@@ -18,9 +18,6 @@ dev.close()
 conf_plcys = config.xpath('.//policy-options/policy-statement')
 used_plcys = config.xpath('.//protocols//export') + config.findall('.//protocols//import')
 
-#conf_plcys = config.findall('.//policy-options/policy-statement')
-#used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
-
 conf_plcys_set = set()
 used_plcys_set = set()
 
@@ -39,8 +36,3 @@ print ("There are %s unsed policies" % len(unsed_plcys_set))
 
 for unsed_plcy in unsed_plcys_set:
    print ("Policy \"%s\" is unsed" % unsed_plcy)
-
-
-#print (conf_plcys_set)
-#print (used_plcys_set)
-#print (unsed_plcys)
