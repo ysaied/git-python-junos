@@ -4,11 +4,10 @@ from jnpr.junos import Device
 from lxml import etree
 
 dev = Device(host="10.117.97.39", user="ysaied")
+
 dev.open()
-filter = etree.XML('<configuration><system><name-server/></system></configuration>')
-config = dev.rpc.get_config(filter_xml=filter)
+show_rt = dev.rpc.get_route_information(table="inet.0")
 dev.close()
-dns_servers = config.findall('system/name-server')
-#print (etree.tostring(config, encoding='unicode', pretty_print=True))
-for dns in dns_servers:
-   print (dns.find('.//name').text)
+
+print (etree.tostring(show_rt, encoding='unicode', pretty_print=True))
+
