@@ -3,6 +3,7 @@
 from jnpr.junos import Device
 from lxml import etree
 from jnpr.junos.utils.config import Config
+from pprint import pprint
 
 # define "dev" object from class "Device"
 dev = Device(host="10.117.97.39", user="ysaied")
@@ -17,8 +18,8 @@ dev.close()
 conf_plcys = config.findall('.//policy-options/policy-statement')
 used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
 
-conf_plcys_set = {""}
-used_plcys_set = {""}
+conf_plcys_set = set()
+used_plcys_set = set()
 
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
 for conf_plcy in conf_plcys:
@@ -30,6 +31,6 @@ for used_plcy in used_plcys:
 #   print ("Policy \"%s\" is used" % used_plcy.text)
 
 unsed_plcys = conf_plcys_set - used_plcys_set
-print (conf_plcys_set)
-print (used_plcys_set)
+pprint (conf_plcys_set)
+pprint (used_plcys_set)
 print ("unused polices", unsed_plcys)
