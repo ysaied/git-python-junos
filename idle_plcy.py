@@ -33,4 +33,4 @@ for used_plcy in used_plcys:
 unsed_plcys = conf_plcys_set - used_plcys_set
 pprint (conf_plcys_set)
 pprint (used_plcys_set)
-print ("unused polices", unsed_plcys)
+pprint (unsed_plcys)
