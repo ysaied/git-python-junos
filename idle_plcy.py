@@ -17,9 +17,17 @@ dev.close()
 conf_plcys = config.findall('.//policy-options/policy-statement')
 used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
 
+conf_plcys_set = set()
+used_plcys_set = set()
+
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
 for conf_plcy in conf_plcys:
-   print ("Policy \"%s\" is configured" % conf_plcy.find('.//name').text)
+   conf_plcys_set.add(conf_plcy)
+#   print ("Policy \"%s\" is configured" % conf_plcy.find('.//name').text)
    
 for used_plcy in used_plcys:
-   print ("Policy \"%s\" is used" % used_plcy.text)
+   used_plcys_set.add(used_plcy)
+#   print ("Policy \"%s\" is used" % used_plcy.text)
+
+print (conf_plcys_set)
+print (used_plcys_set)
