@@ -14,4 +14,4 @@ dev.close()
 dest_rts = show_rt.findall('.//rt')
 
 for dest_rt in dest_rts:
-   print ("Destination \"{}\" is available via Protocol \"{}\"".format(dest_rt.find('.//rt-destination').text,dest_rt.find('.//protocol-name').text))
+   print ("Destination \"{}\" is available via Protocol \"{}\"".format(dest_rt.find('rt-destination').text,dest_rt.find('rt-entry/protocol-name').text))
