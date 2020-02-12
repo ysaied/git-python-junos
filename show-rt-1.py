@@ -14,4 +14,4 @@ dev.close()
 dest_rts = show_rt.findall('.//rt')
 
 for dest_rt in dest_rts:
-   print ("Destination \"{}\" via Protocol \"{}\" is active since ".format(dest_rt.find('rt-destination').text,dest_rt.find('rt-entry/protocol-name').text,dest_rt.find('rt-entry/age').text))
+   print ("Destination \"{}\" via Protocol \"{}\" is active since \"{}\"".format(dest_rt.find('rt-destination').text,dest_rt.find('rt-entry/protocol-name').text,dest_rt.find('rt-entry/age').text))
