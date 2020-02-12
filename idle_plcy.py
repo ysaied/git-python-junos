@@ -15,11 +15,11 @@ config = dev.rpc.get_config()
 dev.close()
 
 conf_plcys = config.findall('policy-options/policy-statement')
-used_plcys = config.findall('protocols//export')
+used_plcys = config.findall('protocols//export') + config.findall('protocols//import')
 
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
 for conf_plcy in conf_plcys:
-   print ("Policy \"%s\" found" % conf_plcy.find('.//name').text)
+   print ("Policy \"%s\" is configured" % conf_plcy.find('.//name').text)
    
 for used_plcy in used_plcys:
-   print ("Policy \"%s\" found" % used_plcy.text)
+   print ("Policy \"%s\" is used" % used_plcy.text)
