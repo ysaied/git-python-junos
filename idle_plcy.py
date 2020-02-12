@@ -15,13 +15,16 @@ config = dev.rpc.get_config()
 # apply method "close" to object "dev"
 dev.close()
 
+# apply method "re.findall" to object "config" using XPath
 conf_plcys = config.findall('.//policy-options/policy-statement')
 used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
 
+# define empty set
 conf_plcys_set = set()
 used_plcys_set = set()
 
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
+
 for conf_plcy in conf_plcys:
    conf_plcys_set.add(conf_plcy.find('.//name').text)
 #   print ("Policy \"%s\" is configured" % conf_plcy.find('.//name').text)
@@ -36,8 +39,3 @@ print ("There are %s unsed policies" % len(unsed_plcys_set))
 
 for unsed_plcy in unsed_plcys_set:
    print ("Policy \"%s\" is unsed" % unsed_plcy)
-
-
-#print (conf_plcys_set)
-#print (used_plcys_set)
-#print (unsed_plcys)
