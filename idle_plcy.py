@@ -30,6 +30,6 @@ for used_plcy in used_plcys:
 #   print ("Policy \"%s\" is used" % used_plcy.text)
 
 unsed_plcys = conf_plcys_set - used_plcys_set
-print ("configurd polices" . conf_plcys_set)
-print ("used polices" . used_plcys_set)
-print ("unused polices" . unsed_plcys)
+print ("configurd polices", conf_plcys_set)
+print ("used polices", used_plcys_set)
+print ("unused polices", unsed_plcys)
