@@ -15,8 +15,11 @@ config = dev.rpc.get_config()
 # apply method "close" to object "dev"
 dev.close()
 
-conf_plcys = config.findall('.//policy-options/policy-statement')
-used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
+conf_plcys = config.xpath('.//policy-options/policy-statement')
+used_plcys = config.xpath('.//protocols//export') + config.findall('.//protocols//import')
+
+#conf_plcys = config.findall('.//policy-options/policy-statement')
+#used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
 
 conf_plcys_set = set()
 used_plcys_set = set()
