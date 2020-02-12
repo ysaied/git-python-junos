@@ -14,7 +14,12 @@ config = dev.rpc.get_config()
 # apply method "close" to object "dev"
 dev.close()
 
-plcys = config.findall('policy-options/policy-statement')
+conf_plcys = config.findall('policy-options/policy-statement')
+used_plcys = config.findall('protocols//export')
+
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
-for plcy in plcys:
-   print ("Policy \"%s\" found" % plcy.find('.//name').text)
+for conf_plcy in conf_plcys:
+   print ("Policy \"%s\" found" % conf_plcy.find('.//name').text)
+   
+for used_plcy in used_plcys:
+   print ("Policy \"%s\" found" % used_plcy.text)
