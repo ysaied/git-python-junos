@@ -9,7 +9,7 @@ dev.open()
 show_rt = dev.rpc.get_route_information(table="inet.0")
 dev.close()
 
-print (etree.tostring(show_rt, encoding='unicode', pretty_print=True))
+#print (etree.tostring(show_rt, encoding='unicode', pretty_print=True))
 
 dest_rts = show_rt.findall('.//rt-destination')
 
