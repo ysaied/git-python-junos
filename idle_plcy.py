@@ -15,6 +15,6 @@ config = dev.rpc.get_config()
 dev.close()
 
 plcys = config.findall('policy-options/policy-statement/name')
-#print (etree.tostring(config, encoding='unicode', pretty_print=True))
-for plcy in plcys:
-   print (plcy.text)
+print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
+#for plcy in plcys:
+#   print (plcy.text)
