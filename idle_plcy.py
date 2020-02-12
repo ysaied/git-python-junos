@@ -32,7 +32,7 @@ for used_plcy in used_plcys:
 
 unsed_plcys_set = conf_plcys_set - used_plcys_set
 
-print ("There are %s unsed policies" % str(len(unsed_plcys_set)))
+print ("There are %s unsed policies" % len(unsed_plcys_set))
 
 for unsed_plcy in unsed_plcys_set:
    print ("Policy \"%s\" is unsed" % unsed_plcy)
