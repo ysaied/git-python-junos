@@ -14,7 +14,7 @@ config = dev.rpc.get_config()
 # apply method "close" to object "dev"
 dev.close()
 
-plcys = config.findall('policy-options/policy-statement/name')
+plcys = config.findall('policy-options/policy-statement')
 #print (etree.tostring(config, encoding='unicode', pretty_print=True))
 for plcy in plcys:
    print (plcy.find('.//name').text)
