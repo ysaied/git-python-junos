@@ -11,3 +11,7 @@ dev.close()
 
 print (etree.tostring(show_rt, encoding='unicode', pretty_print=True))
 
+dest_rts = show_rt.findall('.//rt-destination')
+
+for dest_rt in dest_rts:
+   print ("Destination subnet \"%s\" is available" % dest_rt.text)
