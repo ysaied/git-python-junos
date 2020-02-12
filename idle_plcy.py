@@ -15,7 +15,7 @@ config = dev.rpc.get_config()
 dev.close()
 
 conf_plcys = config.findall('.//policy-options/policy-statement')
-used_plcys = config.findall('protocols//export') + config.findall('protocols//import')
+used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
 
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
 for conf_plcy in conf_plcys:
