@@ -17,4 +17,4 @@ dev.close()
 plcys = config.findall('policy-options/policy-statement')
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
 for plcy in plcys:
-   print ("Policy name \"%s\" found" % plcy.find('.//name').text)
+   print ("Policy \"%s\" found" % plcy.find('.//name').text)
