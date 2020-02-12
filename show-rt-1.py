@@ -15,4 +15,4 @@ dest_rts = show_rt.findall('.//rt')
 
 for dest_rt in dest_rts:
    print ("Destination subnet \"%s\" is available" % dest_rt.find('.//rt-destination').text)
-   print ("Destination subnet \"%s\" is available" % dest_rt.find('.//rt-entry').text)
+   print ("Protocol \"%s\" is available" % dest_rt.find('.//protocol-name').text)
