@@ -22,7 +22,7 @@ used_plcys_set = set()
 
 #print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
 for conf_plcy in conf_plcys:
-   conf_plcys_set.add(conf_plcy.text)
+   conf_plcys_set.add(conf_plcy.find('.//name').text)
 #   print ("Policy \"%s\" is configured" % conf_plcy.find('.//name').text)
    
 for used_plcy in used_plcys:
