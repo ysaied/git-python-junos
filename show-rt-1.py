@@ -6,7 +6,8 @@ from lxml import etree
 dev = Device(host="10.117.97.39", user="ysaied")
 
 dev.open()
-show_rt = dev.rpc.get_route_information(table="inet.0")
+#show_rt = dev.rpc.get_route_information(table="inet.0")
+show_rt = dev.rpc.get_route_information()
 dev.close()
 
 #print (etree.tostring(show_rt, encoding='unicode', pretty_print=True))
@@ -14,4 +15,4 @@ dev.close()
 dest_rts = show_rt.findall('.//rt')
 
 for dest_rt in dest_rts:
-   print ("Destination \"{}\" via Protocol \"{}\" is active since \"{}\"".format(dest_rt.find('rt-destination').text,dest_rt.find('rt-entry/protocol-name').text,dest_rt.find('rt-entry/age').text))
+   print ("Destination \"{}\" via Protocol \"{}\" is active for \"{}\"".format(dest_rt.find('rt-destination').text,dest_rt.find('rt-entry/protocol-name').text,dest_rt.find('rt-entry/age').text))
