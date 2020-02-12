@@ -4,7 +4,7 @@ from jnpr.junos import Device
 from lxml import etree
 
 
-dev = Device(host="10.117.97.55", user="ysaied")
+dev = Device(host="10.117.97.39", user="ysaied")
 
 show_interfaces = etree.XML("<configuration><interfaces/></configuration>")
 
