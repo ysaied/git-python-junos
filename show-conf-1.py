@@ -13,7 +13,9 @@ dev.open()
 #show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces)
 #below to show output in JUNOS Text format
 #show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'text'})
-show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'xml'})
+#below to show output in XML format with explicit defination
+#show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'xml'})
+show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'json'})
 dev.close()
 
 
