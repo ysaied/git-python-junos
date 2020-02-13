@@ -22,6 +22,6 @@ show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format
 
 dev.close()
 
-print (show_conf_intf)
+print (etree.tostring(show_conf_intf))
 #print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
 
