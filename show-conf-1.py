@@ -9,7 +9,11 @@ dev = Device(host="10.117.97.39", user="ysaied")
 show_interfaces = etree.XML("<configuration><interfaces/></configuration>")
 
 dev.open()
-show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'text'})
+#below to show output in XML format
+#show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces)
+#below to show output in JUNOS Text format
+#show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'text'})
+show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'xml'})
 dev.close()
 
 
