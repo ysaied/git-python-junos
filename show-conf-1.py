@@ -9,8 +9,9 @@ dev = Device(host="10.117.97.39", user="ysaied")
 show_interfaces = etree.XML("<configuration><interfaces/></configuration>")
 
 dev.open()
-show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces)
+show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'text'})
 dev.close()
+
 
 print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
 
