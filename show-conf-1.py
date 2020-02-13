@@ -23,7 +23,7 @@ dev.close()
 
 #show_conf_intf_json = json.loads(show_conf_intf)
 
-show_conf_intf_json = json.dumps(show_conf_intf, indent=3)
+show_conf_intf_json = json.dumps(show_conf_intf, indent=1)
 
 print (show_conf_intf_json)
 #print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
