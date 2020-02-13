@@ -18,6 +18,6 @@ dev.open()
 show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'json'})
 dev.close()
 
-
-print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
+print (show_conf_intf)
+#print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
 
