@@ -21,7 +21,7 @@ dev.open()
 #show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'xml'})
 
 #below to show output in JSON format - need below JSON format printing 
-show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'json'})
+show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'json', 'inherit':'inherit'})
 
 dev.close()
 
