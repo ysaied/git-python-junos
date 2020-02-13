@@ -8,7 +8,7 @@ import json
 dev = Device(host="10.117.97.39", user="ysaied")
 
 # below XML filter
-show_interfaces = etree.XML("<configuration></interfaces></interface></name>fxp0</name></interface></interfaces></configuration>")
+show_interfaces = etree.XML("<configuration><interfaces><interface><name>fxp0</name></interface></interfaces></configuration>")
 # below XPATH filter
 #show_interfaces = ('interfaces/interface[name = "fxp0"]')
 
