@@ -7,8 +7,10 @@ import json
 
 dev = Device(host="10.117.97.39", user="ysaied")
 
+# below XML filter
 #show_interfaces = etree.XML("<configuration><interfaces/></configuration>")
-show_interfaces = ("interfaces")
+# below XPATH filter
+show_interfaces = ('interfaces/interface')
 
 dev.open()
 #below to show output in XML format
