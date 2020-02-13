@@ -8,9 +8,9 @@ import json
 dev = Device(host="10.117.97.39", user="ysaied")
 
 # below XML filter
-show_interfaces = etree.XML("<interfaces><interface><name>fxp0</name></interface></interfaces>")
+#show_interfaces = etree.XML("<interfaces><interface><name>fxp0</name></interface></interfaces>")
 # below XPATH filter
-#show_interfaces = ('interfaces/interface[name = "fxp0"]')
+show_interfaces = ("interfaces/interface[name = \"fxp0\"]")
 
 dev.open()
 #below to show output in XML format
