@@ -10,7 +10,7 @@ dev = Device(host="10.117.97.39", user="ysaied")
 # below XML filter
 #show_interfaces = etree.XML("<configuration><interfaces/></configuration>")
 # below XPATH filter
-show_interfaces = ('interfaces/interface')
+show_interfaces = ('interfaces/interface[fxp0]')
 
 dev.open()
 #below to show output in XML format
