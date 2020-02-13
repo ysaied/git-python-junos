@@ -18,10 +18,9 @@ dev.open()
 #show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'xml'})
 
 show_conf_intf = dev.rpc.get_config(filter_xml=show_interfaces, options={'format':'json'})
-show_conf_intf_json = '[' . json.loads(show_conf_intf) . ']'
 
 dev.close()
 
-print (show_conf_intf_json)
+print ('[' . json.loads(show_conf_intf) . ']')
 #print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
 
