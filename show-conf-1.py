@@ -28,5 +28,5 @@ dev.close()
 #print (etree.tostring(show_conf_intf, encoding='unicode', pretty_print=True))
 
 #use below to print JSON in human readable format
-show_conf_intf_json = json.dumps(show_conf_intf, indent=2, sort_keys=True)
+show_conf_intf_json = json.dumps(show_conf_intf, indent=2)
 print (show_conf_intf_json)
