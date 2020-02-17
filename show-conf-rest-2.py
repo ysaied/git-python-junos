@@ -53,20 +53,7 @@ for node, ip in dev_dic.items():
    ftp_conf = rest_responce_xml.find('.//ftp')
    print ("\n" + "="*20 + " "*2 + node + " "*2 + "="*20)
 
-   if (telnet_conf is not None):
-      if ("inactive" in telnet_conf.attrib.keys()):
-         print ("Telnet is Configured but Inactive!")
-      else:
-         print ("Telnet is Configured & Enabled!")
-   else:
-      print ("Telnet is NOT Configured!")
-
-   if (ftp_conf is not None):
-      if ("inactive" in ftp_conf.attrib.keys()):
-         print ("FTP is Configured but Inactive!")
-      else:
-         print ("FTP is Configured & Enabled!")
-   else:
-      print ("FTP is NOT Configured!") 
+   check_conf_xpath(Telnet, telnet_conf)
+   check_conf_xpath(FTP, ftp_conf)
 
    print ("="*51 + "\n")
