@@ -53,7 +53,7 @@ for node, ip in dev_dic.items():
    ftp_conf = rest_responce_xml.find('.//ftp')
    print ("\n" + "="*20 + " "*2 + node + " "*2 + "="*20)
 
-   check_conf_xpath(Telnet, telnet_conf)
-   check_conf_xpath(FTP, ftp_conf)
+   check_conf_xpath("Telnet", telnet_conf)
+   check_conf_xpath("FTP", ftp_conf)
 
    print ("="*51 + "\n")
