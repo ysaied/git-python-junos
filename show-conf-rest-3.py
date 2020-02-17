@@ -57,8 +57,8 @@ for node, ip in dev_dic.items():
       headers= rest_headers
       )
    rest_responce_xml = etree.fromstring(rest_responce.content)
-   telnet_conf = rest_responce_xml.find('.//system/service/telnet')
-   ftp_conf = rest_responce_xml.find('.//system/service/ftp')
+   telnet_conf = rest_responce_xml.find('.//system/services/telnet')
+   ftp_conf = rest_responce_xml.find('.//system/services/ftp')
    print ("\n" + "="*20 + " "*2 + node + " "*2 + "="*20)
 
    check_conf_xpath("Telnet", telnet_conf)
