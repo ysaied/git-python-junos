@@ -66,4 +66,4 @@ for node, ip in dev_dic.items():
    check_conf_xpath("FTP", ftp_conf)
    check_conf_xpath("RE Filter", lo0_filter_conf)
 
-   print ("="*51 + "\n")
+   print ("="*(44+len(node)) + "\n")
