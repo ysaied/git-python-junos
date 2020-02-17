@@ -59,9 +59,11 @@ for node, ip in dev_dic.items():
    rest_responce_xml = etree.fromstring(rest_responce.content)
    telnet_conf = rest_responce_xml.find('.//system/services/telnet')
    ftp_conf = rest_responce_xml.find('.//system/services/ftp')
+   lo0_filter_conf = rest_responce_xml.find('.//interfaces/interface[name = "lo0"]/unit[name = "0"]/family/inet/filter/input')
    print ("\n" + "="*20 + " "*2 + node + " "*2 + "="*20)
 
    check_conf_xpath("Telnet", telnet_conf)
    check_conf_xpath("FTP", ftp_conf)
+   check_conf_xpath("RE Filter", lo0_filter_conf)
 
    print ("="*51 + "\n")
