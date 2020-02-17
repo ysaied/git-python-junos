@@ -5,12 +5,6 @@ from lxml import etree
 import json
 import requests
 
-
-line_start = """
-======================================================="""
-line_end = """=======================================================
-"""
-
 dev_dic = { "KIF_VPN" : "10.117.97.56", 
    "HRZ_VPN" : "10.117.97.55", 
    "AMS_VPN" : "10.117.97.37", 
@@ -49,12 +43,21 @@ for node, ip in dev_dic.items():
    telnet_conf = rest_responce_xml.find('.//telnet')
    ftp_conf = rest_responce_xml.find('.//ftp')
    print ("\n" + "="*20 + " "*2 + node + " "*2 + "="*20)
+
    if (telnet_conf is not None):
-      print ("Telnet is configured!")
+      if ("inactive" in telnet_conf.attrib.keys()):
+         print ("Telnet is Configured but Inactive!")
+      else:
+         print ("Telnet is Configured & Enabled!")
    else:
-      print ("Telnet is NOT configured!")
+      print ("Telnet is NOT Configured!")
+
    if (ftp_conf is not None):
-      print ("FTP is configured")
+      if ("inactive" in ftp_conf.attrib.keys()):
+         print ("FTP is Configured but Inactive!")
+      else:
+         print ("FTP is Configured & Enabled!")
    else:
-      print ("FTP is NOT configured!")
+      print ("FTP is NOT Configured!") 
+
    print ("="*51 + "\n")
