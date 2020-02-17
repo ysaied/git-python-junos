@@ -1,0 +1,43 @@
+
+#!/usr/bin/python
+from jnpr.junos import Device
+from lxml import etree
+import json
+import requests
+
+KIF_VPN = "10.117.97.56"
+HRZ_VPN = "10.117.97.55"
+AMS_VPN = "10.117.97.37"
+LON_VPN = "10.117.97.36"
+Partner = "10.117.97.39"
+
+dev_list = [ KIF_VPN, HRZ_VPN, AMS_VPN, LON_VPN, Partner]
+
+show_config = """
+<get-config>
+  <source>
+    <running/>
+  </source>
+  <filter type="subtree">
+    <configuration>
+      <system>
+        <services/>
+      </system>
+    </configuration>
+  </filter>
+</get-config>
+"""
+rest_url = "http://{}:9080/rpc/"
+rest_auth = requests.auth.HTTPBasicAuth("jnpr", "jnpr123")
+rest_headers = {"Content-Type" : "application/xml", "Accept" : "text/plain"}
+
+for dev in dev_list:
+   rest_responce = requests.post(
+      rest_url.format(dev), 
+      data=show_config,
+      auth=rest_auth,
+      headers= rest_headers
+      )
+   telnet_conf = etree.fromstring(rest_responce.text).findall('.//telnet')
+   for 
+print (telnet_conf.text)

@@ -5,27 +5,56 @@ from lxml import etree
 import json
 import requests
 
-KIF-VPN = "10.117.97.56"
-HRZ-VPN = "10.117.97.55"
-AMS-VPN = "10.117.97.37"
-LON-VPN = "10.117.97.36"
-Partner = "10.117.97.39"
 
-dev_list = [ KIF-VPN, HRZ-VPN, AMS-VPN, LON-VPN, Partner]
+line_start = """
+======================================================="""
+line_end = """=======================================================
+"""
+
+dev_dic = { "KIF_VPN" : "10.117.97.56", 
+   "HRZ_VPN" : "10.117.97.55", 
+   "AMS_VPN" : "10.117.97.37", 
+   "LON_VPN" : "10.117.97.36", 
+   "Partner" : "10.117.97.39" 
+   }   
+
+
 
 show_config = """
 <get-config>
   <source>
     <running/>
   </source>
+  <filter type="subtree">
+    <configuration>
+      <system>
+        <services/>
+      </system>
+    </configuration>
+  </filter>
 </get-config>
 """
+rest_url = "http://{}:9080/rpc/"
+rest_auth = requests.auth.HTTPBasicAuth("jnpr", "jnpr123")
+rest_headers = {"Content-Type" : "application/xml", "Accept" : "text/plain"}
 
-
-for dev in dev_list:
-   config = requests.post("http://{}:9080/rpc/".format(dev), 
+for node, ip in dev_dic.items():
+   rest_responce = requests.post(
+      rest_url.format(ip), 
       data=show_config,
-      auth=requests.auth.HTTPBasicAuth(jnpr, jnpr123),
-      header={"Content-Type: application/xml", "Accept: application/xml"}
+      auth=rest_auth,
+      headers= rest_headers
       )
-   print (config)      
+   rest_responce_xml = etree.fromstring(rest_responce.content)
+   telnet_conf = rest_responce_xml.find('.//telnet')
+   ftp_conf = rest_responce_xml.find('.//ftp')
+   print ("\n" + "="*20 + " "*2 + node + " "*2 + "="*20)
+   if (telnet_conf is not None):
+      print ("Telnet is configured!")
+   else:
+      print ("Telnet is NOT configured!")
+   if (ftp_conf is not None):
+      print ("FTP is configured")
+   else:
+      print ("FTP is NOT configured!")
+   print ("="*51 + "\n")
