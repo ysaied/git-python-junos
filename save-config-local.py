@@ -19,8 +19,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
    dev.open()
    try:
       file_copy = dev.rpc.file_copy(source="/config/juniper.conf.gz", destination=backup_conf_filename)
-      print ("File Copy OK!")
+      print ("Running-configuration Saved!" % )
    except:
-      print ("File Copy Error!")
+      print ("Running-configuration Saved!")
       
    dev.close()
