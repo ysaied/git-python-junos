@@ -41,6 +41,16 @@ def check_isis_route(node_name, node_ip):
          print ("    ----> ISIS route to Loopback --> BAD!")
    else:
       print ("    ----> ISIS route to Loopback --> BAD!")
+      
+def check_bgp_neighbor(node_name, node_ip): 
+   rpc_bgp_ngbr = dev.rpc.get_bgp_neighbor_information(neighbor-address=node_ip)
+   if ( rpc_bgp_ngbr.find('.//peer-address') is not None):
+      if ( rpc_bgp_ngbr.find('.//peer-state').text == "Established" ):
+         print ("    ----> BGP Session --> OK!")
+      else:
+         print ("    ----> BGP Session --> BAD!")
+   else:
+      print ("    ----> BGP Session --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
