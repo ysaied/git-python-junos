@@ -21,16 +21,16 @@ login_username = "ysaied"
 def check_reachabilitily(node_name, node_ip): 
    rpc_ping = dev.rpc.ping(host=node_ip, count="10", rapid=True)
    if ( rpc_ping.find('.//ping-success') is not None):
-      print ("----> PING --> OK!")
+      print ("    ----> PING --> OK!")
    else:
-      print ("----> PING --> BAD!")
+      print ("    ----> PING --> BAD!")
 
 def check_ospf_route(node_name, node_ip): 
    rpc_ospf_rt = dev.rpc.get_route_information(protocol="ospf", table="inet.0", destination=node_ip)
    if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
-      print ("----> OSPF route to Loopback --> OK!")
+      print ("    ----> OSPF route to Loopback --> OK!")
    else:
-      print ("----> OSPF route to Loopback --> BAD!")
+      print ("    ----> OSPF route to Loopback --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
