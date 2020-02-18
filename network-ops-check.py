@@ -14,8 +14,7 @@ dev_mgmt = { "KIF_VPN" : "10.117.97.56",
 dev_loopback = { "KIF_VPN" : "1.0.0.11", 
    "HRZ_VPN" : "1.0.0.12", 
    "AMS_VPN" : "1.0.0.13", 
-   "LON_VPN" : "1.0.0.14",
-   "Partner" : "1.0.0.15"
+   "LON_VPN" : "1.0.0.14"
    }  
 
 login_username = "ysaied"
