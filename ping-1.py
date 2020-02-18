@@ -32,9 +32,9 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
    for dst_node, loopback_ip in dev_loopback.items():
-      check_reachabilitily(dst_node, loopback_ip)   
-   
-   
+      if ( dst_node != src_node ):
+         check_reachabilitily(dst_node, loopback_ip)   
+
    print ("="*(44+len(src_node)) + "\n")
    
    dev.close()
