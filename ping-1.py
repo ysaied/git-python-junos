@@ -32,6 +32,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
          print ("Destination %s is NOT Reachable!" % dst_node )
    
    
-   print ("="*(44+len(node)) + "\n")
+   print ("="*(44+len(src_node)) + "\n")
    
    dev.close()
