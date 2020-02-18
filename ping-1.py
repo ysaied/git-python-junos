@@ -63,14 +63,16 @@ def check_ldp_binding(node_name, node_ip):
       print ("    ----> LDP Binding to Loopback --> BAD!")
       
 def check_rsvp_lsp(node_name, node_ip): 
-   rpc_rsvp_ingress_up_lsp = dev.rpc.get_mpls_lsp_information(ingress=True, up=True)
-   if ( rpc_rsvp_ingress_up_lsp.findall('.//destination-address') is not None):
-      if ( rpc_rsvp_ingress_up_lsp.findall('.//destination-address').text == node_ip ):
-         print ("    ----> RSVP LSP --> OK!")
+   rpc_rsvp_in_lsp = dev.rpc.get_mpls_lsp_information(ingress=True, up=True)
+   lsp_dst_all = rpc_rpc_rsvp_in_lsp.findall('.//destination-address')
+   if ( lsp_dst_all is not None):
+      for lsp_dst in lsp_dst_all:
+         if ( lsp_dst.text == node_ip):
+            print ("    ----> RSVP LSP --> OK!")
+         else:
+            print ("    ----> RSVP LSP --> BAD!")
       else:
          print ("    ----> RSVP LSP --> BAD!")
-   else:
-      print ("    ----> RSVP LSP --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
