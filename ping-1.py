@@ -25,6 +25,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
    for dst_node, loopback_ip in dev_loopback.items():
+      if ( dst_node != src_node ):
+        print ("DO!")
       ping_dst_loopback = dev.rpc.ping(host=loopback_ip, count="10", rapid=True)
       if ( ping_dst_loopback.find('.//ping-success') is not None):
          print ("Destination %s is Reachable!" % dst_node )
