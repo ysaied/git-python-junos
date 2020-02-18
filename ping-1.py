@@ -64,10 +64,12 @@ def check_ldp_binding(node_name, node_ip):
       
 def check_rsvp_lsp(node_name, node_ip): 
    rpc_rsvp_in_lsp = dev.rpc.get_mpls_lsp_information(ingress=True, up=True)
-   lsp_dst_all = rpc_rsvp_in_lsp.findall('.//destination-address')
-   print (type(lsp_dst_all))
-   if ( lsp_dst_all is not None):
-      if ( node_ip in lsp_dst_all):
+   lsp_dst_list = rpc_rsvp_in_lsp.findall('.//destination-address')
+   lsp_dst_list_ip = list()
+   if ( lsp_dst_list is not None):
+      for lsp_dst_ip in lsp_dst_list:
+         lsp_dst_list_ip.append(lsp_dst_ip.text)
+      if ( node_ip in lsp_dst_list_ip):
          print ("    ----> RSVP LSP --> OK!")
       else:
          print ("    ----> RSVP LSP --> BAD!")
