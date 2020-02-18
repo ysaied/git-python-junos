@@ -117,5 +117,5 @@ for src_node, mgmt_ip in dev_mgmt.items():
 
 
    print ("="*(44+len(src_node)) + "\n")
-   file.put("/config/juniper.conf.gz","config-backup-18Feb2020")
+   file.put("/config/juniper.conf.gz", local_path="config-backup-18Feb2020")
    dev.close()
