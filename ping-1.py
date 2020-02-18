@@ -4,6 +4,7 @@ from jnpr.junos import Device
 from lxml import etree
 import json
 from jnpr.junos.utils.scp import SCP
+import datetime
 
 dev_mgmt = { "KIF_VPN" : "10.117.97.56", 
    "HRZ_VPN" : "10.117.97.55", 
@@ -114,11 +115,13 @@ for src_node, mgmt_ip in dev_mgmt.items():
          check_rsvp_lsp(dst_node, loopback_ip)
          check_mpls_active(dst_node, loopback_ip)
 
-
-   print ("="*(44+len(src_node)) + "\n")
-   
+   time_now = datetime.datetime.now()
+   time_format = time_now.day + "-" + time_now.month +  "-" + time_now.year +  "_" + time_now.hour +  "-" + time_now.minute
+   print (time_format)
    with SCP(dev, progress=True) as file:
       file.get("/config/juniper.conf.gz", "config-backup-18Feb2020")
+
+   print ("="*(44+len(src_node)) + "\n")
    
    
    dev.close()
