@@ -34,8 +34,8 @@ def check_ospf_route(node_name, node_ip):
 
 def check_isis_route(node_name, node_ip): 
    rpc_isis_rt = dev.rpc.get_route_information(protocol="isis", table="inet.0", destination=node_ip)
-   if ( rpc_ospf_rt.find('.//rt-destination') is not None):
-      if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
+   if ( rpc_isis_rt.find('.//rt-destination') is not None):
+      if ( rpc_isis_rt.find('.//rt-destination').text == (node_ip + "/32") ):
          print ("    ----> ISIS route to Loopback --> OK!")
       else:
          print ("    ----> ISIS route to Loopback --> BAD!")
