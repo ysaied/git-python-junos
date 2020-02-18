@@ -28,9 +28,9 @@ def check_reachabilitily(node_name, node_ip):
 def check_ospf_route(node_name, node_ip): 
    rpc_ospf_rt = dev.rpc.get_route_information(protocol="ospf", table="inet.0", destination=node_ip)
    if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
-      print ("OSPF route to %s is Available!" % node_name )
+      print ("%s --> OSPF route to Loopback --> OK!" % node_name )
    else:
-      print ("OSPF route to %s is NOT Available!" % node_name )
+      print ("%s --> OSPF route to Loopback --> BAD!" % node_name )
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
