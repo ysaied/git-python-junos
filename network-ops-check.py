@@ -115,12 +115,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
          check_rsvp_lsp(dst_node, loopback_ip)
          check_mpls_active(dst_node, loopback_ip)
 
-   time_now = datetime.now().strftime("%d%b%Y_%I:%M_%p")
-   backup_conf_filename = str("config-backup-" + time_now)
-   print (backup_conf_filename)
-   with SCP(dev, progress=True) as file:
-      file.get("/config/juniper.conf.gz", backup_conf_filename)
-
    print ("="*(44+len(src_node)) + "\n")
    
    
