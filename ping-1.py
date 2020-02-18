@@ -3,7 +3,7 @@
 from jnpr.junos import Device
 from lxml import etree
 import json
-
+from jnpr.junos.utils.scp import SCP
 
 dev_mgmt = { "KIF_VPN" : "10.117.97.56", 
    "HRZ_VPN" : "10.117.97.55", 
@@ -97,6 +97,9 @@ def check_mpls_active(node_name, node_ip):
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
+   file = SCP(dev)
+
+   file.put("/config/juniper.conf.gz","config-backup-18Feb2020")
    dev.open()
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
