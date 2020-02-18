@@ -51,6 +51,16 @@ def check_bgp_neighbor(node_name, node_ip):
          print ("    ----> BGP Session --> BAD!")
    else:
       print ("    ----> BGP Session --> BAD!")
+      
+def check_ldp_binding(node_name, node_ip): 
+   rpc_ldp_rt = dev.rpc.get_route_information(protocol="ldp", table="inet.3", destination=node_ip)
+   if ( rpc_ldp_rt.find('.//rt-destination') is not None):
+      if ( rpc_ldp_rt.find('.//rt-destination').text == (node_ip + "/32") ):
+         print ("    ----> LDP Binding to Loopback --> OK!")
+      else:
+         print ("    ----> LDP Binding to Loopback --> BAD!")
+   else:
+      print ("    ----> LDP Binding to Loopback --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
