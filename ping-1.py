@@ -49,7 +49,7 @@ def check_isis_route(node_name, node_ip):
          print ("    ----> ISIS route to Loopback --> BAD!")
    else:
       print ("    ----> ISIS route to Loopback --> BAD!")
-      
+
 def check_bgp_neighbor(node_name, node_ip): 
    rpc_bgp_ngbr = dev.rpc.get_bgp_neighbor_information(neighbor_address=node_ip)
    if ( rpc_bgp_ngbr.find('.//peer-address') is not None):
@@ -59,7 +59,7 @@ def check_bgp_neighbor(node_name, node_ip):
          print ("    ----> BGP Session --> BAD!")
    else:
       print ("    ----> BGP Session --> BAD!")
-      
+
 def check_ldp_binding(node_name, node_ip): 
    rpc_ldp_rt = dev.rpc.get_route_information(protocol="ldp", table="inet.3", destination=node_ip)
    if ( rpc_ldp_rt.find('.//rt-destination') is not None):
@@ -69,7 +69,7 @@ def check_ldp_binding(node_name, node_ip):
          print ("    ----> LDP Binding to Loopback --> BAD!")
    else:
       print ("    ----> LDP Binding to Loopback --> BAD!")
-      
+
 def check_rsvp_lsp(node_name, node_ip): 
    rpc_rsvp_in_lsp = dev.rpc.get_mpls_lsp_information(ingress=True, up=True)
    lsp_dst_list = rpc_rsvp_in_lsp.findall('.//destination-address')
@@ -83,17 +83,14 @@ def check_rsvp_lsp(node_name, node_ip):
          print ("    ----> RSVP LSP --> BAD!")
    else:
       print ("    ----> RSVP LSP --> BAD!")
-      
+
 def check_mpls_active(node_name, node_ip): 
-   rpc_mpls_rt = dev.rpc.get_route_information(active-path=True, table="inet.3", destination=node_ip)
+   rpc_mpls_rt = dev.rpc.get_route_information(active_path=True, table="inet.3", destination=node_ip)
    if ( rpc_mpls_rt.find('.//rt-destination') is not None):
-      mpls_active_protocol = rpc_mpls_rt.find('.//rt-destination/rt-entry/protocol-name').text
-      if ( mpls_active_protocol is not None ):
-         print ("    ----> Active MPLS Path via --> %s!", % mpls_active_protocol)
-      else:
-         print ("    ----> LDP Binding to Loopback --> BAD!")
+      mpls_active_protocol = rpc_mpls_rt.find('.//rt-entry/protocol-name').text
+      print ("    ----> Active MPLS Path via --> %s!" % mpls_active_protocol)
    else:
-      print ("    ----> LDP Binding to Loopback --> BAD!")
+      print ("    ----> Active MPLS Path --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
