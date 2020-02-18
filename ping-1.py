@@ -32,6 +32,13 @@ def check_ospf_route(node_name, node_ip):
    else:
       print ("    ----> OSPF route to Loopback --> BAD!")
 
+def check_isis_route(node_name, node_ip): 
+   rpc_isis_rt = dev.rpc.get_route_information(protocol="isis", table="inet.0", destination=node_ip)
+   if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
+      print ("    ----> ISIS route to Loopback --> OK!")
+   else:
+      print ("    ----> ISIS route to Loopback --> BAD!")
+
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
@@ -42,7 +49,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
       if ( dst_node != src_node ):
          print (dst_node)
          check_reachabilitily(dst_node, loopback_ip)
-         check_ospf_route(dst_node, loopback_ip)   
+         check_ospf_route(dst_node, loopback_ip)
+         check_isis_route(dst_node, loopback_ip)   
          
 
 
