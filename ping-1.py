@@ -97,7 +97,6 @@ def check_mpls_active(node_name, node_ip):
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
-   file = SCP(dev, progress=True)
 
    dev.open()
    
@@ -118,8 +117,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
 
    print ("="*(44+len(src_node)) + "\n")
    
-   
-   file.get("/config/juniper.conf.gz", "config-backup-18Feb2020")
+   with SCP(dev, progress=True) as file
+      file.get("/config/juniper.conf.gz", "config-backup-18Feb2020")
    
    
    dev.close()
