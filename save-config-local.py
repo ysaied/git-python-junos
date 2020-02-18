@@ -19,11 +19,9 @@ for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
 
    dev.open()
-   
+   file_copy = dev.rpc.file_copy(source="/config/juniper.conf.gz", destination="/var/home/ysaied/")   
 #   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
 
-   with FS(dev) as file_sys:
-      file_sys.cp("/config/juniper.conf.gz", "/var/home/ysaied/")
 
 #   print ("="*(44+len(src_node)) + "\n")
    
