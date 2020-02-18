@@ -116,7 +116,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
          check_mpls_active(dst_node, loopback_ip)
 
    time_now = datetime.datetime.now()
-   time_format = time_now.day + "-" + time_now.month +  "-" + time_now.year +  "_" + time_now.hour +  "-" + time_now.minute
+   time_format = str (time_now.day + "-" + time_now.month +  "-" + time_now.year +  "_" + time_now.hour +  "-" + time_now.minute)
    print (time_format)
    with SCP(dev, progress=True) as file:
       file.get("/config/juniper.conf.gz", "config-backup-18Feb2020")
