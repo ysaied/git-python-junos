@@ -21,10 +21,17 @@ login_username = "ysaied"
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
+   
+   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
+   
    for dst_node, loopback_ip in dev_loopback.items():
       ping_dst_loopback = dev.rpc.ping(host=loopback_ip, count="10", rapid=True)
       if ( ping_dst_loopback.find('.//ping-success') is not None):
          print ("Destination %s is Reachable!" % dst_node )
       else:
          print ("Destination %s is NOT Reachable!" % dst_node )
+   
+   
+   print ("="*(44+len(node)) + "\n")
+   
    dev.close()
