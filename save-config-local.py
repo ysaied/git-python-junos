@@ -18,7 +18,7 @@ print (backup_conf_filename)
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
 
-#   dev.open()
+   dev.open()
    
 #   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
 
@@ -28,4 +28,4 @@ for src_node, mgmt_ip in dev_mgmt.items():
 #   print ("="*(44+len(src_node)) + "\n")
    
    
-#   dev.close()
+   dev.close()
