@@ -3,13 +3,10 @@
 from jnpr.junos import Device
 from lxml import etree
 import json
-from jnpr.junos.utils.scp import SCP
+from jnpr.junos.utils.fs import FS
 from datetime import datetime
 
-dev_mgmt = { "KIF_VPN" : "10.117.97.56", 
-   "HRZ_VPN" : "10.117.97.55", 
-   "AMS_VPN" : "10.117.97.37", 
-   "LON_VPN" : "10.117.97.36" 
+dev_mgmt = { "KIF_VPN" : "10.117.97.39" }
    } 
 
 
@@ -26,8 +23,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
    
 #   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
 
-   with SCP(dev, progress=True) as file:
-      file.get("/config/juniper.conf.gz", remote_path=backup_conf_filename)
+   with FS(dev) as file_sys:
+      file_sys.cp("/config/juniper.conf.gz", "/var/home/ysaied/")
 
 #   print ("="*(44+len(src_node)) + "\n")
    
