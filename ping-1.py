@@ -64,7 +64,7 @@ def check_ldp_binding(node_name, node_ip):
       
 def check_rsvp_lsp(node_name, node_ip): 
    rpc_rsvp_in_lsp = dev.rpc.get_mpls_lsp_information(ingress=True, up=True)
-   lsp_dst_all = rpc_rsvp_in_lsp.findall('.//destination-address')
+   lsp_dst_all = rpc_rsvp_in_lsp.findall('.//destination-address', string)
    print (type(lsp_dst_all))
    if ( lsp_dst_all is not None):
       if ( node_ip in lsp_dst_all):
