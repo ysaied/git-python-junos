@@ -18,6 +18,13 @@ dev_loopback = { "KIF_VPN" : "1.0.0.11",
 
 login_username = "ysaied"
 
+def check_reachabilitily(node_name, node_ip): 
+   rpc_ping = dev.rpc.ping(host=node_ip, count="10", rapid=True)
+   if ( rpc_ping.find('.//ping-success') is not None):
+      print ("Destination %s is Reachable!" % node_name )
+   else:
+      print ("Destination %s is NOT Reachable!" % node_name )
+
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
@@ -25,13 +32,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
    for dst_node, loopback_ip in dev_loopback.items():
-      if ( dst_node != src_node ):
-        print ("DO!")
-      ping_dst_loopback = dev.rpc.ping(host=loopback_ip, count="10", rapid=True)
-      if ( ping_dst_loopback.find('.//ping-success') is not None):
-         print ("Destination %s is Reachable!" % dst_node )
-      else:
-         print ("Destination %s is NOT Reachable!" % dst_node )
+      check_reachabilitily(dst_node, loopback_ip)   
    
    
    print ("="*(44+len(src_node)) + "\n")
