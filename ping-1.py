@@ -39,6 +39,8 @@ def check_isis_route(node_name, node_ip):
          print ("    ----> ISIS route to Loopback --> OK!")
       else:
          print ("    ----> ISIS route to Loopback --> BAD!")
+   else:
+      print ("    ----> ISIS route to Loopback --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
