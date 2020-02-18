@@ -21,9 +21,9 @@ login_username = "ysaied"
 def check_reachabilitily(node_name, node_ip): 
    rpc_ping = dev.rpc.ping(host=node_ip, count="10", rapid=True)
    if ( rpc_ping.find('.//ping-success') is not None):
-      print ("Destination %s is Reachable!" % node_name )
+      print ("PING to %s OK!" % node_name )
    else:
-      print ("Destination %s is NOT Reachable!" % node_name )
+      print ("PING to %s BAD!" % node_name )
 
 def check_ospf_route(node_name, node_ip): 
    rpc_ospf_rt = dev.rpc.get_route_information(protocol="ospf", table="inet.0", destination=node_ip)
