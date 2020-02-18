@@ -69,6 +69,7 @@ for node, ip in dev_dic.items():
    ldp_conf = rest_responce_xml.find('.//protocols/ldp')
    rsvp_conf = rest_responce_xml.find('.//protocols/rsvp')
    lldp_conf = rest_responce_xml.find('.//protocols/lldp')
+   pcep_conf = rest_responce_xml.find('.//protocols/pcep')
    lo0_filter_conf = rest_responce_xml.find('.//interfaces/interface[name = "lo0"]/unit[name = "0"]/family/inet/filter/input')
    
    
@@ -84,5 +85,7 @@ for node, ip in dev_dic.items():
    check_conf_xpath("LDP Protocol", ldp_conf)
    check_conf_xpath("RSVP Protocol", rsvp_conf)
    check_conf_xpath("LLDP Protocol", lldp_conf)
+   check_conf_xpath("PCEP Protocol", pcep_conf)
+   
 
    print ("="*(44+len(node)) + "\n")
