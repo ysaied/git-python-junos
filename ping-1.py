@@ -86,6 +86,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
          check_isis_route(dst_node, loopback_ip)   
          check_bgp_neighbor(dst_node, loopback_ip)
          check_ldp_binding(dst_node, loopback_ip)
+         check_rsvp_lsp(dst_node, loopback_ip)
 
 
    print ("="*(44+len(src_node)) + "\n")
