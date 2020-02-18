@@ -25,6 +25,14 @@ def check_reachabilitily(node_name, node_ip):
    else:
       print ("    ----> PING --> BAD!")
 
+def hop_count(node_name, node_ip): 
+   rpc_trace = dev.rpc.traceroute(host=node_ip, no-resolve=True)
+   print (etree.tostring(rpc_trace))
+#   if ( rpc_ping.find('.//ping-success') is not None):
+#      print ("    ----> PING --> OK!")
+#   else:
+#      print ("    ----> PING --> BAD!")
+
 def check_ospf_route(node_name, node_ip): 
    rpc_ospf_rt = dev.rpc.get_route_information(protocol="ospf", table="inet.0", destination=node_ip)
    if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
@@ -97,6 +105,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
       if ( dst_node != src_node ):
          print (dst_node)
          check_reachabilitily(dst_node, loopback_ip)
+         hop_count(dst_node, loopback_ip)
          check_ospf_route(dst_node, loopback_ip)
          check_isis_route(dst_node, loopback_ip)   
          check_bgp_neighbor(dst_node, loopback_ip)
