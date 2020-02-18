@@ -17,5 +17,10 @@ backup_conf_filename = str("./" + "config-backup-" + datetime.now().strftime("%d
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
-   file_copy = dev.rpc.file_copy(source="/config/juniper.conf.gz", destination=backup_conf_filename)   
+   try:
+      file_copy = dev.rpc.file_copy(source="/config/juniper.conf.gz", destination=backup_conf_filename)
+      print ("File Copy OK!")
+   except:
+      print ("File Copy Error!")
+      
    dev.close()
