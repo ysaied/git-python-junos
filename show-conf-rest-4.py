@@ -32,7 +32,7 @@ show_config = """
             </unit>
         </interface>
       </interfaces>
-      <protocols>
+      <protocols/>
     </configuration>
   </filter>
 </get-config>
