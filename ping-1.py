@@ -117,7 +117,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
 
    print ("="*(44+len(src_node)) + "\n")
    
-   with SCP(dev, progress=True) as file
+   with SCP(dev, progress=True) as file:
       file.get("/config/juniper.conf.gz", "config-backup-18Feb2020")
    
    
