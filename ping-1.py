@@ -99,7 +99,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    file = SCP(dev)
 
-   file.put("/config/juniper.conf.gz","config-backup-18Feb2020")
    dev.open()
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
@@ -118,5 +117,5 @@ for src_node, mgmt_ip in dev_mgmt.items():
 
 
    print ("="*(44+len(src_node)) + "\n")
-   
+   file.put("/config/juniper.conf.gz","config-backup-18Feb2020")
    dev.close()
