@@ -19,7 +19,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
 
    dev.open()
-   file_copy = dev.rpc.file_copy(source="/config/juniper.conf.gz", destination=backup_conf_filename)   
+   file_copy = dev.rpc.file_copy(source="/config/juniper.conf.gz", destination="./%s" % backup_conf_filename)   
 #   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
 
 
