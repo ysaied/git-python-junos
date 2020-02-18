@@ -7,7 +7,6 @@ from jnpr.junos.utils.fs import FS
 from datetime import datetime
 
 dev_mgmt = { "KIF_VPN" : "10.117.97.39" }
-   } 
 
 
 login_username = "ysaied"
