@@ -75,6 +75,17 @@ def check_rsvp_lsp(node_name, node_ip):
          print ("    ----> RSVP LSP --> BAD!")
    else:
       print ("    ----> RSVP LSP --> BAD!")
+      
+def check_mpls_active(node_name, node_ip): 
+   rpc_mpls_rt = dev.rpc.get_route_information(active-path=True, table="inet.3", destination=node_ip)
+   if ( rpc_mpls_rt.find('.//rt-destination') is not None):
+      mpls_active_protocol = rpc_mpls_rt.find('.//rt-destination/rt-entry/protocol-name').text
+      if ( mpls_active_protocol is not None ):
+         print ("    ----> Active MPLS Path via --> %s!", % mpls_active_protocol)
+      else:
+         print ("    ----> LDP Binding to Loopback --> BAD!")
+   else:
+      print ("    ----> LDP Binding to Loopback --> BAD!")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
@@ -91,6 +102,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
          check_bgp_neighbor(dst_node, loopback_ip)
          check_ldp_binding(dst_node, loopback_ip)
          check_rsvp_lsp(dst_node, loopback_ip)
+         check_mpls_active(dst_node, loopback_ip)
 
 
    print ("="*(44+len(src_node)) + "\n")
