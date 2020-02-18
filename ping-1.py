@@ -13,32 +13,35 @@ dev_mgmt = { "KIF_VPN" : "10.117.97.56",
 dev_loopback = { "KIF_VPN" : "1.0.0.11", 
    "HRZ_VPN" : "1.0.0.12", 
    "AMS_VPN" : "1.0.0.13", 
-   "LON_VPN" : "1.0.0.14"
+   "LON_VPN" : "1.0.0.14",
+   "Partner" : "1.0.0.15"
    }  
 
 login_username = "ysaied"
 
 def check_reachabilitily(node_name, node_ip): 
-   rpc_ping = dev.rpc.ping(host=node_ip, count="10", rapid=True)
+   rpc_ping = dev.rpc.ping(host=node_ip, count="3", rapid=True)
    if ( rpc_ping.find('.//ping-success') is not None):
       print ("    ----> PING --> OK!")
    else:
       print ("    ----> PING --> BAD!")
 
 def hop_count(node_name, node_ip): 
-   rpc_trace = dev.rpc.traceroute(host=node_ip, no-resolve=True)
-   print (etree.tostring(rpc_trace))
-#   if ( rpc_ping.find('.//ping-success') is not None):
-#      print ("    ----> PING --> OK!")
-#   else:
-#      print ("    ----> PING --> BAD!")
+   rpc_ping = dev.rpc.ping(host=node_ip, count="3", rapid=True)
+   if ( rpc_ping.find('.//ping-success') is not None ): 
+      rpc_trace = dev.rpc.traceroute(host=node_ip, no_resolve=True, wait="1")
+      trace_ttl = len(rpc_trace.findall('.//ttl-value'))
+      print ("    ----> Traceroute No. of Hops --> %s" % trace_ttl)
+   else:
+      print ("    ----> Traceroute No. of Hops --> BAD!")
 
 def check_ospf_route(node_name, node_ip): 
    rpc_ospf_rt = dev.rpc.get_route_information(protocol="ospf", table="inet.0", destination=node_ip)
-   if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
-      print ("    ----> OSPF route to Loopback --> OK!")
-   else:
-      print ("    ----> OSPF route to Loopback --> BAD!")
+   if ( rpc_ospf_rt.find('.//rt-destination') is not None):
+      if ( rpc_ospf_rt.find('.//rt-destination').text == (node_ip + "/32") ):
+         print ("    ----> OSPF route to Loopback --> OK!")
+      else:
+         print ("    ----> OSPF route to Loopback --> BAD!")
 
 def check_isis_route(node_name, node_ip): 
    rpc_isis_rt = dev.rpc.get_route_information(protocol="isis", table="inet.0", destination=node_ip)
