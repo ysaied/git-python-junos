@@ -41,7 +41,7 @@ set security ike gateway ike-gateway-ipsec-{0} local-address {2}
 
 set security ipsec proposal ipsec-default-proposal description ike-phase2-policy
 set security ipsec proposal ipsec-default-proposal protocol esp
-set security ipsec proposal ipsec-default-proposal authentication-algorithm hmac-sha-256-128
+set security ipsec proposal ipsec-default-proposal authentication-algorithm hmac-sha1-96
 set security ipsec proposal ipsec-default-proposal encryption-algorithm aes-256-cbc
 set security ipsec proposal ipsec-default-proposal lifetime-seconds 3600
 

@@ -40,7 +40,7 @@ crypto isakmp profile ike-policy-ipsec-{0}
   keyring ike-policy-ipsec-{0}
 exit
 
-crypto ipsec transform-set ipsec-default-proposal esp-aes 256 esp-sha256-hmac 
+crypto ipsec transform-set ipsec-default-proposal esp-aes 256 esp-sha-hmac 
   mode tunnel
 exit
 
