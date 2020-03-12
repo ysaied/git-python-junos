@@ -78,7 +78,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    
    for show in show_all:
       print (show)
-      print (dev.rpc.cli(show, format='text', normalize=False).text)
+      print (dev.rpc.cli(show, format='text').text)
 
    print ("="*(44+len(src_node)) + "\n")
    
