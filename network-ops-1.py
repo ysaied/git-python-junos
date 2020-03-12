@@ -90,12 +90,21 @@ def check_mpls_active(node_name, node_ip):
 
 
 def test_3_1(): 
-   rpc_chassis_hardware = dev.rpc.get_chassis_inventory(clei_models=True)
+   rpc_chassis_hardware = dev.rpc.get_chassis_inventory(format=text)
+   rpc_chassis_models = dev.rpc.get_chassis_inventory(clei_models=True)
+   rpc_fpc_info = dev.rpc.get_fpc_information(detail=True)
+   rpc_fpc_err = dev.rpc.get_fpc_error_information()
+   rpc_pic_info = dev.rpc.get_pic_information()
+   rpc_chassis_alarms = dev.rpc.get_alarm_information()
+   rpc_sys_alarms = dev.rpc.get_system_alarm_information()
+   rpc_version = dev.rpc.get_software_information()
+   rpc_re_info = dev.rpc.get-route_engine_information()
+   
    print (etree.tostring(rpc_chassis_hardware, encoding='unicode', pretty_print=True))
 
 
 for src_node, mgmt_ip in dev_mgmt.items():
-   print ( src_node + mgmt_ip)
+
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
