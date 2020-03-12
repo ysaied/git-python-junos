@@ -79,13 +79,13 @@ for src_node, mgmt_ip in dev_mgmt.items():
    file_output.write ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + "="*20)
    
    for show in show_all:
-      file_output.write ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)      
+      file_output.write ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5 + "\n")      
       output = dev.rpc.cli(show, format='text')
       
       if type(output) is bool:
-         file_output.write ("\nNO Output Available !!!!")
+         file_output.write ("\nNO Output Available !!!!\n")
       else:
-         file_output.write ("\n" + output.text)
+         file_output.write ("\n" + output.text + "\n")
 
    file_output.write ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
