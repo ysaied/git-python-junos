@@ -28,7 +28,7 @@ for a in range(9):
   show_a.append(show_cmd)
 
 show_b = list()
-show_b0 = 'show interfaces terse | grep "ge|xe|ae|em"' 
+show_b0 = "show interfaces ters" 
 show_b1 = "show ospf interface"
 show_b2 = "show ospf neighbor"
 show_b3 = "show ospf database"
@@ -70,21 +70,31 @@ for c in range(2,6):
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 show_all = show_a + show_b + show_c
 
+file_output = open("~/junos-output.txt", "w")
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + "="*20)
+   file_output.write ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + "="*20)
    
    for show in show_all:
       print ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)
+      file_output.write ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)
+      
       output = dev.rpc.cli(show, format='text')
+      
       if type(output) is bool:
          print ("NO Output Available !!!!")
+         file_output.write ("NO Output Available !!!!")
       else:
          print (output.text)
+         file_output.write (output.text)
 
    print ("="*(44+len(src_node)+len(time_now)) + "\n")
-   
+   file_output.write ("="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
+
+file_output.close()
+
