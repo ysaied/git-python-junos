@@ -66,16 +66,17 @@ for c in range(2,6):
   show_c.append(show_cmd)
 
 
-#print (etree.tostring(rpc_chassis_hardware, encoding='unicode', pretty_print=True))
 
+time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 show_all = show_a + show_b + show_c
+
 
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
-   print (datetime.now().strftime("%A___%d-%h-%Y___%I:%M %p"))
-   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
+   print ("\n" + "="*20 + " "*2 + time_now + " "*2 + "="*20)
+   print ("="*20 + " "*2 + src_node + " "*2 + "="*20)
    
    for show in show_all:
       print (show)
