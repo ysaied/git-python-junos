@@ -95,12 +95,13 @@ def test_3_1():
 
 
 for src_node, mgmt_ip in dev_mgmt.items():
+   print ( src_node + mgmt_ip)
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
-   test_3_1(src_node, mgmt_ip)
+   test_3_1()
    
    print ("="*(44+len(src_node)) + "\n")
    
