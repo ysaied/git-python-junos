@@ -23,7 +23,7 @@ show_a7 = "show version invoke-on all-routing-engines"
 show_a8 = "show chassis routing-engine"
 
 for a in range(9):
-  show_cmd = exec("show_a%d" % a)
+  show_cmd = exec("show_a%d" % (a))
   
   show_a.append(show_cmd)
 
