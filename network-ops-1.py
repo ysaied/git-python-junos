@@ -56,10 +56,10 @@ print (show_b)
 
 show_c0 = "show route table l3vpn-option_a-%d"
 show_c1 = "show route table l3vpn-option_c-%d"
-show_c2 = "show l2vpn connections
-show_c3 = "show l2circuit connections
-show_c4 = "show vpls connections
-show_c5 = "show vpls mac-table
+show_c2 = "show l2vpn connections"
+show_c3 = "show l2circuit connections"
+show_c4 = "show vpls connections"
+show_c5 = "show vpls mac-table"
 
 for n in range(101,106):
   print (show_c0 % n)
