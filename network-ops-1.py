@@ -75,8 +75,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
-   print ("\n" + "="*20 + " "*2 + time_now + " "*2 + "="*20)
-   print ("="*20 + " "*2 + src_node + " "*2 + "="*20)
+   print ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + "="*20)
    
    for show in show_all:
       print (show)
@@ -86,6 +85,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
       else:
          print (output.text)
 
-   print ("="*(44+len(src_node)) + "\n")
+   print ("="*(44+len(src_node)+len(time_now)) + "\n")
    
    dev.close()
