@@ -1,23 +1,39 @@
 
-====================  vMX_RR-21  Thursday__12-Mar-2020__09:59 PM====================
+====================  vMX_RR-21  Thursday__12-Mar-2020__10:24 PM====================
+
 =====  show chassis hardware  =====
+
 Hardware inventory:
 Item             Version  Part number  Serial number     Description
 Chassis                                VR5E67C476CF      VRR
 Midplane        
 Routing Engine                                           RE-VRR
 
-=====  show chassis hardware clei-models  =====NO Output Available !!!!
-=====  show chassis fpc detail  =====NO Output Available !!!!
-=====  show chassis fpc errors  =====NO Output Available !!!!
-=====  show chassis fpc pic-status  =====NO Output Available !!!!
+
+=====  show chassis hardware clei-models  =====
+NO Output Available !!!!
+
+=====  show chassis fpc detail  =====
+NO Output Available !!!!
+
+=====  show chassis fpc errors  =====
+NO Output Available !!!!
+
+=====  show chassis fpc pic-status  =====
+NO Output Available !!!!
+
 =====  show chassis alarms  =====
+
 No alarms currently active
+
 
 =====  show system alarms  =====
+
 No alarms currently active
 
+
 =====  show version invoke-on all-routing-engines  =====
+
 re0:
 --------------------------------------------------------------------------
 Hostname: vMX_RR-21
@@ -91,130 +107,231 @@ JUNOS jfirmware [20200131.231848_builder_junos_193_r2_s1]
 JUNOS Online Documentation [20200131.231848_builder_junos_193_r2_s1]
 JUNOS jail runtime [20200130.95c8806_builder_stable_11]
 
+
 =====  show chassis routing-engine  =====
+
 Routing Engine status:
     DRAM                      8146 MB (8192 MB installed)
     Memory utilization           7 percent
     5 sec CPU utilization:
-      User                      10 percent
-      Background                 0 percent
-      Kernel                     4 percent
-      Interrupt                  0 percent
-      Idle                      86 percent
-    1 min CPU utilization:
-      User                       1 percent
-      Background                 0 percent
-      Kernel                     1 percent
-      Interrupt                  0 percent
-      Idle                      98 percent
-    5 min CPU utilization:
-      User                       1 percent
+      User                       0 percent
       Background                 0 percent
       Kernel                     0 percent
       Interrupt                  0 percent
       Idle                      99 percent
-    15 min CPU utilization:
-      User                       1 percent
+    1 min CPU utilization:
+      User                       2 percent
       Background                 0 percent
       Kernel                     1 percent
       Interrupt                  0 percent
-      Idle                      98 percent
+      Idle                      96 percent
+    5 min CPU utilization:
+      User                       4 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      94 percent
+    15 min CPU utilization:
+      User                       4 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      94 percent
     Model                          RE-VRR
     Start time                     2020-03-10 16:44:58 UTC
-    Uptime                         2 days, 4 hours, 58 minutes, 20 seconds
+    Uptime                         2 days, 5 hours, 22 minutes, 46 seconds
     Last reboot reason             Router rebooted after a normal shutdown.
     Load averages:                 1 minute   5 minute  15 minute
-                                       0.29       0.27       0.27
+                                       0.95       0.60       0.43
 
-=====  show interfaces ters  =====
-protocol: operation-failed
-error: device ters not found
+
+=====  show interfaces terse  =====
+
+Interface               Admin Link Proto    Local                 Remote
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em0                     up    up
+em0.0                   up    up   inet     10.255.255.5/24 
+                                   multiservice
+em1                     up    up
+em1.0                   up    up   inet     87.201.172.205/28
+                                   multiservice
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet    
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet     128.0.0.1           --> 0/0
+                                            128.0.0.4           --> 0/0
+                                   inet6    fe80::250:560f:fc8d:5687
+lsi                     up    up
+mif                     up    up
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
 
 =====  show ospf interface  =====
+
 OSPF instance is not running
+
 
 =====  show ospf neighbor  =====
+
 OSPF instance is not running
+
 
 =====  show ospf database  =====
+
 OSPF instance is not running
 
+
 =====  show ted database  =====
+
 TED database: 0 ISIS nodes 0 INET nodes
 
+
 =====  show route protocol ospf  =====
+
 
 inet.0: 6 destinations, 6 routes (6 active, 0 holddown, 0 hidden)
 
 inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 
+
 =====  show mpls interface  =====
+
 MPLS not configured
+
 
 =====  show ldp interface  =====
+
 LDP instance is not running
+
 
 =====  show ldp neighbor   =====
+
 LDP instance is not running
 
-=====  show route table inet.3 protocol ldp  =====NO Output Available !!!!
+
+=====  show route table inet.3 protocol ldp  =====
+NO Output Available !!!!
+
 =====  show rsvp interface  =====
+
 RSVP not configured
+
 
 =====  show rsvp neighbor  =====
+
 RSVP not configured
+
 
 =====  show rsvp session  =====
+
 RSVP not configured
 
-=====  show route table inet.3 protocol rsvp  =====NO Output Available !!!!
+
+=====  show route table inet.3 protocol rsvp  =====
+NO Output Available !!!!
+
 =====  show mpls lsp ingress  =====
+
 MPLS not configured
 
+
 =====  show bgp summary  =====
+
 BGP is not running
+
 
 =====  show route table l3vpn-option_a-101  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_a-102  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_a-103  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_a-104  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_a-105  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_c-111  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_c-112  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_c-113  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_c-114  =====
 
+
 error: No routing tables matching specification.
+
 
 =====  show route table l3vpn-option_c-115  =====
 
+
 error: No routing tables matching specification.
 
-=====  show l2vpn connections  =====NO Output Available !!!!
-=====  show l2circuit connections  =====NO Output Available !!!!
-=====  show vpls connections  =====NO Output Available !!!!
-=====  show vpls mac-table  =====NO Output Available !!!!====================================================================================
+
+=====  show l2vpn connections  =====
+NO Output Available !!!!
+
+=====  show l2circuit connections  =====
+NO Output Available !!!!
+
+=====  show vpls connections  =====
+NO Output Available !!!!
+
+=====  show vpls mac-table  =====
+NO Output Available !!!!
+====================================================================================
