@@ -12,6 +12,7 @@ login_username = "ysaied"
 
 
 
+show_a = list()
 show_a0 = "show chassis hardware"
 show_a1 = "show chassis hardware clei-models"
 show_a2 = "show chassis fpc detail"
@@ -22,13 +23,34 @@ show_a6 = "show system alarms"
 show_a7 = "show version invoke-on all-routing-engines"
 show_a8 = "show chassis routing-engine"
 
-show_a = list()
-
 for a in range(9):
   show_cmd = vars()[("show_a%d" % a)]
   show_a.append(show_cmd)
 
+show_b = list()
+show_b0 = "show interfaces terse" 
+show_b1 = "show ospf interface"
+show_b2 = "show ospf neighbor"
+show_b3 = "show ospf database"
+show_b4 = "show ted database"
+show_b5 = "show route protocol ospf"
+show_b6 = "show mpls interfaces"
+show_b7 = "show ldp interface"
+show_b8 = "show ldp neighbor "
+show_b9 = "show route table inet.3 protocol ldp"
+show_b10 = "show rsvp interface"
+show_b11 = "show rsvp neighbor"
+show_b12 = "show rsvp session"
+show_b13 = "show route table inet.3 protocol rsvp"
+show_b14 = "show mpls lsp ingress"
+show_b15 = "show bgp summary"
+
+for a in range(16):
+  show_cmd = vars()[("show_b%d" % b)]
+  show_b.append(show_cmd)
+
 print (show_a)
+print (show_b)
 
 
 def check_reachabilitily(node_name, node_ip): 
