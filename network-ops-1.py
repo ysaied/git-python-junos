@@ -45,7 +45,7 @@ show_b13 = "show route table inet.3 protocol rsvp"
 show_b14 = "show mpls lsp ingress"
 show_b15 = "show bgp summary"
 
-for a in range(16):
+for b in range(16):
   show_cmd = vars()[("show_b%d" % b)]
   show_b.append(show_cmd)
 
