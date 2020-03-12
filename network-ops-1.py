@@ -111,7 +111,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
-   test_3_1()
+   print (dev.display_xml_rpc('show route', format='text'))
+#   test_3_1()
    
    print ("="*(44+len(src_node)) + "\n")
    
