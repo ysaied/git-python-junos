@@ -49,11 +49,7 @@ for b in range(16):
   show_cmd = vars()[("show_b%d" % b)]
   show_b.append(show_cmd)
 
-
-print (show_a)
-print (show_b)
-
-
+show_c = list()
 show_c0 = "show route table l3vpn-option_a-%d"
 show_c1 = "show route table l3vpn-option_c-%d"
 show_c2 = "show l2vpn connections"
@@ -62,9 +58,13 @@ show_c4 = "show vpls connections"
 show_c5 = "show vpls mac-table"
 
 for n in range(101,106):
-  print (show_c0 % n)
+  show_cmd = vars()[(show_c0 % n)]
 
 
+
+print (show_a)
+print (show_b)
+print (show_c)
 
 def check_reachabilitily(node_name, node_ip): 
    rpc_ping = dev.rpc.ping(host=node_ip, count="3", rapid=True)
