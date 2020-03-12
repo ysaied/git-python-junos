@@ -170,7 +170,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
-#   test_3_1()
+   print (dev.cli("show version"))
    
    print ("="*(44+len(src_node)) + "\n")
    
