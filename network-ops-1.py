@@ -61,6 +61,9 @@ for n in range(101,106):
   show_c.append(show_c0 % n)
 for n in range(111,116):
   show_c.append(show_c1 % n)
+for c in range(2,6):
+  show_cmd = vars()[("show_c%d" % c)]
+  show_c.append(show_cmd)
 
 
 
