@@ -98,7 +98,7 @@ def test_3_1():
    rpc_chassis_alarms = dev.rpc.get_alarm_information()
    rpc_sys_alarms = dev.rpc.get_system_alarm_information()
    rpc_version = dev.rpc.get_software_information()
-   rpc_re_info = dev.rpc.get-route_engine_information()
+   rpc_re_info = dev.rpc.get_route_engine_information()
    
    print (etree.tostring(rpc_chassis_hardware, encoding='unicode', pretty_print=True))
 
