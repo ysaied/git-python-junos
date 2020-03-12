@@ -28,7 +28,7 @@ for a in range(9):
   show_a.append(show_cmd)
 
 show_b = list()
-show_b0 = "show interfaces ters" 
+show_b0 = "show interfaces terse" 
 show_b1 = "show ospf interface"
 show_b2 = "show ospf neighbor"
 show_b3 = "show ospf database"
@@ -87,7 +87,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
       
       if type(output) is bool:
          print ("NO Output Available !!!!")
-         file_output.write ("NO Output Available !!!!")
+         file_output.write ("\n NO Output Available !!!!")
       else:
          print (output.text)
          file_output.write (output.text)
