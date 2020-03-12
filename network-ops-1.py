@@ -90,7 +90,7 @@ def check_mpls_active(node_name, node_ip):
 
 
 def test_3_1(): 
-   rpc_chassis_hardware = dev.rpc.get_chassis_inventory(format="text")
+   rpc_chassis_hardware = dev.rpc.get_chassis_inventory({format="text"})
    rpc_chassis_models = dev.rpc.get_chassis_inventory(clei_models=True)
    rpc_fpc_info = dev.rpc.get_fpc_information(detail=True)
    rpc_fpc_err = dev.rpc.get_fpc_error_information()
