@@ -28,7 +28,7 @@ for a in range(9):
   show_a.append(show_cmd)
 
 show_b = list()
-show_b0 = "show interfaces terse | grep \"ge|xe|ae|em\"" 
+show_b0 = 'show interfaces terse | grep "ge|xe|ae|em"' 
 show_b1 = "show ospf interface"
 show_b2 = "show ospf neighbor"
 show_b3 = "show ospf database"
