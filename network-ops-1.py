@@ -23,7 +23,7 @@ show_a8 = "show version invoke-on all-routing-engines"
 show_a9 = "show chassis routing-engine"
 
 for i in range(10):
-  print ("a%d" % i)
+  print ("show_a%d" % i)
 
 
 def check_reachabilitily(node_name, node_ip): 
