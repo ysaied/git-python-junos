@@ -85,7 +85,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
       if type(output) is bool:
          file_output.write ("\nNO Output Available !!!!")
       else:
-         file_output.write ("\n"output.text)
+         file_output.write ("\n" + output.text)
 
    print ("="*(44+len(src_node)+len(time_now)) + "\n")
    file_output.write ("="*(44+len(src_node)+len(time_now)) + "\n")   
