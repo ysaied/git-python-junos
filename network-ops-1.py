@@ -77,7 +77,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
    for show in show_all:
-      print (dev.rpc.cli(show, format='text', normalize=False).text)
+      print (etree.tostring(dev.rpc.cli(show, format='text', normalize=False)))
 
    print ("="*(44+len(src_node)) + "\n")
    
