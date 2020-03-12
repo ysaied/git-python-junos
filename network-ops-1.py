@@ -12,7 +12,7 @@ login_username = "ysaied"
 
 
 
-vars()[show_a0] = "show chassis hardware"
+show_a0 = "show chassis hardware"
 show_a1 = "show chassis hardware clei-models"
 show_a2 = "show chassis fpc detail"
 show_a3 = "show chassis fpc errors"
@@ -25,7 +25,7 @@ show_a8 = "show chassis routing-engine"
 show_a = list()
 
 for a in range(9):
-  show_cmd = ("show_a%d" % a)
+  show_cmd = vars()[("show_a%d" % a)]
   show_a.append(show_cmd)
 
 print (show_a)
