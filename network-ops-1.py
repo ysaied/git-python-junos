@@ -11,8 +11,8 @@ dev_mgmt = { "vMX_RR-21" : "87.201.172.205" }
 login_username = "ysaied"
 
 
-show_a = list()
-show_a0 = "show chassis hardware"
+
+vars()[show_a0] = "show chassis hardware"
 show_a1 = "show chassis hardware clei-models"
 show_a2 = "show chassis fpc detail"
 show_a3 = "show chassis fpc errors"
@@ -22,9 +22,10 @@ show_a6 = "show system alarms"
 show_a7 = "show version invoke-on all-routing-engines"
 show_a8 = "show chassis routing-engine"
 
+show_a = list()
+
 for a in range(9):
   show_cmd = ("show_a%d" % a)
-  
   show_a.append(show_cmd)
 
 print (show_a)
