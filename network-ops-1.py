@@ -58,7 +58,7 @@ show_c4 = "show vpls connections"
 show_c5 = "show vpls mac-table"
 
 for n in range(101,106):
-  show_cmd = vars()[(show_c0 % n)]
+  show_c.append(show_c0 % n)
 
 
 
