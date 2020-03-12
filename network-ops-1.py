@@ -79,7 +79,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
    for show in show_all:
       print (show)
       output = dev.rpc.cli(show, format='text')
-      print (type(output))
+      if type(output) is bool:
+         print ("tosse")
       print (output)
 
    print ("="*(44+len(src_node)) + "\n")
