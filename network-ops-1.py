@@ -12,18 +12,19 @@ login_username = "ysaied"
 
 
 show_a = list()
-show_a1 = "show chassis hardware"
-show_a2 = "show chassis hardware clei-models"
-show_a3 = "show chassis fpc detail"
-show_a4 = "show chassis fpc errors"
-show_a5 = "show chassis fpc pic-status"
-show_a6 = "show chassis alarms"
-show_a7 = "show system alarms"
-show_a8 = "show version invoke-on all-routing-engines"
-show_a9 = "show chassis routing-engine"
+show_a0 = "show chassis hardware"
+show_a1 = "show chassis hardware clei-models"
+show_a2 = "show chassis fpc detail"
+show_a3 = "show chassis fpc errors"
+show_a4 = "show chassis fpc pic-status"
+show_a5 = "show chassis alarms"
+show_a6 = "show system alarms"
+show_a7 = "show version invoke-on all-routing-engines"
+show_a8 = "show chassis routing-engine"
 
-for i in range(10):
-  show_cmd = "show_a%d" % i
+for a in range(9):
+  show_cmd = exec("show_a%d" % a)
+  
   show_a.append(show_cmd)
 
 print (show_a)
