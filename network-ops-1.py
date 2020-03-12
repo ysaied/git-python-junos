@@ -78,7 +78,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + "="*20)
    
    for show in show_all:
-      print (show)
+      print ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)
       output = dev.rpc.cli(show, format='text')
       if type(output) is bool:
          print ("NO Output Available !!!!")
