@@ -26,6 +26,8 @@ for i in range(10):
   show_cmd = "show_a%d" % i
   show_a.append(show_cmd)
 
+print (show_a)
+
 
 def check_reachabilitily(node_name, node_ip): 
    rpc_ping = dev.rpc.ping(host=node_ip, count="3", rapid=True)
