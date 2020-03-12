@@ -81,10 +81,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
       output = dev.rpc.cli(show, format='text')
       if type(output) is bool:
          print ("NO Output Available !!!!")
-      elif type(output) == "lxml.etree._Element":
-         print (output.text)
       else:
-         print ("tose")
+         print (output.text)
 
    print ("="*(44+len(src_node)) + "\n")
    
