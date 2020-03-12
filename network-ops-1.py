@@ -74,6 +74,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
+   print (datetime.now().strftime("%A___%d-%h-%Y___%I:%M %p"))
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
    for show in show_all:
