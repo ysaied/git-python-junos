@@ -6,8 +6,7 @@ import json
 from jnpr.junos.utils.scp import SCP
 from datetime import datetime
 
-dev_mgmt = { "vMX_RR-21" : "87.201.172.205" 
-   } 
+dev_mgmt = { "vMX_RR-21" : "87.201.172.205" } 
 
 login_username = "ysaied"
 
@@ -90,7 +89,7 @@ def check_mpls_active(node_name, node_ip):
       
 
 
-def test_3_1(node_name, node_ip): 
+def test_3_1(): 
    rpc_chassis_hardware = dev.rpc.get_chassis_inventory(clei_models=True)
    print (etree.tostring(rpc_chassis_hardware, encoding='unicode', pretty_print=True))
 
