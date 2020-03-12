@@ -1,0 +1,220 @@
+
+====================  vMX_RR-21  Thursday__12-Mar-2020__09:59 PM====================
+=====  show chassis hardware  =====
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                VR5E67C476CF      VRR
+Midplane        
+Routing Engine                                           RE-VRR
+
+=====  show chassis hardware clei-models  =====NO Output Available !!!!
+=====  show chassis fpc detail  =====NO Output Available !!!!
+=====  show chassis fpc errors  =====NO Output Available !!!!
+=====  show chassis fpc pic-status  =====NO Output Available !!!!
+=====  show chassis alarms  =====
+No alarms currently active
+
+=====  show system alarms  =====
+No alarms currently active
+
+=====  show version invoke-on all-routing-engines  =====
+re0:
+--------------------------------------------------------------------------
+Hostname: vMX_RR-21
+Model: vrr
+Junos: 19.3R2-S1.5
+JUNOS OS Kernel 64-bit  [20200130.95c8806_builder_stable_11]
+JUNOS OS libs [20200130.95c8806_builder_stable_11]
+JUNOS OS runtime [20200130.95c8806_builder_stable_11]
+JUNOS OS time zone information [20200130.95c8806_builder_stable_11]
+JUNOS network stack and utilities [20200131.231848_builder_junos_193_r2_s1]
+JUNOS libs [20200131.231848_builder_junos_193_r2_s1]
+JUNOS OS libs compat32 [20200130.95c8806_builder_stable_11]
+JUNOS OS 32-bit compatibility [20200130.95c8806_builder_stable_11]
+JUNOS libs compat32 [20200131.231848_builder_junos_193_r2_s1]
+JUNOS runtime [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Virtual Route Reflector Configuraton Package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS sflow mx [20200131.231848_builder_junos_193_r2_s1]
+JUNOS py extensions [20200131.231848_builder_junos_193_r2_s1]
+JUNOS py base [20200131.231848_builder_junos_193_r2_s1]
+JUNOS OS vmguest [20200130.95c8806_builder_stable_11]
+JUNOS OS support utilities [20200130.95c8806_builder_stable_11]
+JUNOS OS crypto [20200130.95c8806_builder_stable_11]
+JUNOS na telemetry [19.3R2-S1.5]
+JUNOS mx libs compat32 [20200131.231848_builder_junos_193_r2_s1]
+JUNOS mx runtime [20200131.231848_builder_junos_193_r2_s1]
+JUNOS RPD Telemetry Application [19.3R2-S1.5]
+JUNOS common platform support [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Openconfig [19.3R2-S1.5]
+JUNOS mtx network modules [20200131.231848_builder_junos_193_r2_s1]
+JUNOS modules [20200131.231848_builder_junos_193_r2_s1]
+JUNOS mx modules [20200131.231848_builder_junos_193_r2_s1]
+JUNOS mx libs [20200131.231848_builder_junos_193_r2_s1]
+JUNOS SQL Sync Daemon [20200131.231848_builder_junos_193_r2_s1]
+JUNOS mtx Data Plane Crypto Support [20200131.231848_builder_junos_193_r2_s1]
+JUNOS daemons [20200131.231848_builder_junos_193_r2_s1]
+JUNOS mx daemons [20200131.231848_builder_junos_193_r2_s1]
+JUNOS High End AppQos Daemon [20200131.231848_builder_junos_193_r2_s1]
+JUNOS appidd-mx application-identification daemon [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services URL Filter package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services TLB Service PIC package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Telemetry [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services TCP-LOG [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services SSL [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services SOFTWIRE [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Stateful Firewall [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services RTCOM [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services RPM [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services PCEF package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services NAT [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Mobile Subscriber Service Container package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services MobileNext Software package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Logging Report Framework package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services LL-PDF Container package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Jflow Container package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Deep Packet Inspection package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services IPSec [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services IDS [20200131.231848_builder_junos_193_r2_s1]
+JUNOS IDP Services [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services HTTP Content Management package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Crypto [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Captive Portal and Content Delivery Container package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services COS [20200131.231848_builder_junos_193_r2_s1]
+JUNOS AppId Services [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services Application Level Gateways [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Services AACL Container package [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Extension Toolkit [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Packet Forwarding Engine Support (M/T Common) [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Juniper Malware Removal Tool (JMRT) [1.0.0+20200131.231848_builder_junos_193_r2_s1]
+JUNOS J-Insight [20200131.231848_builder_junos_193_r2_s1]
+JUNOS jfirmware [20200131.231848_builder_junos_193_r2_s1]
+JUNOS Online Documentation [20200131.231848_builder_junos_193_r2_s1]
+JUNOS jail runtime [20200130.95c8806_builder_stable_11]
+
+=====  show chassis routing-engine  =====
+Routing Engine status:
+    DRAM                      8146 MB (8192 MB installed)
+    Memory utilization           7 percent
+    5 sec CPU utilization:
+      User                      10 percent
+      Background                 0 percent
+      Kernel                     4 percent
+      Interrupt                  0 percent
+      Idle                      86 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    5 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     0 percent
+      Interrupt                  0 percent
+      Idle                      99 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
+    Model                          RE-VRR
+    Start time                     2020-03-10 16:44:58 UTC
+    Uptime                         2 days, 4 hours, 58 minutes, 20 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.29       0.27       0.27
+
+=====  show interfaces ters  =====
+protocol: operation-failed
+error: device ters not found
+
+=====  show ospf interface  =====
+OSPF instance is not running
+
+=====  show ospf neighbor  =====
+OSPF instance is not running
+
+=====  show ospf database  =====
+OSPF instance is not running
+
+=====  show ted database  =====
+TED database: 0 ISIS nodes 0 INET nodes
+
+=====  show route protocol ospf  =====
+
+inet.0: 6 destinations, 6 routes (6 active, 0 holddown, 0 hidden)
+
+inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+=====  show mpls interface  =====
+MPLS not configured
+
+=====  show ldp interface  =====
+LDP instance is not running
+
+=====  show ldp neighbor   =====
+LDP instance is not running
+
+=====  show route table inet.3 protocol ldp  =====NO Output Available !!!!
+=====  show rsvp interface  =====
+RSVP not configured
+
+=====  show rsvp neighbor  =====
+RSVP not configured
+
+=====  show rsvp session  =====
+RSVP not configured
+
+=====  show route table inet.3 protocol rsvp  =====NO Output Available !!!!
+=====  show mpls lsp ingress  =====
+MPLS not configured
+
+=====  show bgp summary  =====
+BGP is not running
+
+=====  show route table l3vpn-option_a-101  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_a-102  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_a-103  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_a-104  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_a-105  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_c-111  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_c-112  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_c-113  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_c-114  =====
+
+error: No routing tables matching specification.
+
+=====  show route table l3vpn-option_c-115  =====
+
+error: No routing tables matching specification.
+
+=====  show l2vpn connections  =====NO Output Available !!!!
+=====  show l2circuit connections  =====NO Output Available !!!!
+=====  show vpls connections  =====NO Output Available !!!!
+=====  show vpls mac-table  =====NO Output Available !!!!====================================================================================
