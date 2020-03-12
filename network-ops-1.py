@@ -24,7 +24,7 @@ show_a9 = "show chassis routing-engine"
 
 for i in range(10):
   show_cmd = "show_a%d" % i
-  show_a += show_a[show_cmd]
+  show_a.append(show_cmd)
 
 
 def check_reachabilitily(node_name, node_ip): 
