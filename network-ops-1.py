@@ -87,7 +87,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
       else:
          file_output.write ("\n" + output.text)
 
-   print ("="*(44+len(src_node)+len(time_now)) + "\n")
    file_output.write ("="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
 
