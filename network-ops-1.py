@@ -11,7 +11,7 @@ dev_mgmt = { "vMX_RR-21" : "87.201.172.205" }
 login_username = "ysaied"
 
 
-
+show_a = list()
 show_a1 = "show chassis hardware"
 show_a2 = "show chassis hardware clei-models"
 show_a3 = "show chassis fpc detail"
@@ -23,7 +23,8 @@ show_a8 = "show version invoke-on all-routing-engines"
 show_a9 = "show chassis routing-engine"
 
 for i in range(10):
-  print ("show_a%d" % i)
+  show_cmd = "show_a%d" % i
+  show_a += show_a[show_cmd]
 
 
 def check_reachabilitily(node_name, node_ip): 
