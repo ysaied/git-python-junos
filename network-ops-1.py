@@ -170,7 +170,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
-   print (dev.cli("show version"))
+   print (dev.display_xml_rpc('show route', format='text'))
    
    print ("="*(44+len(src_node)) + "\n")
    
