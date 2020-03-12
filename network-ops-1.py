@@ -11,6 +11,21 @@ dev_mgmt = { "vMX_RR-21" : "87.201.172.205" }
 login_username = "ysaied"
 
 
+
+show_a1 = "show chassis hardware"
+show_a2 = "show chassis hardware clei-models"
+show_a3 = "show chassis fpc detail"
+show_a4 = "show chassis fpc errors"
+show_a5 = "show chassis fpc pic-status"
+show_a6 = "show chassis alarms"
+show_a7 = "show system alarms"
+show_a8 = "show version invoke-on all-routing-engines"
+show_a9 = "show chassis routing-engine"
+
+for i in range(10):
+  print ("a%d" % i)
+
+
 def check_reachabilitily(node_name, node_ip): 
    rpc_ping = dev.rpc.ping(host=node_ip, count="3", rapid=True)
    if ( rpc_ping.find('.//ping-success') is not None):
@@ -105,13 +120,11 @@ def test_3_1():
 
 for src_node, mgmt_ip in dev_mgmt.items():
 
-#   with Device(host= mgmt_ip, user= login_username) as dev:
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
    
    print ("\n" + "="*20 + " "*2 + src_node + " "*2 + "="*20)
    
-   print (dev.rpc('show route', format='text'))
 #   test_3_1()
    
    print ("="*(44+len(src_node)) + "\n")
