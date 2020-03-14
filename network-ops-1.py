@@ -75,9 +75,8 @@ file_output = open("junos-output.txt", "w")
 for src_node, mgmt_ip in dev_mgmt.items():
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
-   
-   print >> file_output, (("#"*(len(src_node) + len(time_now) + 46))"\n"*2)
-   print >> file_output, ("*"*(len(src_node) + len(time_now) + 46))
+
+   print >> file_output, ("#"*(len(src_node) + len(time_now) + 46))
    print >> file_output, ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + " "*2 + "="*20)
    
    for show in show_all:
