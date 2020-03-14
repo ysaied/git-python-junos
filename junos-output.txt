@@ -1,5 +1,6 @@
+######################################################################################
 
-====================  vMX_RR-21  Thursday__12-Mar-2020__10:24 PM====================
+====================  vMX_RR-21  Saturday__14-Mar-2020__02:08 PM  ====================
 
 =====  show chassis hardware  =====
 
@@ -114,35 +115,35 @@ Routing Engine status:
     DRAM                      8146 MB (8192 MB installed)
     Memory utilization           7 percent
     5 sec CPU utilization:
-      User                       0 percent
+      User                       3 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      95 percent
+    1 min CPU utilization:
+      User                       1 percent
       Background                 0 percent
       Kernel                     0 percent
       Interrupt                  0 percent
       Idle                      99 percent
-    1 min CPU utilization:
+    5 min CPU utilization:
       User                       2 percent
       Background                 0 percent
       Kernel                     1 percent
       Interrupt                  0 percent
-      Idle                      96 percent
-    5 min CPU utilization:
-      User                       4 percent
-      Background                 0 percent
-      Kernel                     1 percent
-      Interrupt                  0 percent
-      Idle                      94 percent
+      Idle                      97 percent
     15 min CPU utilization:
-      User                       4 percent
+      User                       2 percent
       Background                 0 percent
       Kernel                     1 percent
       Interrupt                  0 percent
-      Idle                      94 percent
+      Idle                      98 percent
     Model                          RE-VRR
     Start time                     2020-03-10 16:44:58 UTC
-    Uptime                         2 days, 5 hours, 22 minutes, 46 seconds
+    Uptime                         3 days, 21 hours, 7 minutes, 24 seconds
     Last reboot reason             Router rebooted after a normal shutdown.
     Load averages:                 1 minute   5 minute  15 minute
-                                       0.95       0.60       0.43
+                                       0.54       0.47       0.42
 
 
 =====  show interfaces terse  =====
@@ -334,4 +335,6 @@ NO Output Available !!!!
 
 =====  show vpls mac-table  =====
 NO Output Available !!!!
+
 ====================================================================================
+
