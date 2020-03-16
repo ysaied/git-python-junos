@@ -74,7 +74,7 @@ for c in range(2,6):
 show_d = list()
 show_d0 = "show configuration"
 
-for d in range(0):
+for d in range(1):
   show_cmd = vars()[("show_d%d" % d)]
   show_d.append(show_cmd)
 
