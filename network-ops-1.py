@@ -71,17 +71,10 @@ for c in range(2,6):
   show_cmd = vars()[("show_c%d" % c)]
   show_c.append(show_cmd)
 
-show_d = list()
-show_d0 = "show configuration"
-
-for d in range(1):
-  show_cmd = vars()[("show_d%d" % d)]
-  show_d.append(show_cmd)
-
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 today = datetime.now().strftime("%d-%h-%Y")
 
-show_all = show_a + show_b + show_c + show_d
+show_all = show_a + show_b + show_c
 
 #file_output = open("junos-output.txt", "w")
 
