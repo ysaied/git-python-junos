@@ -86,7 +86,10 @@ show_all = show_a + show_b + show_c + show_d
 #file_output = open("junos-output.txt", "w")
 
 for src_node, mgmt_ip in dev_mgmt.items():
+   
    file_output = open(src_node+"_"+today+"_outputs.txt", "w")
+   print ("open file for %s" % src_node)
+   
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
 
@@ -101,11 +104,12 @@ for src_node, mgmt_ip in dev_mgmt.items():
             print >> file_output, ("NO Output Available !!!!")
          else:
             print >> file_output, (output.text)
+            print ("progressing %s" % show)
       except:
          print >> file_output, ("NOT Supported command !!!!")
 
    print >> file_output, ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
-
-file_output.close()
+   file_output.close()
+   print ("closing file for %s" % src_node)
 
