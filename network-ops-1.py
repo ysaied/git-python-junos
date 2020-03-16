@@ -6,7 +6,13 @@ import json
 from jnpr.junos.utils.scp import SCP
 from datetime import datetime
 
-dev_mgmt = { "vMX_RR-21" : "87.201.172.205" } 
+# dev_mgmt = { "vMX_RR-21" : "87.201.172.205" } 
+dev_mgmt = { "KIF_VPN" : "10.117.97.56", 
+   "HRZ_VPN" : "10.117.97.55", 
+   "AMS_VPN" : "10.117.97.37", 
+   "LON_VPN" : "10.117.97.36", 
+   "Partner" : "10.117.97.39"
+   } 
 
 login_username = "ysaied"
 
