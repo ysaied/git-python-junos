@@ -86,13 +86,15 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print >> file_output, ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + " "*2 + "="*20)
    
    for show in show_all:
-      print >> file_output, ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)      
-      output = dev.rpc.cli(show, format='text')
-      
-      if type(output) is bool:
-         print >> file_output, ("NO Output Available !!!!")
-      else:
-         print >> file_output, (output.text)
+      print >> file_output, ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)          
+      try :
+         output = dev.rpc.cli(show, format='text')
+         if type(output) is bool:
+            print >> file_output, ("NO Output Available !!!!")
+         else:
+            print >> file_output, (output.text)
+      except:
+         print >> file_output, ("NOT Supported command !!!!")
 
    print >> file_output, ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
