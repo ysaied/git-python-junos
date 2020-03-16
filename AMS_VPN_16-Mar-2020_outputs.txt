@@ -1,0 +1,1876 @@
+##################################################################################
+
+====================  AMS_VPN  Monday__16-Mar-2020__11:35 PM  ====================
+
+=====  show chassis hardware @ AMS_VPN  =====
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                JN12642FFAFB      MX480
+Midplane         REV 44   750-047862   ACRK1622          Enhanced MX480 Midplane
+FPM Board        REV 04   760-059208   CAJN8404          Front Panel Display
+PEM 0            Rev 02   740-063045   QCS1725T02S       DC 2.4kW Power Entry Module
+PEM 1            Rev 02   740-063045   QCS1725T029       DC 2.4kW Power Entry Module
+PEM 2            Rev 02   740-063045   QCS1725T02V       DC 2.4kW Power Entry Module
+PEM 3            Rev 02   740-063045   QCS1725T00C       DC 2.4kW Power Entry Module
+Routing Engine 0 REV 16   750-054758   CAJV8156          RE-S-2X00x6
+Routing Engine 1 REV 16   750-054758   CAJV8278          RE-S-2X00x6
+CB 0             REV 09   750-062572   CAJY6696          Enhanced MX SCB 2
+CB 1             REV 09   750-062572   CAJY6835          Enhanced MX SCB 2
+FPC 0            REV 11   750-063184   CAJX6491          MPC2E NG PQ & Flex Q
+  CPU            REV 13   711-045719   CAJX1024          RMPC PMB
+  MIC 0          REV 29   750-028380   CAJJ1804          3D 2x 10GE XFP
+    PIC 0                 BUILTIN      BUILTIN           1x 10GE XFP
+      Xcvr 0     REV 01   740-031833   AY71H43           XFP-10G-LR
+    PIC 1                 BUILTIN      BUILTIN           1x 10GE XFP
+      Xcvr 0     REV 01   740-031833   AY80SQF           XFP-10G-LR
+  MIC 1          REV 36   750-028392   CAJC7427          3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 01   740-016069   PQQ4XXK           SFP-IR
+      Xcvr 1              NON-JNPR     J2341031625       SFP-LX10
+      Xcvr 2              NON-JNPR     HA11340010402     SFP-LX10
+      Xcvr 5     REV 02   740-013111   G301534           SFP-T
+      Xcvr 7     REV 02   740-013111   G256665           SFP-T
+      Xcvr 9     A01  A   NON-JNPR     76S484H05901      SFP-LX10
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 1     REV 01   740-031850   0ZT459606601      SFP-LX10
+      Xcvr 2     REV 01   740-011614   84S495H04320      SFP-LX10
+      Xcvr 3     REV 01   740-031850   0ZT459606602      SFP-LX10
+      Xcvr 4     REV 01   740-031850   0ZT459606441      SFP-LX10
+      Xcvr 7     REV 01   740-016066   PXA04TB           SFP-IR
+      Xcvr 8              NON-JNPR     HA11330320998     SFP-LX10
+      Xcvr 9              NON-JNPR     ECL133907RX       SFP-IR
+FPC 1            REV 11   750-063184   CAJX6643          MPC2E NG PQ & Flex Q
+  CPU            REV 13   711-045719   CAJX1360          RMPC PMB
+  MIC 0          REV 05   750-060558   CAJN8989          MIC-3D-4OC3OC12-1OC48
+    PIC 0                 BUILTIN      BUILTIN           MIC-3D-4OC3OC12-1OC48
+      Xcvr 0     REV 01   740-016063   PPE2E9E           SFP-IR
+      Xcvr 1     REV 01   740-016063   PPE2CBV           SFP-IR
+      Xcvr 2     REV 01   740-031850   AC1718SA2MM       SFP-LX10
+      Xcvr 3     REV 01   740-016063   PPE2F4P           SFP-IR
+  MIC 1          REV 22   750-028380   CABK0512          3D 2x 10GE XFP
+    PIC 2                 BUILTIN      BUILTIN           1x 10GE XFP
+      Xcvr 0              NON-JNPR     ULB01HZ           XFP-10G-LR
+    PIC 3                 BUILTIN      BUILTIN           1x 10GE XFP
+      Xcvr 0     REV 01   740-031833   UJN0ELS           XFP-10G-LR
+Fan Tray                                                 Enhanced Left Fan Tray
+
+
+=====  show chassis hardware clei-models @ AMS_VPN  =====
+
+Hardware inventory:
+Item             Version  Part number  CLEI code         FRU model number
+Midplane         REV 44   750-047862   COMLM10BRB        CHAS-BP3-MX480-S
+FPM Board        REV 04   760-059208   COUCAEGBTB        CRAFT-MX480-S
+PEM 0            Rev 02   740-063045                     PWR-MX480-2400-DC-S
+PEM 1            Rev 02   740-063045                     PWR-MX480-2400-DC-S
+PEM 2            Rev 02   740-063045                     PWR-MX480-2400-DC-S
+PEM 3            Rev 02   740-063045                     PWR-MX480-2400-DC-S
+Routing Engine 0 REV 16   750-054758   COUCAU7BAA        RE-S-X6-64G-S
+Routing Engine 1 REV 16   750-054758   COUCAU7BAA        RE-S-X6-64G-S
+CB 0             REV 09   750-062572   COUCATYBAB        SCBE2-MX-S
+CB 1             REV 09   750-062572   COUCATYBAB        SCBE2-MX-S
+FPC 0            REV 11   750-063184   IPUCBH4CAH        MPC2E-3D-NG
+  MIC 0          REV 29   750-028380   COUIBDXBAA        MIC-3D-2XGE-XFP
+  MIC 1          REV 36   750-028392   COUIBCRBAA        MIC-3D-20GE-SFP
+FPC 1            REV 11   750-063184   IPUCBH4CAH        MPC2E-3D-NG
+  MIC 0          REV 05   750-060558   COUIA8JBAC        MIC-3D-4OC3OC12-1OC48
+  MIC 1          REV 22   750-028380   COUIBCPBAA        MIC-3D-2XGE-XFP
+Fan Tray                                                 FFANTRAY-MX480-HC-S
+
+
+=====  show chassis fpc detail @ AMS_VPN  =====
+
+Slot 0 information:
+  State                               Online    
+  Temperature                      39 degrees C / 102 degrees F
+  Total CPU DRAM                 3584 MB
+  Total RLDRAM                    259 MB
+  Total DDR DRAM                 20352 MB
+  FIPS Capable                        False 
+  FIPS Mode                           False 
+  Start time                          2020-02-10 10:01:46 GST
+  Uptime                              35 days, 13 hours, 34 minutes, 42 seconds
+  Max MPC base power consumption   308 Watts
+  Max MIC0 power consumption        29 Watts
+  Max MIC1 power consumption        37 Watts
+  Max MPC total power consumption  374 Watts
+Slot 1 information:
+  State                               Online    
+  Temperature                      40 degrees C / 104 degrees F
+  Total CPU DRAM                 3584 MB
+  Total RLDRAM                    259 MB
+  Total DDR DRAM                 20352 MB
+  FIPS Capable                        False 
+  FIPS Mode                           False 
+  Start time                          2020-02-10 10:01:54 GST
+  Uptime                              35 days, 13 hours, 34 minutes, 34 seconds
+  Max MPC base power consumption   308 Watts
+  Max MIC0 power consumption        24 Watts
+  Max MIC1 power consumption        29 Watts
+  Max MPC total power consumption  361 Watts
+
+
+=====  show chassis fpc errors @ AMS_VPN  =====
+
+FPC Scope    Category   Level Occurred Cleared Threshold Action-Taken Action
+  0 board    functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+    pfe      functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+                        Pfe-State: pfe-0 -ENABLED | 
+  1 board    functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+    pfe      functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+                        Pfe-State: pfe-0 -ENABLED | 
+
+
+=====  show chassis fpc pic-status @ AMS_VPN  =====
+
+Slot 0   Online       MPC2E NG PQ & Flex Q                          
+  PIC 0  Online       1x 10GE XFP
+  PIC 1  Online       1x 10GE XFP
+  PIC 2  Online       10x 1GE(LAN) SFP
+  PIC 3  Online       10x 1GE(LAN) SFP
+Slot 1   Online       MPC2E NG PQ & Flex Q                          
+  PIC 0  Online       MIC-3D-4OC3OC12-1OC48
+  PIC 2  Online       1x 10GE XFP
+  PIC 3  Online       1x 10GE XFP
+
+
+=====  show chassis alarms @ AMS_VPN  =====
+
+9 alarms currently active
+Alarm time               Class  Description
+2020-02-16 10:38:28 GST  Major  PEM 3 Input Failure
+2020-02-16 10:38:28 GST  Major  PEM 3 Not OK
+2020-02-16 10:38:28 GST  Major  PEM 2 Input Failure
+2020-02-16 10:38:28 GST  Major  PEM 2 Not OK
+2020-02-16 10:38:23 GST  Minor  VMHost RE 1 Disk 1 
+2020-02-16 10:38:23 GST  Minor  VMHost RE 1 Disk 2 
+2020-02-16 10:38:18 GST  Major  Host 1 fxp0 : Ethernet Link Down
+2020-02-16 10:38:18 GST  Minor  VMHost RE 0 Disk 1 
+2020-02-16 10:38:18 GST  Minor  VMHost RE 0 Disk 2 
+
+
+=====  show system alarms @ AMS_VPN  =====
+
+9 alarms currently active
+Alarm time               Class  Description
+2020-02-16 10:38:28 GST  Major  PEM 3 Input Failure
+2020-02-16 10:38:28 GST  Major  PEM 3 Not OK
+2020-02-16 10:38:28 GST  Major  PEM 2 Input Failure
+2020-02-16 10:38:28 GST  Major  PEM 2 Not OK
+2020-02-16 10:38:23 GST  Minor  VMHost RE 1 Disk 1 
+2020-02-16 10:38:23 GST  Minor  VMHost RE 1 Disk 2 
+2020-02-16 10:38:18 GST  Major  Host 1 fxp0 : Ethernet Link Down
+2020-02-16 10:38:18 GST  Minor  VMHost RE 0 Disk 1 
+2020-02-16 10:38:18 GST  Minor  VMHost RE 0 Disk 2 
+
+
+=====  show version invoke-on all-routing-engines @ AMS_VPN  =====
+
+re0:
+--------------------------------------------------------------------------
+Hostname: AMS-VPN
+Model: mx480
+Junos: 18.4R3.3
+JUNOS OS Kernel 64-bit  [20191211.fa5e90e_builder_stable_11]
+JUNOS OS libs [20191211.fa5e90e_builder_stable_11]
+JUNOS OS runtime [20191211.fa5e90e_builder_stable_11]
+JUNOS OS time zone information [20191211.fa5e90e_builder_stable_11]
+JUNOS network stack and utilities [20191221.040256_builder_junos_184_r3]
+JUNOS libs [20191221.040256_builder_junos_184_r3]
+JUNOS OS libs compat32 [20191211.fa5e90e_builder_stable_11]
+JUNOS OS 32-bit compatibility [20191211.fa5e90e_builder_stable_11]
+JUNOS libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS runtime [20191221.040256_builder_junos_184_r3]
+Junos vmguest package [20191221.040256_builder_junos_184_r3]
+JUNOS sflow mx [20191221.040256_builder_junos_184_r3]
+JUNOS py extensions [20191221.040256_builder_junos_184_r3]
+JUNOS py base [20191221.040256_builder_junos_184_r3]
+JUNOS OS vmguest [20191211.fa5e90e_builder_stable_11]
+JUNOS OS crypto [20191211.fa5e90e_builder_stable_11]
+JUNOS na telemetry [18.4R3.3]
+JUNOS Security Intelligence [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS mx runtime [20191221.040256_builder_junos_184_r3]
+JUNOS common platform support [20191221.040256_builder_junos_184_r3]
+JUNOS Openconfig [18.4R3.3]
+JUNOS mtx network modules [20191220.185702_builder_junos_184_r3]
+JUNOS modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs [20191221.040256_builder_junos_184_r3]
+JUNOS SQL Sync Daemon [20191221.040256_builder_junos_184_r3]
+JUNOS mtx Data Plane Crypto Support [20191221.040256_builder_junos_184_r3]
+JUNOS daemons [20191221.040256_builder_junos_184_r3]
+JUNOS mx daemons [20191221.040256_builder_junos_184_r3]
+JUNOS -MX appidd application-identification daemon [20191221.040256_builder_junos_184_r3]
+JUNOS Services URL Filter package [20191221.040256_builder_junos_184_r3]
+JUNOS Services TLB Service PIC package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Telemetry [20191221.040256_builder_junos_184_r3]
+JUNOS Services TCP-LOG [20191221.040256_builder_junos_184_r3]
+JUNOS Services SSL [20191221.040256_builder_junos_184_r3]
+JUNOS Services SOFTWIRE [20191221.040256_builder_junos_184_r3]
+JUNOS Services Stateful Firewall [20191221.040256_builder_junos_184_r3]
+JUNOS Services RTCOM [20191221.040256_builder_junos_184_r3]
+JUNOS Services RPM [20191221.040256_builder_junos_184_r3]
+JUNOS Services PCEF package [20191221.040256_builder_junos_184_r3]
+JUNOS Services NAT [20191221.040256_builder_junos_184_r3]
+JUNOS Services Mobile Subscriber Service Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services MobileNext Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Logging Report Framework package [20191221.040256_builder_junos_184_r3]
+JUNOS Services LL-PDF Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Jflow Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Deep Packet Inspection package [20191221.040256_builder_junos_184_r3]
+JUNOS Services IPSec [20191221.040256_builder_junos_184_r3]
+JUNOS Services IDS [20191221.040256_builder_junos_184_r3]
+JUNOS IDP Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services HTTP Content Management package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Flowd MS-MPC Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Crypto [20191221.040256_builder_junos_184_r3]
+JUNOS Services Captive Portal and Content Delivery Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services COS [20191221.040256_builder_junos_184_r3]
+JUNOS AppId Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services Application Level Gateways [20191221.040256_builder_junos_184_r3]
+JUNOS Services AACL Container package [20191221.040256_builder_junos_184_r3]
+JUNOS SDN Software Suite [20191221.040256_builder_junos_184_r3]
+JUNOS Extension Toolkit [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (wrlinux9) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MXSPC3) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX/EX92XX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (M/T Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS J-Insight [20191221.040256_builder_junos_184_r3]
+JUNOS jfirmware [20191221.040256_builder_junos_184_r3]
+JUNOS Online Documentation [20191221.040256_builder_junos_184_r3]
+JUNOS jail runtime [20191211.fa5e90e_builder_stable_11]
+
+re1:
+--------------------------------------------------------------------------
+Hostname: AMS-VPN
+Model: mx480
+Junos: 18.4R3.3
+JUNOS OS Kernel 64-bit  [20191211.fa5e90e_builder_stable_11]
+JUNOS OS libs [20191211.fa5e90e_builder_stable_11]
+JUNOS OS runtime [20191211.fa5e90e_builder_stable_11]
+JUNOS OS time zone information [20191211.fa5e90e_builder_stable_11]
+JUNOS network stack and utilities [20191221.040256_builder_junos_184_r3]
+JUNOS libs [20191221.040256_builder_junos_184_r3]
+JUNOS OS libs compat32 [20191211.fa5e90e_builder_stable_11]
+JUNOS OS 32-bit compatibility [20191211.fa5e90e_builder_stable_11]
+JUNOS libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS runtime [20191221.040256_builder_junos_184_r3]
+Junos vmguest package [20191221.040256_builder_junos_184_r3]
+JUNOS sflow mx [20191221.040256_builder_junos_184_r3]
+JUNOS py extensions [20191221.040256_builder_junos_184_r3]
+JUNOS py base [20191221.040256_builder_junos_184_r3]
+JUNOS OS vmguest [20191211.fa5e90e_builder_stable_11]
+JUNOS OS crypto [20191211.fa5e90e_builder_stable_11]
+JUNOS na telemetry [18.4R3.3]
+JUNOS Security Intelligence [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS mx runtime [20191221.040256_builder_junos_184_r3]
+JUNOS common platform support [20191221.040256_builder_junos_184_r3]
+JUNOS Openconfig [18.4R3.3]
+JUNOS mtx network modules [20191220.185702_builder_junos_184_r3]
+JUNOS modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs [20191221.040256_builder_junos_184_r3]
+JUNOS SQL Sync Daemon [20191221.040256_builder_junos_184_r3]
+JUNOS mtx Data Plane Crypto Support [20191221.040256_builder_junos_184_r3]
+JUNOS daemons [20191221.040256_builder_junos_184_r3]
+JUNOS mx daemons [20191221.040256_builder_junos_184_r3]
+JUNOS -MX appidd application-identification daemon [20191221.040256_builder_junos_184_r3]
+JUNOS Services URL Filter package [20191221.040256_builder_junos_184_r3]
+JUNOS Services TLB Service PIC package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Telemetry [20191221.040256_builder_junos_184_r3]
+JUNOS Services TCP-LOG [20191221.040256_builder_junos_184_r3]
+JUNOS Services SSL [20191221.040256_builder_junos_184_r3]
+JUNOS Services SOFTWIRE [20191221.040256_builder_junos_184_r3]
+JUNOS Services Stateful Firewall [20191221.040256_builder_junos_184_r3]
+JUNOS Services RTCOM [20191221.040256_builder_junos_184_r3]
+JUNOS Services RPM [20191221.040256_builder_junos_184_r3]
+JUNOS Services PCEF package [20191221.040256_builder_junos_184_r3]
+JUNOS Services NAT [20191221.040256_builder_junos_184_r3]
+JUNOS Services Mobile Subscriber Service Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services MobileNext Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Logging Report Framework package [20191221.040256_builder_junos_184_r3]
+JUNOS Services LL-PDF Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Jflow Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Deep Packet Inspection package [20191221.040256_builder_junos_184_r3]
+JUNOS Services IPSec [20191221.040256_builder_junos_184_r3]
+JUNOS Services IDS [20191221.040256_builder_junos_184_r3]
+JUNOS IDP Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services HTTP Content Management package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Flowd MS-MPC Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Crypto [20191221.040256_builder_junos_184_r3]
+JUNOS Services Captive Portal and Content Delivery Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services COS [20191221.040256_builder_junos_184_r3]
+JUNOS AppId Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services Application Level Gateways [20191221.040256_builder_junos_184_r3]
+JUNOS Services AACL Container package [20191221.040256_builder_junos_184_r3]
+JUNOS SDN Software Suite [20191221.040256_builder_junos_184_r3]
+JUNOS Extension Toolkit [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (wrlinux9) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MXSPC3) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX/EX92XX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (M/T Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS J-Insight [20191221.040256_builder_junos_184_r3]
+JUNOS jfirmware [20191221.040256_builder_junos_184_r3]
+JUNOS Online Documentation [20191221.040256_builder_junos_184_r3]
+JUNOS jail runtime [20191211.fa5e90e_builder_stable_11]
+
+
+=====  show chassis routing-engine @ AMS_VPN  =====
+
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master (default)
+    Temperature                 32 degrees C / 89 degrees F
+    CPU temperature             47 degrees C / 116 degrees F
+    DRAM                      49103 MB (49152 MB installed)
+    Memory utilization           7 percent
+    5 sec CPU utilization:
+      User                      10 percent
+      Background                 0 percent
+      Kernel                     5 percent
+      Interrupt                  0 percent
+      Idle                      85 percent
+    1 min CPU utilization:
+      User                       2 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      96 percent
+    5 min CPU utilization:
+      User                       2 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      97 percent
+    15 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      97 percent
+    Model                          RE-S-2X00x6
+    Serial ID                      CAJV8156
+    Start time                     2020-02-10 09:59:28 GST
+    Uptime                         35 days, 13 hours, 37 minutes, 4 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.35       0.30       0.26
+Routing Engine status:
+  Slot 1:
+    Current state                  Backup
+    Election priority              Backup (default)
+    Temperature                 32 degrees C / 89 degrees F
+    CPU temperature             45 degrees C / 113 degrees F
+    DRAM                      49103 MB (49152 MB installed)
+    Memory utilization           4 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     0 percent
+      Interrupt                  0 percent
+      Idle                     100 percent
+    Model                          RE-S-2X00x6
+    Serial ID                      CAJV8278
+    Start time                     2020-02-10 09:33:15 GST
+    Uptime                         35 days, 14 hours, 3 minutes, 5 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.07       0.14       0.11
+
+
+=====  show interfaces terse @ AMS_VPN  =====
+
+Interface               Admin Link Proto    Local                 Remote
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+xe-0/0/0                up    up
+xe-0/0/0.0              up    up   inet     172.21.249.49/31
+                                   mpls    
+                                   multiservice
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+vt-0/0/10.1048586       up    up   vpls    
+vt-0/0/10.1048587       up    up   vpls    
+vt-0/0/10.1048588       up    up   vpls    
+vt-0/0/10.1048589       up    up   vpls    
+vt-0/0/10.1048590       up    up   vpls    
+vt-0/0/10.2097152       up    up   inet    
+                                   mpls    
+xe-0/1/0                up    down
+xe-0/1/0.0              up    down inet     192.168.155.6/30
+                                   mpls    
+                                   multiservice
+ge-0/2/0                up    down
+ge-0/2/0.16386          up    down
+ge-0/2/1                up    up
+ge-0/2/1.0              up    up   inet     172.21.249.108/31
+                                   mpls    
+                                   multiservice
+ge-0/2/2                up    up
+ge-0/2/2.0              up    up   inet     172.21.249.105/31
+                                   mpls    
+                                   multiservice
+ge-0/2/3                up    down
+ge-0/2/3.16386          up    down
+ge-0/2/4                up    down
+ge-0/2/4.16386          up    down
+ge-0/2/5                up    up
+ge-0/2/5.0              up    up   inet     192.168.147.1/24
+                                   multiservice
+ge-0/2/6                up    down
+ge-0/2/6.16386          up    down
+ge-0/2/7                up    down
+ge-0/2/7.16386          up    down
+ge-0/2/8                up    down
+ge-0/2/8.16386          up    down
+ge-0/2/9                up    up
+ge-0/2/9.2              up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.3              up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.4              up    up   inet     10.0.13.1/30    
+                                   multiservice
+ge-0/2/9.5              up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.101            up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.102            up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.103            up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.104            up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.105            up    up   inet     192.168.13.1/30 
+                                   multiservice
+ge-0/2/9.201            up    up   ccc     
+ge-0/2/9.202            up    up   ccc     
+ge-0/2/9.203            up    up   ccc     
+ge-0/2/9.204            up    up   ccc     
+ge-0/2/9.205            up    up   ccc     
+ge-0/2/9.221            up    up   ccc     
+ge-0/2/9.222            up    up   ccc     
+ge-0/2/9.223            up    up   ccc     
+ge-0/2/9.224            up    up   ccc     
+ge-0/2/9.225            up    up   ccc     
+ge-0/2/9.401            up    up   vpls    
+ge-0/2/9.402            up    up   vpls    
+ge-0/2/9.403            up    up   vpls    
+ge-0/2/9.404            up    up   vpls    
+ge-0/2/9.405            up    up   vpls    
+ge-0/2/9.32767          up    up   multiservice
+ge-0/3/0                up    down
+ge-0/3/0.16386          up    down
+ge-0/3/1                up    up
+ge-0/3/2                up    up
+ge-0/3/3                up    up
+ge-0/3/4                up    up
+ge-0/3/5                up    down
+ge-0/3/5.16386          up    down
+ge-0/3/6                up    down
+ge-0/3/6.16386          up    down
+ge-0/3/7                up    down
+ge-0/3/7.16386          up    down
+ge-0/3/8                up    down
+ge-0/3/8.16386          up    down
+ge-0/3/9                up    down
+ge-0/3/9.16386          up    down
+lc-1/0/0                up    up
+lc-1/0/0.32769          up    up   vpls    
+pfe-1/0/0               up    up
+pfe-1/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-1/0/0               up    up
+pfh-1/0/0.16383         up    up   inet    
+pfh-1/0/0.16384         up    up   inet    
+so-1/0/0                up    up
+so-1/0/1                up    up
+so-1/0/2                up    up
+so-1/0/3                up    down
+xe-1/2/0                up    down
+xe-1/2/0.16386          up    down
+xe-1/3/0                up    down
+xe-1/3/0.16386          up    down
+as0                     up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em0                     up    up
+em0.32768               up    up   inet     192.168.1.1/24  
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.117.97.37/24 
+gre                     up    up
+igb0                    up    up
+igb0.0                  up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::200:1ff:fe00:4/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+ipip                    up    up
+irb                     up    up
+ixlv0                   up    up
+ixlv0.0                 up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::200:ff:fe00:4/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     1.0.0.13            --> 0/0
+lo0.4                   up    up   inet     1.0.0.13            --> 0/0
+                                            1.0.1.13            --> 0/0
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+lsi.0                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.1                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.2                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.3                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.4                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.5                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.6                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.7                   up    up   inet    
+                                   iso     
+                                   inet6   
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+
+=====  show ospf interface @ AMS_VPN  =====
+
+Interface           State   Area            DR ID           BDR ID          Nbrs
+ge-0/2/1.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            1
+ge-0/2/2.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            1
+ge-0/2/5.0          DRother 0.0.0.0         0.0.0.0         0.0.0.0            0
+lo0.0               DRother 0.0.0.0         0.0.0.0         0.0.0.0            0
+xe-0/0/0.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            1
+xe-0/1/0.0          Down    0.0.0.0         0.0.0.0         0.0.0.0            0
+
+
+=====  show ospf neighbor @ AMS_VPN  =====
+
+Address          Interface              State     ID               Pri  Dead
+172.21.249.109   ge-0/2/1.0             Full      1.0.0.14         128    32
+172.21.249.104   ge-0/2/2.0             Full      1.0.0.11         128    36
+172.21.249.48    xe-0/0/0.0             Full      172.21.249.4     128    33
+
+
+=====  show ospf database @ AMS_VPN  =====
+
+
+    OSPF database, Area 0.0.0.0
+ Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
+Router   1.0.0.11         1.0.0.11         0x8000101c   308  0x22 0xcfdc 132
+Router   1.0.0.12         1.0.0.12         0x80000755  1064  0x22 0x41bc  96
+Router  *1.0.0.13         1.0.0.13         0x80001274   947  0x22 0x2353 120
+Router   1.0.0.14         1.0.0.14         0x80000706   484  0x22 0x5950  84
+Router   172.21.249.1     172.21.249.1     0x800012ed   519  0x22 0xbcfd 240
+Router   172.21.249.2     172.21.249.2     0x8000217c   297  0x22 0x5927 192
+Router   172.21.249.3     172.21.249.3     0x80001ab4   436  0x22 0x5ac6 168
+Router   172.21.249.4     172.21.249.4     0x800007e8  2000  0x22 0x6f50 168
+Router   172.21.249.6     172.21.249.6     0x80000929  1987  0x22 0x94ce  72
+Router   172.21.250.21    172.21.250.21    0x800005a2  1254  0x22 0x7c44  60
+Router   172.21.252.2     172.21.252.2     0x80007b43   226  0x22 0xda72 156
+Router   172.21.252.3     172.21.252.3     0x80002ce7  1787  0x22 0xd9a9 120
+Router   172.21.252.4     172.21.252.4     0x80004237   945  0x22 0xb21c  72
+Network  172.21.249.77    172.21.249.2     0x800000ed  1791  0x22 0x40c9  32
+OpaqArea 1.0.0.0          172.21.249.1     0x80001260   263  0x20 0xfd49  28
+OpaqArea 1.0.0.0          172.21.249.2     0x80001e9d    36  0x20 0x6398  28
+OpaqArea 1.0.0.0          172.21.249.3     0x800019ca  1924  0x20 0x1cb5  28
+OpaqArea 1.0.0.0          172.21.249.4     0x800007c8  2000  0x20 0x5a89  28
+OpaqArea 1.0.0.0          172.21.252.2     0x80004ac6  1755  0x20 0x920e  28
+OpaqArea 1.0.0.0          172.21.252.3     0x80002c80  1271  0x20 0x7d85  28
+OpaqArea 1.0.0.0          172.21.252.4     0x80004131   945  0x20 0xe05a  28
+OpaqArea 1.0.0.1          1.0.0.11         0x80000fb8  2808  0x22 0xb996  28
+OpaqArea 1.0.0.1          1.0.0.12         0x8000072f  1814  0x22 0xe8f6  28
+OpaqArea*1.0.0.1          1.0.0.13         0x80000fd9  1547  0x22 0x7fab  28
+OpaqArea 1.0.0.1          1.0.0.14         0x800004c4  2734  0x22 0xce7a  28
+OpaqArea 1.0.0.3          1.0.0.11         0x80000408  2308  0x22 0x3c01 136
+OpaqArea 1.0.0.3          1.0.0.12         0x80000736   314  0x22 0xbe1  136
+OpaqArea*1.0.0.3          1.0.0.13         0x80000f2d   347  0x22 0xb84a 136
+OpaqArea 1.0.0.3          1.0.0.14         0x800005af  1985  0x22 0x354c 136
+OpaqArea 1.0.0.4          1.0.0.11         0x80000180   808  0x22 0x4bea 136
+OpaqArea 1.0.0.4          1.0.0.12         0x8000017f  2564  0x22 0xf34c 136
+OpaqArea*1.0.0.4          1.0.0.13         0x80000559  2747  0x22 0x8b6a 136
+OpaqArea 1.0.0.4          1.0.0.14         0x80000183  1234  0x22 0xfa6  136
+OpaqArea 1.0.0.5          1.0.0.11         0x80000ed3  1808  0x22 0xfe6d 136
+OpaqArea*1.0.0.5          1.0.0.13         0x80000183  2147  0x22 0x139b 136
+OpaqArea 1.0.0.6          1.0.0.11         0x80000f13  1308  0x22 0x6da3 136
+OpaqArea 1.0.0.9          172.21.252.2     0x800005a0  1755  0x20 0x1602 168
+OpaqArea 1.0.0.20         172.21.249.3     0x8000003f   436  0x20 0x82ae 216
+OpaqArea 1.0.0.21         172.21.249.3     0x8000003f   436  0x20 0x9408 212
+OpaqArea 1.0.0.56         172.21.249.2     0x80000616    36  0x20 0xc309 204
+OpaqArea 1.0.0.57         172.21.249.2     0x800007ca    36  0x20 0xce49 204
+OpaqArea 1.0.0.71         172.21.249.3     0x800007cb  1924  0x20 0xc241 204
+OpaqArea 1.0.0.72         172.21.249.1     0x8000061c   263  0x20 0xd4ba 204
+OpaqArea 1.0.0.72         172.21.249.3     0x800007ca  1924  0x20 0x43bc 204
+OpaqArea 1.0.0.75         172.21.249.1     0x8000061c   263  0x20 0x3f49 204
+OpaqArea 1.0.0.75         172.21.249.3     0x8000023f  1924  0x20 0x5dff 204
+OpaqArea 1.0.0.76         172.21.249.1     0x800005cd   263  0x20 0x6401 216
+OpaqArea 1.0.0.77         172.21.249.1     0x800005cd   263  0x20 0x765a 212
+OpaqArea 1.0.0.81         172.21.249.2     0x8000003f   297  0x20 0xaaba 204
+OpaqArea 1.0.0.87         172.21.249.2     0x8000003f   297  0x20 0xe57d 204
+OpaqArea 1.0.0.122        172.21.252.3     0x80000236  1271  0x20 0x39a5 168
+OpaqArea 1.0.0.124        172.21.252.3     0x800022d3   264  0x20 0x6c65 168
+OpaqArea 1.0.0.124        172.21.252.4     0x80002071   945  0x20 0xf377 168
+OpaqArea 1.0.0.125        172.21.252.3     0x80002074  1271  0x20 0x9ca2 168
+OpaqArea 1.0.0.153        172.21.252.2     0x8000160b   226  0x20 0x7337 168
+OpaqArea 1.0.3.54         172.21.249.1     0x8000003f   263  0x20 0xeac9 204
+OpaqArea 1.0.3.85         172.21.249.4     0x80000616  2000  0x20 0x387a 204
+OpaqArea 1.0.3.86         172.21.249.4     0x80000617  2000  0x20 0xb4f7 204
+OpaqArea 1.0.3.98         172.21.249.4     0x800004f0  2000  0x20 0x5833 204
+OpaqArea 1.0.3.99         172.21.249.2     0x800000ed  1791  0x20 0xd95d 196
+OpaqArea 1.0.3.101        172.21.249.4     0x800007c9  2000  0x20 0x5490 204
+OpaqArea 1.0.3.102        172.21.249.4     0x800007c9  2000  0x20 0xd20d 204
+OpaqArea 1.0.3.139        172.21.252.2     0x8000003f   739  0x20 0x568b 168
+OpaqArea 4.0.0.0          172.21.249.1     0x80001263   263  0x20 0x893a 100
+OpaqArea 4.0.0.0          172.21.249.2     0x80001ea0    36  0x20 0x572a  92
+OpaqArea 4.0.0.0          172.21.249.3     0x800019cd  1924  0x20 0x2d1a  92
+OpaqArea 4.0.0.0          172.21.249.4     0x800007ca  2000  0x20 0x22c7  92
+OpaqArea 4.0.0.0          172.21.252.2     0x80004ac5  1755  0x20 0x38a8  52
+OpaqArea 4.0.0.0          172.21.252.3     0x80002c80  1271  0x20 0x9330  52
+OpaqArea 4.0.0.0          172.21.252.4     0x80004131   945  0x20 0xec10  52
+OpaqArea 7.0.0.1          172.21.249.1     0x80001260   263  0x20 0x6e45  44
+OpaqArea 7.0.0.1          172.21.249.2     0x80001e9e    36  0x20 0xef76  44
+OpaqArea 7.0.0.1          172.21.249.3     0x80001ea1  1924  0x20 0xc54   44
+OpaqArea 7.0.0.1          172.21.249.4     0x800007c8  2000  0x20 0x2528  44
+OpaqArea 7.0.0.1          172.21.252.2     0x80006773  1755  0x20 0x6fe6  44
+OpaqArea 7.0.0.1          172.21.252.3     0x80003c2b  1271  0x20 0xa323  44
+OpaqArea 7.0.0.1          172.21.252.4     0x800066fd   945  0x20 0xa125  44
+OpaqArea 8.0.0.9          172.21.252.2     0x800005a1  1755  0x20 0xc127  68
+OpaqArea 8.0.0.20         172.21.249.3     0x8000003f   436  0x20 0x3767 112
+OpaqArea 8.0.0.21         172.21.249.3     0x8000003f   436  0x20 0x1877 112
+OpaqArea 8.0.0.56         172.21.249.2     0x800007ca    36  0x20 0x1d49 112
+OpaqArea 8.0.0.57         172.21.249.2     0x800007ca    36  0x20 0x85e3 112
+OpaqArea 8.0.0.71         172.21.249.3     0x800007ca  1924  0x20 0xe11c 112
+OpaqArea 8.0.0.72         172.21.249.1     0x8000061c   263  0x20 0x669e 112
+OpaqArea 8.0.0.72         172.21.249.3     0x800007ca  1924  0x20 0xa94d 112
+OpaqArea 8.0.0.75         172.21.249.1     0x8000061c   263  0x20 0xffa  112
+OpaqArea 8.0.0.75         172.21.249.3     0x8000023f  1924  0x20 0x1b1  112
+OpaqArea 8.0.0.76         172.21.249.1     0x800005cd   263  0x20 0x774e 112
+OpaqArea 8.0.0.77         172.21.249.1     0x800005cd   263  0x20 0xe4cd 112
+OpaqArea 8.0.0.81         172.21.249.2     0x8000003f   297  0x20 0xfec2 112
+OpaqArea 8.0.0.87         172.21.249.2     0x8000003f   297  0x20 0x8142 112
+OpaqArea 8.0.0.122        172.21.252.3     0x80000237  1271  0x20 0xeeb9  68
+OpaqArea 8.0.0.124        172.21.252.3     0x800022d8   264  0x20 0xf3a5  68
+OpaqArea 8.0.0.124        172.21.252.4     0x80002072   945  0x20 0x8b65  68
+OpaqArea 8.0.0.125        172.21.252.3     0x80002075  1271  0x20 0x50a   68
+OpaqArea 8.0.0.153        172.21.252.2     0x8000160e   226  0x20 0x8fbb  68
+OpaqArea 8.0.3.54         172.21.249.1     0x8000003f   263  0x20 0xad76 112
+OpaqArea 8.0.3.85         172.21.249.4     0x80000616  2000  0x20 0x34a6 112
+OpaqArea 8.0.3.86         172.21.249.4     0x80000616  2000  0x20 0x15b6 112
+OpaqArea 8.0.3.98         172.21.249.4     0x800004f2  2000  0x20 0xc50e 112
+OpaqArea 8.0.3.99         172.21.249.2     0x800000ee  1791  0x20 0x6ad6  76
+OpaqArea 8.0.3.101        172.21.249.4     0x800007ca  2000  0x20 0x1b9c 112
+OpaqArea 8.0.3.102        172.21.249.4     0x800007c9  2000  0x20 0x6c57 112
+OpaqArea 8.0.3.139        172.21.252.2     0x80000040   739  0x20 0xe961  68
+    OSPF AS SCOPE link state database
+ Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
+Extern   10.66.10.0       172.21.252.2     0x800013e5  1755  0x20 0x276a  36
+Extern   10.151.14.62     172.21.252.2     0x800013e5  1755  0x20 0x8c6d  36
+Extern   10.183.120.180   172.21.252.2     0x800013e5  1755  0x20 0xd721  36
+Extern   10.183.120.181   172.21.252.2     0x800013e5  1755  0x20 0xcd2a  36
+Extern   10.237.84.130    172.21.252.2     0x800013e5  1755  0x20 0xd048  36
+Extern   10.237.91.138    172.21.252.2     0x800013e5  1755  0x20 0x33d6  36
+Extern   10.237.91.139    172.21.252.2     0x800013e5  1755  0x20 0x29df  36
+Extern   10.237.238.229   172.21.252.2     0x800013e5  1755  0x20 0x4ad0  36
+Extern   172.21.250.21    172.21.252.2     0x800005a1  1755  0x20 0x88df  36
+Extern   194.170.156.0    172.21.252.4     0x800007b4   945  0x20 0xcb82  36
+
+
+=====  show ted database @ AMS_VPN  =====
+
+TED database: 0 ISIS nodes 14 INET nodes
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.1                  Rtr  124967     5      5 OSPF(0.0.0.0)
+    To: 172.21.249.2, Local: 172.21.249.16, Remote: 172.21.249.17
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.2, Local: 172.21.249.18, Remote: 172.21.249.19
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.20, Remote: 172.21.249.21
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.22, Remote: 172.21.249.23
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.252.2, Local: 172.21.249.64, Remote: 172.21.249.65
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.2                  Rtr  124987     5      5 OSPF(0.0.0.0)
+    To: 172.21.249.1, Local: 172.21.249.17, Remote: 172.21.249.16
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.249.19, Remote: 172.21.249.18
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.28, Remote: 172.21.249.29
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.30, Remote: 172.21.249.31
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.77-1, Local: 172.21.249.77, Remote: 0.0.0.0
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.2                  Rtr   36338     2      3 OSPF(0.0.0.0)
+    To: 172.21.249.1, Local: 172.21.249.65, Remote: 172.21.249.64
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.11, Local: 172.21.249.50, Remote: 172.21.249.51
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.250.21, Local: 172.21.250.16, Remote: 172.21.250.17
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.3                  Rtr  124986     5      5 OSPF(0.0.0.0)
+    To: 172.21.249.1, Local: 172.21.249.21, Remote: 172.21.249.20
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.249.23, Remote: 172.21.249.22
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.32, Remote: 172.21.249.33
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.34, Remote: 172.21.249.35
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.14, Local: 172.21.249.46, Remote: 172.21.249.47
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.3                  Rtr   36324     3      3 OSPF(0.0.0.0)
+    To: 172.21.252.4, Local: 172.21.252.73, Remote: 172.21.252.74
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.11, Local: 172.21.252.177, Remote: 172.21.252.178
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.12, Local: 192.168.222.2, Remote: 192.168.222.1
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.4                  Rtr  2367504     5      5 OSPF(0.0.0.0)
+    To: 1.0.0.13, Local: 172.21.249.48, Remote: 172.21.249.49
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.2, Local: 172.21.249.29, Remote: 172.21.249.28
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.2, Local: 172.21.249.31, Remote: 172.21.249.30
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.33, Remote: 172.21.249.32
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.35, Remote: 172.21.249.34
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.4                  Rtr  2367513     1      1 OSPF(0.0.0.0)
+    To: 172.21.252.3, Local: 172.21.252.74, Remote: 172.21.252.73
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.6                  ---  476586     1      0
+1.0.0.11                      Rtr   36324     4      4 OSPF(0.0.0.0)
+    To: 1.0.0.13, Local: 172.21.249.104, Remote: 172.21.249.105
+      Local interface index: 346, Remote interface index: 0
+    To: 172.21.252.2, Local: 172.21.249.51, Remote: 172.21.249.50
+      Local interface index: 370, Remote interface index: 0
+    To: 172.21.252.3, Local: 172.21.252.178, Remote: 172.21.252.177
+      Local interface index: 374, Remote interface index: 0
+    To: 1.0.0.12, Local: 172.21.249.102, Remote: 172.21.249.103
+      Local interface index: 344, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.12                      Rtr   36324     2      2 OSPF(0.0.0.0)
+    To: 172.21.252.3, Local: 192.168.222.1, Remote: 192.168.222.2
+      Local interface index: 141072, Remote interface index: 0
+    To: 1.0.0.11, Local: 172.21.249.103, Remote: 172.21.249.102
+      Local interface index: 382, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.13                      Rtr   36349     3      3 OSPF(0.0.0.0)
+    To: 172.21.249.4, Local: 172.21.249.49, Remote: 172.21.249.48
+      Local interface index: 352, Remote interface index: 0
+    To: 1.0.0.11, Local: 172.21.249.105, Remote: 172.21.249.104
+      Local interface index: 356, Remote interface index: 0
+    To: 1.0.0.14, Local: 172.21.249.108, Remote: 172.21.249.109
+      Local interface index: 355, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.14                      Rtr  1155494     2      2 OSPF(0.0.0.0)
+    To: 1.0.0.13, Local: 172.21.249.109, Remote: 172.21.249.108
+      Local interface index: 99, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.47, Remote: 172.21.249.46
+      Local interface index: 97, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.250.21                 ---  2367513     1      0
+172.21.249.77-1               Net  476586     1      2 OSPF(0.0.0.0)
+    To: 172.21.249.2, Local: 0.0.0.0, Remote: 0.0.0.0
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.6, Local: 0.0.0.0, Remote: 0.0.0.0
+      Local interface index: 0, Remote interface index: 0
+
+
+=====  show route protocol ospf @ AMS_VPN  =====
+
+
+inet.0: 74 destinations, 80 routes (74 active, 0 holddown, 0 hidden)
+@ = Routing Use Only, # = Forwarding Use Only
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        @[OSPF/10] 10:05:20, metric 3500
+                    >  to 172.21.249.104 via ge-0/2/2.0
+1.0.0.12/32        @[OSPF/10] 10:05:11, metric 7000
+                    >  to 172.21.249.104 via ge-0/2/2.0
+1.0.0.14/32        @[OSPF/10] 1w6d 08:58:09, metric 3500
+                    >  to 172.21.249.109 via ge-0/2/1.0
+10.66.10.0/32      *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.151.14.62/32    *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.183.120.180/32  *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.183.120.181/32  *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.237.84.130/32   *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.237.91.138/32   *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.237.91.139/32   *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+10.237.238.229/32  *[OSPF/150] 1d 10:42:48, metric 20, tag 0
+                    >  to 172.21.249.48 via xe-0/0/0.0
+33.33.33.33/32     *[OSPF/10] 1w6d 08:58:02, metric 5501
+                    >  to 172.21.249.109 via ge-0/2/1.0
+44.44.44.44/32     *[OSPF/10] 1d 10:43:08, metric 11501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.21.21/32    *[OSPF/10] 1d 10:43:08, metric 11501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.1/32    *[OSPF/10] 1d 10:43:08, metric 11501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.2/32    *[OSPF/10] 3w6d 09:38:11, metric 10501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.3/32    *[OSPF/10] 1w6d 08:58:02, metric 5501
+                    >  to 172.21.249.109 via ge-0/2/1.0
+172.21.249.4/32    *[OSPF/10] 3w6d 09:38:11, metric 3501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.6/32    *[OSPF/10] 5d 12:23:02, metric 30501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.7/32    *[OSPF/10] 1d 10:43:08, metric 11501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.16/31   *[OSPF/10] 1d 10:43:17, metric 11500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.18/31   *[OSPF/10] 1d 10:43:17, metric 11500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.20/31   *[OSPF/10] 1d 10:43:17, metric 12500
+                    >  to 172.21.249.109 via ge-0/2/1.0
+172.21.249.22/31   *[OSPF/10] 1d 10:43:16, metric 12500
+                    >  to 172.21.249.109 via ge-0/2/1.0
+172.21.249.28/31   *[OSPF/10] 3w6d 09:38:11, metric 10500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.30/31   *[OSPF/10] 3w6d 09:38:11, metric 10500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.32/31   *[OSPF/10] 3w6d 09:38:11, metric 10500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.34/31   *[OSPF/10] 3w6d 09:38:11, metric 10500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.46/31   *[OSPF/10] 1w6d 08:58:09, metric 5500
+                    >  to 172.21.249.109 via ge-0/2/1.0
+172.21.249.50/31   *[OSPF/10] 10:41:37, metric 14500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.64/31   *[OSPF/10] 1d 10:42:58, metric 12500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.72/30   *[OSPF/10] 5d 12:23:02, metric 30520
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.76/30   *[OSPF/10] 3w6d 09:38:11, metric 30500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.249.102/31  *[OSPF/10] 10:05:20, metric 7000
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.249.106/31  *[OSPF/10] 10:05:11, metric 10500
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.250.16/31   *[OSPF/10] 1d 10:42:48, metric 14500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.250.21/32   *[OSPF/10] 1d 10:42:48, metric 14501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.250.64/29   *[OSPF/10] 1d 10:43:08, metric 31500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.250.128/30  *[OSPF/10] 1d 10:43:08, metric 11510
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.250.132/30  *[OSPF/10] 1d 10:43:08, metric 11510
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.250.152/29  *[OSPF/10] 1w6d 10:07:39, metric 10510
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.251.80/30   *[OSPF/10] 3w6d 09:38:11, metric 30500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.251.144/29  *[OSPF/10] 5d 12:23:02, metric 60500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.251.148/30  *[OSPF/10] 1d 10:42:48, metric 14500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.251.161/32  *[OSPF/10] 10:05:06, metric 7001
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.251.241/32  *[OSPF/10] 1d 10:42:48, metric 32500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.251.247/32  *[OSPF/10] 3w6d 09:38:11, metric 10501
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.252.2/32    *[OSPF/10] 1d 10:42:48, metric 32500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.252.3/32    *[OSPF/10] 10:05:06, metric 7001
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.252.4/32    *[OSPF/10] 10:05:06, metric 8001
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.252.12/32   *[OSPF/10] 1d 10:42:48, metric 32500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.252.72/30   *[OSPF/10] 10:05:06, metric 8000
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.252.96/30   *[OSPF/10] 10:05:06, metric 10000
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.252.176/30  *[OSPF/10] 10:05:20, metric 7000
+                    >  to 172.21.249.104 via ge-0/2/2.0
+172.21.253.0/28    *[OSPF/10] 1d 10:42:48, metric 32500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.254.56/30   *[OSPF/10] 3w6d 09:38:11, metric 10510
+                    >  to 172.21.249.48 via xe-0/0/0.0
+172.21.254.128/30  *[OSPF/10] 3w6d 09:38:11, metric 11500
+                    >  to 172.21.249.48 via xe-0/0/0.0
+192.168.222.0/30   *[OSPF/10] 10:05:06, metric 9000
+                    >  to 172.21.249.104 via ge-0/2/2.0
+194.170.156.0/26   *[OSPF/150] 10:05:20, metric 1, tag 5384
+                    >  to 172.21.249.104 via ge-0/2/2.0
+224.0.0.5/32       *[OSPF/10] 4w1d 13:00:47, metric 1
+                       MultiRecv
+
+inet.3: 3 destinations, 6 routes (3 active, 0 holddown, 0 hidden)
+
+l3vpn-grx.inet.0: 31 destinations, 50 routes (31 active, 0 holddown, 10 hidden)
++ = Active Route, - = Last Active, * = Both
+
+2.0.0.13/32        *[OSPF/10] 4w1d 13:00:42, metric 1
+                    >  to 10.0.13.2 via ge-0/2/9.4
+10.0.1.4/30        *[OSPF/10] 4w1d 13:00:42, metric 2
+                    >  to 10.0.13.2 via ge-0/2/9.4
+10.0.1.12/30       *[OSPF/10] 4w1d 13:00:42, metric 2
+                    >  to 10.0.13.2 via ge-0/2/9.4
+224.0.0.5/32       *[OSPF/10] 4w1d 13:00:47, metric 1
+                       MultiRecv
+
+l3vpn-option_a-101.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-102.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-103.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-104.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-105.inet.0: 7 destinations, 10 routes (7 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-Foo.inet.0: 6 destinations, 8 routes (6 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-Moo.inet.0: 6 destinations, 8 routes (6 active, 0 holddown, 0 hidden)
+
+mpls.0: 56 destinations, 56 routes (56 active, 0 holddown, 0 hidden)
+
+bgp.l3vpn.0: 63 destinations, 63 routes (63 active, 0 holddown, 0 hidden)
+
+inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+inet6.3: 3 destinations, 6 routes (3 active, 0 holddown, 0 hidden)
+
+l3vpn-grx.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-101.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-102.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-103.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-104.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-105.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-Foo.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-Moo.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+bgp.l2vpn.0: 10 destinations, 10 routes (10 active, 0 holddown, 0 hidden)
+
+vpls-option_a-401.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-221.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-222.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-223.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-224.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-225.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+vpls-option_a-402.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+vpls-option_a-403.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+vpls-option_a-404.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+vpls-option_a-405.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2circuit.0: 10 destinations, 10 routes (10 active, 0 holddown, 0 hidden)
+
+bgp.rtarget.0: 23 destinations, 62 routes (23 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-221.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-222.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-223.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-224.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-225.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+
+=====  show mpls interface @ AMS_VPN  =====
+
+Interface        State       Administrative groups (x: extended)
+xe-0/0/0.0       Up         <none>
+ge-0/2/1.0       Up         <none>
+ge-0/2/2.0       Up         <none>
+
+
+=====  show ldp interface @ AMS_VPN  =====
+
+Interface          Address                          Label space ID   Nbr   Next
+                                                                    count  hello
+xe-0/0/0.0         172.21.249.49                    1.0.0.13:0        1      1
+xe-0/1/0.0         192.168.155.6                    1.0.0.13:0        0      0
+ge-0/2/1.0         172.21.249.108                   1.0.0.13:0        1      1
+ge-0/2/2.0         172.21.249.105                   1.0.0.13:0        1      4
+lo0.0              1.0.0.13                         1.0.0.13:0        1      0
+
+
+=====  show ldp neighbor  @ AMS_VPN  =====
+
+Address                             Interface       Label space ID     Hold time
+172.21.249.48                       xe-0/0/0.0      172.21.249.4:0       14
+172.21.249.109                      ge-0/2/1.0      1.0.0.14:0           12
+172.21.249.104                      ge-0/2/2.0      1.0.0.11:0           11
+1.0.0.11                            lo0.0           1.0.0.11:0           40
+
+
+=====  show route table inet.3 protocol ldp @ AMS_VPN  =====
+
+
+inet.3: 3 destinations, 6 routes (3 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32         [LDP/9] 10:05:21, metric 3500
+                    >  to 172.21.249.104 via ge-0/2/2.0
+1.0.0.12/32         [LDP/9] 10:05:12, metric 7000
+                    >  to 172.21.249.104 via ge-0/2/2.0, Push 300224
+1.0.0.14/32         [LDP/9] 10:08:39, metric 3500
+                    >  to 172.21.249.109 via ge-0/2/1.0
+
+
+=====  show rsvp interface @ AMS_VPN  =====
+
+RSVP interface: 5 active
+                          Active  Subscr- Static      Available   Reserved    Highwater
+Interface          State  resv    iption  BW          BW          BW          mark
+ge-0/2/1.0             Up       3   100%  1000Mbps    1000Mbps    0bps        0bps       
+ge-0/2/2.0             Up       4   100%  1000Mbps    1000Mbps    0bps        0bps       
+vt-0/0/10.2097152      Up       0   100%  1000Mbps    1000Mbps    0bps        0bps       
+xe-0/0/0.0             Up       3   100%  10Gbps      10Gbps      0bps        0bps       
+xe-0/1/0.0           Down       0   100%  10Gbps      10Gbps      0bps        0bps       
+
+
+=====  show rsvp neighbor @ AMS_VPN  =====
+
+RSVP neighbor: 6 learned
+Address            Idle Up/Dn LastChange HelloInt HelloTx/Rx MsgRcvd
+1.0.0.11              0  4/3    10:05:26        9 283596/283555 24
+1.0.0.14        11:29:48  0/0 1w6d 8:58:18        9 283544/0 0
+172.21.249.4          0  4/3  3w6d 9:38:26        9 294886/294867 3
+172.21.249.48         0  5/4  3w6d 9:38:15        9 283592/283589 118604
+172.21.249.109        0  1/0  1w6d 8:58:11        9 283574/283547 344248
+172.21.249.104        0  5/4    10:05:51        9 283583/283565 17472
+
+
+=====  show rsvp session @ AMS_VPN  =====
+
+Ingress RSVP: 6 sessions
+To              From            State   Rt Style Labelin Labelout LSPname 
+1.0.0.11        1.0.0.13        Up       0  1 FF       -        3 to-kif
+1.0.0.11        1.0.0.13        Up       0  1 FF       -    24011 to-kif
+1.0.0.12        1.0.0.13        Up       0  1 FF       -   300336 to-hrz
+1.0.0.12        1.0.0.13        Up       0  1 FF       -    24006 to-hrz
+1.0.0.14        1.0.0.13        Up       0  1 FF       -        3 to-lon
+1.0.0.14        1.0.0.13        Up       0  1 FF       -    24000 to-lon
+Total 6 displayed, Up 6, Down 0
+
+Egress RSVP: 6 sessions
+To              From            State   Rt Style Labelin Labelout LSPname 
+1.0.0.13        1.0.0.14        Up       0  1 FF       3        - to-ams
+1.0.0.13        1.0.0.14        Up       0  1 FF       3        - to-ams
+1.0.0.13        1.0.0.11        Up       0  1 FF       3        - to-ams
+1.0.0.13        1.0.0.11        Up       0  1 FF       3        - to-ams
+1.0.0.13        1.0.0.12        Up       0  1 FF       3        - to-ams
+1.0.0.13        1.0.0.12        Up       0  1 FF       3        - to-ams
+Total 6 displayed, Up 6, Down 0
+
+Transit RSVP: 4 sessions
+To              From            State   Rt Style Labelin Labelout LSPname 
+1.0.0.11        1.0.0.14        Up       0  1 FF     131        3 to-kif
+1.0.0.12        1.0.0.14        Up       0  1 FF     136   300272 to-hrz
+1.0.0.14        1.0.0.12        Up       0  1 FF     134        3 to-lon
+1.0.0.14        1.0.0.11        Up       0  1 FF     130        3 to-lon
+Total 4 displayed, Up 4, Down 0
+
+
+=====  show route table inet.3 protocol rsvp @ AMS_VPN  =====
+
+
+inet.3: 3 destinations, 6 routes (3 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        *[RSVP/7/1] 08:56:16, metric 3500
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-kif
+1.0.0.12/32        *[RSVP/7/1] 09:18:52, metric 7000
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-hrz
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-hrz
+1.0.0.14/32        *[RSVP/7/1] 1w6d 07:50:15, metric 3500
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+
+
+=====  show mpls lsp ingress @ AMS_VPN  =====
+
+Ingress LSP: 4 sessions
+To              From            State Rt P     ActivePath       LSPname
+1.0.0.13        1.0.0.13        Dn     0       -                to-ams
+1.0.0.12        1.0.0.13        Up     0 *     empty-path       to-hrz
+1.0.0.11        1.0.0.13        Up     0 *     empty-path       to-kif
+1.0.0.14        1.0.0.13        Up     0 *     empty-path       to-lon
+Total 4 displayed, Up 3, Down 1
+
+
+=====  show bgp summary @ AMS_VPN  =====
+
+Threading mode: BGP I/O
+Groups: 10 Peers: 16 Down peers: 2
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+bgp.rtarget.0        
+                      44          5          0          0          0          0
+inet.0               
+                       0          0          0          0          0          0
+bgp.l3vpn.0          
+                      63         63          0          0          0          0
+bgp.l2vpn.0          
+                      10         10          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+1.0.0.11               8966       1347       1362       0       4    10:05:37 Establ
+  bgp.l2vpn.0: 10/10/10/0
+  bgp.l3vpn.0: 17/17/17/0
+  bgp.rtarget.0: 0/18/18/0
+  inet.0: 0/0/0/0
+  l2vpn-option_a-221.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-222.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-223.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-224.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-225.l2vpn.0: 1/1/1/0
+  l3vpn-grx.inet.0: 7/10/10/0
+  l3vpn-option_a-101.inet.0: 1/1/1/0
+  l3vpn-option_a-102.inet.0: 1/1/1/0
+  l3vpn-option_a-103.inet.0: 1/1/1/0
+  l3vpn-option_a-104.inet.0: 1/1/1/0
+  l3vpn-option_a-105.inet.0: 1/1/1/0
+  l3vpn-option_a-Foo.inet.0: 1/1/1/0
+  l3vpn-option_a-Moo.inet.0: 1/1/1/0
+  vpls-option_a-401.l2vpn.0: 1/1/1/0
+  vpls-option_a-402.l2vpn.0: 1/1/1/0
+  vpls-option_a-403.l2vpn.0: 1/1/1/0
+  vpls-option_a-404.l2vpn.0: 1/1/1/0
+  vpls-option_a-405.l2vpn.0: 1/1/1/0
+1.0.0.12               8966       1335       1338       0       4    10:05:14 Establ
+  bgp.l2vpn.0: 0/0/0/0
+  bgp.l3vpn.0: 16/16/16/0
+  bgp.rtarget.0: 0/13/13/0
+  inet.0: 0/0/0/0
+  l2vpn-option_a-221.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-222.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-223.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-224.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-225.l2vpn.0: 0/0/0/0
+  l3vpn-grx.inet.0: 5/9/9/0
+  l3vpn-option_a-101.inet.0: 1/1/1/0
+  l3vpn-option_a-102.inet.0: 1/1/1/0
+  l3vpn-option_a-103.inet.0: 1/1/1/0
+  l3vpn-option_a-104.inet.0: 1/1/1/0
+  l3vpn-option_a-105.inet.0: 1/1/1/0
+  l3vpn-option_a-Foo.inet.0: 1/1/1/0
+  l3vpn-option_a-Moo.inet.0: 1/1/1/0
+  vpls-option_a-401.l2vpn.0: 0/0/0/0
+  vpls-option_a-402.l2vpn.0: 0/0/0/0
+  vpls-option_a-403.l2vpn.0: 0/0/0/0
+  vpls-option_a-404.l2vpn.0: 0/0/0/0
+  vpls-option_a-405.l2vpn.0: 0/0/0/0
+1.0.0.13               8966          0          0       0       0 4w1d 13:00:50 Active
+1.0.0.14               8966      41837      41607       0       3 1w6d 8:58:16 Establ
+  bgp.l2vpn.0: 0/0/0/0
+  bgp.l3vpn.0: 30/30/30/0
+  bgp.rtarget.0: 5/13/13/0
+  inet.0: 0/0/0/0
+  l2vpn-option_a-221.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-222.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-223.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-224.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-225.l2vpn.0: 0/0/0/0
+  l3vpn-grx.inet.0: 6/7/7/0
+  l3vpn-option_a-101.inet.0: 1/4/4/0
+  l3vpn-option_a-102.inet.0: 1/4/4/0
+  l3vpn-option_a-103.inet.0: 1/4/4/0
+  l3vpn-option_a-104.inet.0: 1/4/4/0
+  l3vpn-option_a-105.inet.0: 1/3/3/0
+  l3vpn-option_a-Foo.inet.0: 1/2/2/0
+  l3vpn-option_a-Moo.inet.0: 1/2/2/0
+  vpls-option_a-401.l2vpn.0: 0/0/0/0
+  vpls-option_a-402.l2vpn.0: 0/0/0/0
+  vpls-option_a-403.l2vpn.0: 0/0/0/0
+  vpls-option_a-404.l2vpn.0: 0/0/0/0
+  vpls-option_a-405.l2vpn.0: 0/0/0/0
+2.0.0.11               8959      93064      91785       0       0 5w0d 5:14:21 Establ
+  l3vpn-grx.inet.0: 1/1/1/0
+2.0.0.12               8959      93063      91785       0       0 5w0d 5:14:21 Establ
+  l3vpn-grx.inet.0: 0/1/1/0
+2.0.0.13               8959      93062      91784       0       0 5w0d 5:14:20 Establ
+  l3vpn-grx.inet.0: 1/1/1/0
+2.0.0.14               8959      93063      91784       0       0 5w0d 5:14:21 Establ
+  l3vpn-grx.inet.0: 1/1/1/0
+192.168.13.2           1301          0          0       0       1 3w0d 12:28:21 Connect
+192.168.13.2           1610      92454      91699       0       0 5w0d 5:14:09 Establ
+  l3vpn-option_a-101.inet.0: 3/4/4/0
+192.168.13.2           1610      92454      91696       0       0 5w0d 5:14:41 Establ
+  l3vpn-option_a-102.inet.0: 3/4/4/0
+192.168.13.2           1610      92454      91694       0       0 5w0d 5:12:56 Establ
+  l3vpn-option_a-103.inet.0: 3/4/4/0
+192.168.13.2           1610      92454      91694       0       0 5w0d 5:12:50 Establ
+  l3vpn-option_a-104.inet.0: 3/4/4/0
+192.168.13.2           1610      92454      91694       0       0 5w0d 5:13:17 Establ
+  l3vpn-option_a-105.inet.0: 2/3/3/0
+192.168.13.2           1610      92454      91694       0       0 5w0d 5:13:13 Establ
+  l3vpn-option_a-Foo.inet.0: 1/2/2/0
+192.168.13.2           1610      92454      91694       0       0 5w0d 5:14:21 Establ
+  l3vpn-option_a-Moo.inet.0: 1/2/2/0
+
+
+=====  show route table l3vpn-option_a-101 @ AMS_VPN  =====
+
+
+l3vpn-option_a-101.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+192.168.2.1/32     *[BGP/170] 4w1d 13:00:48, localpref 100
+                      AS path: 1610 65101 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+                    [BGP/170] 1w6d 08:57:30, localpref 100, from 1.0.0.14
+                      AS path: 1610 65101 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.11.0/30    *[BGP/170] 10:05:23, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-kif
+192.168.12.0/30    *[BGP/170] 10:05:14, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-hrz
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-hrz
+192.168.13.0/30    *[Direct/0] 4w1d 13:00:50
+                    >  via ge-0/2/9.101
+192.168.13.1/32    *[Local/0] 4w1d 13:00:50
+                       Local via ge-0/2/9.101
+192.168.14.0/30    *[BGP/170] 1w6d 08:57:50, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+                    [BGP/170] 1w6d 08:57:50, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+192.168.103.0/24   *[BGP/170] 4w1d 13:00:48, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+                    [BGP/170] 1w6d 08:57:31, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.104.0/24   *[BGP/170] 4w1d 13:00:48, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+                    [BGP/170] 1w6d 08:57:31, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+
+l3vpn-option_a-101.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 4w1d 12:59:01
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-102 @ AMS_VPN  =====
+
+
+l3vpn-option_a-102.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+192.168.2.1/32     *[BGP/170] 4w1d 13:00:48, localpref 100
+                      AS path: 1610 65102 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+                    [BGP/170] 1w6d 08:57:35, localpref 100, from 1.0.0.14
+                      AS path: 1610 65102 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.11.0/30    *[BGP/170] 10:05:23, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-kif
+192.168.12.0/30    *[BGP/170] 10:05:14, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-hrz
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-hrz
+192.168.13.0/30    *[Direct/0] 4w1d 13:00:50
+                    >  via ge-0/2/9.102
+192.168.13.1/32    *[Local/0] 4w1d 13:00:50
+                       Local via ge-0/2/9.102
+192.168.14.0/30    *[BGP/170] 1w6d 08:57:50, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+                    [BGP/170] 1w6d 08:57:50, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+192.168.103.0/24   *[BGP/170] 4w1d 13:00:48, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+                    [BGP/170] 1w6d 08:57:35, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.104.0/24   *[BGP/170] 4w1d 13:00:48, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+                    [BGP/170] 1w6d 08:57:35, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+
+l3vpn-option_a-102.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 4w1d 12:59:01
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-103 @ AMS_VPN  =====
+
+
+l3vpn-option_a-103.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+192.168.2.1/32     *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 65103 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+                    [BGP/170] 1w6d 08:57:40, localpref 100, from 1.0.0.14
+                      AS path: 1610 65103 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.11.0/30    *[BGP/170] 10:05:24, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-kif
+192.168.12.0/30    *[BGP/170] 10:05:15, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-hrz
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-hrz
+192.168.13.0/30    *[Direct/0] 4w1d 13:00:51
+                    >  via ge-0/2/9.103
+192.168.13.1/32    *[Local/0] 4w1d 13:00:51
+                       Local via ge-0/2/9.103
+192.168.14.0/30    *[BGP/170] 1w6d 08:57:51, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+                    [BGP/170] 1w6d 08:57:51, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+192.168.103.0/24   *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+                    [BGP/170] 1w6d 08:57:40, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.104.0/24   *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+                    [BGP/170] 1w6d 08:57:40, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+
+l3vpn-option_a-103.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 4w1d 12:59:02
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-104 @ AMS_VPN  =====
+
+
+l3vpn-option_a-104.inet.0: 8 destinations, 12 routes (8 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+192.168.2.1/32     *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 65104 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+                    [BGP/170] 1w6d 08:57:44, localpref 100, from 1.0.0.14
+                      AS path: 1610 65104 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.11.0/30    *[BGP/170] 10:05:24, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-kif
+192.168.12.0/30    *[BGP/170] 10:05:15, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-hrz
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-hrz
+192.168.13.0/30    *[Direct/0] 4w1d 13:00:51
+                    >  via ge-0/2/9.104
+192.168.13.1/32    *[Local/0] 4w1d 13:00:51
+                       Local via ge-0/2/9.104
+192.168.14.0/30    *[BGP/170] 1w6d 08:57:51, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+                    [BGP/170] 1w6d 08:57:51, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+192.168.103.0/24   *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+                    [BGP/170] 1w6d 08:57:44, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.104.0/24   *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+                    [BGP/170] 1w6d 08:57:44, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+
+l3vpn-option_a-104.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 4w1d 12:59:02
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-105 @ AMS_VPN  =====
+
+
+l3vpn-option_a-105.inet.0: 7 destinations, 10 routes (7 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+192.168.11.0/30    *[BGP/170] 10:05:24, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-kif
+192.168.12.0/30    *[BGP/170] 10:05:15, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.104 via ge-0/2/2.0, label-switched-path to-hrz
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-hrz
+192.168.13.0/30    *[Direct/0] 4w1d 13:00:51
+                    >  via ge-0/2/9.105
+192.168.13.1/32    *[Local/0] 4w1d 13:00:51
+                       Local via ge-0/2/9.105
+192.168.14.0/30    *[BGP/170] 1w6d 08:57:51, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+                    [BGP/170] 1w6d 08:57:51, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+192.168.103.0/24   *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+                    [BGP/170] 1w6d 08:57:48, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+192.168.104.0/24   *[BGP/170] 4w1d 13:00:49, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+                    [BGP/170] 1w6d 08:57:48, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 172.21.249.109 via ge-0/2/1.0, label-switched-path to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path to-lon
+
+l3vpn-option_a-105.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 4w1d 12:59:02
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_c-111 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-112 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-113 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-114 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-115 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show l2vpn connections @ AMS_VPN  =====
+
+Layer-2 VPN connections:
+
+Legend for connection status (St)   
+EI -- encapsulation invalid      NC -- interface encapsulation not CCC/TCC/VPLS
+EM -- encapsulation mismatch     WE -- interface and instance encaps not same
+VC-Dn -- Virtual circuit down    NP -- interface hardware not present 
+CM -- control-word mismatch      -> -- only outbound connection is up
+CN -- circuit not provisioned    <- -- only inbound connection is up
+OR -- out of range               Up -- operational
+OL -- no outgoing label          Dn -- down                      
+LD -- local site signaled down   CF -- call admission control failure      
+RD -- remote site signaled down  SC -- local and remote site ID collision
+LN -- local site not designated  LM -- local site ID not minimum designated
+RN -- remote site not designated RM -- remote site ID not minimum designated
+XX -- unknown connection status  IL -- no incoming label
+MM -- MTU mismatch               MI -- Mesh-Group ID not available
+BK -- Backup connection	         ST -- Standby connection
+PF -- Profile parse failure      PB -- Profile busy
+RS -- remote site standby	 SN -- Static Neighbor
+LB -- Local site not best-site   RB -- Remote site not best-site
+VM -- VLAN ID mismatch           HS -- Hot-standby Connection
+
+Legend for interface status 
+Up -- operational           
+Dn -- down
+
+Instance: l2vpn-option_a-221
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 29, Outgoing label: 800020
+      Local interface: ge-0/2/9.221, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-222
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 31, Outgoing label: 800022
+      Local interface: ge-0/2/9.222, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-223
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 33, Outgoing label: 800024
+      Local interface: ge-0/2/9.223, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-224
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 35, Outgoing label: 800026
+      Local interface: ge-0/2/9.224, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-225
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 37, Outgoing label: 800028
+      Local interface: ge-0/2/9.225, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+
+=====  show l2circuit connections @ AMS_VPN  =====
+
+Layer-2 Circuit Connections:
+
+Legend for connection status (St)   
+EI -- encapsulation invalid      NP -- interface h/w not present   
+MM -- mtu mismatch               Dn -- down                       
+EM -- encapsulation mismatch     VC-Dn -- Virtual circuit Down    
+CM -- control-word mismatch      Up -- operational                
+VM -- vlan id mismatch		 CF -- Call admission control failure
+OL -- no outgoing label          IB -- TDM incompatible bitrate 
+NC -- intf encaps not CCC/TCC    TM -- TDM misconfiguration 
+BK -- Backup Connection          ST -- Standby Connection
+CB -- rcvd cell-bundle size bad  SP -- Static Pseudowire
+LD -- local site signaled down   RS -- remote site standby
+RD -- remote site signaled down  HS -- Hot-standby Connection
+XX -- unknown
+
+Legend for interface status  
+Up -- operational            
+Dn -- down                   
+Neighbor: 1.0.0.11 
+    Interface                 Type  St     Time last up          # Up trans
+    ge-0/2/9.201(vc 201)      rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 24, Outgoing label: 300112
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.201, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.202(vc 202)      rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 25, Outgoing label: 300128
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.202, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.203(vc 203)      rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 26, Outgoing label: 300144
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.203, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.204(vc 204)      rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 27, Outgoing label: 300160
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.204, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.205(vc 205)      rmt   Up     Mar 16 13:31:02 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 28, Outgoing label: 300176
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.205, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+
+=====  show vpls connections @ AMS_VPN  =====
+
+Layer-2 VPN connections:
+
+Legend for connection status (St)   
+EI -- encapsulation invalid      NC -- interface encapsulation not CCC/TCC/VPLS
+EM -- encapsulation mismatch     WE -- interface and instance encaps not same
+VC-Dn -- Virtual circuit down    NP -- interface hardware not present 
+CM -- control-word mismatch      -> -- only outbound connection is up
+CN -- circuit not provisioned    <- -- only inbound connection is up
+OR -- out of range               Up -- operational
+OL -- no outgoing label          Dn -- down                      
+LD -- local site signaled down   CF -- call admission control failure      
+RD -- remote site signaled down  SC -- local and remote site ID collision
+LN -- local site not designated  LM -- local site ID not minimum designated
+RN -- remote site not designated RM -- remote site ID not minimum designated
+XX -- unknown connection status  IL -- no incoming label
+MM -- MTU mismatch               MI -- Mesh-Group ID not available
+BK -- Backup connection	         ST -- Standby connection
+PF -- Profile parse failure      PB -- Profile busy
+RS -- remote site standby	 SN -- Static Neighbor
+LB -- Local site not best-site   RB -- Remote site not best-site
+VM -- VLAN ID mismatch           HS -- Hot-standby Connection
+
+Legend for interface status 
+Up -- operational           
+Dn -- down
+
+Instance: vpls-option_a-401
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 22:34:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 180, Outgoing label: 800300
+      Local interface: vt-0/0/10.1048586, Status: Up, Encapsulation: VPLS
+        Description: Intf - vpls vpls-option_a-401 local site 13 remote site 11
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-402
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 22:34:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 188, Outgoing label: 800324
+      Local interface: vt-0/0/10.1048587, Status: Up, Encapsulation: VPLS
+        Description: Intf - vpls vpls-option_a-402 local site 13 remote site 11
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-403
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 22:34:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 196, Outgoing label: 800308
+      Local interface: vt-0/0/10.1048588, Status: Up, Encapsulation: VPLS
+        Description: Intf - vpls vpls-option_a-403 local site 13 remote site 11
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-404
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 22:34:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 204, Outgoing label: 800332
+      Local interface: vt-0/0/10.1048589, Status: Up, Encapsulation: VPLS
+        Description: Intf - vpls vpls-option_a-404 local site 13 remote site 11
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-405
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     Mar 16 22:34:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 212, Outgoing label: 800316
+      Local interface: vt-0/0/10.1048590, Status: Up, Encapsulation: VPLS
+        Description: Intf - vpls vpls-option_a-405 local site 13 remote site 11
+      Flow Label Transmit: No, Flow Label Receive: No
+
+
+=====  show vpls mac-table @ AMS_VPN  =====
+NO Output Available !!!!
+
+================================================================================
+
