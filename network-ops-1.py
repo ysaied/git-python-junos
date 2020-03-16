@@ -104,7 +104,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
             print >> file_output, ("NO Output Available !!!!")
          else:
             print >> file_output, (output.text)
-            print ("progressing %s" % show)
+            print ("\t progressing %s" % show)
       except:
          print >> file_output, ("NOT Supported command !!!!")
 
