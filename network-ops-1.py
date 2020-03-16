@@ -74,11 +74,13 @@ for c in range(2,6):
 
 
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
+today = datetime.now().strftime("%d-%h-%Y")
 show_all = show_a + show_b + show_c
 
-file_output = open("junos-output.txt", "w")
+#file_output = open("junos-output.txt", "w")
 
 for src_node, mgmt_ip in dev_mgmt.items():
+   file_output = open(src_node+"_"+today+"_outputs.txt", "w")
    dev = Device(host= mgmt_ip, user= login_username)
    dev.open()
 
@@ -86,7 +88,7 @@ for src_node, mgmt_ip in dev_mgmt.items():
    print >> file_output, ("\n" + "="*20 + " "*2 + src_node + " "*2 + time_now + " "*2 + "="*20)
    
    for show in show_all:
-      print >> file_output, ("\n" + "="*5 + " "*2 + show + " "*2 + "="*5)          
+      print >> file_output, ("\n" + "="*5 + " "*2 + show + " @ " + src_node + " "*2 + "="*5)          
       try :
          output = dev.rpc.cli(show, format='text')
          if type(output) is bool:
