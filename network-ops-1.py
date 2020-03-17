@@ -62,12 +62,18 @@ show_c2 = "show l2vpn connections"
 show_c3 = "show l2circuit connections"
 show_c4 = "show vpls connections"
 show_c5 = "show vpls mac-table"
+show_c6 = "show route protocol bgp table bgp.l3vpn.0"
+show_c7 = "show route protocol bgp table bgp.l2vpn.0"
+show_c8 = "show route protocol bgp table bgp.rtarget.0"
+show_c9 = "show route summary"
+show_c10 = "show ldp database inet"
+show_c11 = "show ldp database l2circuit"
 
 for n in range(101,106):
   show_c.append(show_c0 % n)
 for n in range(111,116):
   show_c.append(show_c1 % n)
-for c in range(2,6):
+for c in range(2,12):
   show_cmd = vars()[("show_c%d" % c)]
   show_c.append(show_cmd)
 
