@@ -100,7 +100,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
             print ("\t progressing %s" % show)
       except:
          print >> file_output, ("NOT Supported command !!!!")
-
+         
+   print >> file_output, dev.rpc.get_config(options={'format':'text', 'inherit':'inherit'})
    print >> file_output, ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
    file_output.close()
