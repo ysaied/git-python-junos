@@ -22,11 +22,11 @@ show_a = list()
 show_a0 = "show chassis hardware"
 show_a1 = "show chassis hardware clei-models"
 show_a2 = "show chassis fpc detail"
-show_a3 = ""
+show_a3 = 'show version invoke-on all-routing-engines | except "JUNOS "'
 show_a4 = "show chassis fpc pic-status"
 show_a5 = "show chassis alarms"
 show_a6 = "show system alarms"
-show_a7 = "show version invoke-on all-routing-engines"
+show_a7 = 'show version invoke-on all-routing-engines | except "JUNOS "'
 show_a8 = "show chassis routing-engine"
 
 for a in range(9):
