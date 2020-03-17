@@ -101,7 +101,8 @@ for src_node, mgmt_ip in dev_mgmt.items():
       except:
          print >> file_output, ("NOT Supported command !!!!")
          
-   print >> file_output, dev.rpc.get_config(options={'format':'text', 'inherit':'inherit'})
+   print >> file_output, etree.tostring(dev.rpc.get_config(options={'format':'text', 'inherit':'inherit'}) encoding='unicode', pretty_print=True))
+   
    print >> file_output, ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
    file_output.close()
