@@ -1,0 +1,341 @@
+"IP";"OS"
+"10.117.97.1";""
+
+"10.117.97.2";""
+
+"10.117.97.3";"Linux 3.12 - 4.10|Linux 2.6.32 - 3.10|Linux 3.10|Linux 3.1|Linux 3.2|Linux 3.16|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Linux 2.6.18|Dahua or Amcrest network video recorder (Linux)|Western Digital My Cloud DL4100 NAS (Linux 3.10)"
+
+"10.117.97.4";"Linux 3.12 - 4.10|Linux 2.6.32 - 3.10|Linux 3.10|Linux 3.1|Linux 3.2|Linux 3.16|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Linux 2.6.18|Western Digital My Cloud DL4100 NAS (Linux 3.10)|ASUS RT-N56U WAP (Linux 3.4)"
+
+"10.117.97.5";"Linux 3.12 - 4.10|Linux 2.6.32 - 3.10|Linux 3.10|Linux 3.1|Linux 3.2|Linux 3.16|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Linux 2.6.18|Dahua or Amcrest network video recorder (Linux)|Western Digital My Cloud DL4100 NAS (Linux 3.10)"
+
+"10.117.97.6";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.7";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.8";"Linux 3.12 - 4.10|Linux 2.6.32 - 3.10|Linux 3.10|Linux 3.1|Linux 3.2|Linux 3.16|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Linux 2.6.18|Philips Hue Bridge 2.0 (Linux)|Geovision EBD4700 CCTV camera (Linux 3.4)"
+
+"10.117.97.9";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.10";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.11";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.12";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.13";"Linux 2.6.32"
+
+"10.117.97.14";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.15";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.16";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.22";"Linux 3.2 - 4.9"
+
+"10.117.97.23";"Tomato 1.27 - 1.28 (Linux 2.4.20)|Linux 2.6.18 - 2.6.22|Fortinet FortiGate-50B or 310B firewall|Fortinet FortiGate 100D firewall|D-Link DWL-624+ or DWL-2000AP, or TRENDnet TEW-432BRP WAP"
+
+"10.117.97.24";"Huawei CloudEngine CE6800 switch|Huawei VRP 8.100|Huawei VRP 5.160|Huawei VRP 3 switch|Huawei AP6050DN WAP|NEC UNIVERGE SV8100 PBX|Netopia 2247 ADSL router|FireBrick FB2700 firewall|Nortel BNT Ethernet switch module|HP GbW2c Ethernet Blade Switch"
+
+"10.117.97.26";"Linux 3.12 - 4.10|Linux 2.6.32 - 3.10|Linux 3.10|Linux 3.1|Linux 3.2|Linux 3.16|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Linux 2.6.18|Western Digital My Cloud DL4100 NAS (Linux 3.10)|ASUS RT-N56U WAP (Linux 3.4)"
+
+"10.117.97.28";"Huawei AP6050DN WAP|Huawei VRP 3 switch"
+
+"10.117.97.29";"Cisco IOS XR 4.1.1|Cisco IOS XR 5.1.2|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco ASR 9010 router"
+
+"10.117.97.30";"Cisco IOS XR 4.1.1|Cisco IOS XR 5.1.2|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco ASR 9010 router"
+
+"10.117.97.31";"Cisco Nexus 7000-series switch (NX-OS 6.1(2))|Cisco Nexus switch (NX-OS 6.2)|Cisco Nexus switch (NX-OS 5 or 6.0(2))|Cisco Nexus 7000 switch (NX-OS 6.0)|Cisco Nexus 5548 switch (NX-OS 5.2)|Cisco Nexus switch (NX-OS 6.0(2))|Cisco Nexus switch (NX-OS 5)|Cisco Nexus switch (NX-OS 7.2)|Cisco Nexus 5010 switch (NX-OS 4.1)|Cisco Nexus 5000 switch"
+
+"10.117.97.32";"Cisco Nexus switch (NX-OS 5 or 6.0(2))"
+
+"10.117.97.33";"Cisco IOS XR 4.1.1|Cisco IOS XR 5.1.2|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco ASR 9010 router"
+
+"10.117.97.34";"Cisco IOS XR 4.1.1|Cisco IOS XR 5.1.2|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco ASR 9010 router"
+
+"10.117.97.35";"Linux 2.6.24 - 2.6.36|Linux 2.6.32 - 2.6.35|Aerohive HiveOS 5.1|Linux 2.6.17 - 2.6.36|Linux 2.6.19 - 2.6.36|Linux 2.6.9 - 2.6.30|Aerohive HiveOS 7.1|Linux 2.6.32|Linux 2.6.18 - 2.6.32|Linux 2.6.36 - 2.6.37"
+
+"10.117.97.36";"Juniper EX2200 switch (JUNOS 12)"
+
+"10.117.97.37";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.38";"VMware ESXi 6.0.0"
+
+"10.117.97.39";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.40";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.41";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.42";"Sun Solaris 9 or 10, or OpenSolaris 2009.06 snv_111b"
+
+"10.117.97.43";"Linux 3.10 - 4.11"
+
+"10.117.97.44";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.45";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.46";""
+
+"10.117.97.53";"Linux 3.10 - 3.12|Linux 4.4|Linux 4.9|Linux 3.2 - 3.8|Linux 4.0|Linux 3.11 - 4.1|Linux 2.6.32 - 3.0|Linux 2.6.32|Linux 3.10 - 3.16|Linux 2.6.39"
+
+"10.117.97.55";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.56";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.57";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.60";"VMware ESXi 6.0.0|VMware ESXi 5.0 - 5.5|VMware ESXi 5.5|VMware ESXi 4.1|Crestron XPanel control system|FreeBSD 7.0-RELEASE-p1 - 10.0-CURRENT|FreeBSD 5.3 - 5.5|FreeBSD 8.0-RELEASE|FreeNAS 0.686 (FreeBSD 6.2-RELEASE) or VMware ESXi Server 3.0 - 4.0|VMware ESX Server 4.0.1"
+
+"10.117.97.61";"VMware ESXi 6.0.0|VMware ESXi 5.0 - 5.5|VMware ESXi 5.5|VMware ESXi 4.1|Crestron XPanel control system|FreeBSD 7.0-RELEASE-p1 - 10.0-CURRENT|FreeBSD 5.3 - 5.5|FreeBSD 8.0-RELEASE|FreeNAS 0.686 (FreeBSD 6.2-RELEASE) or VMware ESXi Server 3.0 - 4.0|VMware ESX Server 4.0.1"
+
+"10.117.97.62";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Huawei CloudEngine CE6800 switch|Cisco ASR 9010 router|Huawei S9300 switch|Huawei VRP 5.160|3Com SuperStack 3 Switch 3870|Cisco 1841 router (IOS 12)"
+
+"10.117.97.63";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco ASR 9010 router"
+
+"10.117.97.65";"Linux 3.10 - 4.11|Linux 3.2 - 4.9"
+
+"10.117.97.67";"3Com SuperStack 3 Switch 3870|Epson Stylus Pro 400 printer|Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|3Com Baseline Switch 2226-SFP Plus|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.68";"3Com SuperStack 3 Switch 3870|Epson Stylus Pro 400 printer|Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|3Com Baseline Switch 2226-SFP Plus|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.70";"3Com SuperStack 3 Switch 3870|Epson Stylus Pro 400 printer|Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|3Com Baseline Switch 2226-SFP Plus|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.71";"3Com 4200G or Huawei Quidway S5600 switch|Huawei AP6050DN WAP|Huawei VRP 3 switch|3Com Switch 4200G|Huawei MA5200 router|3Com 4500G switch|SMC SMC8014WG WAP|H3C Comware 5.20|3Com SuperStack 3 Switch 4500|H3C E126A or S3100-8T-SI switch (Comware 3.10)"
+
+"10.117.97.76";"Huawei AP6050DN WAP|Huawei VRP 3 switch|Huawei VRP 5.160|Huawei S9300 switch|3Com 4200G or Huawei Quidway S5600 switch|Huawei CloudEngine CE6800 switch|Huawei S2326 switch|3Com Switch 4200G|TiVo series 1 (Sony SVR-2000 or Philips HDR112) (Linux 2.1.24-TiVo-2.5, PowerPC)|Epson Stylus Pro 400 printer"
+
+"10.117.97.79";"Huawei AP6050DN WAP|Huawei VRP 3 switch|Huawei VRP 5.160|Huawei S9300 switch|3Com 4200G or Huawei Quidway S5600 switch|Huawei S2326 switch|Huawei CloudEngine CE6800 switch|3Com Switch 4200G|Netopia 2247 ADSL router|TiVo series 1 (Sony SVR-2000 or Philips HDR112) (Linux 2.1.24-TiVo-2.5, PowerPC)"
+
+"10.117.97.80";"Microsoft Windows XP SP2 or SP3"
+
+"10.117.97.82";"Huawei CloudEngine CE6800 switch|Huawei VRP 8.100|Huawei AP6050DN WAP|Huawei VRP 5.160|Huawei VRP 3 switch|Netopia 2247 ADSL router|Nortel BNT Ethernet switch module|Cisco C860 router (IOS 15.2)|HP GbW2c Ethernet Blade Switch|NEC UNIVERGE SV8100 PBX"
+
+"10.117.97.83";"Huawei AP6050DN WAP|Huawei VRP 3 switch|Huawei VRP 5.160|Huawei S9300 switch|3Com 4200G or Huawei Quidway S5600 switch|Huawei S2326 switch|Huawei CloudEngine CE6800 switch|3Com Switch 4200G|Netopia 2247 ADSL router|TiVo series 1 (Sony SVR-2000 or Philips HDR112) (Linux 2.1.24-TiVo-2.5, PowerPC)"
+
+"10.117.97.84";""
+
+"10.117.97.85";"Sun Solaris 9 or 10, or OpenSolaris 2009.06 snv_111b"
+
+"10.117.97.86";"Microsoft Windows Vista or Windows 7 SP1"
+
+"10.117.97.87";"Netgear WGN824 v2 DSL router"
+
+"10.117.97.88";"Netgear WGN824 v2 DSL router"
+
+"10.117.97.89";"Netgear WGN824 v2 DSL router"
+
+"10.117.97.91";"Microsoft Windows 2000 Server SP3 or SP4|Microsoft Windows XP SP2 or SP3, or Windows Server 2003|Microsoft Windows XP SP3"
+
+"10.117.97.92";"Netgear WGN824 v2 DSL router"
+
+"10.117.97.93";"3Com SuperStack 3 Switch 3870|Epson Stylus Pro 400 printer|Nintendo Wii game console|Crestron XPanel control system|Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Apple Mac OS X 10.3.9 (Panther) - 10.4.7 (Tiger) (Darwin 7.9.0 - 8.7.8, PowerPC)|Apple Mac OS X 10.4.11 (Tiger) (Darwin 8.11.0)|Apple Mac OS X 10.4.11 (Tiger) (Darwin 8.11.0, PowerPC)|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch"
+
+"10.117.97.94";"Linux 3.2 - 4.9"
+
+"10.117.97.95";"Linux 3.2 - 4.9"
+
+"10.117.97.96";"Linux 3.2 - 4.9"
+
+"10.117.97.98";"Netgear WGN824 v2 DSL router"
+
+"10.117.97.99";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Huawei CloudEngine CE6800 switch|3Com SuperStack 3 Switch 3870"
+
+"10.117.97.100";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Huawei CloudEngine CE6800 switch|3Com SuperStack 3 Switch 3870"
+
+"10.117.97.101";"Cisco Nexus 7000-series switch (NX-OS 6.1(2))|Cisco Nexus switch (NX-OS 6.2)|Cisco Nexus switch (NX-OS 5 or 6.0(2))|Cisco Nexus 7000 switch (NX-OS 6.0)|Cisco Nexus 5548 switch (NX-OS 5.2)|Cisco Nexus switch (NX-OS 6.0(2))|Cisco Nexus switch (NX-OS 5)|Cisco Nexus switch (NX-OS 7.2)|Cisco Nexus 5010 switch (NX-OS 4.1)|Cisco Nexus 5000 switch"
+
+"10.117.97.102";"Cisco Nexus switch (NX-OS 5 or 6.0(2))|Cisco Nexus 7000 switch (NX-OS 6.0)|Cisco Nexus 7000-series switch (NX-OS 6.1(2))|Cisco Nexus 7000 switch (NX-OS 5.2(4))|Cisco Nexus switch (NX-OS 6.0(2))|Cisco Nexus switch (NX-OS 6.2)|Cisco Nexus 7000 switch (NX-OS 6.2.8)|Cisco Nexus 5010 switch (NX-OS 4.1)|Cisco Nexus 3000 switch (NX-OS 6)|Cisco Nexus 5000 switch"
+
+"10.117.97.103";"Linux 3.2 - 4.9"
+
+"10.117.97.104";"Linux 3.2 - 4.9"
+
+"10.117.97.105";"3Com 4200G or Huawei Quidway S5600 switch|Huawei AP6050DN WAP|Huawei VRP 3 switch|3Com Switch 4200G|3Com 4500G switch|H3C Comware 5.20|3Com SuperStack 3 Switch 4500|Huawei MA5200 router|H3C E126A or S3100-8T-SI switch (Comware 3.10)|Huawei AR 28 router"
+
+"10.117.97.106";"Huawei VRP 8.100|Huawei CloudEngine CE6800 switch|NEC UNIVERGE SV8100 PBX|3Com SuperStack 3 Switch 3870|Aastra A510 VoIP phone|Brother HL-5070N printer|Brother MFC-7820N printer|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Huawei AP6050DN WAP|Huawei S9300 switch"
+
+"10.117.97.107";"3Com 4200G or Huawei Quidway S5600 switch|Huawei AP6050DN WAP|Huawei VRP 3 switch|3Com 4500G switch|3Com Switch 4200G|3Com SuperStack 3 Switch 4500|Huawei MA5200 router|Huawei AR 28 router|H3C Comware 5.20|H3C E126A or S3100-8T-SI switch (Comware 3.10)"
+
+"10.117.97.108";"Microsoft Windows Server 2008 SP2 or Windows 10 or Xbox One"
+
+"10.117.97.112";"FreeBSD 7.0-BETA4|FreeBSD 8.0-CURRENT|FreeBSD 7.0-RELEASE|OpenBSD 4.6|OpenBSD 5.3|OpenBSD 4.2|OpenBSD 4.7|OpenBSD 5.0|OpenBSD 6.0|OpenBSD 4.3"
+
+"10.117.97.113";"Linux 2.6.32 - 3.13|Linux 2.6.32|Linux 2.6.32 - 3.10|Linux 3.2 - 3.8|Linux 3.2|Linux 3.8|Linux 3.10|Linux 2.6.32 - 3.0|Linux 2.6.39|Linux 3.4"
+
+"10.117.97.114";"FreeBSD 10.1-RELEASE|FreeBSD 7.0-RELEASE-p1 - 10.0-CURRENT|FreeBSD 7.1-RELEASE|FreeBSD 8.0-STABLE|FreeBSD 9.0-RELEASE|FreeBSD 9.2-RELEASE-p3|FreeBSD 7.0-BETA4 - 7.0|FreeBSD 7.2-RELEASE|FreeBSD 7.0-RELEASE|FreeBSD 7.0-RELEASE-p2 - 7.1-PRERELEASE"
+
+"10.117.97.117";"FreeBSD 7.0-BETA4|FreeBSD 8.0-CURRENT|FreeBSD 7.0-RELEASE|OpenBSD 4.6|OpenBSD 5.3|OpenBSD 4.7|OpenBSD 5.0|OpenBSD 6.0|OpenBSD 6.1|OpenBSD 4.9"
+
+"10.117.97.118";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.119";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.120";"Linux 2.6.32 - 3.10"
+
+"10.117.97.124";"Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows Server 2008 R2, Windows 8, or Windows 8.1 Update 1"
+
+"10.117.97.127";"Linux 2.6.32 - 3.10"
+
+"10.117.97.128";"Linux 3.2 - 4.9"
+
+"10.117.97.129";"Linux 3.2 - 4.9"
+
+"10.117.97.130";"Linux 3.2 - 4.9"
+
+"10.117.97.131";"Linux 3.2 - 4.9"
+
+"10.117.97.132";"Linux 3.2 - 4.9"
+
+"10.117.97.133";"Linux 3.2 - 4.9"
+
+"10.117.97.135";"Linux 3.2 - 4.9"
+
+"10.117.97.136";"Linux 3.2 - 4.9|Linux 3.10 - 4.11|Linux 2.6.32 - 3.13|Linux 4.10|Linux 4.5|Asus RT-AC66U WAP|Linux 3.10|Linux 3.2|Linux 2.6.32|Linux 3.13"
+
+"10.117.97.137";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Cisco ASR 9010 router|Huawei CloudEngine CE6800 switch|Huawei S9300 switch|Huawei VRP 5.160|Cisco 1841 router (IOS 12)|Cisco 1841 router (IOS 12.4)"
+
+"10.117.97.138";""
+
+"10.117.97.139";"Linux 2.6.18 - 2.6.31"
+
+"10.117.97.141";"Linux 3.10 - 4.11|Linux 3.2 - 4.9|Linux 3.11 - 4.1|Linux 3.10 - 3.16|Linux 4.4|Linux 3.2.0|Linux 3.13|Linux 3.16"
+
+"10.117.97.143";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Cisco ASR 9010 router|Huawei CloudEngine CE6800 switch|Huawei S9300 switch|Huawei VRP 5.160|Cisco 1841 router (IOS 12)|Cisco 1841 router (IOS 12.4)"
+
+"10.117.97.147";"Linux 3.10 - 4.11|Linux 3.2 - 4.9|Linux 4.0|Linux 3.10 - 3.12|Linux 4.4|Linux 3.10|Linux 4.9|Linux 3.10 - 3.16"
+
+"10.117.97.150";"Linux 3.10 - 4.11|Linux 3.2 - 4.9"
+
+"10.117.97.151";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.153";"3Com SuperStack 3 Switch 3870|Cisco Nexus 5000 switch|Cisco Nexus switch (NX-OS 5)|Linux 2.6.24|Cisco Nexus 7000 switch (NX-OS 4.2(4))|Cisco Nexus switch (NX-OS 5 or 6.0(2))|Cisco Nexus 7000 switch (NX-OS 6.0)|Oki B711 printer|APC Smart-UPS (AOS 5.1.1)|Lexmark 1400-series printer"
+
+"10.117.97.156";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.157";"Linux 2.6.9 - 2.6.30"
+
+"10.117.97.158";"Linux 3.10 - 4.11|Linux 3.2 - 4.9"
+
+"10.117.97.159";""
+
+"10.117.97.160";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.161";"Linux 2.6.32 - 3.10"
+
+"10.117.97.162";"Linux 3.10 - 4.11|Linux 3.2 - 4.9"
+
+"10.117.97.163";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.164";"Enterasys Matrix X-series router (Linux 2.4)|Linux 2.6.24 - 2.6.26 (Debian)|Linux 2.6.8 - 2.6.30|Cisco MDS 9000 switch|Linux 2.6.22 (Ubuntu, x86)|Linux 2.6.27 (Ubuntu 8.10)|Cisco NX-OS 6.2|Crestron XPanel control system|Avocent ACS5016 console server (Linux 2.6.22)|Asus RT-AC66U router (Linux 2.6)"
+
+"10.117.97.165";"Linux 3.12 - 4.10|Linux 3.16|ASUS RT-N56U WAP (Linux 3.4)|Linux 3.1|Linux 3.2|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Linux 3.10 - 4.1|Linux 3.2.0|Linux 2.6.32|Linux 3.10"
+
+"10.117.97.170";"HP iLO 4 remote management interface"
+
+"10.117.97.171";"HP iLO 4 remote management interface"
+
+"10.117.97.173";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Huawei CloudEngine CE6800 switch|3Com SuperStack 3 Switch 3870"
+
+"10.117.97.174";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Huawei CloudEngine CE6800 switch|3Com SuperStack 3 Switch 3870"
+
+"10.117.97.175";"Cisco IOS XR 5.1.2|Cisco IOS XR 4.1.1|Cisco CRS-1 router (IOS XR 3.4.1 - 3.6.2)|Cisco 877 router (IOS 12.4)|Cisco ASR 9010 router|Huawei CloudEngine CE6800 switch|Huawei S9300 switch|Huawei VRP 5.160|Cisco 1841 router (IOS 12)|Cisco 1841 router (IOS 12.4)"
+
+"10.117.97.178";"Cisco Nexus switch (NX-OS 5)|Cisco Nexus 7000 switch (NX-OS 4.2(4))|Linux 2.6.24|Cisco Nexus 7000-series switch (NX-OS 6.1(2))|APC Smart-UPS (AOS 5.1.1)|Oki B930 printer|Cisco Nexus 5000 switch|3Com SuperStack 3 Switch 3870|Lexmark 1400-series printer|Cisco Nexus switch (NX-OS 6.2)"
+
+"10.117.97.179";"Cisco Aironet 1141N (IOS 12.4) or 3602I (IOS 15.3) WAP|Cisco Aironet 2600-series WAP (IOS 15.2(2))"
+
+"10.117.97.180";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.181";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.182";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.183";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.184";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3870|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.187";"Linux 3.10 - 4.11"
+
+"10.117.97.188";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Huawei VRP 3 switch|3Com SuperStack 3 Switch 3812"
+
+"10.117.97.189";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|3Com SuperStack 3 Switch 3870|Huawei AP6050DN WAP|Huawei S9300 switch"
+
+"10.117.97.190";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.191";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Huawei VRP 3 switch|3Com SuperStack 3 Switch 3812"
+
+"10.117.97.192";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.196";"Linux 3.2 - 4.9"
+
+"10.117.97.199";"Linux 3.10 - 4.11"
+
+"10.117.97.200";"Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows Server 2008 R2, Windows 8, or Windows 8.1 Update 1"
+
+"10.117.97.201";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.203";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.204";"Cisco 836, 890, 1751, 1841, 2800, or 2900 router (IOS 12.4 - 15.1)|Cisco Aironet 1141N (IOS 12.4) or 3602I (IOS 15.3) WAP|Cisco Aironet 2600-series WAP (IOS 15.2(2))"
+
+"10.117.97.205";"Linux 2.6.32|Linux 3.2 - 4.9|Linux 2.6.32 - 3.10|Linux 3.4 - 3.10|Linux 3.1|Linux 3.2|AXIS 210A or 211 Network Camera (Linux 2.6.17)|Synology DiskStation Manager 5.2-5644|Netgear RAIDiator 4.2.28|Linux 2.6.32 - 2.6.35"
+
+"10.117.97.207";"Linux 2.6.32 - 3.10|Linux 2.6.32 - 3.13"
+
+"10.117.97.208";"Linux 2.6.32 - 3.10|Linux 2.6.32 - 3.13"
+
+"10.117.97.209";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.210";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.211";"Cisco 836, 890, 1751, 1841, 2800, or 2900 router (IOS 12.4 - 15.1)|Cisco Aironet 1141N (IOS 12.4) or 3602I (IOS 15.3) WAP|Cisco Aironet 2600-series WAP (IOS 15.2(2))"
+
+"10.117.97.212";"Juniper EX2200 switch (JUNOS 12)|Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.213";"Juniper Networks J2320 or MX5-T router; or EX2200, EX3200, EX4200, or EX8200 switch (JUNOS 8.5 - 11.2)"
+
+"10.117.97.222";"Linux 3.2 - 4.9"
+
+"10.117.97.223";"3Com SuperStack 3 Switch 3870|Epson Stylus Pro 400 printer|Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|Dell PowerConnect 3248 switch|SMC TigerStack III 6824M switch|3Com Baseline Switch 2226-SFP Plus|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch"
+
+"10.117.97.225";"Linux 2.6.32 - 3.10"
+
+"10.117.97.226";"Microsoft Windows 7 SP0 - SP1, Windows Server 2008 SP1, Windows Server 2008 R2, Windows 8, or Windows 8.1 Update 1"
+
+"10.117.97.227";"OpenWrt 0.9 - 7.09 (Linux 2.4.30 - 2.4.34)|OpenWrt White Russian 0.9 (Linux 2.4.30)|OpenWrt Kamikaze 7.09 (Linux 2.6.22)|Linux 2.4.18|Philips Hue Bridge 2.0 (Linux)|Asus RT-AC66U router (Linux 2.6)|Asus RT-N16 WAP (Linux 2.6)|Asus RT-N66U WAP (Linux 2.6)|Tomato 1.28 (Linux 2.6.22)|Crestron XPanel control system"
+
+"10.117.97.229";"FreeBSD 7.0-RELEASE-p1 - 10.0-CURRENT|FreeBSD 8.0-BETA2 - 10.1-RELEASE|FreeBSD 8.0-RELEASE|VMware ESXi 6.0.0|Crestron XPanel control system|NAS4Free (FreeBSD 9.1)|VMware ESXi 5.0 - 5.5|NAS4Free (FreeBSD 9.3-RELEASE - 10.3-RELEASE)|NAS4Free (FreeBSD 9.1-RELEASE - 10.3-RELEASE)|FreeBSD 10.1-RELEASE"
+
+"10.117.97.230";"Linux 3.2 - 4.9|Linux 3.10|Linux 3.8 - 4.14|Linux 4.4 - 4.9|Synology DiskStation Manager 5.2-5644|Linux 3.10 - 3.13|Linux 3.12|Linux 3.19|Linux 3.2|Linux 3.4 - 3.10"
+
+"10.117.97.232";"HP iLO 3 or iLO 4 remote management interface"
+
+"10.117.97.233";""
+
+"10.117.97.234";"Linux 3.2 - 4.9"
+
+"10.117.97.237";"Brother MFC-7820N printer|NEC UNIVERGE SV8100 PBX|Nintendo Wii game console|Dell PowerConnect 8024F switch|Enterasys B5 switch|GoPro Wifi-Bacpac camera|MQX RTOS|Rigol DS1000Z-series oscilloscope|Rockwell Automation Logix EtherNet/IP module|Fuji Xerox ApeosPort IV C2275 printer"
+
+"10.117.97.238";"Brother MFC-7820N printer|Nintendo Wii game console|Dell PowerConnect 8024F switch|Enterasys B5 switch|Rigol DS1000Z-series oscilloscope|Rockwell Automation Logix EtherNet/IP module|Fuji Xerox ApeosPort IV C2275 printer|NEC UNIVERGE SV8100 PBX|AMX AVB-RX-DXLINK-HDMI audio/video receiver|IBM AIX 5.3"
+
+"10.117.97.239";"Huawei CloudEngine CE6800 switch|Huawei VRP 8.100|Huawei AP6050DN WAP|Huawei VRP 3 switch|Huawei VRP 5.160|Netopia 2247 ADSL router|NEC UNIVERGE SV8100 PBX|Nortel BNT Ethernet switch module|HP GbW2c Ethernet Blade Switch|Huawei S9300 switch"
+
+"10.117.97.241";"Linux 2.6.32 - 3.10|Linux 2.6.32 - 3.13|DD-WRT v24 or v30 (Linux 3.10)|Linux 3.2 - 3.16"
+
+"10.117.97.242";"Linux 3.2 - 4.9"
+
+"10.117.97.243";"Linux 3.2 - 4.9"
+
+"10.117.97.244";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|Juniper Networks ERX-700 router|3Com SuperStack 3 Switch 3870|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Epson Stylus Pro 400 printer|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.245";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|3Com SuperStack 3 Switch 3812|SMC TigerStack III 6824M switch"
+
+"10.117.97.246";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Huawei VRP 3 switch|3Com SuperStack 3 Switch 3812"
+
+"10.117.97.247";"Alcatel-Lucent 7750 Service Router (SR OS 9.0.R9)|3Com SuperStack 3 Switch 3870|Juniper Networks ERX-700 router|Epson Stylus Pro 400 printer|Dell PowerConnect 3248 switch|Foundry EdgeIron switch|SMC SMC6750L2 or SMC7724M/VSW switch|Enterasys Matrix N7 switch|Huawei VRP 3 switch|3Com SuperStack 3 Switch 3812"
+
+"10.117.97.248";"Microsoft Windows XP SP2 or SP3, or Windows Server 2003"
+
+"10.117.97.253";"HP iLO 4 remote management interface"
+
