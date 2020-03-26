@@ -11,18 +11,21 @@ dev = Device(host="172.16.67.21", user="ysaied")
 # apply method "open" to object "dev"
 dev.open()
 # apply method rpc.get_config to object "dev" after connection got established
-config = dev.rpc.get_config()
+config = dev.rpc.get_config(format="text")
 # apply method "close" to object "dev"
 dev.close()
 
+
+print (config)
+
 ### Groups XPATH
-junos_groups = config.findall('.//groups')
+#junos_groups = config.findall('.//groups')
 ### look for re0 group
 ### ./group[name=re0]
-for group in junos_groups:
-   print (group.find('./name').text)
-   if group.find('./[name = "re0"]') is not None:
-       if group.find('./system/host-name') is not None:
-          print (group.find('./system/host-name').text)
+#for group in junos_groups:
+#   print (group.find('./name').text)
+#   if group.find('./[name = "re0"]') is not None:
+#       if group.find('./system/host-name') is not None:
+#          print (group.find('./system/host-name').text)
 
 
