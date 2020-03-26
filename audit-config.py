@@ -20,6 +20,6 @@ junos_groups = config.findall('.//groups')
 ### look for re0 group
 ### ./group[name=re0]
 for group in junos_groups:
-   print (junos_groups.find('.//name').text)
+   print (junos_groups.findall('.//name').text)
 
 
