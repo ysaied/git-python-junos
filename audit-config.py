@@ -15,31 +15,11 @@ config = dev.rpc.get_config()
 # apply method "close" to object "dev"
 dev.close()
 
-conf_plcys = config.findall('.//policy-options/policy-statement')
-used_plcys = config.findall('.//protocols//export') + config.findall('.//protocols//import')
-
-conf_plcys_set = set()
-used_plcys_set = set()
-
-#print (etree.tostring(plcys, encoding='unicode', pretty_print=True))
-for conf_plcy in conf_plcys:
-   conf_plcys_set.add(conf_plcy.find('.//name').text)
-#   print ("Policy \"%s\" is configured" % conf_plcy.find('.//name').text)
-   
-for used_plcy in used_plcys:
-   used_plcys_set.add(used_plcy.text)
-#   print ("Policy \"%s\" is used" % used_plcy.text)
-
-unsed_plcys_set = conf_plcys_set - used_plcys_set
-
-print ("There are %s unsed policies" % len(unsed_plcys_set))
-
-for unsed_plcy in unsed_plcys_set:
-   print ("Policy \"%s\" is unsed" % unsed_plcy)
-
-
-#print (conf_plcys_set)
-#print (used_plcys_set)
-#print (unsed_plcys)
+### Groups XPATH
+junos_groups = config.findall('.//groups')
+### look for re0 group
+### ./group[name=re0]
+for group in junos_groups:
+   print (junos_groups.find('.//name').text)
 
 
