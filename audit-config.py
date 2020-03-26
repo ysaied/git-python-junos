@@ -22,6 +22,7 @@ junos_groups = config.findall('.//groups')
 for group in junos_groups:
    print (group.find('./name').text)
    if group.find('./[name = "re0"]') is not None:
-      print ("OK")
+       if group.find('./system/host-name') is not None:
+          print (group.find('./system/host-name').text)
 
 
