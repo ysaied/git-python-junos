@@ -21,7 +21,7 @@ junos_groups = config.findall('.//groups')
 ### ./group[name=re0]
 for group in junos_groups:
    print (group.find('./name').text)
-   if group.find('./[name=re0]'):
+   if group.find('./[name = "re0"]'):
       print ("OK")
 
 
