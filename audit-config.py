@@ -16,7 +16,7 @@ config = dev.rpc.get_config(format="text")
 dev.close()
 
 
-print (config)
+print (config.text)
 
 ### Groups XPATH
 #junos_groups = config.findall('.//groups')
