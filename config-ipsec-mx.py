@@ -10,8 +10,12 @@ Cisco_CSR1kv_1 = { "name" : "Cisco-CSR1Kv-1", "wan_ip" : "192.168.147.204", "ips
 Cisco_CSR1kv_2 = { "name" : "Cisco-CSR1Kv-2", "wan_ip" : "192.168.147.211", "ipsec_client_id" : "22", "ipsec_key" : "jnpr123" }
 Juniper_vSRX_1 = { "name" : "vSRX-1", "wan_ip" : "192.168.147.212", "ipsec_client_id" : "23", "ipsec_key" : "jnpr123" }
 Juniper_vSRX_2 = { "name" : "vSRX-2", "wan_ip" : "192.168.147.213", "ipsec_client_id" : "24", "ipsec_key" : "jnpr123" }
+PA_vFW_1 = { "name" : "PA-vFW-1", "wan_ip" : "192.168.147.69", "ipsec_client_id" : "25", "ipsec_key" : "jnpr123" }
+PA_vFW_2 = { "name" : "PA-vFW-2", "wan_ip" : "192.168.147.72", "ipsec_client_id" : "26", "ipsec_key" : "jnpr123" }
+VyOS_1 = { "name" : "VyOS_1", "wan_ip" : "192.168.147.74", "ipsec_client_id" : "27", "ipsec_key" : "jnpr123" }
 
-ipsec_clients = [ Cisco_CSR1kv_1, Cisco_CSR1kv_2, Juniper_vSRX_1, Juniper_vSRX_2 ]
+
+ipsec_clients = [ Cisco_CSR1kv_1, Cisco_CSR1kv_2, Juniper_vSRX_1, Juniper_vSRX_2, PA_vFW_1, PA_vFW_2, VyOS_1 ]
 
 config = """
 delete interfaces ms-5/0/0 unit {0}
