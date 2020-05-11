@@ -1,6 +1,6 @@
 ##################################################################################
 
-====================  Partner  Monday__11-May-2020__02:20 PM  ====================
+====================  Partner  Monday__11-May-2020__02:58 PM  ====================
 
 =====  show chassis hardware @ Partner  =====
 
@@ -73,14 +73,14 @@ Fan Tray                                                 FFANTRAY-MX480-HC-S
 
 Slot 0 information:
   State                               Online    
-  Temperature                      25 degrees C / 77 degrees F
+  Temperature                      27 degrees C / 80 degrees F
   Total CPU DRAM                 2048 MB
   Total RLDRAM                    403 MB
   Total DDR DRAM                 1572 MB
   FIPS Capable                        False 
   FIPS Mode                           False 
   Start time                          2020-02-10 13:30:49 GST
-  Uptime                              91 days, 50 minutes, 14 seconds
+  Uptime                              91 days, 1 hour, 29 minutes, 7 seconds
   Max power consumption            227 Watts
 
 
@@ -280,28 +280,28 @@ Routing Engine status:
   Slot 0:
     Current state                  Master
     Election priority              Master
-    Temperature                 23 degrees C / 73 degrees F
-    CPU temperature             20 degrees C / 68 degrees F
+    Temperature                 25 degrees C / 77 degrees F
+    CPU temperature             22 degrees C / 71 degrees F
     DRAM                      16321 MB (16384 MB installed)
     Memory utilization           7 percent
     5 sec CPU utilization:
-      User                      12 percent
-      Background                 0 percent
-      Kernel                     4 percent
-      Interrupt                  0 percent
-      Idle                      84 percent
-    1 min CPU utilization:
       User                       2 percent
       Background                 0 percent
       Kernel                     2 percent
       Interrupt                  0 percent
       Idle                      96 percent
+    1 min CPU utilization:
+      User                       1 percent
+      Background                 0 percent
+      Kernel                     1 percent
+      Interrupt                  0 percent
+      Idle                      98 percent
     5 min CPU utilization:
       User                       1 percent
       Background                 0 percent
-      Kernel                     2 percent
+      Kernel                     1 percent
       Interrupt                  0 percent
-      Idle                      97 percent
+      Idle                      98 percent
     15 min CPU utilization:
       User                       1 percent
       Background                 0 percent
@@ -311,16 +311,16 @@ Routing Engine status:
     Model                          RE-S-1800x4
     Serial ID                      9009142830
     Start time                     2020-02-10 13:33:24 GST
-    Uptime                         91 days, 47 minutes, 42 seconds
+    Uptime                         91 days, 1 hour, 26 minutes, 32 seconds
     Last reboot reason             Router rebooted after a normal shutdown.
     Load averages:                 1 minute   5 minute  15 minute
-                                       0.46       0.37       0.36
+                                       0.23       0.31       0.32
 Routing Engine status:
   Slot 1:
     Current state                  Backup
     Election priority              Backup (default)
-    Temperature                 23 degrees C / 73 degrees F
-    CPU temperature             21 degrees C / 69 degrees F
+    Temperature                 25 degrees C / 77 degrees F
+    CPU temperature             22 degrees C / 71 degrees F
     DRAM                      16321 MB (16384 MB installed)
     Memory utilization           6 percent
     5 sec CPU utilization:
@@ -332,10 +332,10 @@ Routing Engine status:
     Model                          RE-S-1800x4
     Serial ID                      9009260072
     Start time                     2020-02-10 13:13:59 GST
-    Uptime                         91 days, 1 hour, 6 minutes, 55 seconds
+    Uptime                         91 days, 1 hour, 45 minutes, 51 seconds
     Last reboot reason             Router rebooted after a normal shutdown.
     Load averages:                 1 minute   5 minute  15 minute
-                                       0.29       0.16       0.14
+                                       0.22       0.19       0.17
 
 
 =====  show interfaces terse @ Partner  =====

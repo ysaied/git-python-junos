@@ -1,6 +1,6 @@
 ##################################################################################
 
-====================  AMS_VPN  Monday__11-May-2020__02:20 PM  ====================
+====================  AMS_VPN  Monday__11-May-2020__02:58 PM  ====================
 
 =====  show chassis hardware @ AMS_VPN  =====
 
@@ -82,24 +82,24 @@ Fan Tray                                                 FFANTRAY-MX480-HC-S
 
 Slot 0 information:
   State                               Online    
-  Temperature                      30 degrees C / 86 degrees F
+  Temperature                      31 degrees C / 87 degrees F
   Total CPU DRAM                 3584 MB
   Total RLDRAM                    259 MB
   Total DDR DRAM                 20352 MB
   Start time                          2020-04-17 13:39:41 GST
-  Uptime                              24 days, 40 minutes, 51 seconds
+  Uptime                              24 days, 1 hour, 19 minutes, 45 seconds
   Max MPC base power consumption   308 Watts
   Max MIC0 power consumption        29 Watts
   Max MIC1 power consumption        37 Watts
   Max MPC total power consumption  374 Watts
 Slot 1 information:
   State                               Online    
-  Temperature                      29 degrees C / 84 degrees F
+  Temperature                      30 degrees C / 86 degrees F
   Total CPU DRAM                 3584 MB
   Total RLDRAM                    259 MB
   Total DDR DRAM                 20352 MB
   Start time                          2020-04-17 13:39:47 GST
-  Uptime                              24 days, 40 minutes, 45 seconds
+  Uptime                              24 days, 1 hour, 19 minutes, 39 seconds
   Max MPC base power consumption   308 Watts
   Max MIC0 power consumption        24 Watts
   Max MIC1 power consumption        29 Watts
@@ -284,11 +284,11 @@ Routing Engine status:
     DRAM                      49113 MB (49152 MB installed)
     Memory utilization           4 percent
     5 sec CPU utilization:
-      User                       0 percent
+      User                       1 percent
       Background                 0 percent
       Kernel                     1 percent
       Interrupt                  0 percent
-      Idle                      98 percent
+      Idle                      97 percent
     1 min CPU utilization:
       User                       0 percent
       Background                 0 percent
@@ -310,16 +310,16 @@ Routing Engine status:
     Model                          RE-S-2X00x6
     Serial ID                      CAJV8156
     Start time                     2020-04-17 13:37:28 GST
-    Uptime                         24 days, 43 minutes, 1 second
+    Uptime                         24 days, 1 hour, 21 minutes, 58 seconds
     Last reboot reason             0x2000:hypervisor reboot
     Load averages:                 1 minute   5 minute  15 minute
-                                       0.11       0.20       0.17
+                                       0.16       0.18       0.16
 Routing Engine status:
   Slot 1:
     Current state                  Backup
     Election priority              Backup
     Temperature                 29 degrees C / 84 degrees F
-    CPU temperature             41 degrees C / 105 degrees F
+    CPU temperature             42 degrees C / 107 degrees F
     DRAM                      49113 MB (49152 MB installed)
     Memory utilization           4 percent
     5 sec CPU utilization:
@@ -331,10 +331,10 @@ Routing Engine status:
     Model                          RE-S-2X00x6
     Serial ID                      CAJV8278
     Start time                     2020-04-17 13:22:11 GST
-    Uptime                         24 days, 58 minutes, 9 seconds
+    Uptime                         24 days, 1 hour, 37 minutes, 6 seconds
     Last reboot reason             0x2000:hypervisor reboot
     Load averages:                 1 minute   5 minute  15 minute
-                                       0.16       0.13       0.14
+                                       0.25       0.23       0.18
 
 
 =====  show interfaces terse @ AMS_VPN  =====
@@ -529,7 +529,7 @@ xe-0/1/0.0          Down    0.0.0.0         0.0.0.0         0.0.0.0            0
 =====  show ospf neighbor @ AMS_VPN  =====
 
 Address          Interface              State     ID               Pri  Dead
-172.21.249.48    xe-0/0/0.0             Full      172.21.249.4     128    39
+172.21.249.48    xe-0/0/0.0             Full      172.21.249.4     128    35
 
 
 =====  show ospf database @ AMS_VPN  =====
@@ -537,128 +537,128 @@ Address          Interface              State     ID               Pri  Dead
 
     OSPF database, Area 0.0.0.0
  Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
-Router   1.0.0.11         1.0.0.11         0x8000181a  2132  0x22 0xa2bd  84
-Router   1.0.0.12         1.0.0.12         0x80000de9  1605  0x22 0xdb49  60
-Router  *1.0.0.13         1.0.0.13         0x8000198b  2739  0x22 0xca54  72
-Router   1.0.0.14         1.0.0.14         0x80000dec  1926  0x22 0xcd0c  60
-Router   172.21.249.1     172.21.249.1     0x80000b96  1916  0x22 0x2c63 276
-Router   172.21.249.2     172.21.249.2     0x800009a7   689  0x22 0xd2b3 168
-Router   172.21.249.3     172.21.249.3     0x80000985  1510  0x22 0x225b 204
-Router   172.21.249.4     172.21.249.4     0x8000120a  1509  0x22 0x320a 144
-Router   172.21.250.21    172.21.250.21    0x80000efe   778  0x22 0xa8b2  60
-Router   172.21.252.1     172.21.252.1     0x80000033   862  0x22 0xb5a0  72
-Router   172.21.252.2     172.21.252.2     0x800084f4   810  0x22 0x9525 156
-Router   172.21.252.3     172.21.252.3     0x8000365d  1361  0x22 0xaa25 144
-Router   172.21.252.4     172.21.252.4     0x80004ba0   988  0x22 0xc497  72
-OpaqArea 1.0.0.0          172.21.249.1     0x80000923  1186  0x20 0x93f9  28
-OpaqArea 1.0.0.0          172.21.249.2     0x80000936  1943  0x20 0x7107  28
-OpaqArea 1.0.0.0          172.21.249.3     0x80002333  1920  0x20 0x2d32  28
-OpaqArea 1.0.0.0          172.21.249.4     0x80001120   975  0x20 0x8df4  28
-OpaqArea 1.0.0.0          172.21.252.1     0x8000002f  1628  0x20 0x9ce7  28
-OpaqArea 1.0.0.0          172.21.252.2     0x8000541e  1553  0x20 0xc579  28
-OpaqArea 1.0.0.0          172.21.252.3     0x800035d7   598  0x20 0xb3ee  28
-OpaqArea 1.0.0.0          172.21.252.4     0x80004a85  1997  0x20 0x1dc0  28
-OpaqArea 1.0.0.1          1.0.0.11         0x8000160f  1721  0x22 0xf7fa  28
-OpaqArea 1.0.0.1          1.0.0.12         0x80000d76  2595  0x22 0x484a  28
-OpaqArea*1.0.0.1          1.0.0.13         0x80001648   767  0x22 0x8d28  28
-OpaqArea 1.0.0.1          1.0.0.14         0x80000b10   865  0x22 0x23d3  28
-OpaqArea 1.0.0.3          1.0.0.11         0x80000005   180  0x22 0xf11a 136
-OpaqArea 1.0.0.3          1.0.0.12         0x800003ce   614  0x22 0x3830 136
-OpaqArea*1.0.0.3          1.0.0.13         0x80000004  1796  0x22 0x5669 136
-OpaqArea 1.0.0.3          1.0.0.14         0x8000002b  1926  0x22 0x3c6a 136
-OpaqArea 1.0.0.5          1.0.0.11         0x8000000a   910  0x22 0x2b69 136
-OpaqArea 1.0.0.9          172.21.252.2     0x80000efb  1553  0x20 0x446f 168
-OpaqArea 1.0.0.20         172.21.249.3     0x80000003  1915  0x20 0xfa72 216
-OpaqArea 1.0.0.21         172.21.249.3     0x80000002  1926  0x20 0xfca  212
-OpaqArea 1.0.0.35         172.21.249.1     0x80000003  1920  0x20 0xa677 212
-OpaqArea 1.0.0.36         172.21.249.1     0x80000003  1921  0x20 0x25e0 204
-OpaqArea 1.0.0.56         172.21.249.2     0x80000552   936  0x20 0x4e43 204
-OpaqArea 1.0.0.57         172.21.249.2     0x80000136   936  0x20 0xaa8  204
-OpaqArea 1.0.0.61         172.21.252.2     0x800000bc  1053  0x20 0xdb3e 168
-OpaqArea 1.0.0.70         172.21.249.3     0x80000003  1919  0x20 0x7f3  212
-OpaqArea 1.0.0.72         172.21.249.1     0x800007b0  1186  0x20 0xa851 204
-OpaqArea 1.0.0.72         172.21.249.3     0x80000001  1510  0x20 0xebe4 204
-OpaqArea 1.0.0.73         172.21.249.3     0x80000003  1920  0x20 0x716f 204
-OpaqArea 1.0.0.74         172.21.249.1     0x800000bb  1186  0x20 0x9af0 204
-OpaqArea 1.0.0.75         172.21.249.1     0x8000080d  1186  0x20 0x573e 204
-OpaqArea 1.0.0.75         172.21.249.3     0x80000032  1926  0x20 0x5c3d 204
-OpaqArea 1.0.0.76         172.21.249.1     0x80000003  1916  0x20 0x92c  216
-OpaqArea 1.0.0.77         172.21.249.1     0x80000002  1925  0x20 0x1d84 212
-OpaqArea 1.0.0.81         172.21.249.2     0x800000c1  1183  0x20 0xa53d 204
-OpaqArea 1.0.0.87         172.21.249.2     0x800007ef  1183  0x20 0x6f3c 204
-OpaqArea 1.0.0.113        172.21.252.3     0x8000002a   598  0x20 0x707c 168
-OpaqArea 1.0.0.118        172.21.252.1     0x80000031   600  0x20 0x7070 168
-OpaqArea 1.0.0.122        172.21.252.3     0x800005a4   346  0x20 0x3268 168
-OpaqArea 1.0.0.124        172.21.252.3     0x80000003  1361  0x20 0x539e 168
-OpaqArea 1.0.0.124        172.21.252.4     0x800029c6   729  0x20 0x2ede 168
-OpaqArea 1.0.0.125        172.21.252.3     0x800029cd   598  0x20 0xce0e 168
-OpaqArea 1.0.0.153        172.21.252.2     0x8000000b   810  0x20 0x9459 168
-OpaqArea 1.0.3.85         172.21.249.4     0x80000551   975  0x20 0xc4b3 204
-OpaqArea 1.0.3.86         172.21.249.4     0x80000135   975  0x20 0x870c 204
-OpaqArea 1.0.3.98         172.21.249.4     0x80000005   975  0x20 0x1b8d 204
-OpaqArea 1.0.3.102        172.21.249.4     0x80000001  1509  0x20 0x7936 204
-OpaqArea 4.0.0.0          172.21.249.1     0x80000927  1186  0x20 0x1deb 100
-OpaqArea 4.0.0.0          172.21.249.2     0x80000937  1943  0x20 0xec92  92
-OpaqArea 4.0.0.0          172.21.249.3     0x80002339  1920  0x20 0x3899  92
-OpaqArea 4.0.0.0          172.21.249.4     0x80001121   975  0x20 0x5732  92
-OpaqArea 4.0.0.0          172.21.252.1     0x8000002f  1628  0x20 0xc67c  52
-OpaqArea 4.0.0.0          172.21.252.2     0x8000541d  1553  0x20 0x6b14  52
-OpaqArea 4.0.0.0          172.21.252.3     0x800035d7   598  0x20 0xc999  52
-OpaqArea 4.0.0.0          172.21.252.4     0x80004a85  1997  0x20 0x2976  52
-OpaqArea 7.0.0.1          172.21.249.1     0x8000091d  1186  0x20 0x10ef  44
-OpaqArea 7.0.0.1          172.21.249.2     0x80000935  1943  0x20 0x2e2   44
-OpaqArea 7.0.0.1          172.21.249.3     0x80002804  1920  0x20 0x29ca  44
-OpaqArea 7.0.0.1          172.21.249.4     0x8000111f   975  0x20 0x5a92  44
-OpaqArea 7.0.0.1          172.21.252.1     0x8000002f  1628  0x20 0xcf8   44
-OpaqArea 8.0.0.9          172.21.252.2     0x80000ef9  1553  0x20 0xf591  68
-OpaqArea 8.0.0.20         172.21.249.3     0x80000002  1917  0x20 0x2d20 112
-OpaqArea 8.0.0.21         172.21.249.3     0x80000002  1926  0x20 0x4038 112
-OpaqArea 8.0.0.35         172.21.249.1     0x80000003  1920  0x20 0xee9a 112
-OpaqArea 8.0.0.36         172.21.249.1     0x80000003  1921  0x20 0xb4a1 112
-OpaqArea 8.0.0.56         172.21.249.2     0x8000093e   936  0x20 0x5d99 112
-OpaqArea 8.0.0.57         172.21.249.2     0x80000135   936  0x20 0x6890 112
-OpaqArea 8.0.0.61         172.21.252.2     0x800000c2  1053  0x20 0x55f5  68
-OpaqArea 8.0.0.70         172.21.249.3     0x80000002  1919  0x20 0xef92 112
-OpaqArea 8.0.0.72         172.21.249.1     0x8000070f  1186  0x20 0x7d93 112
-OpaqArea 8.0.0.72         172.21.249.3     0x80000001  1510  0x20 0xf7c3 112
-OpaqArea 8.0.0.73         172.21.249.3     0x80000002  1920  0x20 0xd479 112
-OpaqArea 8.0.0.74         172.21.249.1     0x800000aa  1186  0x20 0x6425 112
-OpaqArea 8.0.0.75         172.21.249.1     0x800000aa  1186  0x20 0xa9cb 112
-OpaqArea 8.0.0.75         172.21.249.3     0x80000030  1920  0x20 0xa6fc 112
-OpaqArea 8.0.0.76         172.21.249.1     0x80000004  1912  0x20 0x8f9f 112
-OpaqArea 8.0.0.77         172.21.249.1     0x80000002   681  0x20 0x7f63 112
-OpaqArea 8.0.0.81         172.21.249.2     0x80000771  1183  0x20 0x1272 112
-OpaqArea 8.0.0.87         172.21.249.2     0x800000f4  1183  0x20 0x16f7 112
-OpaqArea 8.0.0.113        172.21.252.3     0x8000002b   598  0x20 0x831b  68
-OpaqArea 8.0.0.118        172.21.252.1     0x80000031   600  0x20 0x3996  68
-OpaqArea 8.0.0.122        172.21.252.3     0x800005a4   598  0x20 0xb2d   68
-OpaqArea 8.0.0.124        172.21.252.3     0x80000004  1361  0x20 0x48c   68
-OpaqArea 8.0.0.124        172.21.252.4     0x800029c8   729  0x20 0xc3cd  68
-OpaqArea 8.0.0.125        172.21.252.3     0x800029ce   598  0x20 0x3775  68
-OpaqArea 8.0.0.153        172.21.252.2     0x8000000c   810  0x20 0xfb69  68
-OpaqArea 8.0.3.85         172.21.249.4     0x8000093d   975  0x20 0xebe8 112
-OpaqArea 8.0.3.86         172.21.249.4     0x80000133   975  0x20 0x686c 112
-OpaqArea 8.0.3.98         172.21.249.4     0x80000005   975  0x20 0xf1e1 112
-OpaqArea 8.0.3.102        172.21.249.4     0x80000001  1509  0x20 0xccc8 112
+Router   1.0.0.11         1.0.0.11         0x8000181b  1786  0x22 0xa0be  84
+Router   1.0.0.12         1.0.0.12         0x80000dea   947  0x22 0xd94a  60
+Router  *1.0.0.13         1.0.0.13         0x8000198c  2116  0x22 0xc855  72
+Router   1.0.0.14         1.0.0.14         0x80000ded  1260  0x22 0xcb0d  60
+Router   172.21.249.1     172.21.249.1     0x80000ba0   150  0x22 0x186d 276
+Router   172.21.249.2     172.21.249.2     0x800009a8  1000  0x22 0xd0b4 168
+Router   172.21.249.3     172.21.249.3     0x8000098e   149  0x22 0x1064 204
+Router   172.21.249.4     172.21.249.4     0x8000120b  2018  0x22 0x300b 144
+Router   172.21.250.21    172.21.250.21    0x80000eff  1120  0x22 0xa6b3  60
+Router   172.21.252.1     172.21.252.1     0x80000034  1161  0x22 0xb3a1  72
+Router   172.21.252.2     172.21.252.2     0x800084f5  1136  0x22 0x9326 156
+Router   172.21.252.3     172.21.252.3     0x8000365e  1670  0x22 0xa826 144
+Router   172.21.252.4     172.21.252.4     0x80004ba1  1295  0x22 0xc298  72
+OpaqArea 1.0.0.0          172.21.249.1     0x80000925   804  0x20 0x8ffb  28
+OpaqArea 1.0.0.0          172.21.249.2     0x80000938   261  0x20 0x6d09  28
+OpaqArea 1.0.0.0          172.21.249.3     0x80002335  1739  0x20 0x2934  28
+OpaqArea 1.0.0.0          172.21.249.4     0x80001121  1261  0x20 0x8bf5  28
+OpaqArea 1.0.0.0          172.21.252.1     0x80000030  1911  0x20 0x9ae8  28
+OpaqArea 1.0.0.0          172.21.252.2     0x8000541f  1867  0x20 0xc37a  28
+OpaqArea 1.0.0.0          172.21.252.3     0x800035d8   916  0x20 0xb1ef  28
+OpaqArea 1.0.0.0          172.21.252.4     0x80004a87   291  0x20 0x19c2  28
+OpaqArea 1.0.0.1          1.0.0.11         0x80001610  1056  0x22 0xf5fb  28
+OpaqArea 1.0.0.1          1.0.0.12         0x80000d77  1945  0x22 0x464b  28
+OpaqArea*1.0.0.1          1.0.0.13         0x80001649   124  0x22 0x8b29  28
+OpaqArea 1.0.0.1          1.0.0.14         0x80000b11   200  0x22 0x21d4  28
+OpaqArea 1.0.0.3          1.0.0.11         0x80000005  2515  0x22 0xf11a 136
+OpaqArea 1.0.0.3          1.0.0.12         0x800003ce  2949  0x22 0x3830 136
+OpaqArea*1.0.0.3          1.0.0.13         0x80000005  1131  0x22 0x546a 136
+OpaqArea 1.0.0.3          1.0.0.14         0x8000002c  1646  0x22 0x3a6b 136
+OpaqArea 1.0.0.5          1.0.0.11         0x8000000b   299  0x22 0x296a 136
+OpaqArea 1.0.0.9          172.21.252.2     0x80000efc  1867  0x20 0x4270 168
+OpaqArea 1.0.0.20         172.21.249.3     0x80000002  1739  0x20 0xfc71 216
+OpaqArea 1.0.0.21         172.21.249.3     0x80000001   149  0x20 0x11c9 212
+OpaqArea 1.0.0.35         172.21.249.1     0x80000006   315  0x20 0xa07a 212
+OpaqArea 1.0.0.36         172.21.249.1     0x80000002   804  0x20 0x27df 204
+OpaqArea 1.0.0.56         172.21.249.2     0x80000553  1245  0x20 0x4c44 204
+OpaqArea 1.0.0.57         172.21.249.2     0x80000137  1245  0x20 0x8a9  204
+OpaqArea 1.0.0.61         172.21.252.2     0x800000bd  1379  0x20 0xd93f 168
+OpaqArea 1.0.0.70         172.21.249.3     0x80000005  1739  0x20 0x3f5  212
+OpaqArea 1.0.0.72         172.21.249.1     0x800007b2   804  0x20 0xa453 204
+OpaqArea 1.0.0.72         172.21.249.3     0x80000003  1739  0x20 0xe7e6 204
+OpaqArea 1.0.0.73         172.21.249.3     0x80000001  1264  0x20 0x756d 204
+OpaqArea 1.0.0.74         172.21.249.1     0x800000bd   804  0x20 0x96f2 204
+OpaqArea 1.0.0.75         172.21.249.1     0x8000080f   804  0x20 0x5340 204
+OpaqArea 1.0.0.75         172.21.249.3     0x80000034  1739  0x20 0x583f 204
+OpaqArea 1.0.0.76         172.21.249.1     0x80000003    52  0x20 0x92c  216
+OpaqArea 1.0.0.77         172.21.249.1     0x80000001   150  0x20 0x1f83 212
+OpaqArea 1.0.0.81         172.21.249.2     0x800000c2  1500  0x20 0xa33e 204
+OpaqArea 1.0.0.87         172.21.249.2     0x800007f0  1500  0x20 0x6d3d 204
+OpaqArea 1.0.0.113        172.21.252.3     0x8000002b   916  0x20 0x6e7d 168
+OpaqArea 1.0.0.118        172.21.252.1     0x80000032   901  0x20 0x6e71 168
+OpaqArea 1.0.0.122        172.21.252.3     0x800005a5   670  0x20 0x3069 168
+OpaqArea 1.0.0.124        172.21.252.3     0x80000004  1670  0x20 0x519f 168
+OpaqArea 1.0.0.124        172.21.252.4     0x800029c7  1054  0x20 0x2cdf 168
+OpaqArea 1.0.0.125        172.21.252.3     0x800029ce   916  0x20 0xcc0f 168
+OpaqArea 1.0.0.153        172.21.252.2     0x8000000c  1136  0x20 0x925a 168
+OpaqArea 1.0.3.85         172.21.249.4     0x80000552  1261  0x20 0xc2b4 204
+OpaqArea 1.0.3.86         172.21.249.4     0x80000136  1261  0x20 0x850d 204
+OpaqArea 1.0.3.98         172.21.249.4     0x80000006  1261  0x20 0x198e 204
+OpaqArea 1.0.3.102        172.21.249.4     0x80000002  2018  0x20 0x7737 204
+OpaqArea 4.0.0.0          172.21.249.1     0x80000929   821  0x20 0x9ce9 100
+OpaqArea 4.0.0.0          172.21.249.2     0x80000939   261  0x20 0xe894  92
+OpaqArea 4.0.0.0          172.21.249.3     0x8000233b  1757  0x20 0xb797  92
+OpaqArea 4.0.0.0          172.21.249.4     0x80001122  1261  0x20 0x5533  92
+OpaqArea 4.0.0.0          172.21.252.1     0x80000030  1911  0x20 0xc47d  52
+OpaqArea 4.0.0.0          172.21.252.2     0x8000541e  1867  0x20 0x6915  52
+OpaqArea 4.0.0.0          172.21.252.3     0x800035d8   916  0x20 0xc79a  52
+OpaqArea 4.0.0.0          172.21.252.4     0x80004a87   291  0x20 0x2578  52
+OpaqArea 7.0.0.1          172.21.249.1     0x8000091e  1512  0x20 0xef0   44
+OpaqArea 7.0.0.1          172.21.249.2     0x80000937   261  0x20 0xfde4  44
+OpaqArea 7.0.0.1          172.21.249.3     0x80002806   504  0x20 0x25cc  44
+OpaqArea 7.0.0.1          172.21.249.4     0x80001120  1261  0x20 0x5893  44
+OpaqArea 7.0.0.1          172.21.252.1     0x80000030  1911  0x20 0xaf9   44
+OpaqArea 8.0.0.9          172.21.252.2     0x80000efa  1867  0x20 0xf392  68
+OpaqArea 8.0.0.20         172.21.249.3     0x80000002   148  0x20 0x2d20 112
+OpaqArea 8.0.0.21         172.21.249.3     0x80000001   149  0x20 0x4237 112
+OpaqArea 8.0.0.35         172.21.249.1     0x80000005   315  0x20 0xea9c 112
+OpaqArea 8.0.0.36         172.21.249.1     0x80000001  1265  0x20 0xb89f 112
+OpaqArea 8.0.0.56         172.21.249.2     0x8000093f  1245  0x20 0x5b9a 112
+OpaqArea 8.0.0.57         172.21.249.2     0x80000136  1245  0x20 0x6691 112
+OpaqArea 8.0.0.61         172.21.252.2     0x800000c3  1379  0x20 0x53f6  68
+OpaqArea 8.0.0.70         172.21.249.3     0x80000004   504  0x20 0xeb94 112
+OpaqArea 8.0.0.72         172.21.249.1     0x80000710  1512  0x20 0x7b94 112
+OpaqArea 8.0.0.72         172.21.249.3     0x80000003  1834  0x20 0xf3c5 112
+OpaqArea 8.0.0.73         172.21.249.3     0x80000001  1264  0x20 0xd678 112
+OpaqArea 8.0.0.74         172.21.249.1     0x800000ab  1512  0x20 0x6226 112
+OpaqArea 8.0.0.75         172.21.249.1     0x800000ab  1512  0x20 0xa7cc 112
+OpaqArea 8.0.0.75         172.21.249.3     0x80000032   504  0x20 0xa2fe 112
+OpaqArea 8.0.0.76         172.21.249.1     0x80000002    52  0x20 0x939d 112
+OpaqArea 8.0.0.77         172.21.249.1     0x80000001   150  0x20 0x8162 112
+OpaqArea 8.0.0.81         172.21.249.2     0x80000772  1500  0x20 0x1073 112
+OpaqArea 8.0.0.87         172.21.249.2     0x800000f5  1500  0x20 0x14f8 112
+OpaqArea 8.0.0.113        172.21.252.3     0x8000002c   916  0x20 0x811c  68
+OpaqArea 8.0.0.118        172.21.252.1     0x80000032   901  0x20 0x3797  68
+OpaqArea 8.0.0.122        172.21.252.3     0x800005a5   916  0x20 0x92e   68
+OpaqArea 8.0.0.124        172.21.252.3     0x80000005  1670  0x20 0x28d   68
+OpaqArea 8.0.0.124        172.21.252.4     0x800029c9  1054  0x20 0xc1ce  68
+OpaqArea 8.0.0.125        172.21.252.3     0x800029cf   916  0x20 0x3576  68
+OpaqArea 8.0.0.153        172.21.252.2     0x8000000d  1136  0x20 0xf96a  68
+OpaqArea 8.0.3.85         172.21.249.4     0x8000093e  1261  0x20 0xe9e9 112
+OpaqArea 8.0.3.86         172.21.249.4     0x80000134  1261  0x20 0x666d 112
+OpaqArea 8.0.3.98         172.21.249.4     0x80000006  1261  0x20 0xefe2 112
+OpaqArea 8.0.3.102        172.21.249.4     0x80000002  2018  0x20 0xcac9 112
     OSPF AS SCOPE link state database
  Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
-Extern   10.66.10.0       172.21.252.2     0x80001d3f  1553  0x20 0x56d7  36
-Extern   10.151.14.62     172.21.252.2     0x80001d3f  1553  0x20 0xbbda  36
-Extern   10.183.120.180   172.21.252.2     0x80001d3f  1553  0x20 0x78e   36
-Extern   10.183.120.181   172.21.252.2     0x80001d3f  1553  0x20 0xfc97  36
-Extern   10.237.84.130    172.21.252.2     0x80001d3f  1553  0x20 0xffb5  36
-Extern   10.237.91.138    172.21.252.2     0x80001d3f  1553  0x20 0x6244  36
-Extern   10.237.91.139    172.21.252.2     0x80001d3f  1553  0x20 0x584d  36
-Extern   10.237.238.229   172.21.252.2     0x80001d3f  1553  0x20 0x793e  36
-Extern   172.21.250.21    172.21.252.2     0x80000efb  1553  0x20 0xb84c  36
-Extern   194.170.156.0    172.21.252.4     0x80000864  1997  0x20 0x6934  36
+Extern   10.66.10.0       172.21.252.2     0x80001d40  1867  0x20 0x54d8  36
+Extern   10.151.14.62     172.21.252.2     0x80001d40  1867  0x20 0xb9db  36
+Extern   10.183.120.180   172.21.252.2     0x80001d40  1867  0x20 0x58f   36
+Extern   10.183.120.181   172.21.252.2     0x80001d40  1867  0x20 0xfa98  36
+Extern   10.237.84.130    172.21.252.2     0x80001d40  1867  0x20 0xfdb6  36
+Extern   10.237.91.138    172.21.252.2     0x80001d40  1867  0x20 0x6045  36
+Extern   10.237.91.139    172.21.252.2     0x80001d40  1867  0x20 0x564e  36
+Extern   10.237.238.229   172.21.252.2     0x80001d40  1867  0x20 0x773f  36
+Extern   172.21.250.21    172.21.252.2     0x80000efc  1867  0x20 0xb64d  36
+Extern   194.170.156.0    172.21.252.4     0x80000866   291  0x20 0x6536  36
 
 
 =====  show ted database @ AMS_VPN  =====
 
 TED database: 0 ISIS nodes 13 INET nodes
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.249.1                  Rtr    1913     7      7 OSPF(0.0.0.0)
+172.21.249.1                  Rtr     148     7      7 OSPF(0.0.0.0)
     To: 172.21.249.2, Local: 172.21.249.16, Remote: 172.21.249.17
       Local interface index: 0, Remote interface index: 0
     To: 172.21.249.2, Local: 172.21.249.18, Remote: 172.21.249.19
@@ -674,11 +674,11 @@ ID                            Type Age(s) LnkIn LnkOut Protocol
     To: 172.21.249.3, Local: 172.21.249.26, Remote: 172.21.249.27
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.252.1                  Rtr   82959     1      1 OSPF(0.0.0.0)
+172.21.252.1                  Rtr   85295     1      1 OSPF(0.0.0.0)
     To: 172.21.252.3, Local: 172.21.252.37, Remote: 172.21.252.38
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.249.2                  Rtr    4788     4      4 OSPF(0.0.0.0)
+172.21.249.2                  Rtr    7124     4      4 OSPF(0.0.0.0)
     To: 172.21.249.1, Local: 172.21.249.17, Remote: 172.21.249.16
       Local interface index: 0, Remote interface index: 0
     To: 172.21.249.1, Local: 172.21.249.19, Remote: 172.21.249.18
@@ -688,7 +688,7 @@ ID                            Type Age(s) LnkIn LnkOut Protocol
     To: 172.21.249.4, Local: 172.21.249.30, Remote: 172.21.249.31
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.252.2                  Rtr   11122     2      3 OSPF(0.0.0.0)
+172.21.252.2                  Rtr   13458     2      3 OSPF(0.0.0.0)
     To: 172.21.249.1, Local: 172.21.249.65, Remote: 172.21.249.64
       Local interface index: 0, Remote interface index: 0
     To: 1.0.0.11, Local: 172.21.249.50, Remote: 172.21.249.51
@@ -696,7 +696,7 @@ ID                            Type Age(s) LnkIn LnkOut Protocol
     To: 172.21.250.21, Local: 172.21.250.16, Remote: 172.21.250.17
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.249.3                  Rtr    1507     6      6 OSPF(0.0.0.0)
+172.21.249.3                  Rtr     148     6      6 OSPF(0.0.0.0)
     To: 172.21.249.1, Local: 172.21.249.21, Remote: 172.21.249.20
       Local interface index: 0, Remote interface index: 0
     To: 172.21.249.1, Local: 172.21.249.23, Remote: 172.21.249.22
@@ -710,7 +710,7 @@ ID                            Type Age(s) LnkIn LnkOut Protocol
     To: 1.0.0.14, Local: 172.21.249.46, Remote: 172.21.249.47
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.252.3                  Rtr    5334     4      4 OSPF(0.0.0.0)
+172.21.252.3                  Rtr    7670     4      4 OSPF(0.0.0.0)
     To: 172.21.252.4, Local: 172.21.252.73, Remote: 172.21.252.74
       Local interface index: 0, Remote interface index: 0
     To: 1.0.0.11, Local: 172.21.252.177, Remote: 172.21.252.178
@@ -720,7 +720,7 @@ ID                            Type Age(s) LnkIn LnkOut Protocol
     To: 172.21.252.1, Local: 172.21.252.38, Remote: 172.21.252.37
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.249.4                  Rtr    1507     4      4 OSPF(0.0.0.0)
+172.21.249.4                  Rtr    3843     4      4 OSPF(0.0.0.0)
     To: 1.0.0.13, Local: 172.21.249.48, Remote: 172.21.249.49
       Local interface index: 0, Remote interface index: 0
     To: 172.21.249.2, Local: 172.21.249.29, Remote: 172.21.249.28
@@ -730,29 +730,29 @@ ID                            Type Age(s) LnkIn LnkOut Protocol
     To: 172.21.249.3, Local: 172.21.249.35, Remote: 172.21.249.34
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.252.4                  Rtr   12947     1      1 OSPF(0.0.0.0)
+172.21.252.4                  Rtr   15283     1      1 OSPF(0.0.0.0)
     To: 172.21.252.3, Local: 172.21.252.74, Remote: 172.21.252.73
       Local interface index: 0, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-1.0.0.11                      Rtr    2126     2      2 OSPF(0.0.0.0)
+1.0.0.11                      Rtr    4462     2      2 OSPF(0.0.0.0)
     To: 172.21.252.2, Local: 172.21.249.51, Remote: 172.21.249.50
       Local interface index: 394, Remote interface index: 0
     To: 172.21.252.3, Local: 172.21.252.178, Remote: 172.21.252.177
       Local interface index: 196626, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-1.0.0.12                      Rtr    5334     1      1 OSPF(0.0.0.0)
+1.0.0.12                      Rtr    7670     1      1 OSPF(0.0.0.0)
     To: 172.21.252.3, Local: 192.168.222.1, Remote: 192.168.222.2
       Local interface index: 141072, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-1.0.0.13                      Rtr    4795     1      1 OSPF(0.0.0.0)
+1.0.0.13                      Rtr    7131     1      1 OSPF(0.0.0.0)
     To: 172.21.249.4, Local: 172.21.249.49, Remote: 172.21.249.48
       Local interface index: 362, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-1.0.0.14                      Rtr    1917     1      1 OSPF(0.0.0.0)
+1.0.0.14                      Rtr    4253     1      1 OSPF(0.0.0.0)
     To: 172.21.249.3, Local: 172.21.249.47, Remote: 172.21.249.46
       Local interface index: 97, Remote interface index: 0
 ID                            Type Age(s) LnkIn LnkOut Protocol
-172.21.250.21                 ---  101524     1      0
+172.21.250.21                 ---  103860     1      0
 
 
 =====  show route 1.0.0.0/24 @ AMS_VPN  =====
@@ -762,69 +762,69 @@ inet.0: 75 destinations, 83 routes (75 active, 0 holddown, 0 hidden)
 @ = Routing Use Only, # = Forwarding Use Only
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        @[OSPF/10] 00:35:27, metric 98000
+1.0.0.11/32        @[OSPF/10] 01:14:22, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0
-                   #[RSVP/7/1] 00:19:15, metric 98000
+                   #[RSVP/7/1] 00:58:10, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [LDP/9] 00:35:27, metric 98000
+                    [LDP/9] 01:14:22, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24036
-1.0.0.12/32        @[OSPF/10] 00:35:27, metric 168000
+1.0.0.12/32        @[OSPF/10] 01:14:22, metric 168000
                     > to 172.21.249.48 via xe-0/0/0.0
-                   #[RSVP/7/1] 00:30:15, metric 168000
+                   #[RSVP/7/1] 01:09:10, metric 168000
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-                    [LDP/9] 00:35:22, metric 168000
+                    [LDP/9] 01:14:17, metric 168000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24038
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:24
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:19
                     > via lo0.0
-1.0.0.14/32        @[OSPF/10] 00:25:07, metric 77000
+1.0.0.14/32        @[OSPF/10] 01:04:02, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0
-                   #[RSVP/7/1] 00:08:15, metric 77000
+                   #[RSVP/7/1] 00:05:03, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [LDP/9] 00:25:07, metric 77000
+                    [LDP/9] 01:04:02, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24041
 
 inet.3: 5 destinations, 8 routes (5 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[RSVP/7/1] 00:19:15, metric 98000
+1.0.0.11/32        *[RSVP/7/1] 00:58:10, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [LDP/9] 00:35:27, metric 98000
+                    [LDP/9] 01:14:22, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24036
-1.0.0.12/32        *[RSVP/7/1] 00:30:15, metric 168000
+1.0.0.12/32        *[RSVP/7/1] 01:09:10, metric 168000
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-                    [LDP/9] 00:35:22, metric 168000
+                    [LDP/9] 01:14:17, metric 168000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24038
-1.0.0.14/32        *[RSVP/7/1] 00:08:15, metric 77000
+1.0.0.14/32        *[RSVP/7/1] 00:05:03, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [LDP/9] 00:25:07, metric 77000
+                    [LDP/9] 01:04:02, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24041
 
 l3vpn-grx.inet.0: 29 destinations, 47 routes (29 active, 0 holddown, 9 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:20
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:15
                     > via lo0.4
-1.0.0.14/32        *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -832,19 +832,19 @@ l3vpn-grx.inet.0: 29 destinations, 47 routes (29 active, 0 holddown, 9 hidden)
 l3vpn-option_a-101.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:20
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:15
                     > via lo0.101
-1.0.0.14/32        *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -852,19 +852,19 @@ l3vpn-option_a-101.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-102.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:20
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:15
                     > via lo0.102
-1.0.0.14/32        *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -872,19 +872,19 @@ l3vpn-option_a-102.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-103.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:20
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:15
                     > via lo0.103
-1.0.0.14/32        *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -892,19 +892,19 @@ l3vpn-option_a-103.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-104.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:20
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:15
                     > via lo0.104
-1.0.0.14/32        *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -912,19 +912,19 @@ l3vpn-option_a-104.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-105.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:20
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:15
                     > via lo0.105
-1.0.0.14/32        *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -933,122 +933,122 @@ bgp.l3vpn.0: 142 destinations, 142 routes (142 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
 1.0.0.11:4:1.0.0.11/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:101:1.0.0.11/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:102:1.0.0.11/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:103:1.0.0.11/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:104:1.0.0.11/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:105:1.0.0.11/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.12:4:1.0.0.12/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:101:1.0.0.12/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:102:1.0.0.12/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:103:1.0.0.12/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:104:1.0.0.12/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:105:1.0.0.12/32                
-                   *[BGP/170] 00:35:22, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:17, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.13:4:1.0.0.13/32                
-                   *[Direct/0] 3w3d 00:41:20
+                   *[Direct/0] 3w3d 01:20:15
                     > via lo0.4
 1.0.0.13:101:1.0.0.13/32                
-                   *[Direct/0] 3w3d 00:41:20
+                   *[Direct/0] 3w3d 01:20:15
                     > via lo0.101
 1.0.0.13:102:1.0.0.13/32                
-                   *[Direct/0] 3w3d 00:41:20
+                   *[Direct/0] 3w3d 01:20:15
                     > via lo0.102
 1.0.0.13:103:1.0.0.13/32                
-                   *[Direct/0] 3w3d 00:41:20
+                   *[Direct/0] 3w3d 01:20:15
                     > via lo0.103
 1.0.0.13:104:1.0.0.13/32                
-                   *[Direct/0] 3w3d 00:41:20
+                   *[Direct/0] 3w3d 01:20:15
                     > via lo0.104
 1.0.0.13:105:1.0.0.13/32                
-                   *[Direct/0] 3w3d 00:41:20
+                   *[Direct/0] 3w3d 01:20:15
                     > via lo0.105
 1.0.0.14:4:1.0.0.14/32                
-                   *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:1.0.0.14/32                
-                   *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:1.0.0.14/32                
-                   *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:1.0.0.14/32                
-                   *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:1.0.0.14/32                
-                   *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:1.0.0.14/32                
-                   *[BGP/170] 00:24:40, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:35, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -1069,19 +1069,19 @@ ge-0/2/9.1       Up         <none>
 Interface          Address                          Label space ID   Nbr   Next
                                                                     count  hello
 lo0.0              1.0.0.13                         1.0.0.13:0        1      0
-xe-0/0/0.0         172.21.249.49                    1.0.0.13:0        1      1
-xe-0/1/0.0         192.168.155.6                    1.0.0.13:0        0      1
-ge-0/2/1.0         172.21.249.108                   1.0.0.13:0        0      1
-ge-0/2/2.0         172.21.249.105                   1.0.0.13:0        0      1
-ge-0/2/9.1         100.0.13.1                       1.0.0.13:0        1      3
+xe-0/0/0.0         172.21.249.49                    1.0.0.13:0        1      3
+xe-0/1/0.0         192.168.155.6                    1.0.0.13:0        0      3
+ge-0/2/1.0         172.21.249.108                   1.0.0.13:0        0      3
+ge-0/2/2.0         172.21.249.105                   1.0.0.13:0        0      3
+ge-0/2/9.1         100.0.13.1                       1.0.0.13:0        1      1
 
 
 =====  show ldp neighbor  @ AMS_VPN  =====
 
 Address                             Interface       Label space ID     Hold time
-1.0.0.11                            lo0.0           1.0.0.11:0           37
-172.21.249.48                       xe-0/0/0.0      172.21.249.4:0       11
-100.0.13.2                          ge-0/2/9.1      10.0.0.2:0           11
+1.0.0.11                            lo0.0           1.0.0.11:0           42
+172.21.249.48                       xe-0/0/0.0      172.21.249.4:0       10
+100.0.13.2                          ge-0/2/9.1      10.0.0.2:0           14
 
 
 =====  show route table inet.3 protocol ldp @ AMS_VPN  =====
@@ -1090,11 +1090,11 @@ Address                             Interface       Label space ID     Hold time
 inet.3: 5 destinations, 8 routes (5 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32         [LDP/9] 00:35:28, metric 98000
+1.0.0.11/32         [LDP/9] 01:14:23, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24036
-1.0.0.12/32         [LDP/9] 00:35:23, metric 168000
+1.0.0.12/32         [LDP/9] 01:14:18, metric 168000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24038
-1.0.0.14/32         [LDP/9] 00:25:08, metric 77000
+1.0.0.14/32         [LDP/9] 01:04:03, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0, Push 24041
 
 
@@ -1114,9 +1114,9 @@ xe-0/1/0.0           Down       0   100%  10Gbps      10Gbps      0bps        0b
 
 RSVP neighbor: 3 learned
 Address            Idle Up/Dn LastChange HelloInt HelloTx/Rx MsgRcvd
-1.0.0.11              0  2/1     2:01:27        9 212616/212537 2
-172.21.249.4          0  2/1     2:01:27        9 49115/49048 15
-172.21.249.48         0  2/1     1:19:37        9 48102/48101 101527
+1.0.0.11              0  2/1     2:40:23        9 212855/212776 2
+172.21.249.4          0  2/1     2:40:23        9 49378/49311 15
+172.21.249.48         0  2/1     1:58:33        9 48362/48361 101646
 
 
 =====  show rsvp session @ AMS_VPN  =====
@@ -1154,15 +1154,15 @@ Total 0 displayed, Up 0, Down 0
 inet.3: 5 destinations, 8 routes (5 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[RSVP/7/1] 00:19:17, metric 98000
+1.0.0.11/32        *[RSVP/7/1] 00:58:12, metric 98000
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[RSVP/7/1] 00:30:17, metric 168000
+1.0.0.12/32        *[RSVP/7/1] 01:09:12, metric 168000
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.14/32        *[RSVP/7/1] 00:08:17, metric 77000
+1.0.0.14/32        *[RSVP/7/1] 00:05:05, metric 77000
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 
@@ -1194,7 +1194,7 @@ bgp.l2vpn.0
 lsdist.0             
                        0          0          0          0          0          0
 Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
-1.0.0.11               8966        328        321       0      65     2:00:33 Establ
+1.0.0.11               8966        411        404       0      65     2:39:28 Establ
   bgp.rtarget.0: 5/25/25/0
   inet.0: 0/0/0/0
   bgp.l3vpn.0: 27/27/27/0
@@ -1215,7 +1215,7 @@ Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn St
   vpls-option_a-403.l2vpn.0: 1/1/1/0
   vpls-option_a-404.l2vpn.0: 1/1/1/0
   vpls-option_a-405.l2vpn.0: 1/1/1/0
-1.0.0.12               8966        240        232       0      32     1:27:29 Establ
+1.0.0.12               8966        323        315       0      32     2:06:24 Establ
   bgp.rtarget.0: 0/16/16/0
   inet.0: 0/0/0/0
   bgp.l3vpn.0: 19/19/19/0
@@ -1236,7 +1236,7 @@ Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn St
   vpls-option_a-403.l2vpn.0: 0/0/0/0
   vpls-option_a-404.l2vpn.0: 0/0/0/0
   vpls-option_a-405.l2vpn.0: 0/0/0/0
-1.0.0.14               8966         82         84       0       6       24:42 Establ
+1.0.0.14               8966        165        167       0       6     1:03:37 Establ
   bgp.rtarget.0: 9/40/40/0
   inet.0: 1/2/2/0
   bgp.l3vpn.0: 38/38/38/0
@@ -1257,15 +1257,15 @@ Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn St
   vpls-option_a-403.l2vpn.0: 0/0/0/0
   vpls-option_a-404.l2vpn.0: 0/0/0/0
   vpls-option_a-405.l2vpn.0: 0/0/0/0
-2.0.0.11               8959      75672      74624       0       0 3w3d 0:38:14 Establ
+2.0.0.11               8959      75758      74708       0       0 3w3d 1:17:09 Establ
   l3vpn-grx.inet.0: 1/1/1/0
-2.0.0.12               8959      75670      74623       0       0 3w3d 0:37:38 Establ
+2.0.0.12               8959      75756      74706       0       0 3w3d 1:16:33 Establ
   l3vpn-grx.inet.0: 1/1/1/0
-2.0.0.13               8959      75670      74616       0       0 3w3d 0:37:30 Establ
+2.0.0.13               8959      75756      74700       0       0 3w3d 1:16:25 Establ
   l3vpn-grx.inet.0: 1/1/1/0
-2.0.0.14               8959      75672      74625       0       0 3w3d 0:38:26 Establ
+2.0.0.14               8959      75758      74709       0       0 3w3d 1:17:21 Establ
   l3vpn-grx.inet.0: 1/1/1/0
-100.0.13.2             1610      75521      75464       0       0 3w3d 0:38:41 Establ
+100.0.13.2             1610      75606      75549       0       0 3w3d 1:17:36 Establ
   bgp.rtarget.0: 25/25/25/0
   inet.0: 2/3/3/0
   bgp.l3vpn.0: 10/10/10/0
@@ -1280,32 +1280,32 @@ Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn St
   vpls-option_a-403.l2vpn.0: 0/0/0/0
   vpls-option_a-404.l2vpn.0: 0/0/0/0
   vpls-option_a-405.l2vpn.0: 0/0/0/0
-192.168.13.2           1301          0          0       0       0 3w3d 0:41:26 Connect
-192.168.13.2           1610      75389      74363       0       0 3w3d 0:38:21 Establ
+192.168.13.2           1301          0          0       0       0 3w3d 1:20:21 Active
+192.168.13.2           1610      75474      74446       0       0 3w3d 1:17:16 Establ
   l3vpn-option_a-101.inet.0: 4/5/5/0
-192.168.13.2           1610      75389      74363       0       0 3w3d 0:38:25 Establ
+192.168.13.2           1610      75475      74447       0       0 3w3d 1:17:20 Establ
   l3vpn-option_a-102.inet.0: 4/5/5/0
-192.168.13.2           1610      75390      74364       0       0 3w3d 0:38:29 Establ
+192.168.13.2           1610      75475      74447       0       0 3w3d 1:17:24 Establ
   l3vpn-option_a-103.inet.0: 4/5/5/0
-192.168.13.2           1610      75390      74402       0       0 3w3d 0:38:33 Establ
+192.168.13.2           1610      75475      74485       0       0 3w3d 1:17:28 Establ
   l3vpn-option_a-104.inet.0: 4/5/5/0
-192.168.13.2           1610      75390      74364       0       0 3w3d 0:38:37 Establ
+192.168.13.2           1610      75475      74448       0       0 3w3d 1:17:32 Establ
   l3vpn-option_a-105.inet.0: 4/5/5/0
-192.168.147.40         8966      76657      75173       0       0 3w3d 0:38:14 Establ
+192.168.147.40         8966      76749      75266       0       0 3w3d 1:17:09 Establ
   lsdist.0: 0/0/0/0
-192.168.147.41         8966      34952      34744       0       2 1w3d 22:36:18 Establ
+192.168.147.41         8966      35048      34837       0       2 1w3d 23:15:13 Establ
   lsdist.0: 0/0/0/0
-192.168.147.44         8966      76572      75172       0       0 3w3d 0:37:42 Establ
+192.168.147.44         8966      76669      75265       0       0 3w3d 1:16:37 Establ
   lsdist.0: 0/0/0/0
-192.168.147.134        8966      35427      34711       0       0 1w3d 22:20:52 Establ
+192.168.147.134        8966      35517      34804       0       0 1w3d 22:59:47 Establ
   lsdist.0: 0/0/0/0
-192.168.147.138        8966      35753      34710       0       0 1w3d 22:20:48 Establ
+192.168.147.138        8966      35847      34804       0       0 1w3d 22:59:43 Establ
   lsdist.0: 0/0/0/0
-192.168.147.139        8966      36287      34711       0       0 1w3d 22:20:44 Establ
+192.168.147.139        8966      36385      34804       0       0 1w3d 22:59:39 Establ
   lsdist.0: 0/0/0/0
-192.168.147.209        8966      76113      75171       0       0 3w3d 0:38:08 Establ
+192.168.147.209        8966      76199      75264       0       0 3w3d 1:17:03 Establ
   lsdist.0: 0/0/0/0
-192.168.147.210        8966      76113      75173       0       0 3w3d 0:38:03 Establ
+192.168.147.210        8966      76199      75266       0       0 3w3d 1:16:58 Establ
   lsdist.0: 0/0/0/0
 
 
@@ -1315,76 +1315,76 @@ Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn St
 l3vpn-option_a-101.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:23
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:18
                     > via lo0.101
-1.0.0.14/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.11/32        *[BGP/170] 3w3d 00:38:22, localpref 100
+2.0.0.11/32        *[BGP/170] 3w3d 01:17:17, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.12/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+2.0.0.12/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.13/32        *[BGP/170] 3w3d 00:38:22, localpref 100
+2.0.0.13/32        *[BGP/170] 3w3d 01:17:17, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
-192.168.11.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.11.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-192.168.12.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+192.168.12.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-192.168.13.0/30    *[Direct/0] 3w3d 00:38:44
+192.168.13.0/30    *[Direct/0] 3w3d 01:17:39
                     > via ge-0/2/9.101
-192.168.13.1/32    *[Local/0] 3w3d 00:38:44
+192.168.13.1/32    *[Local/0] 3w3d 01:17:39
                       Local via ge-0/2/9.101
-192.168.14.0/30    *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+192.168.14.0/30    *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 3w0d 04:04:42, localpref 100
+                    [BGP/170] 3w0d 04:43:37, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
-192.168.103.0/24   *[BGP/170] 22:33:20, localpref 100
+192.168.103.0/24   *[BGP/170] 23:12:15, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.104.0/24   *[BGP/170] 3w3d 00:38:22, localpref 100
+192.168.104.0/24   *[BGP/170] 3w3d 01:17:17, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.201.0/24   *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.201.0/24   *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
@@ -1394,7 +1394,7 @@ l3vpn-option_a-101.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-101.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-ff02::2/128        *[INET6/0] 3w3d 00:41:27
+ff02::2/128        *[INET6/0] 3w3d 01:20:22
                       MultiRecv
 
 
@@ -1404,76 +1404,76 @@ ff02::2/128        *[INET6/0] 3w3d 00:41:27
 l3vpn-option_a-102.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:23
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:18
                     > via lo0.102
-1.0.0.14/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.11/32        *[BGP/170] 3w3d 00:38:26, localpref 100
+2.0.0.11/32        *[BGP/170] 3w3d 01:17:21, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.12/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+2.0.0.12/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.13/32        *[BGP/170] 3w3d 00:38:26, localpref 100
+2.0.0.13/32        *[BGP/170] 3w3d 01:17:21, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
-192.168.11.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.11.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-192.168.12.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+192.168.12.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-192.168.13.0/30    *[Direct/0] 3w3d 00:38:44
+192.168.13.0/30    *[Direct/0] 3w3d 01:17:39
                     > via ge-0/2/9.102
-192.168.13.1/32    *[Local/0] 3w3d 00:38:44
+192.168.13.1/32    *[Local/0] 3w3d 01:17:39
                       Local via ge-0/2/9.102
-192.168.14.0/30    *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+192.168.14.0/30    *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 3w0d 04:04:42, localpref 100
+                    [BGP/170] 3w0d 04:43:37, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
-192.168.103.0/24   *[BGP/170] 22:33:20, localpref 100
+192.168.103.0/24   *[BGP/170] 23:12:15, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.104.0/24   *[BGP/170] 3w3d 00:38:26, localpref 100
+192.168.104.0/24   *[BGP/170] 3w3d 01:17:21, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.201.0/24   *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.201.0/24   *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
@@ -1483,7 +1483,7 @@ l3vpn-option_a-102.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-102.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-ff02::2/128        *[INET6/0] 3w3d 00:41:27
+ff02::2/128        *[INET6/0] 3w3d 01:20:22
                       MultiRecv
 
 
@@ -1493,76 +1493,76 @@ ff02::2/128        *[INET6/0] 3w3d 00:41:27
 l3vpn-option_a-103.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:23
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:18
                     > via lo0.103
-1.0.0.14/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.11/32        *[BGP/170] 3w3d 00:38:30, localpref 100
+2.0.0.11/32        *[BGP/170] 3w3d 01:17:25, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.12/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+2.0.0.12/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.13/32        *[BGP/170] 3w3d 00:38:30, localpref 100
+2.0.0.13/32        *[BGP/170] 3w3d 01:17:25, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
-192.168.11.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.11.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-192.168.12.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+192.168.12.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-192.168.13.0/30    *[Direct/0] 3w3d 00:38:44
+192.168.13.0/30    *[Direct/0] 3w3d 01:17:39
                     > via ge-0/2/9.103
-192.168.13.1/32    *[Local/0] 3w3d 00:38:44
+192.168.13.1/32    *[Local/0] 3w3d 01:17:39
                       Local via ge-0/2/9.103
-192.168.14.0/30    *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+192.168.14.0/30    *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 3w0d 04:04:42, localpref 100
+                    [BGP/170] 3w0d 04:43:37, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
-192.168.103.0/24   *[BGP/170] 22:33:20, localpref 100
+192.168.103.0/24   *[BGP/170] 23:12:15, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.104.0/24   *[BGP/170] 3w3d 00:38:30, localpref 100
+192.168.104.0/24   *[BGP/170] 3w3d 01:17:25, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.201.0/24   *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.201.0/24   *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
@@ -1572,7 +1572,7 @@ l3vpn-option_a-103.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-103.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-ff02::2/128        *[INET6/0] 3w3d 00:41:27
+ff02::2/128        *[INET6/0] 3w3d 01:20:22
                       MultiRecv
 
 
@@ -1582,76 +1582,76 @@ ff02::2/128        *[INET6/0] 3w3d 00:41:27
 l3vpn-option_a-104.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:23
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:18
                     > via lo0.104
-1.0.0.14/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.11/32        *[BGP/170] 3w3d 00:38:34, localpref 100
+2.0.0.11/32        *[BGP/170] 3w3d 01:17:29, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.12/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+2.0.0.12/32        *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.13/32        *[BGP/170] 3w3d 00:38:34, localpref 100
+2.0.0.13/32        *[BGP/170] 3w3d 01:17:29, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
-192.168.11.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.11.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-192.168.12.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+192.168.12.0/30    *[BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-192.168.13.0/30    *[Direct/0] 3w3d 00:38:44
+192.168.13.0/30    *[Direct/0] 3w3d 01:17:39
                     > via ge-0/2/9.104
-192.168.13.1/32    *[Local/0] 3w3d 00:38:44
+192.168.13.1/32    *[Local/0] 3w3d 01:17:39
                       Local via ge-0/2/9.104
-192.168.14.0/30    *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+192.168.14.0/30    *[BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 3w0d 04:04:42, localpref 100
+                    [BGP/170] 3w0d 04:43:37, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
-192.168.103.0/24   *[BGP/170] 22:33:20, localpref 100
+192.168.103.0/24   *[BGP/170] 23:12:15, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.104.0/24   *[BGP/170] 3w3d 00:38:34, localpref 100
+192.168.104.0/24   *[BGP/170] 3w3d 01:17:29, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:38, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.201.0/24   *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.201.0/24   *[BGP/170] 01:14:20, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:20, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
@@ -1661,7 +1661,7 @@ l3vpn-option_a-104.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-104.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-ff02::2/128        *[INET6/0] 3w3d 00:41:27
+ff02::2/128        *[INET6/0] 3w3d 01:20:22
                       MultiRecv
 
 
@@ -1671,76 +1671,76 @@ ff02::2/128        *[INET6/0] 3w3d 00:41:27
 l3vpn-option_a-105.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-1.0.0.11/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+1.0.0.11/32        *[BGP/170] 01:14:21, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-1.0.0.12/32        *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+1.0.0.12/32        *[BGP/170] 01:14:21, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-1.0.0.13/32        *[Direct/0] 3w3d 00:41:23
+1.0.0.13/32        *[Direct/0] 3w3d 01:20:19
                     > via lo0.105
-1.0.0.14/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+1.0.0.14/32        *[BGP/170] 01:03:39, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.11/32        *[BGP/170] 3w3d 00:38:38, localpref 100
+2.0.0.11/32        *[BGP/170] 3w3d 01:17:34, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:39, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.12/32        *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+2.0.0.12/32        *[BGP/170] 01:03:39, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-2.0.0.13/32        *[BGP/170] 3w3d 00:38:38, localpref 100
+2.0.0.13/32        *[BGP/170] 3w3d 01:17:34, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
-192.168.11.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.11.0/30    *[BGP/170] 01:14:21, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-192.168.12.0/30    *[BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+192.168.12.0/30    *[BGP/170] 01:14:21, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
-192.168.13.0/30    *[Direct/0] 3w3d 00:38:44
+192.168.13.0/30    *[Direct/0] 3w3d 01:17:40
                     > via ge-0/2/9.105
-192.168.13.1/32    *[Local/0] 3w3d 00:38:44
+192.168.13.1/32    *[Local/0] 3w3d 01:17:40
                       Local via ge-0/2/9.105
-192.168.14.0/30    *[BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+192.168.14.0/30    *[BGP/170] 01:03:39, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 3w0d 04:04:42, localpref 100
+                    [BGP/170] 3w0d 04:43:38, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
-192.168.103.0/24   *[BGP/170] 22:33:20, localpref 100
+192.168.103.0/24   *[BGP/170] 23:12:16, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:39, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.104.0/24   *[BGP/170] 3w3d 00:38:38, localpref 100
+192.168.104.0/24   *[BGP/170] 3w3d 01:17:34, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
-                    [BGP/170] 00:24:43, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:39, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-192.168.201.0/24   *[BGP/170] 00:35:25, localpref 100, from 1.0.0.11
+192.168.201.0/24   *[BGP/170] 01:14:21, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:25, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:21, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
@@ -1750,7 +1750,7 @@ l3vpn-option_a-105.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 
 l3vpn-option_a-105.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
-ff02::2/128        *[INET6/0] 3w3d 00:41:27
+ff02::2/128        *[INET6/0] 3w3d 01:20:23
                       MultiRecv
 
 
@@ -2012,599 +2012,599 @@ bgp.l3vpn.0: 142 destinations, 142 routes (142 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
 10.0.0.1:111:2.0.0.11/32                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322864
 10.0.0.1:111:192.168.103.0/24                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322864
 10.0.0.1:112:2.0.0.11/32                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322880
 10.0.0.1:112:192.168.103.0/24                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322880
 10.0.0.1:113:2.0.0.11/32                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322896
 10.0.0.1:113:192.168.103.0/24                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322896
 10.0.0.1:114:2.0.0.11/32                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322912
 10.0.0.1:114:192.168.103.0/24                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322912
 10.0.0.1:115:2.0.0.11/32                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322928
 10.0.0.1:115:192.168.103.0/24                
-                   *[BGP/170] 02:00:35, localpref 100
+                   *[BGP/170] 02:39:30, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1, Push 322928
 1.0.0.11:4:1.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:1.0.1.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:2.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:2.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:2.0.11.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:2.0.12.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:2.0.13.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:2.0.14.0/24                
-                   *[BGP/170] 00:32:08, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:11:03, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:10.0.1.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:10.0.1.4/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:10.0.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:4:192.168.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:101:1.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:101:192.168.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:101:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:102:1.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:102:192.168.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:102:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:103:1.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:103:192.168.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:103:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:104:1.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:104:192.168.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:104:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:105:1.0.0.11/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:105:192.168.11.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:105:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.12:4:1.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:4:1.0.1.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:4:2.0.11.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:4:2.0.12.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:101:1.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:101:192.168.12.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:101:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:102:1.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:102:192.168.12.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:102:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:103:1.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:103:192.168.12.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:103:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:104:1.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:104:192.168.12.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:104:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:105:1.0.0.12/32                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:105:192.168.12.0/30                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.12:105:192.168.201.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: 64517 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 1.0.0.13:4:2.0.11.0/24                
-                   *[BGP/170] 00:35:28, localpref 100, from 2.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 2.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.13:4:2.0.12.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 2.0.0.12
+                   *[BGP/170] 01:03:41, localpref 100, from 2.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.13:4:2.0.13.0/24                
-                   *[BGP/170] 3w3d 00:37:34, localpref 100, from 2.0.0.13
+                   *[BGP/170] 3w3d 01:16:29, localpref 100, from 2.0.0.13
                       AS path: I, validation-state: unverified
                     > to 10.0.13.2 via ge-0/2/9.4
 1.0.0.13:4:2.0.14.0/24                
-                   *[BGP/170] 00:24:38, localpref 100, from 2.0.0.14
+                   *[BGP/170] 01:03:33, localpref 100, from 2.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.13:101:2.0.0.11/32                
-                   *[BGP/170] 3w3d 00:38:25, localpref 100
+                   *[BGP/170] 3w3d 01:17:20, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
 1.0.0.13:101:2.0.0.13/32                
-                   *[BGP/170] 3w3d 00:38:25, localpref 100
+                   *[BGP/170] 3w3d 01:17:20, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
 1.0.0.13:101:192.168.103.0/24                
-                   *[BGP/170] 22:33:23, localpref 100
+                   *[BGP/170] 23:12:18, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
 1.0.0.13:101:192.168.104.0/24                
-                   *[BGP/170] 3w3d 00:38:25, localpref 100
+                   *[BGP/170] 3w3d 01:17:20, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.101
 1.0.0.13:102:2.0.0.11/32                
-                   *[BGP/170] 3w3d 00:38:29, localpref 100
+                   *[BGP/170] 3w3d 01:17:24, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
 1.0.0.13:102:2.0.0.13/32                
-                   *[BGP/170] 3w3d 00:38:29, localpref 100
+                   *[BGP/170] 3w3d 01:17:24, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
 1.0.0.13:102:192.168.103.0/24                
-                   *[BGP/170] 22:33:23, localpref 100
+                   *[BGP/170] 23:12:18, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
 1.0.0.13:102:192.168.104.0/24                
-                   *[BGP/170] 3w3d 00:38:29, localpref 100
+                   *[BGP/170] 3w3d 01:17:24, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.102
 1.0.0.13:103:2.0.0.11/32                
-                   *[BGP/170] 3w3d 00:38:33, localpref 100
+                   *[BGP/170] 3w3d 01:17:28, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
 1.0.0.13:103:2.0.0.13/32                
-                   *[BGP/170] 3w3d 00:38:33, localpref 100
+                   *[BGP/170] 3w3d 01:17:28, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
 1.0.0.13:103:192.168.103.0/24                
-                   *[BGP/170] 22:33:23, localpref 100
+                   *[BGP/170] 23:12:18, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
 1.0.0.13:103:192.168.104.0/24                
-                   *[BGP/170] 3w3d 00:38:33, localpref 100
+                   *[BGP/170] 3w3d 01:17:28, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.103
 1.0.0.13:104:2.0.0.11/32                
-                   *[BGP/170] 3w3d 00:38:37, localpref 100
+                   *[BGP/170] 3w3d 01:17:32, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
 1.0.0.13:104:2.0.0.13/32                
-                   *[BGP/170] 3w3d 00:38:37, localpref 100
+                   *[BGP/170] 3w3d 01:17:32, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
 1.0.0.13:104:192.168.103.0/24                
-                   *[BGP/170] 22:33:23, localpref 100
+                   *[BGP/170] 23:12:18, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
 1.0.0.13:104:192.168.104.0/24                
-                   *[BGP/170] 3w3d 00:38:37, localpref 100
+                   *[BGP/170] 3w3d 01:17:32, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.104
 1.0.0.13:105:2.0.0.11/32                
-                   *[BGP/170] 3w3d 00:38:41, localpref 100
+                   *[BGP/170] 3w3d 01:17:36, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
 1.0.0.13:105:2.0.0.13/32                
-                   *[BGP/170] 3w3d 00:38:41, localpref 100
+                   *[BGP/170] 3w3d 01:17:36, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
 1.0.0.13:105:192.168.103.0/24                
-                   *[BGP/170] 22:33:23, localpref 100
+                   *[BGP/170] 23:12:18, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
 1.0.0.13:105:192.168.104.0/24                
-                   *[BGP/170] 3w3d 00:38:41, localpref 100
+                   *[BGP/170] 3w3d 01:17:36, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 192.168.13.2 via ge-0/2/9.105
 1.0.0.14:4:1.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:1.0.1.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:2.0.0.12/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:2.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:10.0.1.8/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:10.0.1.12/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:10.0.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:4:192.168.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:1.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:2.0.0.11/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:2.0.0.12/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:192.168.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:192.168.103.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:101:192.168.104.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:1.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:2.0.0.11/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:2.0.0.12/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:192.168.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:192.168.103.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:102:192.168.104.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:1.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:2.0.0.11/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:2.0.0.12/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:192.168.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:192.168.103.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:103:192.168.104.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:1.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:2.0.0.11/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:2.0.0.12/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:192.168.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:192.168.103.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:104:192.168.104.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:1.0.0.14/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:2.0.0.11/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:2.0.0.12/32                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:192.168.14.0/30                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:192.168.103.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1.0.0.14:105:192.168.104.0/24                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
@@ -2617,52 +2617,52 @@ bgp.l2vpn.0: 20 destinations, 20 routes (20 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
 1.0.0.11:401:11:9/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:402:11:9/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:403:11:9/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:404:11:9/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:405:11:9/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:221:11:13/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:222:11:13/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:223:11:13/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:224:11:13/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 1.0.0.11:225:11:13/96                
-                   *[BGP/170] 02:00:37, localpref 100, from 1.0.0.11
+                   *[BGP/170] 02:39:32, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
@@ -2675,488 +2675,488 @@ bgp.rtarget.0: 55 destinations, 122 routes (55 active, 0 holddown, 0 hidden)
 + = Active Route, - = Last Active, * = Both
 
 1610:1610:101/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:102/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:103/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:104/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:105/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:221/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:222/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:223/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:224/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:225/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:321/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:322/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:323/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:324/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:325/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:401/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:402/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:403/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:404/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:1610:405/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:8966:111/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:8966:112/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:8966:113/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:8966:114/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 1610:8966:115/96                
-                   *[BGP/170] 3w3d 00:38:45, localpref 100
+                   *[BGP/170] 3w3d 01:17:40, localpref 100
                       AS path: 1610 I, validation-state: unverified
                     > to 100.0.13.2 via ge-0/2/9.1
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: 1610 I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
 8966:8966:4/96                
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:101/96                
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:102/96                
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:103/96                
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:104/96                
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:105/96                
-                    [BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                    [BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:111/96                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:112/96                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:113/96                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:114/96                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:115/96                
-                   *[BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                   *[BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:221/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:222/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:223/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:224/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:225/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:321/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:322/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:323/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:324/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:325/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.12
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.12
                       AS path: I, validation-state: unverified
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path PCE-INIT-to-hrz-2
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
 8966:8966:401/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:402/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:403/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:404/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:405/96                
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:1001/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:1002/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:1003/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
 8966:8966:1004/96                
-                   *[BGP/170] 00:24:46, localpref 100, from 1.0.0.14
+                   *[BGP/170] 01:03:41, localpref 100, from 1.0.0.14
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
-                    [BGP/170] 00:35:28, localpref 100, from 1.0.0.11
+                    [BGP/170] 01:14:23, localpref 100, from 1.0.0.11
                       AS path: I, validation-state: unverified
                     > to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
@@ -3438,7 +3438,7 @@ Labels advertised: 4
 
 =====  show configuration @ AMS_VPN  =====
 <configuration-text>
-## Last changed: 2020-05-11 12:11:59 GST
+## Last changed: 2020-05-11 14:49:41 GST
 version 16.1R6-S2.3;
 system {
     host-name AMS-VPN;
@@ -3591,7 +3591,7 @@ services {
 }
 interfaces {
     xe-0/0/0 {
-        description "To FRK-ASR9K-IPOP_Ten0/5/0/30";
+        description "To FRK-EMIX-RA_5/0/30";
         mtu 9192;
         unit 0 {
             family inet {
@@ -3604,7 +3604,7 @@ interfaces {
         }
     }
     xe-0/1/0 {
-        description "To MRS-ASR9K-RB_Ten0/5/0/23";
+        description "To MRS-EMIX-RA_6/0/10";
         mtu 9192;
         unit 0 {
             family inet {
