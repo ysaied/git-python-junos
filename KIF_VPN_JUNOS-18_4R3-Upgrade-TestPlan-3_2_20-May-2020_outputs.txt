@@ -1,0 +1,1370 @@
+#####################################################################################
+
+====================  KIF_VPN  Wednesday__20-May-2020__05:39 PM  ====================
+
+=====  show interfaces terse @ KIF_VPN  =====
+
+Interface               Admin Link Proto    Local                 Remote
+lc-0/0/0                up    up
+lc-0/0/0.32769          up    up   vpls    
+pfe-0/0/0               up    up
+pfe-0/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-0/0/0               up    up
+pfh-0/0/0.16383         up    up   inet    
+pfh-0/0/0.16384         up    up   inet    
+xe-0/0/0                up    up
+xe-0/0/0.0              up    up   inet     172.21.249.51/31
+                                   mpls    
+                                   multiservice
+gr-0/0/10               up    up
+ip-0/0/10               up    up
+lt-0/0/10               up    up
+mt-0/0/10               up    up
+pd-0/0/10               up    up
+pe-0/0/10               up    up
+ud-0/0/10               up    up
+ut-0/0/10               up    up
+vt-0/0/10               up    up
+vt-0/0/10.2097152       up    up   inet    
+                                   mpls    
+xe-0/1/0                up    down
+xe-0/1/0.100            up    down inet     172.21.248.194/30
+                                   multiservice
+xe-0/1/0.200            up    down inet     172.21.248.198/30
+                                   multiservice
+xe-0/1/0.500            up    down ccc     
+xe-0/1/0.600            up    down ccc     
+xe-0/1/0.32767          up    down multiservice
+ge-0/2/0                up    down
+ge-0/2/0.16386          up    down
+ge-0/2/1                down  down
+ge-0/2/1.0              up    down inet     172.21.249.102/31
+                                   mpls    
+                                   multiservice
+ge-0/2/2                down  down
+ge-0/2/2.0              up    down inet     172.21.249.104/31
+                                   mpls    
+                                   multiservice
+ge-0/2/3                up    down
+ge-0/2/3.16386          up    down
+ge-0/2/4                up    down
+ge-0/2/4.16386          up    down
+ge-0/2/5                up    down
+ge-0/2/5.16386          up    down
+ge-0/2/6                up    down
+ge-0/2/6.16386          up    down
+ge-0/2/7                up    down
+ge-0/2/7.16386          up    down
+ge-0/2/8                up    down
+ge-0/2/8.16386          up    down
+ge-0/2/9                up    down
+ge-0/2/9.16386          up    down
+ge-0/3/0                up    down
+ge-0/3/0.16386          up    down
+ge-0/3/1                up    up
+ge-0/3/1.4              up    up   inet     10.0.11.1/30    
+                                   multiservice
+ge-0/3/1.5              up    up   inet     192.168.11.1/30 
+                                   multiservice
+ge-0/3/1.231            up    down ccc     
+ge-0/3/1.32767          up    up   multiservice
+ge-0/3/2                up    down
+ge-0/3/2.16386          up    down
+ge-0/3/3                up    down
+ge-0/3/3.32767          up    down multiservice
+ge-0/3/4                up    down
+ge-0/3/4.32767          up    down multiservice
+ge-0/3/5                up    down
+ge-0/3/5.16386          up    down
+ge-0/3/6                up    down
+ge-0/3/6.16386          up    down
+ge-0/3/7                up    down
+ge-0/3/7.16386          up    down
+ge-0/3/8                up    down
+ge-0/3/8.16386          up    down
+ge-0/3/9                up    up
+ge-0/3/9.11             up    up   inet     172.0.11.1/30   
+                                   multiservice
+ge-0/3/9.12             up    up   inet     172.0.12.1/30   
+                                   multiservice
+ge-0/3/9.13             up    up   inet     172.0.13.1/30   
+                                   multiservice
+ge-0/3/9.14             up    up   inet     172.0.14.1/30   
+                                   multiservice
+ge-0/3/9.15             up    up   inet     172.0.15.1/30   
+                                   multiservice
+ge-0/3/9.32767          up    up   multiservice
+lc-2/0/0                up    up
+lc-2/0/0.32769          up    up   vpls    
+pfe-2/0/0               up    up
+pfe-2/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-2/0/0               up    up
+pfh-2/0/0.16383         up    up   inet    
+pfh-2/0/0.16384         up    up   inet    
+xe-2/0/0                up    up
+xe-2/0/0.101            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.102            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.103            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.104            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.105            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.111            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.112            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.113            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.114            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.115            up    up   inet     192.168.11.1/30 
+                                   multiservice
+xe-2/0/0.201            up    up   ccc     
+xe-2/0/0.202            up    up   ccc     
+xe-2/0/0.203            up    up   ccc     
+xe-2/0/0.204            up    up   ccc     
+xe-2/0/0.205            up    up   ccc     
+xe-2/0/0.221            up    up   ccc     
+xe-2/0/0.222            up    up   ccc     
+xe-2/0/0.223            up    up   ccc     
+xe-2/0/0.224            up    up   ccc     
+xe-2/0/0.225            up    up   ccc     
+xe-2/0/0.401            up    up   vpls    
+xe-2/0/0.402            up    up   vpls    
+xe-2/0/0.403            up    up   vpls    
+xe-2/0/0.404            up    up   vpls    
+xe-2/0/0.405            up    up   vpls    
+xe-2/0/0.32767          up    up   multiservice
+lc-2/1/0                up    up
+lc-2/1/0.32769          up    up   vpls    
+pfe-2/1/0               up    up
+pfe-2/1/0.16383         up    up   inet    
+                                   inet6   
+xe-2/1/0                up    up
+xe-2/1/0.32767          up    up   multiservice
+lc-2/2/0                up    up
+lc-2/2/0.32769          up    up   vpls    
+pfe-2/2/0               up    up
+pfe-2/2/0.16383         up    up   inet    
+                                   inet6   
+xe-2/2/0                up    up
+xe-2/2/0.0              up    up   inet     172.21.252.178/30
+                                   mpls    
+                                   multiservice
+lc-2/3/0                up    up
+lc-2/3/0.32769          up    up   vpls    
+pfe-2/3/0               up    up
+pfe-2/3/0.16383         up    up   inet    
+                                   inet6   
+xe-2/3/0                up    up
+xe-2/3/0.32767          up    up   multiservice
+lc-3/0/0                up    up
+lc-3/0/0.32769          up    up   vpls    
+pfe-3/0/0               up    up
+pfe-3/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-3/0/0               up    up
+pfh-3/0/0.16383         up    up   inet    
+pfh-3/0/0.16384         up    up   inet    
+so-3/0/0                up    up
+so-3/0/1                up    up
+so-3/0/2                up    down
+so-3/0/3                up    down
+mams-5/0/0              up    up
+ms-5/0/0                up    up
+ms-5/0/0.0              up    up   inet    
+ms-5/0/0.11             up    up   inet     3.0.11.1/30     
+ms-5/0/0.12             up    up   inet     3.0.12.1/30     
+ms-5/0/0.13             up    up   inet     3.0.13.1/30     
+ms-5/0/0.14             up    up   inet     3.0.14.1/30     
+ms-5/0/0.15             up    up   inet     3.0.15.1/30     
+ms-5/0/0.21             up    up   inet     3.0.21.1/30     
+ms-5/0/0.22             up    up   inet     3.0.22.1/30     
+ms-5/0/0.23             up    up   inet     3.0.23.1/30     
+ms-5/0/0.24             up    up   inet     3.0.24.1/30     
+ms-5/0/0.25             up    up   inet     3.0.25.1/30     
+ms-5/0/0.26             up    up   inet     3.0.26.1/30     
+ms-5/0/0.27             up    up   inet     3.0.27.1/30     
+ms-5/0/0.111            up    up   inet    
+ms-5/0/0.112            up    up   inet    
+ms-5/0/0.113            up    up   inet    
+ms-5/0/0.114            up    up   inet    
+ms-5/0/0.115            up    up   inet    
+ms-5/0/0.121            up    up   inet    
+ms-5/0/0.122            up    up   inet    
+ms-5/0/0.123            up    up   inet    
+ms-5/0/0.124            up    up   inet    
+ms-5/0/0.125            up    up   inet    
+ms-5/0/0.126            up    up   inet    
+ms-5/0/0.127            up    up   inet    
+pc-5/0/0                up    up
+pc-5/0/0.16383          up    up   inet    
+pc-5/0/0.16384          up    up   inet     20.0.0.1            --> 20.0.0.96
+pfe-5/0/0               up    up
+pfe-5/0/0.16383         up    up   inet    
+                                   inet6   
+pfh-5/0/0               up    up
+pfh-5/0/0.16383         up    up   inet    
+pfh-5/0/0.16384         up    up   inet    
+mams-5/1/0              up    up
+ms-5/1/0                up    up
+pc-5/1/0                up    up
+pc-5/1/0.16383          up    up   inet    
+pc-5/1/0.16384          up    up   inet     20.0.0.1            --> 20.0.0.97
+mams-5/2/0              up    up
+ms-5/2/0                up    up
+pc-5/2/0                up    up
+pc-5/2/0.16383          up    up   inet    
+pc-5/2/0.16384          up    up   inet     20.0.0.1            --> 20.0.0.98
+mams-5/3/0              up    up
+ms-5/3/0                up    up
+pc-5/3/0                up    up
+pc-5/3/0.16383          up    up   inet    
+pc-5/3/0.16384          up    up   inet     20.0.0.1            --> 20.0.0.99
+as0                     up    down
+cbp0                    up    up
+demux0                  up    up
+dsc                     up    up
+em0                     up    up
+em0.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::200:ff:fe00:4/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+em1                     up    up
+em1.0                   up    up   inet     10.0.0.4/8      
+                                            128.0.0.1/2     
+                                            128.0.0.4/2     
+                                   inet6    fe80::200:1ff:fe00:4/64
+                                            fec0::a:0:0:4/64
+                                   tnp      0x4             
+esi                     up    up
+fti0                    up    up
+fti1                    up    up
+fti2                    up    up
+fti3                    up    up
+fti4                    up    up
+fti5                    up    up
+fti6                    up    up
+fti7                    up    up
+fxp0                    up    up
+fxp0.0                  up    up   inet     10.117.97.56/24 
+gre                     up    up
+ipip                    up    up
+irb                     up    up
+jsrv                    up    up
+jsrv.1                  up    up   inet     128.0.0.127/2   
+lo0                     up    up
+lo0.0                   up    up   inet     1.0.0.11            --> 0/0
+lo0.4                   up    up   inet     1.0.0.11            --> 0/0
+                                            1.0.1.11            --> 0/0
+lo0.10                  up    up   inet     4.0.10.1            --> 0/0
+                                            4.0.10.2            --> 0/0
+                                            4.0.10.3            --> 0/0
+                                            4.0.10.4            --> 0/0
+                                            4.0.10.5            --> 0/0
+                                            4.0.10.6            --> 0/0
+                                            4.0.10.7            --> 0/0
+                                            4.0.10.8            --> 0/0
+                                            4.0.10.9            --> 0/0
+                                            4.0.10.10           --> 0/0
+lo0.101                 up    up   inet     1.0.0.11            --> 0/0
+lo0.102                 up    up   inet     1.0.0.11            --> 0/0
+lo0.103                 up    up   inet     1.0.0.11            --> 0/0
+lo0.104                 up    up   inet     1.0.0.11            --> 0/0
+lo0.105                 up    up   inet     1.0.0.11            --> 0/0
+lo0.111                 up    up   inet     1.0.0.11            --> 0/0
+lo0.112                 up    up   inet     1.0.0.11            --> 0/0
+lo0.113                 up    up   inet     1.0.0.11            --> 0/0
+lo0.114                 up    up   inet     1.0.0.11            --> 0/0
+lo0.115                 up    up   inet     1.0.0.11            --> 0/0
+lo0.16384               up    up   inet     127.0.0.1           --> 0/0
+lo0.16385               up    up   inet    
+lsi                     up    up
+lsi.0                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.1                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.2                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.3                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.4                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.5                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.6                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.7                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.8                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.9                   up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.10                  up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.11                  up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.12                  up    up   inet    
+                                   iso     
+                                   inet6   
+lsi.1048586             up    up   vpls    
+lsi.1048587             up    up   vpls    
+lsi.1048588             up    up   vpls    
+lsi.1048589             up    up   vpls    
+lsi.1048590             up    up   vpls    
+mtun                    up    up
+pimd                    up    up
+pime                    up    up
+pip0                    up    up
+pp0                     up    up
+rbeb                    up    up
+tap                     up    up
+vtep                    up    up
+
+
+=====  show ospf interface @ KIF_VPN  =====
+
+Interface           State   Area            DR ID           BDR ID          Nbrs
+ge-0/2/1.0          Down    0.0.0.0         0.0.0.0         0.0.0.0            0
+ge-0/2/2.0          Down    0.0.0.0         0.0.0.0         0.0.0.0            0
+lo0.0               DRother 0.0.0.0         0.0.0.0         0.0.0.0            0
+xe-0/0/0.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            1
+xe-2/2/0.0          PtToPt  0.0.0.0         0.0.0.0         0.0.0.0            1
+
+
+=====  show ospf neighbor @ KIF_VPN  =====
+
+Address          Interface              State     ID               Pri  Dead
+172.21.249.50    xe-0/0/0.0             Full      172.21.252.2     128    36
+172.21.252.177   xe-2/2/0.0             Full      172.21.252.1       1    35
+
+
+=====  show ospf database @ KIF_VPN  =====
+
+
+    OSPF database, Area 0.0.0.0
+ Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
+Router  *1.0.0.11         1.0.0.11         0x80001968   719  0x22 0xa66c  84
+Router   1.0.0.12         1.0.0.12         0x80000f28   467  0x22 0x714b  84
+Router   1.0.0.13         1.0.0.13         0x80001acd  1201  0x22 0x3932  96
+Router   1.0.0.14         1.0.0.14         0x80000f07   469  0x22 0xbf71  84
+Router   172.21.249.1     172.21.249.1     0x80000d4b  1164  0x22 0x7e7d 276
+Router   172.21.249.2     172.21.249.2     0x80000b57   938  0x22 0xb1ae 168
+Router   172.21.249.3     172.21.249.3     0x80000b50   275  0x22 0xfc79 252
+Router   172.21.249.4     172.21.249.4     0x800013bb   420  0x22 0x3bf5 192
+Router   172.21.250.21    172.21.250.21    0x8000013b   542  0x22 0x57d4  60
+Router   172.21.252.1     172.21.252.1     0x800001e8  1405  0x22 0xf91a 120
+Router   172.21.252.2     172.21.252.2     0x800086b5   141  0x22 0xacb8 180
+Router   172.21.252.3     172.21.252.3     0x80003807  1431  0x22 0x6b0e  72
+Router   172.21.252.4     172.21.252.4     0x80004d2a  1913  0x22 0x659d  96
+OpaqArea 1.0.0.0          172.21.249.1     0x80000aac  1423  0x20 0x7d85  28
+OpaqArea 1.0.0.0          172.21.249.2     0x80000abf  1179  0x20 0x5b92  28
+OpaqArea 1.0.0.0          172.21.249.3     0x800024bf    26  0x20 0x11c0  28
+OpaqArea 1.0.0.0          172.21.249.4     0x800012a9   419  0x20 0x7780  28
+OpaqArea 1.0.0.0          172.21.252.1     0x800001bb   125  0x20 0x8076  28
+OpaqArea 1.0.0.0          172.21.252.2     0x800055a9   141  0x20 0xab07  28
+OpaqArea 1.0.0.0          172.21.252.3     0x8000375f  1692  0x20 0x9e7a  28
+OpaqArea 1.0.0.0          172.21.252.4     0x80004c0e  1656  0x20 0x64d   28
+OpaqArea*1.0.0.1          1.0.0.11         0x8000171a  2160  0x22 0xde08  28
+OpaqArea 1.0.0.1          1.0.0.12         0x80000e83  1205  0x22 0x2b59  28
+OpaqArea 1.0.0.1          1.0.0.13         0x80001752  1951  0x22 0x7634  28
+OpaqArea 1.0.0.1          1.0.0.14         0x80000c18  1871  0x22 0x10dd  28
+OpaqArea*1.0.0.3          1.0.0.11         0x800000ba  2999  0x22 0x5fc3 136
+OpaqArea 1.0.0.3          1.0.0.12         0x800000b4  2680  0x22 0x613e 136
+OpaqArea 1.0.0.3          1.0.0.13         0x800000b5   451  0x22 0x8886 136
+OpaqArea 1.0.0.3          1.0.0.14         0x800000b5  2571  0x22 0x849f 136
+OpaqArea*1.0.0.4          1.0.0.11         0x8000003e  1440  0x22 0xcc96 136
+OpaqArea 1.0.0.4          1.0.0.12         0x800000b4  1942  0x22 0x218  136
+OpaqArea 1.0.0.6          1.0.0.13         0x800000b8  2645  0x22 0x3cc8 136
+OpaqArea 1.0.0.6          1.0.0.14         0x800000b3  1170  0x22 0xdae5 136
+OpaqArea 1.0.0.6          172.21.252.1     0x80000217  1463  0x20 0xc58a 168
+OpaqArea 1.0.0.9          172.21.252.2     0x8000005e   141  0x20 0xa9b5 168
+OpaqArea 1.0.0.20         172.21.249.3     0x80000394    64  0x20 0xce0a 216
+OpaqArea 1.0.0.21         172.21.249.3     0x80000308   424  0x20 0xf9d6 212
+OpaqArea 1.0.0.35         172.21.249.1     0x80000367   196  0x20 0x328c 212
+OpaqArea 1.0.0.36         172.21.249.1     0x800002e0    16  0x20 0xeaf0 204
+OpaqArea 1.0.0.41         172.21.249.2     0x80000164  1179  0x20 0x40ea 204
+OpaqArea 1.0.0.56         172.21.249.2     0x80000089  1135  0x20 0xee70 204
+OpaqArea 1.0.0.57         172.21.249.2     0x80000089  1315  0x20 0x66f9 204
+OpaqArea 1.0.0.61         172.21.252.2     0x80000320   225  0x20 0x1c24 168
+OpaqArea 1.0.0.70         172.21.249.3     0x8000036e   244  0x20 0x2765 212
+OpaqArea 1.0.0.71         172.21.249.3     0x8000016e   530  0x20 0x8fd7 204
+OpaqArea 1.0.0.72         172.21.249.1     0x8000008b  1096  0x20 0x81e  204
+OpaqArea 1.0.0.72         172.21.249.3     0x8000018f    26  0x20 0xcb75 204
+OpaqArea 1.0.0.73         172.21.249.3     0x80000312   244  0x20 0x32b2 204
+OpaqArea 1.0.0.74         172.21.249.1     0x80000597    16  0x20 0xe353 204
+OpaqArea 1.0.0.75         172.21.249.3     0x8000018b   244  0x20 0xee98 204
+OpaqArea 1.0.0.76         172.21.249.1     0x8000023a  1917  0x20 0x9467 216
+OpaqArea 1.0.0.77         172.21.249.1     0x800001a2  1423  0x20 0xd827 212
+OpaqArea 1.0.0.78         172.21.249.1     0x80000458   196  0x20 0xda6f 204
+OpaqArea 1.0.0.80         172.21.249.3     0x80000042    64  0x20 0xf901 204
+OpaqArea 1.0.0.87         172.21.249.2     0x80000088  1675  0x20 0x53c6 204
+OpaqArea 1.0.0.119        172.21.252.4     0x80000164  1913  0x20 0x3833 168
+OpaqArea 1.0.0.122        172.21.252.1     0x8000009b    23  0x20 0x1078 168
+OpaqArea 1.0.0.124        172.21.252.4     0x80002b4e  1913  0x20 0x196a 168
+OpaqArea 1.0.0.125        172.21.252.3     0x80002b55  1692  0x20 0xb999 168
+OpaqArea 1.0.0.128        172.21.252.1     0x800003b7   203  0x20 0xf701 168
+OpaqArea 1.0.0.153        172.21.252.2     0x80000099    44  0x20 0x2f16 168
+OpaqArea 1.0.0.154        172.21.252.2     0x800003e6    44  0x20 0xf329 168
+OpaqArea 1.0.3.85         172.21.249.4     0x8000008a    62  0x20 0x61e2 204
+OpaqArea 1.0.3.86         172.21.249.4     0x8000008e   242  0x20 0x350e 204
+OpaqArea 1.0.3.92         172.21.249.4     0x8000010d   962  0x20 0x844  204
+OpaqArea 1.0.3.98         172.21.249.4     0x80000036  1142  0x20 0x1669 204
+OpaqArea 1.0.3.101        172.21.249.4     0x8000016d   419  0x20 0x1f28 204
+OpaqArea 1.0.3.102        172.21.249.4     0x8000018d   419  0x20 0x5dc4 204
+OpaqArea 4.0.0.0          172.21.249.1     0x80000ab0  1423  0x20 0x8a73 100
+OpaqArea 4.0.0.0          172.21.249.2     0x80000ac0  1179  0x20 0xd61e  92
+OpaqArea 4.0.0.0          172.21.249.3     0x800024c5    26  0x20 0x9f24  92
+OpaqArea 4.0.0.0          172.21.249.4     0x800012ab   419  0x20 0xbbc2  92
+OpaqArea 4.0.0.0          172.21.252.1     0x800001ba   125  0x20 0xac0a  52
+OpaqArea 4.0.0.0          172.21.252.2     0x800055a7   141  0x20 0xcfa4  52
+OpaqArea 4.0.0.0          172.21.252.3     0x8000375f  1692  0x20 0xb425  52
+OpaqArea 4.0.0.0          172.21.252.4     0x80004c0e  1656  0x20 0x1203  52
+OpaqArea 7.0.0.1          172.21.249.1     0x80000aa5  1423  0x20 0xfb7a  44
+OpaqArea 7.0.0.1          172.21.249.2     0x80000abe  1179  0x20 0xeb6e  44
+OpaqArea 7.0.0.1          172.21.249.3     0x8000298e   275  0x20 0x1157  44
+OpaqArea 7.0.0.1          172.21.249.4     0x800012a8   419  0x20 0x441e  44
+OpaqArea 7.0.0.1          172.21.252.1     0x800001ba   125  0x20 0xf186  44
+OpaqArea 8.0.0.6          172.21.252.1     0x80000130   125  0x20 0xf53c  68
+OpaqArea 8.0.0.9          172.21.252.2     0x8000005e   141  0x20 0xdd07  68
+OpaqArea 8.0.0.20         172.21.249.3     0x8000018b    26  0x20 0x17ab 112
+OpaqArea 8.0.0.21         172.21.249.3     0x8000010a    26  0x20 0x2d42 112
+OpaqArea 8.0.0.35         172.21.249.1     0x8000018d  1423  0x20 0x7ea2 112
+OpaqArea 8.0.0.36         172.21.249.1     0x80000109  1164  0x20 0x6131 112
+OpaqArea 8.0.0.41         172.21.249.2     0x80000164  1179  0x20 0xefc5 112
+OpaqArea 8.0.0.56         172.21.249.2     0x80000085   938  0x20 0xade0 112
+OpaqArea 8.0.0.57         172.21.249.2     0x80000085   938  0x20 0x5c33 112
+OpaqArea 8.0.0.61         172.21.252.2     0x8000024d   141  0x20 0x3a84  68
+OpaqArea 8.0.0.70         172.21.249.3     0x8000018c    26  0x20 0xd71f 112
+OpaqArea 8.0.0.71         172.21.249.3     0x8000016b   530  0x20 0x46da 112
+OpaqArea 8.0.0.72         172.21.249.1     0x80000085  1423  0x20 0x61cd 112
+OpaqArea 8.0.0.72         172.21.249.3     0x8000018f   275  0x20 0xd754 112
+OpaqArea 8.0.0.73         172.21.249.3     0x8000010a    26  0x20 0xc183 112
+OpaqArea 8.0.0.74         172.21.249.1     0x80000235  1423  0x20 0x21bf 112
+OpaqArea 8.0.0.75         172.21.249.3     0x8000010a   275  0x20 0xefd8 112
+OpaqArea 8.0.0.76         172.21.249.1     0x80000189  1423  0x20 0x579e 112
+OpaqArea 8.0.0.77         172.21.249.1     0x80000109  1164  0x20 0xc59d 112
+OpaqArea 8.0.0.78         172.21.249.1     0x8000012e  1917  0x20 0xaec4 112
+OpaqArea 8.0.0.80         172.21.249.3     0x8000002e   530  0x20 0xc955 112
+OpaqArea 8.0.0.87         172.21.249.2     0x80000085  1179  0x20 0xbde5 112
+OpaqArea 8.0.0.119        172.21.252.4     0x80000165  1913  0x20 0xd979  68
+OpaqArea 8.0.0.122        172.21.252.1     0x80000059  1403  0x20 0xc380  68
+OpaqArea 8.0.0.124        172.21.252.4     0x80002b51  1913  0x20 0xac5a  68
+OpaqArea 8.0.0.125        172.21.252.3     0x80002b57  1692  0x20 0x2002  68
+OpaqArea 8.0.0.128        172.21.252.1     0x8000010c  1403  0x20 0xb2f4  68
+OpaqArea 8.0.0.153        172.21.252.2     0x80000059   141  0x20 0x61b6  68
+OpaqArea 8.0.0.154        172.21.252.2     0x8000010b   630  0x20 0x8aa2  68
+OpaqArea 8.0.3.85         172.21.249.4     0x80000085   419  0x20 0x6cee 112
+OpaqArea 8.0.3.86         172.21.249.4     0x80000085   419  0x20 0xd489 112
+OpaqArea 8.0.3.92         172.21.249.4     0x80000107   941  0x20 0x76c0 112
+OpaqArea 8.0.3.98         172.21.249.4     0x8000002f   419  0x20 0x4063 112
+OpaqArea 8.0.3.101        172.21.249.4     0x8000016c   419  0x20 0x80d1 112
+OpaqArea 8.0.3.102        172.21.249.4     0x8000018d   419  0x20 0x79b4 112
+    OSPF AS SCOPE link state database
+ Type       ID               Adv Rtr           Seq      Age  Opt  Cksum  Len 
+Extern   10.66.10.0       172.21.252.2     0x80001ec9   141  0x20 0x3e64  36
+Extern   10.151.14.62     172.21.252.2     0x80001ec9   141  0x20 0xa367  36
+Extern   10.183.120.180   172.21.252.2     0x80001ec9   141  0x20 0xee1b  36
+Extern   10.183.120.181   172.21.252.2     0x80001ec9   141  0x20 0xe424  36
+Extern   10.237.84.130    172.21.252.2     0x80001ec9   141  0x20 0xe742  36
+Extern   10.237.91.138    172.21.252.2     0x80001ec9   141  0x20 0x4ad0  36
+Extern   10.237.91.139    172.21.252.2     0x80001ec9   141  0x20 0x40d9  36
+Extern   10.237.238.229   172.21.252.2     0x80001ec9   141  0x20 0x61ca  36
+Extern   172.21.250.21    172.21.252.2     0x8000005c   141  0x20 0x2290  36
+Extern   194.170.156.0    172.21.252.4     0x800009ed  1656  0x20 0x53bf  36
+
+
+=====  show ted database @ KIF_VPN  =====
+
+TED database: 0 ISIS nodes 13 INET nodes
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.1                  Rtr      14     7      7 OSPF(0.0.0.0)
+    To: 172.21.249.3, Local: 172.21.249.20, Remote: 172.21.249.21
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.22, Remote: 172.21.249.23
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.24, Remote: 172.21.249.25
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.26, Remote: 172.21.249.27
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.2, Local: 172.21.249.16, Remote: 172.21.249.17
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.252.2, Local: 172.21.249.64, Remote: 172.21.249.65
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.252.1, Local: 172.21.250.169, Remote: 172.21.250.168
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.1                  Rtr      22     3      3 OSPF(0.0.0.0)
+    To: 1.0.0.11, Local: 172.21.252.177, Remote: 172.21.252.178
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.250.168, Remote: 172.21.250.169
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.12, Local: 192.168.222.2, Remote: 192.168.222.1
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.2                  Rtr    1132     4      4 OSPF(0.0.0.0)
+    To: 172.21.249.1, Local: 172.21.249.17, Remote: 172.21.249.16
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.252.4, Local: 172.21.252.197, Remote: 172.21.252.198
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.28, Remote: 172.21.249.29
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.30, Remote: 172.21.249.31
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.2                  Rtr      44     3      4 OSPF(0.0.0.0)
+    To: 1.0.0.11, Local: 172.21.249.50, Remote: 172.21.249.51
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.249.65, Remote: 172.21.249.64
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.250.21, Local: 172.21.250.16, Remote: 172.21.250.17
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.12, Local: 192.168.123.1, Remote: 192.168.123.2
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.3                  Rtr      62     8      8 OSPF(0.0.0.0)
+    To: 172.21.249.1, Local: 172.21.249.21, Remote: 172.21.249.20
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.249.23, Remote: 172.21.249.22
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.249.25, Remote: 172.21.249.24
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.1, Local: 172.21.249.27, Remote: 172.21.249.26
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.32, Remote: 172.21.249.33
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.34, Remote: 172.21.249.35
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.14, Local: 172.21.249.46, Remote: 172.21.249.47
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.13, Local: 192.168.155.5, Remote: 192.168.155.6
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.3                  Rtr  174528     1      1 OSPF(0.0.0.0)
+    To: 172.21.252.4, Local: 172.21.252.73, Remote: 172.21.252.74
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.249.4                  Rtr      58     6      6 OSPF(0.0.0.0)
+    To: 172.21.249.3, Local: 172.21.249.33, Remote: 172.21.249.32
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.3, Local: 172.21.249.35, Remote: 172.21.249.34
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.2, Local: 172.21.249.29, Remote: 172.21.249.28
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.249.2, Local: 172.21.249.31, Remote: 172.21.249.30
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.14, Local: 172.21.252.90, Remote: 172.21.252.89
+      Local interface index: 0, Remote interface index: 0
+    To: 1.0.0.13, Local: 172.21.249.48, Remote: 172.21.249.49
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.252.4                  Rtr  174528     2      2 OSPF(0.0.0.0)
+    To: 172.21.249.2, Local: 172.21.252.198, Remote: 172.21.252.197
+      Local interface index: 0, Remote interface index: 0
+    To: 172.21.252.3, Local: 172.21.252.74, Remote: 172.21.252.73
+      Local interface index: 0, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.11                      Rtr    1440     2      2 OSPF(0.0.0.0)
+    To: 172.21.252.2, Local: 172.21.249.51, Remote: 172.21.249.50
+      Local interface index: 394, Remote interface index: 0
+    To: 172.21.252.1, Local: 172.21.252.178, Remote: 172.21.252.177
+      Local interface index: 196626, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.12                      Rtr    1941     2      2 OSPF(0.0.0.0)
+    To: 172.21.252.2, Local: 192.168.123.2, Remote: 192.168.123.1
+      Local interface index: 378, Remote interface index: 0
+    To: 172.21.252.1, Local: 192.168.222.1, Remote: 192.168.222.2
+      Local interface index: 141072, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.13                      Rtr     447     2      2 OSPF(0.0.0.0)
+    To: 172.21.249.3, Local: 192.168.155.6, Remote: 192.168.155.5
+      Local interface index: 362, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.249.49, Remote: 172.21.249.48
+      Local interface index: 361, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+1.0.0.14                      Rtr    1166     2      2 OSPF(0.0.0.0)
+    To: 172.21.249.3, Local: 172.21.249.47, Remote: 172.21.249.46
+      Local interface index: 97, Remote interface index: 0
+    To: 172.21.249.4, Local: 172.21.252.89, Remote: 172.21.252.90
+      Local interface index: 102, Remote interface index: 0
+ID                            Type Age(s) LnkIn LnkOut Protocol
+172.21.250.21                 ---  174533     1      0
+
+
+=====  show route protocol ospf @ KIF_VPN  =====
+
+
+inet.0: 97 destinations, 104 routes (93 active, 0 holddown, 4 hidden)
+@ = Routing Use Only, # = Forwarding Use Only
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.12/32        @[OSPF/10] 00:58:04, metric 70000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+1.0.0.13/32        @[OSPF/10] 00:58:04, metric 79000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+1.0.0.14/32        @[OSPF/10] 03:37:27, metric 79000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+10.66.10.0/32      *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.151.14.62/32    *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.183.120.180/32  *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.183.120.181/32  *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.237.84.130/32   *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.237.91.138/32   *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.237.91.139/32   *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+10.237.238.229/32  *[OSPF/150] 03:37:27, metric 20, tag 0
+                    >  to 172.21.249.50 via xe-0/0/0.0
+33.33.33.33/32     *[OSPF/10] 03:37:27, metric 44001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+44.44.44.44/32     *[OSPF/10] 03:37:27, metric 37001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.21.21/32    *[OSPF/10] 03:37:27, metric 37001
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.248.0/27    *[OSPF/10] 02:50:59, metric 44010
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.1/32    *[OSPF/10] 03:37:27, metric 37001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.2/32    *[OSPF/10] 03:37:27, metric 38001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.3/32    *[OSPF/10] 03:37:27, metric 44001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.4/32    *[OSPF/10] 03:37:27, metric 45001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.7/32    *[OSPF/10] 03:37:27, metric 37001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.16/31   *[OSPF/10] 03:37:27, metric 38000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.20/31   *[OSPF/10] 03:37:27, metric 44000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.22/31   *[OSPF/10] 03:37:27, metric 44000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.24/31   *[OSPF/10] 03:37:27, metric 44000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.249.26/31   *[OSPF/10] 03:37:27, metric 44000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.249.28/31   *[OSPF/10] 03:37:27, metric 45000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.249.30/31   *[OSPF/10] 03:37:27, metric 45000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.249.32/31   *[OSPF/10] 03:37:27, metric 51000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.34/31   *[OSPF/10] 03:37:27, metric 51000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.46/31   *[OSPF/10] 03:37:27, metric 79000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.249.48/31   *[OSPF/10] 03:37:27, metric 80000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.249.64/31   *[OSPF/10] 03:37:27, metric 37000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.249.72/30   *[OSPF/10] 03:37:27, metric 57000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.250.16/31   *[OSPF/10] 03:37:27, metric 37000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.250.21/32   *[OSPF/10] 03:37:27, metric 37001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.250.64/29   *[OSPF/10] 03:37:27, metric 57000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.250.132/30  *[OSPF/10] 03:37:27, metric 37010
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.250.152/29  *[OSPF/10] 03:37:27, metric 38010
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.250.168/31  *[OSPF/10] 03:37:27, metric 37000
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.251.148/30  *[OSPF/10] 03:37:27, metric 37000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.251.161/32  *[OSPF/10] 03:37:27, metric 60001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.251.241/32  *[OSPF/10] 03:37:27, metric 35001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.251.247/32  *[OSPF/10] 03:37:27, metric 38001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.252.1/32    *[OSPF/10] 03:37:27, metric 35001
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.252.2/32    *[OSPF/10] 03:37:27, metric 35001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.252.3/32    *[OSPF/10] 03:37:27, metric 60001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.252.4/32    *[OSPF/10] 03:37:27, metric 58001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.252.11/32   *[OSPF/10] 03:37:27, metric 35001
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.252.12/32   *[OSPF/10] 03:37:27, metric 35001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.252.72/30   *[OSPF/10] 03:37:27, metric 60000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.252.88/30   *[OSPF/10] 03:37:27, metric 80000
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.252.96/30   *[OSPF/10] 03:37:27, metric 60000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.252.196/30  *[OSPF/10] 03:37:27, metric 58000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+172.21.253.0/28    *[OSPF/10] 03:37:27, metric 35001
+                    >  to 172.21.249.50 via xe-0/0/0.0
+172.21.254.56/30   *[OSPF/10] 03:37:27, metric 38010
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+172.21.254.128/30  *[OSPF/10] 03:37:27, metric 53000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+192.168.123.0/30   *[OSPF/10] 03:37:27, metric 70000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+192.168.147.0/24   *[OSPF/10] 00:58:04, metric 79001
+                       to 172.21.249.50 via xe-0/0/0.0
+                    >  to 172.21.252.177 via xe-2/2/0.0
+192.168.155.4/30   *[OSPF/10] 03:37:27, metric 79000
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+192.168.222.0/30   *[OSPF/10] 03:37:27, metric 70000
+                    >  to 172.21.252.177 via xe-2/2/0.0
+194.170.156.0/26   *[OSPF/150] 03:37:27, metric 1, tag 5384
+                    >  to 172.21.249.50 via xe-0/0/0.0
+                       to 172.21.252.177 via xe-2/2/0.0
+224.0.0.5/32       *[OSPF/10] 2d 00:30:10, metric 1
+                       MultiRecv
+
+inet.3: 7 destinations, 14 routes (6 active, 0 holddown, 4 hidden)
+
+l3vpn-cisco-100.inet.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-cisco-200.inet.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-grx.inet.0: 29 destinations, 47 routes (29 active, 0 holddown, 8 hidden)
++ = Active Route, - = Last Active, * = Both
+
+2.0.0.11/32        *[OSPF/10] 2d 00:28:09, metric 1
+                    >  to 10.0.11.2 via ge-0/3/1.4
+2.0.0.12/32        *[OSPF/10] 2d 00:28:09, metric 2
+                    >  to 10.0.11.2 via ge-0/3/1.4
+10.0.1.0/30        *[OSPF/10] 2d 00:28:09, metric 2
+                    >  to 10.0.11.2 via ge-0/3/1.4
+10.0.1.4/30        *[OSPF/10] 2d 00:28:09, metric 2
+                    >  to 10.0.11.2 via ge-0/3/1.4
+224.0.0.5/32       *[OSPF/10] 2d 00:30:10, metric 1
+                       MultiRecv
+
+l3vpn-option_a-101.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-102.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-103.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-104.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-105.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-111.inet.0: 8 destinations, 10 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-112.inet.0: 8 destinations, 10 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-113.inet.0: 8 destinations, 10 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-114.inet.0: 8 destinations, 10 routes (8 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-115.inet.0: 8 destinations, 10 routes (8 active, 0 holddown, 0 hidden)
+
+vr-ipsec-hub.inet.0: 80 destinations, 80 routes (80 active, 0 holddown, 0 hidden)
+
+mpls.0: 52 destinations, 52 routes (52 active, 0 holddown, 0 hidden)
+
+bgp.l3vpn.0: 124 destinations, 124 routes (124 active, 0 holddown, 0 hidden)
+
+inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+inet6.3: 6 destinations, 10 routes (6 active, 0 holddown, 0 hidden)
+
+l3vpn-cisco-100.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-cisco-200.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-grx.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-101.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-102.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-103.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-104.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_a-105.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-111.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-112.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-113.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-114.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+l3vpn-option_c-115.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+vr-ipsec-hub.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
+
+bgp.l2vpn.0: 7 destinations, 7 routes (7 active, 0 holddown, 0 hidden)
+
+l2vpn-cisco-500.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-cisco-600.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-221.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-222.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-223.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-224.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-225.l2vpn.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2circuit.0: 21 destinations, 21 routes (21 active, 0 holddown, 0 hidden)
+
+bgp.rtarget.0: 55 destinations, 122 routes (55 active, 0 holddown, 0 hidden)
+
+lsdist.0: 55 destinations, 55 routes (55 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+NODE { AS:8966 Area:0.0.0.0 IPv4:1.0.0.11 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:1.0.0.12 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:1.0.0.13 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:1.0.0.14 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.252.3 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+NODE { AS:8966 Area:0.0.0.0 IPv4:172.21.252.4 OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.11 }.{ IPv4:172.21.249.51 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:172.21.249.50 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.11 }.{ IPv4:172.21.252.178 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 }.{ IPv4:172.21.252.177 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.12 }.{ IPv4:192.168.123.2 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:192.168.123.1 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.12 }.{ IPv4:192.168.222.1 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 }.{ IPv4:192.168.222.2 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.13 }.{ IPv4:172.21.249.49 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.48 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.13 }.{ IPv4:192.168.155.6 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:192.168.155.5 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.14 }.{ IPv4:172.21.249.47 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.46 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:1.0.0.14 }.{ IPv4:172.21.252.89 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.252.90 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.16 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.249.17 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.20 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.21 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.22 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.23 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.24 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.25 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.26 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.27 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.64 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:172.21.249.65 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.250.169 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 }.{ IPv4:172.21.250.168 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.249.17 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.16 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.249.28 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.29 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.249.30 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.31 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.252.197 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.4 }.{ IPv4:172.21.252.198 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.21 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.20 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.23 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.22 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.25 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.24 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.27 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.26 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.32 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.33 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.34 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.35 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.46 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.14 }.{ IPv4:172.21.249.47 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:192.168.155.5 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.13 }.{ IPv4:192.168.155.6 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.29 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.249.28 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.31 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.249.30 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.33 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.32 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.35 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.3 }.{ IPv4:172.21.249.34 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.249.48 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.13 }.{ IPv4:172.21.249.49 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.249.4 }.{ IPv4:172.21.252.90 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.14 }.{ IPv4:172.21.252.89 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 }.{ IPv4:172.21.250.168 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.250.169 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 }.{ IPv4:172.21.252.177 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.11 }.{ IPv4:172.21.252.178 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.1 }.{ IPv4:192.168.222.2 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.12 }.{ IPv4:192.168.222.1 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:172.21.249.50 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.11 }.{ IPv4:172.21.249.51 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:172.21.249.65 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.1 }.{ IPv4:172.21.249.64 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:172.21.250.16 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.250.21 }.{ IPv4:172.21.250.17 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.2 }.{ IPv4:192.168.123.1 } Remote { AS:8966 Area:0.0.0.0 IPv4:1.0.0.12 }.{ IPv4:192.168.123.2 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.3 }.{ IPv4:172.21.252.73 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.4 }.{ IPv4:172.21.252.74 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.4 }.{ IPv4:172.21.252.74 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.252.3 }.{ IPv4:172.21.252.73 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+LINK { Local { AS:8966 Area:0.0.0.0 IPv4:172.21.252.4 }.{ IPv4:172.21.252.198 } Remote { AS:8966 Area:0.0.0.0 IPv4:172.21.249.2 }.{ IPv4:172.21.252.197 } OSPF:0 }/1536              
+                   *[OSPF/10] 02:13:22
+                       Fictitious
+
+l2vpn-cisco-500.l2id.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-cisco-600.l2id.0: 2 destinations, 2 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-221.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-222.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-223.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-224.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+l2vpn-option_a-225.l2id.0: 2 destinations, 3 routes (2 active, 0 holddown, 0 hidden)
+
+
+=====  show mpls interface @ KIF_VPN  =====
+
+Interface        State       Administrative groups (x: extended)
+xe-2/2/0.0       Up         <none>
+xe-0/0/0.0       Up         <none>
+ge-0/2/1.0       Dn         <none>
+ge-0/2/2.0       Dn         <none>
+
+
+=====  show ldp interface @ KIF_VPN  =====
+
+Interface          Address                          Label space ID   Nbr   Next
+                                                                    count  hello
+lo0.0              1.0.0.11                         1.0.0.11:0        3      0
+xe-2/2/0.0         172.21.252.178                   1.0.0.11:0        1      0
+xe-0/0/0.0         172.21.249.51                    1.0.0.11:0        1      0
+ge-0/2/1.0         172.21.249.102                   1.0.0.11:0        0      0
+ge-0/2/2.0         172.21.249.104                   1.0.0.11:0        0      0
+
+
+=====  show ldp neighbor @ KIF_VPN  =====
+
+Address                             Interface       Label space ID     Hold time
+1.0.0.12                            lo0.0           1.0.0.12:0           43
+1.0.0.13                            lo0.0           1.0.0.13:0           35
+1.0.0.14                            lo0.0           1.0.0.14:0           36
+172.21.252.177                      xe-2/2/0.0      172.21.252.1:0       10
+172.21.249.50                       xe-0/0/0.0      172.21.252.2:0       12
+
+
+=====  show route table inet.3 protocol ldp @ KIF_VPN  =====
+
+
+inet.3: 7 destinations, 14 routes (6 active, 0 holddown, 4 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.12/32         [LDP/9] 00:01:24, metric 70000
+                    >  to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-hrz
+                       to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-hrz
+                       to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-hrz
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-hrz
+1.0.0.13/32         [LDP/9] 00:00:07, metric 79000
+                    >  to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-ams
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-ams
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-ams
+1.0.0.14/32         [LDP/9] 01:17:27, metric 79000
+                    >  to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-lon
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-lon
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-lon
+                       to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-lon
+
+
+=====  show rsvp interface @ KIF_VPN  =====
+
+RSVP interface: 5 active
+                          Active  Subscr- Static      Available   Reserved    Highwater
+Interface          State  resv    iption  BW          BW          BW          mark
+ge-0/2/1.0           Down       0   100%  1000Mbps    1000Mbps    0bps        962.802kbps
+ge-0/2/2.0           Down       0   100%  1000Mbps    1000Mbps    0bps        725.293Mbps
+vt-0/0/10.2097152      Up       0   100%  1000Mbps    1000Mbps    0bps        0bps       
+xe-0/0/0.0             Up       6   100%  10Gbps      9.80381Gbps 196.194Mbps 725.479Mbps
+xe-2/2/0.0             Up       6   100%  10Gbps      10Gbps      820bps      725.288Mbps
+
+
+=====  show rsvp neighbor @ KIF_VPN  =====
+
+RSVP neighbor: 7 learned
+Address            Idle Up/Dn LastChange HelloInt HelloTx/Rx MsgRcvd
+1.0.0.12              0  1/0  2d 0:28:34        9 19391/19391 2
+1.0.0.13              0  1/0  1d 1:18:20        9 19310/19287 2
+172.21.249.1    12:03:38  0/0 2d 0:28:12        9 19388/0    0
+172.21.252.1          0  1/0  2d 0:28:46        9 19644/19644 0
+172.21.252.2          0  1/0  2d 0:28:39        9 20272/20273 0
+172.21.252.177        0  1/0  2d 0:28:55        9 19393/19393 11087
+172.21.249.50         0  1/0  2d 0:28:12        9 19390/19389 10832
+
+
+=====  show rsvp session @ KIF_VPN  =====
+
+Ingress RSVP: 10 sessions
+To              From            State   Rt Style Labelin Labelout LSPname 
+1.0.0.12        1.0.0.11        Up       0  1 SE       -    24015 kif-to-hrz
+1.0.0.12        1.0.0.11        Up       0  1 SE       -    24061 kif-to-hrz
+1.0.0.12        1.0.0.11        Up       0  1 SE       -    24029 Bypass->172.21.249.50->192.168.123.2
+1.0.0.12        1.0.0.11        Up       0  1 SE       -    24068 Bypass->172.21.252.177->192.168.222.1
+1.0.0.13        1.0.0.11        Up       0  1 SE       -    24053 kif-to-ams
+1.0.0.13        1.0.0.11        Up       0  1 SE       -    24071 kif-to-ams
+1.0.0.14        1.0.0.11        Up       0  1 SE       -    24003 kif-to-lon
+1.0.0.14        1.0.0.11        Up       0  1 SE       -    24025 kif-to-lon
+172.21.249.1    1.0.0.11        Up       0  1 SE       -    24000 Bypass->172.21.252.177->172.21.250.169
+172.21.249.1    1.0.0.11        Up       0  1 SE       -    24013 Bypass->172.21.249.50->172.21.249.64
+Total 10 displayed, Up 10, Down 0
+
+Egress RSVP: 12 sessions
+To              From            State   Rt Style Labelin Labelout LSPname 
+1.0.0.11        1.0.0.13        Up       0  1 SE       3        - ams-to-kif
+1.0.0.11        1.0.0.13        Up       0  1 SE       3        - ams-to-kif
+1.0.0.11        1.0.0.14        Up       0  1 SE       3        - lon-to-kif
+1.0.0.11        1.0.0.14        Up       0  1 SE       3        - lon-to-kif
+1.0.0.11        1.0.0.12        Up       0  1 SE       3        - hrz-to-kif
+1.0.0.11        1.0.0.12        Up       0  1 SE       3        - hrz-to-kif
+1.0.0.11        1.0.0.12        Up       0  1 SE       3        - Bypass->192.168.123.1->172.21.249.51
+1.0.0.11        1.0.0.12        Up       0  1 SE       3        - Bypass->192.168.222.2->172.21.252.178
+1.0.0.11        172.21.252.2    Up       0  1 SE       3        - autob_FJN-EMIX-RA_t65069_Te0_0_0_10
+1.0.0.11        172.21.249.1    Up       0  1 SE       3        - autob_SKM-EMIX-RD-ASR9922_t65097_Hu0_0_0_6_172.21.252.1
+1.0.0.11        172.21.252.1    Up       0  1 SE       3        - autob_SKM-EMIX-RA_t65138_Te0_0_0_9
+1.0.0.11        172.21.249.1    Up       0  1 SE       3        - autob_SKM-EMIX-RD-ASR9922_t65144_Hu0_0_0_2_172.21.252.2
+Total 12 displayed, Up 12, Down 0
+
+Transit RSVP: 2 sessions
+To              From            State   Rt Style Labelin Labelout LSPname 
+172.21.249.1    172.21.252.2    Up       0  1 SE  300592    24038 autob_FJN-EMIX-RA_t65074_Hu0_1_0_1
+172.21.249.1    172.21.252.1    Up       0  1 SE  300608    24033 autob_SKM-EMIX-RA_t65165_Hu0_1_0_0
+Total 2 displayed, Up 2, Down 0
+
+
+=====  show route table inet.3 protocol rsvp @ KIF_VPN  =====
+
+
+inet.3: 7 destinations, 14 routes (6 active, 0 holddown, 4 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.12/32        *[RSVP/7/1] 00:01:26, metric 70000
+                    >  to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-hrz
+                       to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-hrz
+                       to 172.21.249.50 via xe-0/0/0.0, label-switched-path Bypass->172.21.252.177->192.168.222.1
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path Bypass->172.21.249.50->192.168.123.2
+1.0.0.13/32        *[RSVP/7/1] 00:00:09, metric 79000
+                    >  to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-ams
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-ams
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path Bypass->172.21.249.50->172.21.249.64
+1.0.0.14/32        *[RSVP/7/1] 01:17:29, metric 79000
+                    >  to 172.21.249.50 via xe-0/0/0.0, label-switched-path kif-to-lon
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path kif-to-lon
+                       to 172.21.252.177 via xe-2/2/0.0, label-switched-path Bypass->172.21.249.50->172.21.249.64
+                       to 172.21.249.50 via xe-0/0/0.0, label-switched-path Bypass->172.21.252.177->172.21.250.169
+
+
+=====  show mpls lsp ingress @ KIF_VPN  =====
+
+Ingress LSP: 3 sessions
+To              From            State Rt P     ActivePath       LSPname
+1.0.0.13        1.0.0.11        Up     0 *     primary          kif-to-ams
+1.0.0.12        1.0.0.11        Up     0 *     primary          kif-to-hrz
+1.0.0.14        1.0.0.11        Up     0 *     primary          kif-to-lon
+Total 3 displayed, Up 3, Down 0
+
+
+=====  show bgp summary @ KIF_VPN  =====
+
+Threading mode: BGP I/O
+Groups: 15 Peers: 31 Down peers: 4
+Table          Tot Paths  Act Paths Suppressed    History Damp State    Pending
+bgp.rtarget.0        
+                      97         55          0          0          0          0
+inet.0               
+                       4          4          0          0          0          0
+bgp.l3vpn.0          
+                     124        124          0          0          0          0
+bgp.l2vpn.0          
+                       7          7          0          0          0          0
+lsdist.0             
+                       0          0          0          0          0          0
+bgp.l3vpn-inet6.0    
+                       0          0          0          0          0          0
+Peer                     AS      InPkt     OutPkt    OutQ   Flaps Last Up/Dwn State|#Active/Received/Accepted/Damped...
+1.0.0.12               8966        335        334       0       1     2:22:13 Establ
+  bgp.l2vpn.0: 0/0/0/0
+  bgp.l3vpn-inet6.0: 0/0/0/0
+  bgp.l3vpn.0: 35/35/35/0
+  bgp.rtarget.0: 5/16/16/0
+  inet.0: 0/0/0/0
+  l2vpn-cisco-500.l2vpn.0: 0/0/0/0
+  l2vpn-cisco-600.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-221.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-222.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-223.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-224.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-225.l2vpn.0: 0/0/0/0
+  l3vpn-grx.inet.0: 3/5/5/0
+  l3vpn-option_a-101.inet.0: 2/3/3/0
+  l3vpn-option_a-102.inet.0: 2/3/3/0
+  l3vpn-option_a-103.inet.0: 2/3/3/0
+  l3vpn-option_a-104.inet.0: 2/3/3/0
+  l3vpn-option_a-105.inet.0: 2/3/3/0
+  l3vpn-option_c-111.inet.0: 2/3/3/0
+  l3vpn-option_c-112.inet.0: 2/3/3/0
+  l3vpn-option_c-113.inet.0: 2/3/3/0
+  l3vpn-option_c-114.inet.0: 2/3/3/0
+  l3vpn-option_c-115.inet.0: 2/3/3/0
+  vpls-option_a-401.l2vpn.0: 0/0/0/0
+  vpls-option_a-402.l2vpn.0: 0/0/0/0
+  vpls-option_a-403.l2vpn.0: 0/0/0/0
+  vpls-option_a-404.l2vpn.0: 0/0/0/0
+  vpls-option_a-405.l2vpn.0: 0/0/0/0
+1.0.0.13               8966        379        360       0       1     2:24:12 Establ
+  bgp.l2vpn.0: 5/5/5/0
+  bgp.l3vpn-inet6.0: 0/0/0/0
+  bgp.l3vpn.0: 51/51/51/0
+  bgp.rtarget.0: 25/41/41/0
+  inet.0: 2/2/2/0
+  l2vpn-cisco-500.l2vpn.0: 0/0/0/0
+  l2vpn-cisco-600.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-221.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-222.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-223.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-224.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-225.l2vpn.0: 1/1/1/0
+  l3vpn-grx.inet.0: 6/11/11/0
+  l3vpn-option_a-101.inet.0: 6/6/6/0
+  l3vpn-option_a-102.inet.0: 6/6/6/0
+  l3vpn-option_a-103.inet.0: 6/6/6/0
+  l3vpn-option_a-104.inet.0: 6/6/6/0
+  l3vpn-option_a-105.inet.0: 6/6/6/0
+  l3vpn-option_c-111.inet.0: 2/2/2/0
+  l3vpn-option_c-112.inet.0: 2/2/2/0
+  l3vpn-option_c-113.inet.0: 2/2/2/0
+  l3vpn-option_c-114.inet.0: 2/2/2/0
+  l3vpn-option_c-115.inet.0: 2/2/2/0
+  vpls-option_a-401.l2vpn.0: 0/0/0/0
+  vpls-option_a-402.l2vpn.0: 0/0/0/0
+  vpls-option_a-403.l2vpn.0: 0/0/0/0
+  vpls-option_a-404.l2vpn.0: 0/0/0/0
+  vpls-option_a-405.l2vpn.0: 0/0/0/0
+1.0.0.14               8966        347        333       0       1     2:23:17 Establ
+  bgp.l2vpn.0: 2/2/2/0
+  bgp.l3vpn-inet6.0: 0/0/0/0
+  bgp.l3vpn.0: 38/38/38/0
+  bgp.rtarget.0: 25/40/40/0
+  inet.0: 2/2/2/0
+  l2vpn-cisco-500.l2vpn.0: 1/1/1/0
+  l2vpn-cisco-600.l2vpn.0: 1/1/1/0
+  l2vpn-option_a-221.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-222.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-223.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-224.l2vpn.0: 0/0/0/0
+  l2vpn-option_a-225.l2vpn.0: 0/0/0/0
+  l3vpn-grx.inet.0: 6/8/8/0
+  l3vpn-option_a-101.inet.0: 3/6/6/0
+  l3vpn-option_a-102.inet.0: 3/6/6/0
+  l3vpn-option_a-103.inet.0: 3/6/6/0
+  l3vpn-option_a-104.inet.0: 3/6/6/0
+  l3vpn-option_a-105.inet.0: 3/6/6/0
+  vpls-option_a-401.l2vpn.0: 0/0/0/0
+  vpls-option_a-402.l2vpn.0: 0/0/0/0
+  vpls-option_a-403.l2vpn.0: 0/0/0/0
+  vpls-option_a-404.l2vpn.0: 0/0/0/0
+  vpls-option_a-405.l2vpn.0: 0/0/0/0
+2.0.0.11               8959       6361       6281       0       0  2d 0:28:18 Establ
+  l3vpn-grx.inet.0: 1/1/1/0
+2.0.0.12               8959       6362       6277       0       0  2d 0:28:16 Establ
+  l3vpn-grx.inet.0: 1/1/1/0
+2.0.0.13               8959       6361       6278       0       0  2d 0:28:17 Establ
+  l3vpn-grx.inet.0: 1/1/1/0
+2.0.0.14               8959       6362       6275       0       0  2d 0:28:15 Establ
+  l3vpn-grx.inet.0: 0/1/1/0
+3.0.11.2                 11       6189       6194       0       0  2d 0:21:35 Establ
+  vr-ipsec-hub.inet.0: 10/10/10/0
+3.0.12.2                 12       6190       6194       0       0  2d 0:21:36 Establ
+  vr-ipsec-hub.inet.0: 10/10/10/0
+3.0.13.2                 13       6189       6193       0       0  2d 0:21:51 Establ
+  vr-ipsec-hub.inet.0: 10/10/10/0
+3.0.14.2                 14       6189       6193       0       0  2d 0:21:47 Establ
+  vr-ipsec-hub.inet.0: 10/10/10/0
+3.0.15.2                 15       6189       6193       0       0  2d 0:21:43 Establ
+  vr-ipsec-hub.inet.0: 10/10/10/0
+192.168.11.2           1101          0          0       0       0  2d 0:30:13 Active
+192.168.11.2          64517       5843       6252       0       0  2d 0:28:59 Establ
+  l3vpn-option_a-101.inet.0: 1/2/2/0
+192.168.11.2          64517       5842       6251       0       0  2d 0:29:00 Establ
+  l3vpn-option_a-102.inet.0: 1/2/2/0
+192.168.11.2          64517       5842       6250       0       0  2d 0:28:59 Establ
+  l3vpn-option_a-103.inet.0: 1/2/2/0
+192.168.11.2          64517       5837       6251       0       0  2d 0:29:00 Establ
+  l3vpn-option_a-104.inet.0: 1/2/2/0
+192.168.11.2          64517       5846       6247       0       0  2d 0:28:59 Establ
+  l3vpn-option_a-105.inet.0: 1/2/2/0
+192.168.11.2          64517       3252       3475       0       0  1d 3:00:11 Establ
+  l3vpn-option_c-111.inet.0: 1/2/2/0
+192.168.11.2          64517       3253       3475       0       0  1d 3:00:11 Establ
+  l3vpn-option_c-112.inet.0: 1/2/2/0
+192.168.11.2          64517       3248       3475       0       0  1d 3:00:10 Establ
+  l3vpn-option_c-113.inet.0: 1/2/2/0
+192.168.11.2          64517       3251       3475       0       0  1d 3:00:09 Establ
+  l3vpn-option_c-114.inet.0: 1/2/2/0
+192.168.11.2          64517       3254       3475       0       0  1d 3:00:09 Establ
+  l3vpn-option_c-115.inet.0: 1/2/2/0
+192.168.147.40         8966          0          0       0       0  2d 0:30:13 Connect
+192.168.147.41         8966          0          0       0       0  2d 0:30:13 Connect
+192.168.147.44         8966          0          0       0       0  2d 0:30:13 Connect
+192.168.147.134        8966       3348       5324       0       1  1d 1:17:44 Establ
+  lsdist.0: 0/0/0/0
+192.168.147.138        8966       3326       5324       0       1  1d 1:17:48 Establ
+  lsdist.0: 0/0/0/0
+192.168.147.139        8966       3320       5324       0       1  1d 1:17:58 Establ
+  lsdist.0: 0/0/0/0
+192.168.147.209        8966       3343       5324       0       1  1d 1:17:59 Establ
+  lsdist.0: 0/0/0/0
+192.168.147.210        8966       3341       5324       0       1  1d 1:17:48 Establ
+  lsdist.0: 0/0/0/0
+
+
+===================================================================================
+
