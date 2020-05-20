@@ -35,7 +35,7 @@ test_3_2_14 = "show route table inet.3 protocol rsvp"
 test_3_2_15 = "show mpls lsp ingress"
 test_3_2_16 = "show bgp summary"
 
-for a in range(1,16):
+for a in range(1,17):
   show_cmd = vars()[("test_3_2_%d" % a)]
   test_3_2.append(show_cmd)
 
@@ -46,7 +46,7 @@ show_all = test_3_2
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
-   file_name = src_node+"_"+"JUNOS-18_4R3-Upgrade-TestPlan-3_2"+today+"_outputs.txt"
+   file_name = src_node+"_"+"JUNOS-18_4R3-Upgrade-TestPlan-3_2_"+today+"_outputs.txt"
    file_output = open(file_name, "w")
    print ("open file for %s" % src_node)
    
@@ -67,12 +67,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
             print ("\t progressing %s" % show)
       except:
          print >> file_output, ("NOT Supported command !!!!")
-   
-### collect show configuration  
-
-   print ("\t progressing show configuration")
-   print >> file_output, ("\n" + "="*5 + " "*2 + "show configuration" + " @ " + src_node + " "*2 + "="*5)      
-   print >> file_output, etree.tostring(dev.rpc.get_config(options={'format':'text', 'inherit':'inherit'}), encoding='unicode', pretty_print=True)
    
    print >> file_output, ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()

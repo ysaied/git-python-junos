@@ -28,7 +28,7 @@ test_3_1_7 = "show system alarms"
 test_3_1_8 = "show version invoke-on all-routing-engines"
 test_3_1_9 = "show chassis routing-engine"
 
-for a in range(1,9):
+for a in range(1,10):
   show_cmd = vars()[("test_3_1_%d" % a)]
   test_3_1.append(show_cmd)
 
@@ -39,7 +39,7 @@ show_all = test_3_1
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
-   file_name = src_node+"_"+"JUNOS-18_4R3-Upgrade-TestPlan3_2"+today+"_outputs.txt"
+   file_name = src_node+"_"+"JUNOS-18_4R3-Upgrade-TestPlan-3_1_"+today+"_outputs.txt"
    file_output = open(file_name, "w")
    print ("open file for %s" % src_node)
    
@@ -60,12 +60,6 @@ for src_node, mgmt_ip in dev_mgmt.items():
             print ("\t progressing %s" % show)
       except:
          print >> file_output, ("NOT Supported command !!!!")
-   
-### collect show configuration  
-
-   print ("\t progressing show configuration")
-   print >> file_output, ("\n" + "="*5 + " "*2 + "show configuration" + " @ " + src_node + " "*2 + "="*5)      
-   print >> file_output, etree.tostring(dev.rpc.get_config(options={'format':'text', 'inherit':'inherit'}), encoding='unicode', pretty_print=True)
    
    print >> file_output, ("\n" + "="*(44+len(src_node)+len(time_now)) + "\n")   
    dev.close()
