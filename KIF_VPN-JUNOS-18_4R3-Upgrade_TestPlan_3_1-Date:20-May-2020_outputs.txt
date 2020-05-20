@@ -1,0 +1,552 @@
+#####################################################################################
+
+====================  KIF_VPN  Wednesday__20-May-2020__05:42 PM  ====================
+
+=====  show chassis hardware @ KIF_VPN  =====
+
+Hardware inventory:
+Item             Version  Part number  Serial number     Description
+Chassis                                JN11632BDAFA      MX960
+Midplane         REV 03   710-013698   ABAB2315          MX960 Backplane
+FPM Board        REV 03   710-014974   XX0758            Front Panel Display
+PDM              Rev 03   740-013110   QCS13505010       Power Distribution Module
+PEM 0            Rev 08   740-013683   QCS1401708V       DC Power Entry Module
+PEM 1            Rev 08   740-013683   QCS1401709K       DC Power Entry Module
+PEM 2            Rev 08   740-013683   QCS1401705N       DC Power Entry Module
+PEM 3            Rev 08   740-013683   QCS140170AW       DC Power Entry Module
+Routing Engine 0 REV 10   740-031116   9009196252        RE-S-1800x4
+Routing Engine 1 REV 10   740-031116   9009198487        RE-S-1800x4
+CB 0             REV 22   750-031391   CACW8236          Enhanced MX SCB
+CB 1             REV 22   750-031391   CACW8020          Enhanced MX SCB
+CB 2             REV 07   710-021523   XZ9599            MX SCB
+FPC 0            REV 25   750-038490   CAFX0860          MPCE Type 1 3D Q
+  CPU            REV 07   711-038484   CAFR1382          MPCE PMB 2G 
+  MIC 0          REV 22   750-028380   CABK0541          3D 2x 10GE XFP
+    PIC 0                 BUILTIN      BUILTIN           1x 10GE XFP
+      Xcvr 0              NON-JNPR     AGA1429NMU3       XFP-10G-LR
+    PIC 1                 BUILTIN      BUILTIN           1x 10GE XFP
+      Xcvr 0     A01  A   NON-JNPR     9X3218A00935      XFP-10G-LR
+  MIC 1          REV 30   750-028392   CADF3583          3D 20x 1GE(LAN) SFP
+    PIC 2                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 0     REV 01   740-016066   PXA04TB           SFP-IR
+      Xcvr 1              NON-JNPR     EC134600540648    SFP-LX10
+      Xcvr 2              NON-JNPR     H6939001969       SFP-LX10
+    PIC 3                 BUILTIN      BUILTIN           10x 1GE(LAN) SFP
+      Xcvr 1     REV 01   740-031850   AC1718SA2MP       SFP-LX10
+      Xcvr 9     REV 01   740-031850   PPF2YN1           SFP-LX10
+  QXM 0          REV 08   711-028408   CAFX5775          MPC QXM
+FPC 2            REV 15   750-021566   XZ9688            DPCE 4x 10GE R
+  CPU            REV 03   710-022351   XZ8451            DPC PMB
+  PIC 0                   BUILTIN      BUILTIN           1x 10GE(LAN/WAN)
+    Xcvr 0       A01  A   NON-JNPR     763012A00863      XFP-10G-LR
+  PIC 1                   BUILTIN      BUILTIN           1x 10GE(LAN/WAN)
+    Xcvr 0                NON-JNPR     ECL144903JY       XFP-10G-LR
+  PIC 2                   BUILTIN      BUILTIN           1x 10GE(LAN/WAN)
+    Xcvr 0       REV 01   740-031833   UKN0MRY           XFP-10G-LR
+  PIC 3                   BUILTIN      BUILTIN           1x 10GE(LAN/WAN)
+    Xcvr 0       q        NON-JNPR     SPC153306QA       XFP-10G-LR
+FPC 3            REV 11   750-038490   CABL9496          MPCE Type 1 3D Q
+  CPU            REV 04   711-038484   CABJ2159          MPCE PMB 2G 
+  MIC 0          REV 18   750-031969   CABH0740          MIC-3D-4OC3OC12-1OC48
+    PIC 0                 BUILTIN      BUILTIN           MIC-3D-4OC3OC12-1OC48
+      Xcvr 0     REV 01   740-016063   PUN196S           SFP-IR
+      Xcvr 1     REV 01   740-016063   PPE2E97           SFP-IR
+  QXM 0          REV 06   711-028408   CABK9265          MPC QXM
+FPC 5            REV 17   750-038768   CAHD0022          MS-MPC
+  CPU                     BUILTIN      BUILTIN           MS-MPC-PMB
+  PIC 0                   BUILTIN      BUILTIN           MS-MPC-PIC
+  PIC 1                   BUILTIN      BUILTIN           MS-MPC-PIC
+  PIC 2                   BUILTIN      BUILTIN           MS-MPC-PIC
+  PIC 3                   BUILTIN      BUILTIN           MS-MPC-PIC
+Fan Tray 0       REV 05   740-014971   VS8393            Fan Tray
+Fan Tray 1       REV 05   740-014971   VS8593            Fan Tray
+
+
+=====  show chassis hardware clei-models @ KIF_VPN  =====
+
+Hardware inventory:
+Item             Version  Part number  CLEI code         FRU model number
+Midplane         REV 03   710-013698                     CHAS-BP-MX960-S
+FPM Board        REV 03   710-014974                     CRAFT-MX960-S
+PEM 0            Rev 08   740-013683                     PWR-MX960-DC-S
+PEM 1            Rev 08   740-013683                     PWR-MX960-DC-S
+PEM 2            Rev 08   740-013683                     PWR-MX960-DC-S
+PEM 3            Rev 08   740-013683                     PWR-MX960-DC-S
+Routing Engine 0 REV 10   740-031116   COUCASYBAA        RE-S-1800X4-16G-S
+Routing Engine 1 REV 10   740-031116   COUCASYBAA        RE-S-1800X4-16G-S
+CB 0             REV 22   750-031391   COUCATGBAA        SCBE-MX-S
+CB 1             REV 22   750-031391   COUCATGBAA        SCBE-MX-S
+CB 2             REV 07   710-021523                     SCB-MX960-S
+FPC 0            REV 25   750-038490   COUIBETBAB        MX-MPC1E-3D-Q
+  MIC 0          REV 22   750-028380   COUIBCPBAA        MIC-3D-2XGE-XFP
+  MIC 1          REV 30   750-028392   COUIBCRBAA        MIC-3D-20GE-SFP
+FPC 2            REV 15   750-021566                     DPCE-R-4XGE-XFP
+FPC 3            REV 11   750-038490   COUIBA3BAB        MX-MPC1E-3D-Q
+  MIC 0          REV 18   750-031969   COUIA8JBAA        MIC-3D-4OC3OC12-1OC48
+FPC 5            REV 17   750-038768   COUIBCVBAA        MS-MPC-128G
+  CPU                     BUILTIN     
+Fan Tray 0       REV 05   740-014971                     FFANTRAY-MX960-S
+Fan Tray 1       REV 05   740-014971                     FFANTRAY-MX960-S
+
+
+=====  show chassis fpc detail @ KIF_VPN  =====
+
+Slot 0 information:
+  State                               Online    
+  Temperature                      47 degrees C / 116 degrees F
+  Total CPU DRAM                 2048 MB
+  Total RLDRAM                    403 MB
+  Total DDR DRAM                 1572 MB
+  FIPS Capable                        False 
+  FIPS Mode                           False 
+  Start time                          2020-05-18 17:10:01 GST
+  Uptime                              2 days, 32 minutes, 42 seconds
+  Max power consumption            227 Watts
+Slot 2 information:
+  State                               Online    
+  Temperature                      38 degrees C / 100 degrees F
+  Total CPU DRAM                 1024 MB
+  Total RLDRAM                    256 MB
+  Total DDR DRAM                 4096 MB
+  FIPS Capable                        False 
+  FIPS Mode                           False 
+  Start time                          2020-05-18 17:10:03 GST
+  Uptime                              2 days, 32 minutes, 40 seconds
+  Max power consumption            310 Watts
+Slot 3 information:
+  State                               Online    
+  Temperature                      39 degrees C / 102 degrees F
+  Total CPU DRAM                 2048 MB
+  Total RLDRAM                    403 MB
+  Total DDR DRAM                 1572 MB
+  FIPS Capable                        False 
+  FIPS Mode                           False 
+  Start time                          2020-05-18 17:10:21 GST
+  Uptime                              2 days, 32 minutes, 22 seconds
+  Max power consumption            227 Watts
+Slot 5 information:
+  State                               Online    
+  Temperature                      57 degrees C / 134 degrees F
+  Total CPU DRAM                 1024 MB
+  Total RLDRAM                    259 MB
+  Total DDR DRAM                 4864 MB
+  FIPS Capable                        False 
+  FIPS Mode                           False 
+  Start time                          2020-05-18 17:10:15 GST
+  Uptime                              2 days, 32 minutes, 28 seconds
+  Max power consumption            585 Watts
+
+
+=====  show chassis fpc errors @ KIF_VPN  =====
+
+FPC Scope    Category   Level Occurred Cleared Threshold Action-Taken Action
+  0 board    functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+    pfe      functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+                        Pfe-State: pfe-0 -ENABLED | 
+  2 board    functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+    pfe      functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+  3 board    functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+    pfe      functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+                        Pfe-State: pfe-0 -ENABLED | 
+  5 board    functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       GET STATE|CM ALARM|
+                        Fatal      0        0       1         0       RESET 
+    pfe      functional Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             memory     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             io         Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             storage    Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             switch     Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+             processing Minor      0        0       1         0       LOG|CM ALARM|
+                        Major      0        0       1         0       CM ALARM|DISABLE PFE
+                        Fatal      0        0       1         0       RESET 
+                        Pfe-State: pfe-0 -ENABLED | 
+
+
+=====  show chassis fpc pic-status @ KIF_VPN  =====
+
+Slot 0   Online       MPCE Type 1 3D Q                              
+  PIC 0  Online       1x 10GE XFP
+  PIC 1  Online       1x 10GE XFP
+  PIC 2  Online       10x 1GE(LAN) SFP
+  PIC 3  Online       10x 1GE(LAN) SFP
+Slot 2   Online       DPCE 4x 10GE R                                
+  PIC 0  Online       1x 10GE(LAN/WAN)
+  PIC 1  Online       1x 10GE(LAN/WAN)
+  PIC 2  Online       1x 10GE(LAN/WAN)
+  PIC 3  Online       1x 10GE(LAN/WAN)
+Slot 3   Online       MPCE Type 1 3D Q                              
+  PIC 0  Online       MIC-3D-4OC3OC12-1OC48
+Slot 5   Online       MS-MPC                                        
+  PIC 0  Online       MS-MPC-PIC
+  PIC 1  Online       MS-MPC-PIC
+  PIC 2  Online       MS-MPC-PIC
+  PIC 3  Online       MS-MPC-PIC
+
+
+=====  show chassis alarms @ KIF_VPN  =====
+
+8 alarms currently active
+Alarm time               Class  Description
+2020-05-18 17:10:51 GST  Minor  Require a Fan Tray upgrade
+2020-05-18 17:09:46 GST  Major  CB fabrics are of mixed types
+2020-05-18 17:09:46 GST  Minor  CB 2 Fabric Chip 0 Not Online
+2020-05-18 17:09:46 GST  Minor  CB 2 Fabric Chip 1 Not Online
+2020-05-18 17:09:46 GST  Major  PEM 2 Not OK
+2020-05-18 17:09:46 GST  Major  PEM 2 Input Failure
+2020-05-18 17:09:46 GST  Major  PEM 3 Not OK
+2020-05-18 17:09:46 GST  Major  PEM 3 Input Failure
+
+
+=====  show system alarms @ KIF_VPN  =====
+
+8 alarms currently active
+Alarm time               Class  Description
+2020-05-18 17:10:51 GST  Minor  Require a Fan Tray upgrade
+2020-05-18 17:09:46 GST  Major  CB fabrics are of mixed types
+2020-05-18 17:09:46 GST  Minor  CB 2 Fabric Chip 0 Not Online
+2020-05-18 17:09:46 GST  Minor  CB 2 Fabric Chip 1 Not Online
+2020-05-18 17:09:46 GST  Major  PEM 2 Not OK
+2020-05-18 17:09:46 GST  Major  PEM 2 Input Failure
+2020-05-18 17:09:46 GST  Major  PEM 3 Not OK
+2020-05-18 17:09:46 GST  Major  PEM 3 Input Failure
+
+
+=====  show version invoke-on all-routing-engines @ KIF_VPN  =====
+
+re0:
+--------------------------------------------------------------------------
+Hostname: KIF-VPN
+Model: mx960
+Junos: 18.4R3.3
+JUNOS OS Kernel 64-bit  [20191211.fa5e90e_builder_stable_11]
+JUNOS OS libs [20191211.fa5e90e_builder_stable_11]
+JUNOS OS runtime [20191211.fa5e90e_builder_stable_11]
+JUNOS OS time zone information [20191211.fa5e90e_builder_stable_11]
+JUNOS network stack and utilities [20191221.040256_builder_junos_184_r3]
+JUNOS libs [20191221.040256_builder_junos_184_r3]
+JUNOS OS libs compat32 [20191211.fa5e90e_builder_stable_11]
+JUNOS OS 32-bit compatibility [20191211.fa5e90e_builder_stable_11]
+JUNOS libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS runtime [20191221.040256_builder_junos_184_r3]
+JUNOS sflow mx [20191221.040256_builder_junos_184_r3]
+JUNOS py extensions [20191221.040256_builder_junos_184_r3]
+JUNOS py base [20191221.040256_builder_junos_184_r3]
+JUNOS OS crypto [20191211.fa5e90e_builder_stable_11]
+JUNOS na telemetry [18.4R3.3]
+JUNOS Security Intelligence [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS mx runtime [20191221.040256_builder_junos_184_r3]
+JUNOS common platform support [20191221.040256_builder_junos_184_r3]
+JUNOS Openconfig [18.4R3.3]
+JUNOS mtx network modules [20191220.185702_builder_junos_184_r3]
+JUNOS modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs [20191221.040256_builder_junos_184_r3]
+JUNOS SQL Sync Daemon [20191221.040256_builder_junos_184_r3]
+JUNOS mtx Data Plane Crypto Support [20191221.040256_builder_junos_184_r3]
+JUNOS daemons [20191221.040256_builder_junos_184_r3]
+JUNOS mx daemons [20191221.040256_builder_junos_184_r3]
+JUNOS Services URL Filter package [20191221.040256_builder_junos_184_r3]
+JUNOS Services TLB Service PIC package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Telemetry [20191221.040256_builder_junos_184_r3]
+JUNOS Services TCP-LOG [20191221.040256_builder_junos_184_r3]
+JUNOS Services SSL [20191221.040256_builder_junos_184_r3]
+JUNOS Services SOFTWIRE [20191221.040256_builder_junos_184_r3]
+JUNOS Services Stateful Firewall [20191221.040256_builder_junos_184_r3]
+JUNOS Services RTCOM [20191221.040256_builder_junos_184_r3]
+JUNOS Services RPM [20191221.040256_builder_junos_184_r3]
+JUNOS Services PCEF package [20191221.040256_builder_junos_184_r3]
+JUNOS Services NAT [20191221.040256_builder_junos_184_r3]
+JUNOS Services Mobile Subscriber Service Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services MobileNext Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Logging Report Framework package [20191221.040256_builder_junos_184_r3]
+JUNOS Services LL-PDF Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Jflow Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Deep Packet Inspection package [20191221.040256_builder_junos_184_r3]
+JUNOS Services IPSec [20191221.040256_builder_junos_184_r3]
+JUNOS Services IDS [20191221.040256_builder_junos_184_r3]
+JUNOS IDP Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services HTTP Content Management package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Flowd MS-MPC Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Crypto [20191221.040256_builder_junos_184_r3]
+JUNOS Services Captive Portal and Content Delivery Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services COS [20191221.040256_builder_junos_184_r3]
+JUNOS AppId Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services Application Level Gateways [20191221.040256_builder_junos_184_r3]
+JUNOS Services AACL Container package [20191221.040256_builder_junos_184_r3]
+JUNOS SDN Software Suite [20191221.040256_builder_junos_184_r3]
+JUNOS Extension Toolkit [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX/EX92XX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (M/T Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS J-Insight [20191221.040256_builder_junos_184_r3]
+JUNOS jfirmware [20191221.040256_builder_junos_184_r3]
+JUNOS Online Documentation [20191221.040256_builder_junos_184_r3]
+JUNOS jail runtime [20191211.fa5e90e_builder_stable_11]
+
+re1:
+--------------------------------------------------------------------------
+Hostname: KIF-VPN
+Model: mx960
+Junos: 18.4R3.3
+JUNOS OS Kernel 64-bit  [20191211.fa5e90e_builder_stable_11]
+JUNOS OS libs compat32 [20191211.fa5e90e_builder_stable_11]
+JUNOS OS 32-bit compatibility [20191211.fa5e90e_builder_stable_11]
+JUNOS OS time zone information [20191211.fa5e90e_builder_stable_11]
+JUNOS OS libs [20191211.fa5e90e_builder_stable_11]
+JUNOS OS runtime [20191211.fa5e90e_builder_stable_11]
+JUNOS network stack and utilities [20191221.040256_builder_junos_184_r3]
+JUNOS libs [20191221.040256_builder_junos_184_r3]
+JUNOS libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS runtime [20191221.040256_builder_junos_184_r3]
+JUNOS sflow mx [20191221.040256_builder_junos_184_r3]
+JUNOS py extensions [20191221.040256_builder_junos_184_r3]
+JUNOS py base [20191221.040256_builder_junos_184_r3]
+JUNOS OS crypto [20191211.fa5e90e_builder_stable_11]
+JUNOS na telemetry [18.4R3.3]
+JUNOS Security Intelligence [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs compat32 [20191221.040256_builder_junos_184_r3]
+JUNOS mx runtime [20191221.040256_builder_junos_184_r3]
+JUNOS common platform support [20191221.040256_builder_junos_184_r3]
+JUNOS Openconfig [18.4R3.3]
+JUNOS mtx network modules [20191220.185702_builder_junos_184_r3]
+JUNOS modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx modules [20191221.040256_builder_junos_184_r3]
+JUNOS mx libs [20191221.040256_builder_junos_184_r3]
+JUNOS SQL Sync Daemon [20191221.040256_builder_junos_184_r3]
+JUNOS mtx Data Plane Crypto Support [20191221.040256_builder_junos_184_r3]
+JUNOS daemons [20191221.040256_builder_junos_184_r3]
+JUNOS mx daemons [20191221.040256_builder_junos_184_r3]
+JUNOS -MX appidd application-identification daemon [20191221.040256_builder_junos_184_r3]
+JUNOS Services URL Filter package [20191221.040256_builder_junos_184_r3]
+JUNOS Services TLB Service PIC package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Telemetry [20191221.040256_builder_junos_184_r3]
+JUNOS Services TCP-LOG [20191221.040256_builder_junos_184_r3]
+JUNOS Services SSL [20191221.040256_builder_junos_184_r3]
+JUNOS Services SOFTWIRE [20191221.040256_builder_junos_184_r3]
+JUNOS Services Stateful Firewall [20191221.040256_builder_junos_184_r3]
+JUNOS Services RTCOM [20191221.040256_builder_junos_184_r3]
+JUNOS Services RPM [20191221.040256_builder_junos_184_r3]
+JUNOS Services PCEF package [20191221.040256_builder_junos_184_r3]
+JUNOS Services NAT [20191221.040256_builder_junos_184_r3]
+JUNOS Services Mobile Subscriber Service Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services MobileNext Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Logging Report Framework package [20191221.040256_builder_junos_184_r3]
+JUNOS Services LL-PDF Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Jflow Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Deep Packet Inspection package [20191221.040256_builder_junos_184_r3]
+JUNOS Services IPSec [20191221.040256_builder_junos_184_r3]
+JUNOS Services IDS [20191221.040256_builder_junos_184_r3]
+JUNOS IDP Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services HTTP Content Management package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Flowd MS-MPC Software package [20191221.040256_builder_junos_184_r3]
+JUNOS Services Crypto [20191221.040256_builder_junos_184_r3]
+JUNOS Services Captive Portal and Content Delivery Container package [20191221.040256_builder_junos_184_r3]
+JUNOS Services COS [20191221.040256_builder_junos_184_r3]
+JUNOS AppId Services [20191221.040256_builder_junos_184_r3]
+JUNOS Services Application Level Gateways [20191221.040256_builder_junos_184_r3]
+JUNOS Services AACL Container package [20191221.040256_builder_junos_184_r3]
+JUNOS SDN Software Suite [20191221.040256_builder_junos_184_r3]
+JUNOS Extension Toolkit [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX/EX92XX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (M/T Common) [20191221.040256_builder_junos_184_r3]
+JUNOS Packet Forwarding Engine Support (MX Common) [20191221.040256_builder_junos_184_r3]
+JUNOS J-Insight [20191221.040256_builder_junos_184_r3]
+JUNOS jfirmware [20191221.040256_builder_junos_184_r3]
+JUNOS Online Documentation [20191221.040256_builder_junos_184_r3]
+JUNOS jail runtime [20191211.fa5e90e_builder_stable_11]
+
+
+=====  show chassis routing-engine @ KIF_VPN  =====
+
+Routing Engine status:
+  Slot 0:
+    Current state                  Master
+    Election priority              Master
+    Temperature                 43 degrees C / 109 degrees F
+    CPU temperature             37 degrees C / 98 degrees F
+    DRAM                      16321 MB (16384 MB installed)
+    Memory utilization           8 percent
+    5 sec CPU utilization:
+      User                       5 percent
+      Background                 0 percent
+      Kernel                     3 percent
+      Interrupt                  0 percent
+      Idle                      92 percent
+    1 min CPU utilization:
+      User                       3 percent
+      Background                 0 percent
+      Kernel                     3 percent
+      Interrupt                  0 percent
+      Idle                      95 percent
+    5 min CPU utilization:
+      User                       2 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      95 percent
+    15 min CPU utilization:
+      User                       2 percent
+      Background                 0 percent
+      Kernel                     2 percent
+      Interrupt                  0 percent
+      Idle                      96 percent
+    Model                          RE-S-1800x4
+    Serial ID                      9009196252
+    Start time                     2020-05-18 17:02:47 GST
+    Uptime                         2 days, 39 minutes, 56 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.27       0.32       0.27
+Routing Engine status:
+  Slot 1:
+    Current state                  Backup
+    Election priority              Backup
+    Temperature                 41 degrees C / 105 degrees F
+    CPU temperature             37 degrees C / 98 degrees F
+    DRAM                      16321 MB (16384 MB installed)
+    Memory utilization           7 percent
+    5 sec CPU utilization:
+      User                       0 percent
+      Background                 0 percent
+      Kernel                     0 percent
+      Interrupt                  0 percent
+      Idle                     100 percent
+    Model                          RE-S-1800x4
+    Serial ID                      9009198487
+    Start time                     2020-05-18 16:53:17 GST
+    Uptime                         2 days, 49 minutes, 20 seconds
+    Last reboot reason             Router rebooted after a normal shutdown.
+    Load averages:                 1 minute   5 minute  15 minute
+                                       0.10       0.18       0.16
+
+
+===================================================================================
+
