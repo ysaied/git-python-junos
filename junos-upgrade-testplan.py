@@ -29,7 +29,7 @@ test_3_1_7 = "show system alarms"
 test_3_1_8 = "show version invoke-on all-routing-engines"
 test_3_1_9 = "show chassis routing-engine"
 
-for a range(1,9):
+for a in range(1,9):
   show_cmd = vars()[("test_3_1_%d" % a)]
   test_3_1.append(show_cmd)
 
@@ -51,7 +51,7 @@ test_3_2_14 = "show route table inet.3 protocol rsvp"
 test_3_2_15 = "show mpls lsp ingress"
 test_3_2_16 = "show bgp summary"
 
-for a range(1,16):
+for a in range(1,16):
   show_cmd = vars()[("test_3_2_%d" % a)]
   test_3_2.append(show_cmd)
 

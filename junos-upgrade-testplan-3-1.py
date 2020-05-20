@@ -28,7 +28,7 @@ test_3_1_7 = "show system alarms"
 test_3_1_8 = "show version invoke-on all-routing-engines"
 test_3_1_9 = "show chassis routing-engine"
 
-for a range(1,9):
+for a in range(1,9):
   show_cmd = vars()[("test_3_1_%d" % a)]
   test_3_1.append(show_cmd)
 
