@@ -20,17 +20,17 @@ test_3_6_3 = "show services ipsec-vpn ipsec statistics"
 
 
 for a in range(1,4):
-  show_cmd = vars()[("test_3_4_%d" % a)]
-  test_3_4.append(show_cmd)
+  show_cmd = vars()[("test_3_6_%d" % a)]
+  test_3_6.append(show_cmd)
 
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 today = datetime.now().strftime("%d-%h-%Y")
 
-show_all = test_3_4
+show_all = test_3_6
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
-   file_name = src_node+"-"+"JUNOS-18_4R3-Upgrade_TestPlan_3_4-Date:"+today+"_outputs.txt"
+   file_name = src_node+"-"+"JUNOS-18_4R3-Upgrade_TestPlan_3_6-Date:"+today+"_outputs.txt"
    file_output = open(file_name, "w")
    print ("open file for %s" % src_node)
    
