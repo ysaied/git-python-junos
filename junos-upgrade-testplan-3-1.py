@@ -37,11 +37,10 @@ today = datetime.now().strftime("%d-%h-%Y")
 
 show_all = test_3_1
 
-#file_output = open("junos-output.txt", "w")
-
 for src_node, mgmt_ip in dev_mgmt.items():
-   
-   file_output = open(src_node+"_"+today+"_outputs.txt", "w")
+      
+   file_name = src_node+"_"+"JUNOS-18_4R3-Upgrade-TestPlan"+today+"_outputs.txt"
+   file_output = open(file_name, "w")
    print ("open file for %s" % src_node)
    
    dev = Device(host= mgmt_ip, user= login_username)
