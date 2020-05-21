@@ -1,16 +1,16 @@
-#####################################################################################
+####################################################################################
 
-====================  KIF_VPN  Wednesday__20-May-2020__10:28 PM  ====================
+====================  KIF_VPN  Thursday__21-May-2020__12:28 PM  ====================
 
 =====  show services ipsec-vpn ike security-associations @ KIF_VPN  =====
 
 Remote Address  State         Initiator cookie  Responder cookie  Exchange type
-192.168.147.204 Not matured   8612f69d9bfd2881  952874b7275c17f8  Main         
+192.168.147.212 Not matured   b12966f546744e26  0000000000000000  Main         
+192.168.147.72  Matured       525dd1036be1d5a8  646a268df0aacf88  Main         
 192.168.147.69  Matured       744940f366eeb969  e3afe4be338dc842  Main         
-192.168.147.213 Not matured   0da0a435ba3b7e48  0000000000000000  Main         
-192.168.147.72  Not matured   3e41545fa87312ff  0000000000000000  Main         
-192.168.147.212 Not matured   20cebd2eda1f8015  0000000000000000  Main         
+192.168.147.204 Matured       0f3ece6016573ad7  1f8c532466346762  Main         
 192.168.147.211 Matured       8567c0a5e69acc09  2ed9d520f82a182e  Main         
+192.168.147.213 Not matured   e1bb01443a95a212  0000000000000000  Main         
 192.168.147.74  Matured       d7f2fdb3b9fbec83  e45e9e54818c266a  Main         
 172.0.11.2      Matured       162cd0a252eaa718  d0d13bd1d99c13dc  Main         
 172.0.12.2      Matured       7810b6b85f97c22a  a7b8028a1b477aad  Main         
@@ -29,10 +29,10 @@ Service set: ipsec-11, IKE Routing-instance: vr-ipsec-hub
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   1329872736  0           tunnel     dynamic  ESP       
-    outbound  1711210520  0           tunnel     dynamic  ESP       
-    inbound   810874642   0           tunnel     dynamic  ESP       
-    outbound  531433471   0           tunnel     dynamic  ESP       
+    inbound   3472787990  0           tunnel     dynamic  ESP       
+    outbound  471651416   0           tunnel     dynamic  ESP       
+    inbound   4084978972  0           tunnel     dynamic  ESP       
+    outbound  1873043243  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-12, IKE Routing-instance: vr-ipsec-hub
 
@@ -42,10 +42,10 @@ Service set: ipsec-12, IKE Routing-instance: vr-ipsec-hub
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   2038249026  0           tunnel     dynamic  ESP       
-    outbound  2728375696  0           tunnel     dynamic  ESP       
-    inbound   1481105548  0           tunnel     dynamic  ESP       
-    outbound  427754775   0           tunnel     dynamic  ESP       
+    inbound   1708280191  0           tunnel     dynamic  ESP       
+    outbound  448093611   0           tunnel     dynamic  ESP       
+    inbound   1528709465  0           tunnel     dynamic  ESP       
+    outbound  4029200343  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-13, IKE Routing-instance: vr-ipsec-hub
 
@@ -55,10 +55,8 @@ Service set: ipsec-13, IKE Routing-instance: vr-ipsec-hub
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   73636901    0           tunnel     dynamic  ESP       
-    outbound  1184313156  0           tunnel     dynamic  ESP       
-    inbound   4198708154  0           tunnel     dynamic  ESP       
-    outbound  2609341366  0           tunnel     dynamic  ESP       
+    inbound   43484436    0           tunnel     dynamic  ESP       
+    outbound  4151266576  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-14, IKE Routing-instance: vr-ipsec-hub
 
@@ -68,8 +66,8 @@ Service set: ipsec-14, IKE Routing-instance: vr-ipsec-hub
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   28299916    0           tunnel     dynamic  ESP       
-    outbound  1072131600  0           tunnel     dynamic  ESP       
+    inbound   4066784427  0           tunnel     dynamic  ESP       
+    outbound  454794053   0           tunnel     dynamic  ESP       
 
 Service set: ipsec-15, IKE Routing-instance: vr-ipsec-hub
 
@@ -79,10 +77,10 @@ Service set: ipsec-15, IKE Routing-instance: vr-ipsec-hub
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   3256056654  0           tunnel     dynamic  ESP       
-    outbound  723879404   0           tunnel     dynamic  ESP       
-    inbound   273826790   0           tunnel     dynamic  ESP       
-    outbound  3671152909  0           tunnel     dynamic  ESP       
+    inbound   522873901   0           tunnel     dynamic  ESP       
+    outbound  3925918663  0           tunnel     dynamic  ESP       
+    inbound   910879331   0           tunnel     dynamic  ESP       
+    outbound  1486701484  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-21, IKE Routing-instance: default
 
@@ -91,8 +89,9 @@ Service set: ipsec-21, IKE Routing-instance: default
   IPSec inside interface: ms-5/0/0.21, Tunnel MTU: 1500
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
-  
-  --- No IPSec SA information available ---
+    Direction SPI         AUX-SPI     Mode       Type     Protocol
+    inbound   4104656117  0           tunnel     dynamic  ESP       
+    outbound  2897224674  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-22, IKE Routing-instance: default
 
@@ -102,8 +101,10 @@ Service set: ipsec-22, IKE Routing-instance: default
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   2270666539  0           tunnel     dynamic  ESP       
-    outbound  2659144974  0           tunnel     dynamic  ESP       
+    inbound   1635640927  0           tunnel     dynamic  ESP       
+    outbound  3583885125  0           tunnel     dynamic  ESP       
+    inbound   3222222333  0           tunnel     dynamic  ESP       
+    outbound  3561665297  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-23, IKE Routing-instance: default
 
@@ -133,10 +134,10 @@ Service set: ipsec-25, IKE Routing-instance: default
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   534678329   0           tunnel     dynamic  ESP       
-    outbound  3424918118  0           tunnel     dynamic  ESP       
-    inbound   4082598149  0           tunnel     dynamic  ESP       
-    outbound  3193572955  0           tunnel     dynamic  ESP       
+    inbound   4220335040  0           tunnel     dynamic  ESP       
+    outbound  4156280501  0           tunnel     dynamic  ESP       
+    inbound   688085811   0           tunnel     dynamic  ESP       
+    outbound  2772214539  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-26, IKE Routing-instance: default
 
@@ -145,8 +146,11 @@ Service set: ipsec-26, IKE Routing-instance: default
   IPSec inside interface: ms-5/0/0.26, Tunnel MTU: 1500
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
-  
-  --- No IPSec SA information available ---
+    Direction SPI         AUX-SPI     Mode       Type     Protocol
+    inbound   2969165930  0           tunnel     dynamic  ESP       
+    outbound  4086703358  0           tunnel     dynamic  ESP       
+    inbound   847885788   0           tunnel     dynamic  ESP       
+    outbound  3484697554  0           tunnel     dynamic  ESP       
 
 Service set: ipsec-27, IKE Routing-instance: default
 
@@ -156,10 +160,10 @@ Service set: ipsec-27, IKE Routing-instance: default
   UDP encapsulate: Disabled, UDP Destination port: 0
   NATT Detection: Not Detected, NATT keepalive interval: 0
     Direction SPI         AUX-SPI     Mode       Type     Protocol
-    inbound   2283979291  0           tunnel     dynamic  ESP       
-    outbound  3421081388  0           tunnel     dynamic  ESP       
-    inbound   402644888   0           tunnel     dynamic  ESP       
-    outbound  3235652377  0           tunnel     dynamic  ESP       
+    inbound   3204373885  0           tunnel     dynamic  ESP       
+    outbound  3299099900  0           tunnel     dynamic  ESP       
+    inbound   1960026171  0           tunnel     dynamic  ESP       
+    outbound  3307086633  0           tunnel     dynamic  ESP       
 
 
 =====  show services ipsec-vpn ipsec statistics @ KIF_VPN  =====
@@ -168,10 +172,10 @@ Service set: ipsec-27, IKE Routing-instance: default
 PIC: ms-5/0/0, Service set: ipsec-11
 
 ESP Statistics:
-  Encrypted bytes:           978928
-  Decrypted bytes:           978720
-  Encrypted packets:          13586
-  Decrypted packets:          13589
+  Encrypted bytes:          1235392
+  Decrypted bytes:          1235344
+  Encrypted packets:          17147
+  Decrypted packets:          17152
 AH Statistics:
   Input bytes:                    0
   Output bytes:                   0
@@ -191,10 +195,10 @@ Errors:
 PIC: ms-5/0/0, Service set: ipsec-12
 
 ESP Statistics:
-  Encrypted bytes:           978608
-  Decrypted bytes:           978656
-  Encrypted packets:          13581
-  Decrypted packets:          13588
+  Encrypted bytes:          1235328
+  Decrypted bytes:          1235728
+  Encrypted packets:          17146
+  Decrypted packets:          17158
 AH Statistics:
   Input bytes:                    0
   Output bytes:                   0
@@ -214,10 +218,10 @@ Errors:
 PIC: ms-5/0/0, Service set: ipsec-13
 
 ESP Statistics:
-  Encrypted bytes:           978928
-  Decrypted bytes:           978672
-  Encrypted packets:          13586
-  Decrypted packets:          13588
+  Encrypted bytes:          1235472
+  Decrypted bytes:          1235552
+  Encrypted packets:          17148
+  Decrypted packets:          17155
 AH Statistics:
   Input bytes:                    0
   Output bytes:                   0
@@ -237,10 +241,10 @@ Errors:
 PIC: ms-5/0/0, Service set: ipsec-14
 
 ESP Statistics:
-  Encrypted bytes:           979568
-  Decrypted bytes:           978864
-  Encrypted packets:          13596
-  Decrypted packets:          13591
+  Encrypted bytes:          1236624
+  Decrypted bytes:          1235360
+  Encrypted packets:          17166
+  Decrypted packets:          17152
 AH Statistics:
   Input bytes:                    0
   Output bytes:                   0
@@ -260,10 +264,10 @@ Errors:
 PIC: ms-5/0/0, Service set: ipsec-15
 
 ESP Statistics:
-  Encrypted bytes:           979120
-  Decrypted bytes:           978352
-  Encrypted packets:          13589
-  Decrypted packets:          13583
+  Encrypted bytes:          1235792
+  Decrypted bytes:          1235104
+  Encrypted packets:          17153
+  Decrypted packets:          17148
 AH Statistics:
   Input bytes:                    0
   Output bytes:                   0
@@ -441,5 +445,5 @@ Errors:
   Flow errors: 0, Misc errors: 0
 
 
-===================================================================================
+==================================================================================
 
