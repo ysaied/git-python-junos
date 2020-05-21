@@ -27,7 +27,7 @@ test_3_4_1 = "show configuration class-of-service interfaces"
 
 
 for a in range(1,2):
-  show_cmd = vars()[("test_3_2_%d" % a)]
+  show_cmd = vars()[("test_3_4_%d" % a)]
   test_3_4.append(show_cmd)
 
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
