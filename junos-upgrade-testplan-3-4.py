@@ -16,7 +16,7 @@ dev_mgmt = { "KIF_VPN" : "10.117.97.56",
 login_username = "ysaied"
 
 ce_ifd = { "KIF_VPN" : "xe-2/0/0", 
-   "HRZ_VPN" : " xe-0/3/0", 
+   "HRZ_VPN" : "xe-0/3/0", 
    "AMS_VPN" : "ge-0/2/9", 
    "LON_VPN" : "ge-3/1/7"
    } 
@@ -24,21 +24,20 @@ ce_ifd = { "KIF_VPN" : "xe-2/0/0",
 
 test_3_4 = list()
 test_3_4_1 = "show configuration class-of-service interfaces"
-test_3_4_2 = "show class-of-service interface" + ifl
 
 
-for a in range(1,17):
+for a in range(1,2):
   show_cmd = vars()[("test_3_2_%d" % a)]
-  test_3_2.append(show_cmd)
+  test_3_4.append(show_cmd)
 
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 today = datetime.now().strftime("%d-%h-%Y")
 
-show_all = test_3_2
+show_all = test_3_4
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
-   file_name = src_node+"-"+"JUNOS-18_4R3-Upgrade_TestPlan_3_2-Date:"+today+"_outputs.txt"
+   file_name = src_node+"-"+"JUNOS-18_4R3-Upgrade_TestPlan_3_4-Date:"+today+"_outputs.txt"
    file_output = open(file_name, "w")
    print ("open file for %s" % src_node)
    
