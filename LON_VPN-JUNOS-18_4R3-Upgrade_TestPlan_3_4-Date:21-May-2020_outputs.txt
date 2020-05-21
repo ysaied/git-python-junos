@@ -3,7 +3,438 @@
 ====================  LON_VPN  Thursday__21-May-2020__11:36 AM  ====================
 
 =====  show configuration class-of-service interfaces @ LON_VPN  =====
-None
+
+ge-1/3/1 {
+    apply-groups core-cos;
+}
+ge-1/3/2 {
+    apply-groups core-cos;
+}
+ge-2/1/0 {
+    apply-groups core-cos;
+}
+ge-3/0/0 {
+    apply-groups core-cos;
+}
+ge-3/1/7 {
+    unit 101 {
+        forwarding-class best-effort;
+    }
+    unit 102 {
+        forwarding-class silver;
+    }
+    unit 103 {
+        forwarding-class gold;
+    }
+    unit 104 {
+        forwarding-class vpn-customers;
+    }
+    unit 301 {
+        forwarding-class best-effort;
+    }
+    unit 302 {
+        forwarding-class silver;
+    }
+    unit 303 {
+        forwarding-class gold;
+    }
+    unit 304 {
+        forwarding-class vpn-customers;
+    }
+    unit 321 {
+        forwarding-class best-effort;
+    }
+    unit 322 {
+        forwarding-class silver;
+    }
+    unit 323 {
+        forwarding-class gold;
+    }                                   
+    unit 324 {
+        forwarding-class vpn-customers;
+    }
+}
+
+
+=====  show class-of-service interface ge-3/1/7 @ LON_VPN  =====
+
+Physical interface: ge-3/1/7, Index: 166
+Maximum usable queues: 8, Queues in use: 7
+  Scheduler map: <default>, Index: 2
+  Input scheduler map: <default>, Index: 2
+  Chassis scheduler map: <default-chassis>, Index: 4
+  Congestion-notification: Disabled
+
+  Logical interface: ge-3/1/7.1, Index: 74
+Object                  Name                   Type                    Index
+Rewrite-Output          exp-default            exp (mpls-any)             33
+Classifier              exp-default            exp                        10
+Classifier              ipprec-compatibility   ip                         13
+
+  Logical interface: ge-3/1/7.101, Index: 107
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-3/1/7.102, Index: 108
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-3/1/7.103, Index: 109
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-3/1/7.104, Index: 110
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-3/1/7.105, Index: 111
+Object                  Name                   Type                    Index
+Classifier              ipprec-compatibility   ip                         13
+
+  Logical interface: ge-3/1/7.301, Index: 112
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-3/1/7.302, Index: 113
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-3/1/7.303, Index: 114
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-3/1/7.304, Index: 115
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-3/1/7.305, Index: 116
+
+  Logical interface: ge-3/1/7.321, Index: 117
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-3/1/7.322, Index: 118
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-3/1/7.323, Index: 119
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-3/1/7.324, Index: 120
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-3/1/7.325, Index: 121
+
+  Logical interface: ge-3/1/7.32767, Index: 122
+
+  Logical interface: ge-3/1/7.4, Index: 105
+Object                  Name                   Type                    Index
+Classifier              ipprec-compatibility   ip                         13
+
+  Logical interface: ge-3/1/7.5, Index: 106
+Object                  Name                   Type                    Index
+Classifier              ipprec-compatibility   ip                         13
+
+
+=====  show interfaces queue ge-2/1/0 @ LON_VPN  =====
+ 
+Physical interface: ge-2/1/0, Enabled, Physical link is Up
+  Interface index: 141, SNMP ifIndex: 531
+  Description: To MRS-EMIX-RA_6/0/5
+Forwarding classes: 16 supported, 7 in use
+Egress queues: 8 supported, 7 in use
+Queue: 0, Forwarding classes: best-effort
+  Queued:
+    Packets              :            1948180852                     2 pps
+    Bytes                :         2871718172135                  5184 bps
+  Transmitted:
+    Packets              :            1948180852                     2 pps
+    Bytes                :         2871718172135                  5184 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 1, Forwarding classes: silver
+  Queued:
+    Packets              :          484691318628                     0 pps
+    Bytes                :        56110501867080                     0 bps
+  Transmitted:
+    Packets              :          484691318628                     0 pps
+    Bytes                :        56110501867080                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 2, Forwarding classes: gold      
+  Queued:
+    Packets              :             172322301                     0 pps
+    Bytes                :          249178047246                     0 bps
+  Transmitted:
+    Packets              :             172322301                     0 pps
+    Bytes                :          249178047246                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 3, Forwarding classes: network-control
+  Queued:
+    Packets              :           25885445599                    12 pps
+    Bytes                :         2737328155483                  7216 bps
+  Transmitted:
+    Packets              :           25885445599                    12 pps
+    Bytes                :         2737328155483                  7216 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 4, Forwarding classes: vpn-customers
+  Queued:
+    Packets              :             172322301                     0 pps
+    Bytes                :          249178047246                     0 bps
+  Transmitted:                          
+    Packets              :             172322301                     0 pps
+    Bytes                :          249178047246                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 5, Forwarding classes: Realtime
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 6, Forwarding classes: Conversation
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+
+{master}
+
+=====  show interfaces queue ge-3/0/0  @ LON_VPN  =====
+  
+Physical interface: ge-3/0/0, Enabled, Physical link is Up
+  Interface index: 158, SNMP ifIndex: 517
+  Description: To FRK-EMIX-RA_TO_BE_GIVE_BY_CISCO
+Forwarding classes: 16 supported, 7 in use
+Egress queues: 8 supported, 7 in use
+Queue: 0, Forwarding classes: best-effort
+  Queued:
+    Packets              :                196616                     0 pps
+    Bytes                :              14723161                   480 bps
+  Transmitted:
+    Packets              :                196616                     0 pps
+    Bytes                :              14723161                   480 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 1, Forwarding classes: silver
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 2, Forwarding classes: gold      
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 3, Forwarding classes: network-control
+  Queued:
+    Packets              :              25151936                    44 pps
+    Bytes                :            1347436958                 21160 bps
+  Transmitted:
+    Packets              :              25151936                    44 pps
+    Bytes                :            1347436958                 21160 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 4, Forwarding classes: vpn-customers
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:                          
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 5, Forwarding classes: Realtime
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
+Queue: 6, Forwarding classes: Conversation
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low, non-TCP        :                     0                     0 pps
+     Low, TCP            :                     0                     0 pps
+     High, non-TCP       :                     0                     0 pps
+     High, TCP           :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low, non-TCP        :                     0                     0 bps
+     Low, TCP            :                     0                     0 bps
+     High, non-TCP       :                     0                     0 bps
+     High, TCP           :                     0                     0 bps
 
 ==================================================================================
 

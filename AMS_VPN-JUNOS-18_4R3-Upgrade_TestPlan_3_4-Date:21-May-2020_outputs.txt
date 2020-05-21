@@ -3,7 +3,536 @@
 ====================  AMS_VPN  Thursday__21-May-2020__11:36 AM  ====================
 
 =====  show configuration class-of-service interfaces @ AMS_VPN  =====
-None
+
+xe-0/0/0 {
+    apply-groups core-cos;
+}
+xe-0/1/0 {
+    apply-groups core-cos;
+}
+ge-0/2/1 {
+    apply-groups core-cos;
+}
+ge-0/2/2 {
+    apply-groups core-cos;
+}
+ge-0/2/9 {
+    unit 101 {
+        forwarding-class best-effort;
+    }
+    unit 102 {
+        forwarding-class silver;
+    }
+    unit 103 {
+        forwarding-class gold;
+    }
+    unit 104 {
+        forwarding-class vpn-customers;
+    }
+    unit 201 {
+        forwarding-class best-effort;
+    }
+    unit 202 {
+        forwarding-class silver;
+    }
+    unit 203 {
+        forwarding-class gold;
+    }
+    unit 204 {
+        forwarding-class vpn-customers;
+    }
+    unit 221 {
+        forwarding-class best-effort;
+    }
+    unit 222 {
+        forwarding-class silver;
+    }
+    unit 223 {
+        forwarding-class gold;
+    }                                   
+    unit 224 {
+        forwarding-class vpn-customers;
+    }
+    unit 401 {
+        forwarding-class best-effort;
+    }
+    unit 402 {
+        forwarding-class silver;
+    }
+    unit 403 {
+        forwarding-class gold;
+    }
+    unit 404 {
+        forwarding-class vpn-customers;
+    }
+}
+
+=====  show class-of-service interface ge-0/2/9 @ AMS_VPN  =====
+
+Physical interface: ge-0/2/9, Index: 172
+Maximum usable queues: 8, Queues in use: 7
+Exclude aggregate overhead bytes: disabled
+Logical interface aggregate statistics: disabled
+  Scheduler map: <default>, Index: 2
+  Congestion-notification: Disabled
+
+  Logical interface: ge-0/2/9.1, Index: 372
+Object                  Name                   Type                    Index
+Classifier              exp-default            exp                        10
+Classifier              ipprec-compatibility   ip                         13
+
+  Logical interface: ge-0/2/9.101, Index: 375
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-0/2/9.102, Index: 376
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-0/2/9.103, Index: 377
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-0/2/9.104, Index: 378
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-0/2/9.105, Index: 379
+Object                  Name                   Type                    Index
+Classifier              ipprec-compatibility   ip                         13
+
+  Logical interface: ge-0/2/9.201, Index: 380
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-0/2/9.202, Index: 381
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-0/2/9.203, Index: 382
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-0/2/9.204, Index: 383
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-0/2/9.205, Index: 384
+
+  Logical interface: ge-0/2/9.221, Index: 385
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-0/2/9.222, Index: 386
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-0/2/9.223, Index: 387
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-0/2/9.224, Index: 388
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-0/2/9.225, Index: 389
+
+  Logical interface: ge-0/2/9.32767, Index: 395
+
+  Logical interface: ge-0/2/9.4, Index: 373
+Object                  Name                   Type                    Index
+Classifier              ipprec-compatibility   ip                         13
+
+  Logical interface: ge-0/2/9.401, Index: 414
+Object                  Name                   Type                    Index
+Classifier-Input        best-effort            fixed                       0
+
+  Logical interface: ge-0/2/9.402, Index: 415
+Object                  Name                   Type                    Index
+Classifier-Input        silver                 fixed                       1
+
+  Logical interface: ge-0/2/9.403, Index: 416
+Object                  Name                   Type                    Index
+Classifier-Input        gold                   fixed                       2
+
+  Logical interface: ge-0/2/9.404, Index: 417
+Object                  Name                   Type                    Index
+Classifier-Input        vpn-customers          fixed                       6
+
+  Logical interface: ge-0/2/9.405, Index: 418
+
+  Logical interface: ge-0/2/9.5, Index: 374
+Object                  Name                   Type                    Index
+Classifier              ipprec-compatibility   ip                         13
+
+
+=====  show interfaces queue xe-0/0/0 @ AMS_VPN  =====
+
+Physical interface: xe-0/0/0, Enabled, Physical link is Up
+  Interface index: 161, SNMP ifIndex: 553
+  Description: To FRK-EMIX-RA_5/0/30
+Forwarding classes: 16 supported, 7 in use
+Egress queues: 8 supported, 7 in use
+Queue: 0, Forwarding classes: best-effort
+  Queued:
+    Packets              :              33252170                     1 pps
+    Bytes                :           49274925930                   640 bps
+  Transmitted:
+    Packets              :              33252170                     1 pps
+    Bytes                :           49274925930                   640 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :              12648448
+Queue: 1, Forwarding classes: silver
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :               6389760
+Queue: 2, Forwarding classes: gold
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :               6389760
+Queue: 3, Forwarding classes: network-control
+  Queued:
+    Packets              :               6339766                    41 pps
+    Bytes                :             576509797                 30848 bps
+  Transmitted:
+    Packets              :               6339766                    41 pps
+    Bytes                :             576509797                 30848 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :               6389760
+Queue: 4, Forwarding classes: vpn-customers
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :              50331648
+Queue: 5, Forwarding classes: Realtime
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:                          
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :              44302336
+Queue: 6, Forwarding classes: Conversation
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :                 32640
+
+
+=====  show interfaces queue xe-0/1/0 @ AMS_VPN  =====
+
+Physical interface: xe-0/1/0, Enabled, Physical link is Up
+  Interface index: 162, SNMP ifIndex: 555
+  Description: To MRS-EMIX-RA_6/0/10
+Forwarding classes: 16 supported, 7 in use
+Egress queues: 8 supported, 7 in use
+Queue: 0, Forwarding classes: best-effort
+  Queued:
+    Packets              :             940332638                     5 pps
+    Bytes                :         1397871303797                  4736 bps
+  Transmitted:
+    Packets              :             940332638                     5 pps
+    Bytes                :         1397871303797                  4736 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                  1464
+    Maximum              :              12648448
+Queue: 1, Forwarding classes: silver
+  Queued:
+    Packets              :             368321142                     0 pps
+    Bytes                :          547544892390                     0 bps
+  Transmitted:
+    Packets              :             368321142                     0 pps
+    Bytes                :          547544892390                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                  1192
+    Maximum              :               6389760
+Queue: 2, Forwarding classes: gold
+  Queued:
+    Packets              :             368321141                     0 pps
+    Bytes                :          547544890902                     0 bps
+  Transmitted:
+    Packets              :             368321141                     0 pps
+    Bytes                :          547544890902                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                  1468
+    Maximum              :               6389760
+Queue: 3, Forwarding classes: network-control
+  Queued:
+    Packets              :             520681441                    17 pps
+    Bytes                :          763339965342                 13184 bps
+  Transmitted:
+    Packets              :             520681441                    17 pps
+    Bytes                :          763339965342                 13184 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                  1450
+    Maximum              :               6389760
+Queue: 4, Forwarding classes: vpn-customers
+  Queued:
+    Packets              :             368321141                     0 pps
+    Bytes                :          547544890902                     0 bps
+  Transmitted:
+    Packets              :             368321141                     0 pps
+    Bytes                :          547544890902                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                  1464
+    Maximum              :              50331648
+Queue: 5, Forwarding classes: Realtime
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:                          
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :              44302336
+Queue: 6, Forwarding classes: Conversation
+  Queued:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+  Transmitted:
+    Packets              :                     0                     0 pps
+    Bytes                :                     0                     0 bps
+    Tail-dropped packets :                     0                     0 pps
+    RL-dropped packets   :                     0                     0 pps
+    RL-dropped bytes     :                     0                     0 bps
+    RED-dropped packets  :                     0                     0 pps
+     Low                 :                     0                     0 pps
+     Medium-low          :                     0                     0 pps
+     Medium-high         :                     0                     0 pps
+     High                :                     0                     0 pps
+    RED-dropped bytes    :                     0                     0 bps
+     Low                 :                     0                     0 bps
+     Medium-low          :                     0                     0 bps
+     Medium-high         :                     0                     0 bps
+     High                :                     0                     0 bps
+  Queue-depth bytes      : 
+    Average              :                     0
+    Current              :                     0
+    Peak                 :                     0
+    Maximum              :                 32640
+
 
 ==================================================================================
 
