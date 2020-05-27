@@ -23,7 +23,7 @@ for a in range(1,3):
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 today = datetime.now().strftime("%d-%h-%Y")
 
-show_all = test_3_4
+show_all = test_3_5
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
