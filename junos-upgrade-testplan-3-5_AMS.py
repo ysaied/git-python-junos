@@ -14,7 +14,14 @@ login_username = "ysaied"
 test_3_5 = list()
 test_3_5_1 = "show configuration firewall policer plcr-5Mbps "
 test_3_5_2 = "show configuration interfaces ge-0/2/9 "
-
+test_3_5_3 = "show interfaces policers ge-0/2/9.101"
+test_3_5_4 = "show interfaces policers ge-0/2/9.201"
+test_3_5_5 = "show interfaces policers ge-0/2/9.221"
+test_3_5_6 = "show interfaces policers ge-0/2/9.401"
+test_3_5_7 = "show interfaces statistics ge-0/2/9.101 detail"
+test_3_5_8 = "show interfaces statistics ge-0/2/9.201 detail"
+test_3_5_9 = "show interfaces statistics ge-0/2/9.221 detail"
+test_3_5_10 = "show interfaces statistics ge-0/2/9.401 detail"
 
 for a in range(1,3):
   show_cmd = vars()[("test_3_5_%d" % a)]
