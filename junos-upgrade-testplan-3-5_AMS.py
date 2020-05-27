@@ -23,7 +23,7 @@ test_3_5_8 = "show interfaces statistics ge-0/2/9.201 detail"
 test_3_5_9 = "show interfaces statistics ge-0/2/9.221 detail"
 test_3_5_10 = "show interfaces statistics ge-0/2/9.401 detail"
 
-for a in range(1,3):
+for a in range(1,11):
   show_cmd = vars()[("test_3_5_%d" % a)]
   test_3_5.append(show_cmd)
 
