@@ -18,7 +18,7 @@ test_3_5_2 = "show configuration interfaces ge-0/2/9 "
 
 for a in range(1,3):
   show_cmd = vars()[("test_3_5_%d" % a)]
-  test_3_4.append(show_cmd)
+  test_3_5.append(show_cmd)
 
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 today = datetime.now().strftime("%d-%h-%Y")
