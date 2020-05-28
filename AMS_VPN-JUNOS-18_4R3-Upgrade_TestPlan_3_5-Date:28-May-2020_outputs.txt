@@ -3,10 +3,175 @@
 ====================  AMS_VPN  Thursday__28-May-2020__12:51 AM  ====================
 
 =====  show configuration firewall policer plcr-5Mbps  @ AMS_VPN  =====
-None
+logical-interface-policer;
+if-exceeding {
+    bandwidth-limit 5m;
+    burst-size-limit 625k;
+}
+then discard;
 
 =====  show configuration interfaces ge-0/2/9  @ AMS_VPN  =====
-None
+description "To Partner-MX480_ge-0/0/0";
+flexible-vlan-tagging;
+mtu 9192;
+encapsulation flexible-ethernet-services;
+unit 1 {
+    description interas_vpn-option_c;
+    vlan-id 1;
+    family inet {
+        address 100.0.13.1/30;
+    }
+    family mpls;
+}
+unit 4 {
+    description l3vpn-grx-infrastructure;
+    vlan-id 4;
+    family inet {
+        address 10.0.13.1/30;
+    }
+}
+unit 5 {
+    description l3vpn-grx-operator-zain;
+    vlan-id 5;
+    family inet {
+        filter {
+            input clear-df-bit;
+        }
+        address 192.168.13.1/30;
+    }
+}
+unit 101 {
+    description l3vpn-option_a-101;
+    vlan-id 101;
+    family inet {
+        policer {
+            input plcr-5Mbps;
+            output plcr-5Mbps;
+        }
+        address 192.168.13.1/30;
+    }                                   
+}                                       
+unit 102 {
+    description l3vpn-option_a-102;
+    vlan-id 102;
+    family inet {
+        address 192.168.13.1/30;
+    }
+}
+unit 103 {
+    description l3vpn-option_a-103;
+    vlan-id 103;
+    family inet {
+        address 192.168.13.1/30;
+    }
+}
+unit 104 {
+    description l3vpn-option_a-104;
+    vlan-id 104;
+    family inet {
+        address 192.168.13.1/30;
+    }
+}
+unit 105 {
+    description l3vpn-option_a-105;
+    vlan-id 105;
+    family inet {
+        address 192.168.13.1/30;
+    }
+}
+unit 201 {
+    description l2ck-option_a-201;
+    encapsulation vlan-ccc;
+    vlan-id 201;
+    family ccc {
+        policer {
+            input plcr-5Mbps;
+            output plcr-5Mbps;
+        }
+    }                                   
+}
+unit 202 {
+    description l2ck-option_a-202;
+    encapsulation vlan-ccc;
+    vlan-id 202;
+}
+unit 203 {
+    description l2ck-option_a-203;
+    encapsulation vlan-ccc;
+    vlan-id 203;
+}
+unit 204 {
+    description l2ck-option_a-204;
+    encapsulation vlan-ccc;
+    vlan-id 204;
+}
+unit 205 {
+    description l2ck-option_a-205;
+    encapsulation vlan-ccc;
+    vlan-id 205;
+}
+unit 221 {
+    description l2vpn-option_a-221;
+    encapsulation vlan-ccc;
+    vlan-id 221;
+    family ccc {
+        policer {
+            input plcr-5Mbps;
+            output plcr-5Mbps;
+        }
+    }
+}
+unit 222 {
+    description l2vpn-option_a-222;
+    encapsulation vlan-ccc;
+    vlan-id 222;
+}
+unit 223 {                              
+    description l2vpn-option_a-223;
+    encapsulation vlan-ccc;
+    vlan-id 223;
+}
+unit 224 {
+    description l2vpn-option_a-224;
+    encapsulation vlan-ccc;
+    vlan-id 224;
+}
+unit 225 {
+    description l2vpn-option_a-225;
+    encapsulation vlan-ccc;
+    vlan-id 225;
+}
+unit 401 {
+    description vpls-option_a-401;
+    encapsulation vlan-vpls;
+    vlan-id 401;
+    family vpls {
+        policer {
+            input plcr-5Mbps;
+            output plcr-5Mbps;
+        }
+    }
+}
+unit 402 {
+    description vpls-option_a-402;
+    encapsulation vlan-vpls;
+    vlan-id 402;
+}
+unit 403 {
+    description vpls-option_a-403;
+    encapsulation vlan-vpls;
+    vlan-id 403;
+}
+unit 404 {
+    description vpls-option_a-404;
+    encapsulation vlan-vpls;            
+    vlan-id 404;
+}
+unit 405 {
+    description vpls-option_a-405;
+    encapsulation vlan-vpls;
+    vlan-id 405;
+}
 
 =====  show interfaces policers ge-0/2/9.101 @ AMS_VPN  =====
 
