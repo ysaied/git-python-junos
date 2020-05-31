@@ -17,8 +17,10 @@ login_username = "ysaied"
 
 
 test_3_11 = list()
-test_3_11_1 = "show configuration class-of-service interfaces"
-
+test_3_11_1 = "show path-computation-client active-pce"
+test_3_11_2 = "show path-computation-client lsp"
+test_3_11_3 = "show path-computation-client statistics"
+test_3_11_4 = "show mpls lsp ingress externally-provisioned detail"
 
 for a in range(1,2):
   show_cmd = vars()[("test_3_11_%d" % a)]
@@ -27,7 +29,7 @@ for a in range(1,2):
 time_now = datetime.now().strftime("%A__%d-%h-%Y__%I:%M %p")
 today = datetime.now().strftime("%d-%h-%Y")
 
-show_all = test_3_4
+show_all = test_3_11
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
