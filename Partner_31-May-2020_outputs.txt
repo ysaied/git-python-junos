@@ -1,0 +1,2420 @@
+
+=====  show configuration @ Partner  =====
+<configuration-text>
+## Last changed: 2020-05-31 10:28:35 GST
+version 18.4R3.3;
+system {
+    commit synchronize;
+    login {
+        user jnpr {
+            uid 2002;
+            class super-user;
+            authentication {
+                encrypted-password "$1$nlpv.Hvh$74e9tkOagiSybgJzdBOG01";
+            }
+        }
+        user ysaied {
+            uid 2001;
+            class super-user;
+            authentication {
+                ssh-rsa "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDI9Jd/xVHDMd1ND52wK59i/3/8tD5JUQDyECuTROnCaKoMXPc8h0Ary1Yk3yHEbr2tVpKvWntwRkoku1i6UtjTYNgN+W03ykb/RotMY4gPqwp2JgPXJMdoJWtlOVpbeBC5FNSAckXXyfLjS68X2SVjKZwNcYDh7Qb6X/FTVeiBB1aQ1xBjEA4ucmb8at74UA7CeUF+tdFYXM2G0LPnfsSL27aCqTzy9w4yePOU1MPCknm5RBFaqECuuzLYEldN4lfjW8luPUtAJPqokx7rVnz6YGOsUBVcIyuoZ8JKaZDRdYjXGxhU4GQ2lIUvwHX9R8iuUfKEcM/oiPzQzEkNY2D7 ysaied@linux-02";
+                ssh-rsa "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDHCGb40rpW9mDL9jryynCWRzYvJqG6PoIxTFf8/RRxO6jEcfVeL83W6E78Pfwi6jOsUlX+vmK0UAcAMrFdgw3NnsE3BiMdYeklQ6sy2AzzMrLNlGI1f3fJ4eBY52E4UW3rgA4GdfD+sB3VIyK14X2+PEPVGD53/O0rGt0UcyfEOkVmp/USaON9k/1QyLlKpfaMKTnwXourURgS3mzcZohv6vPnvXl5H0BMgqvjoHZaKTa9lhBW4Q+kxvOS+qjkJpBjhDVKS972o+w2yj9cRv58g/vJlXjq9r3TqDhu8ZKU6du2BfeOamhCxD2lOdY0bUnyKjj1nak+J9M6zQtSgv6D ysaied@linux-centos-1";
+            }
+        }
+    }
+    root-authentication {
+        encrypted-password "$1$bGV/kA4J$BWjvMHdE2i9USoPqMqgUq.";
+    }
+    services {
+        ssh {
+            max-sessions-per-connection 32;
+        }
+        telnet;
+        netconf {
+            ssh;
+        }
+        rest {
+            http {
+                port 9080;
+            }
+            enable-explorer;
+        }
+    }
+    host-name Partner-re0;
+    backup-router 10.117.97.1;
+    time-zone Asia/Dubai;
+    name-server {
+        8.8.8.8;
+        8.8.4.4;
+    }
+    syslog {
+        user * {
+            any emergency;
+        }
+        file messages {
+            any notice;
+            authorization info;
+        }
+        file interactive-commands {
+            interactive-commands any;
+        }
+        file interfaces {
+            any notice;
+            match "ifAdminStatus|ifOperStatus";
+        }
+        file default-log-messages {
+            any info;
+            match "(requested 'commit' operation)|(requested 'commit synchronize' operation)|(copying configuration to juniper.save)|(commit complete)|ifAdminStatus|(FRU power)|(FRU removal)|(FRU insertion)|(link UP)|transitioned|Transferred|transfer-file|(license add)|(license delete)|(package -X update)|(package -X delete)|(FRU Online)|(FRU Offline)|(plugged in)|(unplugged)|CFMD_CCM_DEFECT| LFMD_3AH | RPD_MPLS_PATH_BFD|(Master Unchanged, Members Changed)|(Master Changed, Members Changed)|(Master Detected, Members Changed)|(vc add)|(vc delete)|(Master detected)|(Master changed)|(Backup detected)|(Backup changed)|(interface vcp-)";
+            structured-data;
+        }
+    }
+    ntp {
+        server 10.117.97.120;
+    }
+}
+logical-systems {
+    ASBR-1 {
+        interfaces {
+            ge-0/0/0 {
+                unit 1 {
+                    description interas_vpn-option_c;
+                    vlan-id 1;
+                    family inet {
+                        address 100.0.13.2/30;
+                    }
+                    family mpls;
+                }
+                unit 101 {
+                    description l3vpn-option_a-101;
+                    vlan-id 101;
+                    family inet {
+                        address 192.168.13.2/30;
+                    }
+                }
+                unit 102 {
+                    description l3vpn-option_a-102;
+                    vlan-id 102;
+                    family inet {
+                        address 192.168.13.2/30;
+                    }
+                }
+                unit 103 {
+                    description l3vpn-option_a-103;
+                    vlan-id 103;
+                    family inet {
+                        address 192.168.13.2/30;
+                    }
+                }
+                unit 104 {
+                    description l3vpn-option_a-104;
+                    vlan-id 104;
+                    family inet {
+                        address 192.168.13.2/30;
+                    }
+                }
+                unit 105 {
+                    description l3vpn-option_a-105;
+                    vlan-id 105;
+                    family inet {
+                        address 192.168.13.2/30;
+                    }
+                }
+                unit 201 {
+                    description l2ck-option_a-201;
+                    encapsulation vlan-ccc;
+                    vlan-id 201;
+                }
+                unit 202 {
+                    description l2ck-option_a-202;
+                    encapsulation vlan-ccc;
+                    vlan-id 202;
+                }
+                unit 203 {
+                    description l2ck-option_a-203;
+                    encapsulation vlan-ccc;
+                    vlan-id 203;
+                }
+                unit 204 {
+                    description l2ck-option_a-204;
+                    encapsulation vlan-ccc;
+                    vlan-id 204;
+                }
+                unit 205 {
+                    description l2ck-option_a-205;
+                    encapsulation vlan-ccc;
+                    vlan-id 205;
+                }
+                unit 221 {
+                    description l2vpn-option_a-221;
+                    encapsulation vlan-ccc;
+                    vlan-id 221;
+                }
+                unit 222 {
+                    description l2vpn-option_a-222;
+                    encapsulation vlan-ccc;
+                    vlan-id 222;
+                }
+                unit 223 {
+                    description l2vpn-option_a-223;
+                    encapsulation vlan-ccc;
+                    vlan-id 223;
+                }
+                unit 224 {
+                    description l2vpn-option_a-224;
+                    encapsulation vlan-ccc;
+                    vlan-id 224;
+                }
+                unit 225 {
+                    description l2vpn-option_a-225;
+                    encapsulation vlan-ccc;
+                    vlan-id 225;
+                }
+                unit 401 {
+                    description vpls-option_a-401;
+                    encapsulation vlan-vpls;
+                    vlan-id 401;
+                }
+                unit 402 {
+                    description vpls-option_a-402;
+                    encapsulation vlan-vpls;
+                    vlan-id 402;
+                }
+                unit 403 {
+                    description vpls-option_a-403;
+                    encapsulation vlan-vpls;
+                    vlan-id 403;
+                }
+                unit 404 {
+                    description vpls-option_a-404;
+                    encapsulation vlan-vpls;
+                    vlan-id 404;
+                }
+                unit 405 {
+                    description vpls-option_a-405;
+                    encapsulation vlan-vpls;
+                    vlan-id 405;
+                }
+            }
+            ge-0/0/9 {
+                unit 2 {
+                    description "To PE";
+                    vlan-id 2;
+                    family inet {
+                        mtu 1500;
+                        address 10.0.1.2/30;
+                    }
+                    family iso;
+                    family inet6;
+                    family mpls;
+                }
+            }
+            lo0 {
+                unit 2 {
+                    family inet {
+                        address 10.0.0.2/32;
+                    }
+                    family iso {
+                        address 49.0000.0000.0000.0002.00;
+                    }
+                }
+                unit 2101 {
+                    family inet {
+                        address 2.0.0.12/32;
+                    }
+                }
+                unit 2102 {
+                    family inet {
+                        address 2.0.0.12/32;
+                    }
+                }
+                unit 2103 {
+                    family inet {
+                        address 2.0.0.12/32;
+                    }
+                }
+                unit 2104 {
+                    family inet {
+                        address 2.0.0.12/32;
+                    }
+                }
+                unit 2105 {
+                    family inet {
+                        address 2.0.0.12/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            ldp {
+                interface all;
+            }
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 10.0.0.2;
+                    family inet {
+                        labeled-unicast {
+                            resolve-vpn;
+                        }
+                    }
+                    family inet-vpn {
+                        unicast;
+                    }
+                    family l2vpn {
+                        signaling;
+                    }
+                    family route-target;
+                    neighbor 10.0.0.1;
+                    neighbor 10.0.0.2;
+                    neighbor 10.0.0.3;
+                }
+                group ebgp {
+                    type external;
+                    neighbor 100.0.13.1 {
+                        family inet {
+                            labeled-unicast;
+                        }
+                        family inet-vpn {
+                            unicast;
+                        }
+                        family l2vpn {
+                            signaling;
+                        }
+                        family route-target;
+                        export ebgp-labeled-loopbacks;
+                        peer-as 8966;
+                    }
+                }
+            }
+            isis {
+                interface ge-0/0/9.2 {
+                    point-to-point;
+                    level 1 disable;
+                }
+                interface lo0.2 {
+                    passive;
+                    level 1 disable;
+                }
+            }
+            rsvp {
+                interface ge-0/0/9.2;
+            }
+            mpls {
+                interface all;
+            }
+            l2circuit {
+                neighbor 10.0.0.1 {
+                    interface ge-0/0/0.201 {
+                        virtual-circuit-id 201;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/0/0.202 {
+                        virtual-circuit-id 202;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/0/0.203 {
+                        virtual-circuit-id 203;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/0/0.204 {
+                        virtual-circuit-id 204;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/0/0.205 {
+                        virtual-circuit-id 205;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                }
+            }
+        }
+        policy-options {
+            policy-statement ebgp-labeled-loopbacks {
+                term loopbacks {
+                    from {
+                        route-filter 10.0.0.0/24 prefix-length-range /32-/32;
+                    }
+                    then accept;
+                }
+            }
+        }
+        routing-instances {
+            l2vpn-option_a-221 {
+                instance-type l2vpn;
+                interface ge-0/0/0.221;
+                route-distinguisher 10.0.0.2:221;
+                vrf-target target:1610:221;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.221 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-222 {
+                instance-type l2vpn;
+                interface ge-0/0/0.222;
+                route-distinguisher 10.0.0.2:222;
+                vrf-target target:1610:222;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.222 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-223 {
+                instance-type l2vpn;
+                interface ge-0/0/0.223;
+                route-distinguisher 10.0.0.2:223;
+                vrf-target target:1610:223;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.223 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-224 {
+                instance-type l2vpn;
+                interface ge-0/0/0.224;
+                route-distinguisher 10.0.0.2:224;
+                vrf-target target:1610:224;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.224 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-225 {
+                instance-type l2vpn;
+                interface ge-0/0/0.225;
+                route-distinguisher 10.0.0.2:225;
+                vrf-target target:1610:225;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.225 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-101 {
+                instance-type vrf;
+                interface ge-0/0/0.101;
+                interface lo0.2101;
+                route-distinguisher 10.0.0.2:101;
+                vrf-target target:1610:101;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.13.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-102 {
+                instance-type vrf;
+                interface ge-0/0/0.102;
+                interface lo0.2102;
+                route-distinguisher 10.0.0.2:102;
+                vrf-target target:1610:102;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.13.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-103 {
+                instance-type vrf;
+                interface ge-0/0/0.103;
+                interface lo0.2103;
+                route-distinguisher 10.0.0.2:103;
+                vrf-target target:1610:103;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.13.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-104 {
+                instance-type vrf;
+                interface ge-0/0/0.104;
+                interface lo0.2104;
+                route-distinguisher 10.0.0.2:104;
+                vrf-target target:1610:104;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.13.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-105 {
+                instance-type vrf;
+                interface ge-0/0/0.105;
+                interface lo0.2105;
+                route-distinguisher 10.0.0.2:105;
+                vrf-target target:1610:105;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.13.1;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-401 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/0/0.401;
+                route-distinguisher 10.0.0.2:401;
+                vrf-target target:1610:401;
+                protocols {
+                    vpls {
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.401;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-402 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/0/0.402;
+                route-distinguisher 10.0.0.2:402;
+                vrf-target target:1610:402;
+                protocols {
+                    vpls {
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.402;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-403 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/0/0.403;
+                route-distinguisher 10.0.0.2:403;
+                vrf-target target:1610:403;
+                protocols {
+                    vpls {
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.403;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-404 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/0/0.404;
+                route-distinguisher 10.0.0.2:404;
+                vrf-target target:1610:404;
+                protocols {
+                    vpls {
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.404;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-405 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/0/0.405;
+                route-distinguisher 10.0.0.2:405;
+                vrf-target target:1610:405;
+                protocols {
+                    vpls {
+                        site 2 {
+                            site-identifier 2;
+                            interface ge-0/0/0.405;
+                        }
+                    }
+                }
+            }
+        }
+        routing-options {
+            autonomous-system 1610;
+        }
+    }
+    ASBR-2 {
+        interfaces {
+            ge-0/0/9 {
+                unit 3 {
+                    description "To PE";
+                    vlan-id 3;
+                    family inet {
+                        mtu 1500;
+                        address 10.0.1.6/30;
+                    }
+                    family iso;
+                    family inet6;
+                    family mpls;
+                }
+            }
+            ge-0/1/0 {
+                unit 1 {
+                    description interas_vpn-option_c;
+                    vlan-id 1;
+                    family inet {
+                        address 100.0.14.2/30;
+                    }
+                    family mpls;
+                }
+                unit 101 {
+                    description l3vpn-option_a-101;
+                    vlan-id 101;
+                    family inet {
+                        address 192.168.14.2/30;
+                    }
+                }
+                unit 102 {
+                    description l3vpn-option_a-102;
+                    vlan-id 102;
+                    family inet {
+                        address 192.168.14.2/30;
+                    }
+                }
+                unit 103 {
+                    description l3vpn-option_a-103;
+                    vlan-id 103;
+                    family inet {
+                        address 192.168.14.2/30;
+                    }
+                }
+                unit 104 {
+                    description l3vpn-option_a-104;
+                    vlan-id 104;
+                    family inet {
+                        address 192.168.14.2/30;
+                    }
+                }
+                unit 105 {
+                    description l3vpn-option_a-105;
+                    vlan-id 105;
+                    family inet {
+                        address 192.168.14.2/30;
+                    }
+                }
+                unit 301 {
+                    description l2ck-option_a-301;
+                    encapsulation vlan-ccc;
+                    vlan-id 301;
+                }
+                unit 302 {
+                    description l2ck-option_a-302;
+                    encapsulation vlan-ccc;
+                    vlan-id 302;
+                }
+                unit 303 {
+                    description l2ck-option_a-303;
+                    encapsulation vlan-ccc;
+                    vlan-id 303;
+                }
+                unit 304 {
+                    description l2ck-option_a-304;
+                    encapsulation vlan-ccc;
+                    vlan-id 304;
+                }
+                unit 305 {
+                    description l2ck-option_a-305;
+                    encapsulation vlan-ccc;
+                    vlan-id 305;
+                }
+                unit 321 {
+                    description l2vpn-option_a-321;
+                    encapsulation vlan-ccc;
+                    vlan-id 321;
+                }
+                unit 322 {
+                    description l2vpn-option_a-322;
+                    encapsulation vlan-ccc;
+                    vlan-id 322;
+                }
+                unit 323 {
+                    description l2vpn-option_a-323;
+                    encapsulation vlan-ccc;
+                    vlan-id 323;
+                }
+                unit 324 {
+                    description l2vpn-option_a-324;
+                    encapsulation vlan-ccc;
+                    vlan-id 324;
+                }
+                unit 325 {
+                    description l2vpn-option_a-325;
+                    encapsulation vlan-ccc;
+                    vlan-id 325;
+                }
+            }
+            lo0 {
+                unit 3 {
+                    family inet {
+                        address 10.0.0.3/32;
+                    }
+                    family iso {
+                        address 49.0000.0000.0000.0003.00;
+                    }
+                }
+                unit 3101 {
+                    family inet {
+                        address 2.0.0.13/32;
+                    }
+                }
+                unit 3102 {
+                    family inet {
+                        address 2.0.0.13/32;
+                    }
+                }
+                unit 3103 {
+                    family inet {
+                        address 2.0.0.13/32;
+                    }
+                }
+                unit 3104 {
+                    family inet {
+                        address 2.0.0.13/32;
+                    }
+                }
+                unit 3105 {
+                    family inet {
+                        address 2.0.0.13/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            ldp {
+                interface all;
+            }
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 10.0.0.3;
+                    family inet {
+                        labeled-unicast {
+                            resolve-vpn;
+                        }
+                    }
+                    family inet-vpn {
+                        unicast;
+                    }
+                    family l2vpn {
+                        signaling;
+                    }
+                    family route-target;
+                    neighbor 10.0.0.1;
+                    neighbor 10.0.0.2;
+                    neighbor 10.0.0.3;
+                }
+                group ebgp {
+                    type external;
+                    neighbor 100.0.14.1 {
+                        family inet {
+                            labeled-unicast;
+                        }
+                        family inet-vpn {
+                            unicast;
+                        }
+                        family l2vpn {
+                            signaling;
+                        }
+                        family route-target;
+                        export ebgp-labeled-loopbacks;
+                        peer-as 8966;
+                    }
+                }
+            }
+            isis {
+                interface ge-0/0/9.3 {
+                    point-to-point;
+                    level 1 disable;
+                }
+                interface lo0.3 {
+                    passive;
+                    level 1 disable;
+                }
+            }
+            rsvp {
+                interface ge-0/0/9.3;
+            }
+            mpls {
+                interface all;
+            }
+            l2circuit {
+                neighbor 10.0.0.1 {
+                    interface ge-0/1/0.301 {
+                        virtual-circuit-id 301;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/0.302 {
+                        virtual-circuit-id 302;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/0.303 {
+                        virtual-circuit-id 303;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/0.304 {
+                        virtual-circuit-id 304;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/0.305 {
+                        virtual-circuit-id 305;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                }
+            }
+        }
+        policy-options {
+            policy-statement ebgp-labeled-loopbacks {
+                term loopbacks {
+                    from {
+                        route-filter 10.0.0.0/24 prefix-length-range /32-/32;
+                    }
+                    then accept;
+                }
+            }
+        }
+        routing-instances {
+            l2vpn-option_a-321 {
+                instance-type l2vpn;
+                interface ge-0/1/0.321;
+                route-distinguisher 10.0.0.3:321;
+                vrf-target target:1610:321;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 3 {
+                            site-identifier 3;
+                            interface ge-0/1/0.321 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-322 {
+                instance-type l2vpn;
+                interface ge-0/1/0.322;
+                route-distinguisher 10.0.0.3:322;
+                vrf-target target:1610:322;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 3 {
+                            site-identifier 3;
+                            interface ge-0/1/0.322 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-323 {
+                instance-type l2vpn;
+                interface ge-0/1/0.323;
+                route-distinguisher 10.0.0.3:323;
+                vrf-target target:1610:323;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 3 {
+                            site-identifier 3;
+                            interface ge-0/1/0.323 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-324 {
+                instance-type l2vpn;
+                interface ge-0/1/0.324;
+                route-distinguisher 10.0.0.3:324;
+                vrf-target target:1610:324;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 3 {
+                            site-identifier 3;
+                            interface ge-0/1/0.324 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-325 {
+                instance-type l2vpn;
+                interface ge-0/1/0.325;
+                route-distinguisher 10.0.0.3:325;
+                vrf-target target:1610:325;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 3 {
+                            site-identifier 3;
+                            interface ge-0/1/0.325 {
+                                remote-site-id 1;
+                            }
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-101 {
+                instance-type vrf;
+                interface ge-0/1/0.101;
+                interface lo0.3101;
+                route-distinguisher 10.0.0.3:101;
+                vrf-target target:1610:101;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.14.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-102 {
+                instance-type vrf;
+                interface ge-0/1/0.102;
+                interface lo0.3102;
+                route-distinguisher 10.0.0.3:102;
+                vrf-target target:1610:102;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.14.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-103 {
+                instance-type vrf;
+                interface ge-0/1/0.103;
+                interface lo0.3103;
+                route-distinguisher 10.0.0.3:103;
+                vrf-target target:1610:103;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.14.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-104 {
+                instance-type vrf;
+                interface ge-0/1/0.104;
+                interface lo0.3104;
+                route-distinguisher 10.0.0.3:104;
+                vrf-target target:1610:104;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.14.1;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-105 {
+                instance-type vrf;
+                interface ge-0/1/0.105;
+                interface lo0.3105;
+                route-distinguisher 10.0.0.3:105;
+                vrf-target target:1610:105;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group ebgp-nni {
+                            type external;
+                            peer-as 8966;
+                            neighbor 192.168.14.1;
+                        }
+                    }
+                }
+            }
+        }
+        routing-options {
+            autonomous-system 1610;
+        }
+    }
+    PE {
+        interfaces {
+            ge-0/0/8 {
+                unit 101 {
+                    description l3vpn-option_a-101;
+                    vlan-id 101;
+                    family inet {
+                        address 192.168.104.1/24;
+                    }
+                }
+                unit 102 {
+                    description l3vpn-option_a-102;
+                    vlan-id 102;
+                    family inet {
+                        address 192.168.104.1/24;
+                    }
+                }
+                unit 103 {
+                    description l3vpn-option_a-103;
+                    vlan-id 103;
+                    family inet {
+                        address 192.168.104.1/24;
+                    }
+                }
+                unit 104 {
+                    description l3vpn-option_a-104;
+                    vlan-id 104;
+                    family inet {
+                        address 192.168.104.1/24;
+                    }
+                }
+                unit 105 {
+                    description l3vpn-option_a-105;
+                    vlan-id 105;
+                    family inet {
+                        address 192.168.104.1/24;
+                    }
+                }
+            }
+            ge-0/1/1 {
+                unit 101 {
+                    description l3vpn-option_a-101;
+                    vlan-id 101;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 102 {
+                    description l3vpn-option_a-102;
+                    vlan-id 102;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 103 {
+                    description l3vpn-option_a-103;
+                    vlan-id 103;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 104 {
+                    description l3vpn-option_a-104;
+                    vlan-id 104;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 105 {
+                    description l3vpn-option_a-105;
+                    vlan-id 105;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 111 {
+                    description l3vpn-option_c-111;
+                    vlan-id 111;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 112 {
+                    description l3vpn-option_c-112;
+                    vlan-id 112;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 113 {
+                    description l3vpn-option_c-113;
+                    vlan-id 113;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 114 {
+                    description l3vpn-option_c-114;
+                    vlan-id 114;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 115 {
+                    description l3vpn-option_c-115;
+                    vlan-id 115;
+                    family inet {
+                        address 192.168.103.1/24;
+                    }
+                }
+                unit 201 {
+                    description l2ck-option_a-201;
+                    encapsulation vlan-ccc;
+                    vlan-id 201;
+                }
+                unit 202 {
+                    description l2ck-option_a-202;
+                    encapsulation vlan-ccc;
+                    vlan-id 202;
+                }
+                unit 203 {
+                    description l2ck-option_a-203;
+                    encapsulation vlan-ccc;
+                    vlan-id 203;
+                }
+                unit 204 {
+                    description l2ck-option_a-204;
+                    encapsulation vlan-ccc;
+                    vlan-id 204;
+                }
+                unit 205 {
+                    description l2ck-option_a-205;
+                    encapsulation vlan-ccc;
+                    vlan-id 205;
+                }
+                unit 221 {
+                    description l2vpn-option_a-221;
+                    encapsulation vlan-ccc;
+                    vlan-id 221;
+                }
+                unit 222 {
+                    description l2vpn-option_a-222;
+                    encapsulation vlan-ccc;
+                    vlan-id 222;
+                }
+                unit 223 {
+                    description l2vpn-option_a-223;
+                    encapsulation vlan-ccc;
+                    vlan-id 223;
+                }
+                unit 224 {
+                    description l2vpn-option_a-224;
+                    encapsulation vlan-ccc;
+                    vlan-id 224;
+                }
+                unit 225 {
+                    description l2vpn-option_a-225;
+                    encapsulation vlan-ccc;
+                    vlan-id 225;
+                }
+                unit 301 {
+                    description l2ck-option_a-301;
+                    encapsulation vlan-ccc;
+                    vlan-id 301;
+                }
+                unit 302 {
+                    description l2ck-option_a-302;
+                    encapsulation vlan-ccc;
+                    vlan-id 302;
+                }
+                unit 303 {
+                    description l2ck-option_a-303;
+                    encapsulation vlan-ccc;
+                    vlan-id 303;
+                }
+                unit 304 {
+                    description l2ck-option_a-304;
+                    encapsulation vlan-ccc;
+                    vlan-id 304;
+                }
+                unit 305 {
+                    description l2ck-option_a-305;
+                    encapsulation vlan-ccc;
+                    vlan-id 305;
+                }
+                unit 321 {
+                    description l2vpn-option_a-321;
+                    encapsulation vlan-ccc;
+                    vlan-id 321;
+                }
+                unit 322 {
+                    description l2vpn-option_a-322;
+                    encapsulation vlan-ccc;
+                    vlan-id 322;
+                }
+                unit 323 {
+                    description l2vpn-option_a-323;
+                    encapsulation vlan-ccc;
+                    vlan-id 323;
+                }
+                unit 324 {
+                    description l2vpn-option_a-324;
+                    encapsulation vlan-ccc;
+                    vlan-id 324;
+                }
+                unit 325 {
+                    description l2vpn-option_a-325;
+                    encapsulation vlan-ccc;
+                    vlan-id 325;
+                }
+                unit 401 {
+                    description vpls-option_a-401;
+                    encapsulation vlan-vpls;
+                    vlan-id 401;
+                }
+                unit 402 {
+                    description vpls-option_a-402;
+                    encapsulation vlan-vpls;
+                    vlan-id 402;
+                }
+                unit 403 {
+                    description vpls-option_a-403;
+                    encapsulation vlan-vpls;
+                    vlan-id 403;
+                }
+                unit 404 {
+                    description vpls-option_a-404;
+                    encapsulation vlan-vpls;
+                    vlan-id 404;
+                }
+                unit 405 {
+                    description vpls-option_a-405;
+                    encapsulation vlan-vpls;
+                    vlan-id 405;
+                }
+            }
+            ge-0/1/9 {
+                unit 2 {
+                    description "To ASBR-1";
+                    vlan-id 2;
+                    family inet {
+                        mtu 1500;
+                        address 10.0.1.1/30;
+                    }
+                    family iso;
+                    family inet6;
+                    family mpls;
+                }
+                unit 3 {
+                    description "To ASBR-2";
+                    vlan-id 3;
+                    family inet {
+                        mtu 1500;
+                        address 10.0.1.5/30;
+                    }
+                    family iso;
+                    family inet6;
+                    family mpls;
+                }
+            }
+            lo0 {
+                unit 1 {
+                    family inet {
+                        address 10.0.0.1/32;
+                    }
+                    family iso {
+                        address 49.0000.0000.0000.0001.00;
+                    }
+                }
+                unit 1101 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1102 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1103 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1104 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1105 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1111 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1112 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1113 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1114 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+                unit 1115 {
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            ldp {
+                interface all;
+            }
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 10.0.0.1;
+                    family inet {
+                        labeled-unicast {
+                            resolve-vpn;
+                        }
+                    }
+                    family inet-vpn {
+                        unicast;
+                    }
+                    family l2vpn {
+                        signaling;
+                    }
+                    family route-target;
+                    neighbor 10.0.0.1;
+                    neighbor 10.0.0.2;
+                    neighbor 10.0.0.3;
+                }
+            }
+            isis {
+                interface ge-0/1/9.2 {
+                    point-to-point;
+                    level 1 disable;
+                }
+                interface ge-0/1/9.3 {
+                    point-to-point;
+                    level 1 disable;
+                }
+                interface lo0.1 {
+                    passive;
+                    level 1 disable;
+                }
+            }
+            rsvp {
+                interface ge-0/1/9.2;
+                interface ge-0/1/9.3;
+            }
+            mpls {
+                interface all;
+            }
+            l2circuit {
+                neighbor 10.0.0.2 {
+                    interface ge-0/1/1.201 {
+                        virtual-circuit-id 201;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.202 {
+                        virtual-circuit-id 202;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.203 {
+                        virtual-circuit-id 203;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.204 {
+                        virtual-circuit-id 204;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.205 {
+                        virtual-circuit-id 205;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                }
+                neighbor 10.0.0.3 {
+                    interface ge-0/1/1.301 {
+                        virtual-circuit-id 301;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.302 {
+                        virtual-circuit-id 302;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.303 {
+                        virtual-circuit-id 303;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.304 {
+                        virtual-circuit-id 304;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                    interface ge-0/1/1.305 {
+                        virtual-circuit-id 305;
+                        no-control-word;
+                        ignore-mtu-mismatch;
+                    }
+                }
+            }
+        }
+        routing-instances {
+            l2vpn-option_a-221 {
+                instance-type l2vpn;
+                interface ge-0/1/1.221;
+                route-distinguisher 10.0.0.1:221;
+                vrf-target target:1610:221;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.221 {
+                                remote-site-id 2;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-222 {
+                instance-type l2vpn;
+                interface ge-0/1/1.222;
+                route-distinguisher 10.0.0.1:222;
+                vrf-target target:1610:222;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.222 {
+                                remote-site-id 2;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-223 {
+                instance-type l2vpn;
+                interface ge-0/1/1.223;
+                route-distinguisher 10.0.0.1:223;
+                vrf-target target:1610:223;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.223 {
+                                remote-site-id 2;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-224 {
+                instance-type l2vpn;
+                interface ge-0/1/1.224;
+                route-distinguisher 10.0.0.1:224;
+                vrf-target target:1610:224;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.224 {
+                                remote-site-id 2;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-225 {
+                instance-type l2vpn;
+                interface ge-0/1/1.225;
+                route-distinguisher 10.0.0.1:225;
+                vrf-target target:1610:225;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.225 {
+                                remote-site-id 2;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-321 {
+                instance-type l2vpn;
+                interface ge-0/1/1.321;
+                route-distinguisher 10.0.0.1:321;
+                vrf-target target:1610:321;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.321 {
+                                remote-site-id 3;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-322 {
+                instance-type l2vpn;
+                interface ge-0/1/1.322;
+                route-distinguisher 10.0.0.1:322;
+                vrf-target target:1610:322;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.322 {
+                                remote-site-id 3;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-323 {
+                instance-type l2vpn;
+                interface ge-0/1/1.323;
+                route-distinguisher 10.0.0.1:323;
+                vrf-target target:1610:323;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.323 {
+                                remote-site-id 3;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-324 {
+                instance-type l2vpn;
+                interface ge-0/1/1.324;
+                route-distinguisher 10.0.0.1:324;
+                vrf-target target:1610:324;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.324 {
+                                remote-site-id 3;
+                            }
+                        }
+                    }
+                }
+            }
+            l2vpn-option_a-325 {
+                instance-type l2vpn;
+                interface ge-0/1/1.325;
+                route-distinguisher 10.0.0.1:325;
+                vrf-target target:1610:325;
+                protocols {
+                    l2vpn {
+                        encapsulation-type ethernet-vlan;
+                        no-control-word;
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.325 {
+                                remote-site-id 3;
+                            }
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-101 {
+                instance-type vrf;
+                interface ge-0/0/8.101;
+                interface ge-0/1/1.101;
+                interface lo0.1101;
+                route-distinguisher 10.0.0.1:101;
+                vrf-target target:1610:101;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group l3vpn-customer {
+                            type external;
+                            peer-as 65101;
+                            neighbor 192.168.104.2;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-102 {
+                instance-type vrf;
+                interface ge-0/0/8.102;
+                interface ge-0/1/1.102;
+                interface lo0.1102;
+                route-distinguisher 10.0.0.1:102;
+                vrf-target target:1610:102;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group l3vpn-customer {
+                            type external;
+                            peer-as 65102;
+                            neighbor 192.168.104.2;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-103 {
+                instance-type vrf;
+                interface ge-0/0/8.103;
+                interface ge-0/1/1.103;
+                interface lo0.1103;
+                route-distinguisher 10.0.0.1:103;
+                vrf-target target:1610:103;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group l3vpn-customer {
+                            type external;
+                            peer-as 65103;
+                            neighbor 192.168.104.2;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-104 {
+                instance-type vrf;
+                interface ge-0/0/8.104;
+                interface ge-0/1/1.104;
+                interface lo0.1104;
+                route-distinguisher 10.0.0.1:104;
+                vrf-target target:1610:104;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group l3vpn-customer {
+                            type external;
+                            peer-as 65104;
+                            neighbor 192.168.104.2;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_a-105 {
+                instance-type vrf;
+                interface ge-0/0/8.105;
+                interface ge-0/1/1.105;
+                interface lo0.1105;
+                route-distinguisher 10.0.0.1:105;
+                vrf-target target:1610:105;
+                vrf-table-label;
+                protocols {
+                    bgp {
+                        group l3vpn-customer {
+                            type external;
+                            peer-as 65105;
+                            neighbor 192.168.104.2;
+                        }
+                    }
+                }
+            }
+            l3vpn-option_c-111 {
+                instance-type vrf;
+                interface ge-0/1/1.111;
+                interface lo0.1111;
+                route-distinguisher 10.0.0.1:111;
+                vrf-target target:8966:111;
+                vrf-table-label;
+            }
+            l3vpn-option_c-112 {
+                instance-type vrf;
+                interface ge-0/1/1.112;
+                interface lo0.1112;
+                route-distinguisher 10.0.0.1:112;
+                vrf-target target:8966:112;
+                vrf-table-label;
+            }
+            l3vpn-option_c-113 {
+                instance-type vrf;
+                interface ge-0/1/1.113;
+                interface lo0.1113;
+                route-distinguisher 10.0.0.1:113;
+                vrf-target target:8966:113;
+                vrf-table-label;
+            }
+            l3vpn-option_c-114 {
+                instance-type vrf;
+                interface ge-0/1/1.114;
+                interface lo0.1114;
+                route-distinguisher 10.0.0.1:114;
+                vrf-target target:8966:114;
+                vrf-table-label;
+            }
+            l3vpn-option_c-115 {
+                instance-type vrf;
+                interface ge-0/1/1.115;
+                interface lo0.1115;
+                route-distinguisher 10.0.0.1:115;
+                vrf-target target:8966:115;
+                vrf-table-label;
+            }
+            vpls-option_a-401 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/1/1.401;
+                route-distinguisher 10.0.0.1:401;
+                vrf-target target:1610:401;
+                protocols {
+                    vpls {
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.401;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-402 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/1/1.402;
+                route-distinguisher 10.0.0.1:402;
+                vrf-target target:1610:402;
+                protocols {
+                    vpls {
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.402;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-403 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/1/1.403;
+                route-distinguisher 10.0.0.1:403;
+                vrf-target target:1610:403;
+                protocols {
+                    vpls {
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.403;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-404 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/1/1.404;
+                route-distinguisher 10.0.0.1:404;
+                vrf-target target:1610:404;
+                protocols {
+                    vpls {
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.404;
+                        }
+                    }
+                }
+            }
+            vpls-option_a-405 {
+                instance-type vpls;
+                vlan-id none;
+                interface ge-0/1/1.405;
+                route-distinguisher 10.0.0.1:405;
+                vrf-target target:1610:405;
+                protocols {
+                    vpls {
+                        site 1 {
+                            site-identifier 1;
+                            interface ge-0/1/1.405;
+                        }
+                    }
+                }
+            }
+        }
+        routing-options {
+            autonomous-system 1610;
+        }
+    }
+    grx-pe-ams {
+        interfaces {
+            ge-0/0/0 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.13.2/30;
+                    }
+                }
+            }
+            ge-0/0/8 {
+                unit 5 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 5;
+                    family inet {
+                        address 10.0.1.13/30;
+                    }
+                }
+            }
+            ge-0/1/9 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.1.6/30;
+                    }
+                }
+            }
+            lo0 {
+                unit 23 {
+                    description grx-loopback;
+                    family inet {
+                        address 2.0.0.13/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 2.0.0.13;
+                    export ibgp-export;
+                    neighbor 2.0.0.11;
+                    neighbor 2.0.0.12;
+                    neighbor 2.0.0.14;
+                    neighbor 1.0.0.11;
+                    neighbor 1.0.0.12;
+                    neighbor 1.0.0.13;
+                    neighbor 1.0.0.14;
+                }
+            }
+            ospf {
+                area 0.0.0.0 {
+                    interface ge-0/0/0.4 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/0/8.5 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/1/9.4 {
+                        interface-type p2p;
+                    }
+                    interface lo0.23 {
+                        passive;
+                    }
+                }
+            }
+        }
+        policy-options {
+            policy-statement ibgp-export {
+                term static {
+                    from {
+                        protocol static;
+                        route-filter 2.0.0.0/16 longer;
+                    }
+                    then accept;
+                }
+            }
+        }
+        routing-options {
+            static {
+                route 2.0.13.0/24 reject;
+            }
+            autonomous-system 8959;
+        }
+        firewall {
+            family inet {
+                filter clear-df-bit {
+                    term grx-external-connection {
+                        from {
+                            fragment-flags dont-fragment;
+                        }
+                        then dont-fragment clear;
+                    }
+                    term accept-any {
+                        then accept;
+                    }
+                }
+            }
+        }
+    }
+    grx-pe-hrz {
+        interfaces {
+            ge-0/0/2 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.12.2/30;
+                    }
+                }
+            }
+            ge-0/0/9 {
+                unit 5 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 5;
+                    family inet {
+                        address 10.0.1.9/30;
+                    }
+                }
+            }
+            ge-0/1/8 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.1.2/30;
+                    }
+                }
+            }
+            lo0 {
+                unit 22 {
+                    description grx-loopback;
+                    family inet {
+                        address 2.0.0.12/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 2.0.0.12;
+                    export ibgp-export;
+                    neighbor 2.0.0.11;
+                    neighbor 2.0.0.13;
+                    neighbor 2.0.0.14;
+                    neighbor 1.0.0.11;
+                    neighbor 1.0.0.12;
+                    neighbor 1.0.0.13;
+                    neighbor 1.0.0.14;
+                }
+            }
+            ospf {
+                area 0.0.0.0 {
+                    interface ge-0/0/2.4 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/1/8.4 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/0/9.5 {
+                        interface-type p2p;
+                    }
+                    interface lo0.22 {
+                        passive;
+                    }
+                }
+            }
+        }
+        policy-options {
+            policy-statement ibgp-export {
+                term static {
+                    from {
+                        protocol static;
+                        route-filter 2.0.0.0/16 longer;
+                    }
+                    then accept;
+                }
+            }
+        }
+        routing-options {
+            static {
+                route 2.0.12.0/24 reject;
+            }
+            autonomous-system 8959;
+        }
+        firewall {
+            family inet {
+                filter clear-df-bit {
+                    term grx-external-connection {
+                        from {
+                            fragment-flags dont-fragment;
+                        }
+                        then dont-fragment clear;
+                    }
+                    term accept-any {
+                        then accept;
+                    }
+                }
+            }
+        }
+    }
+    grx-pe-kif {
+        interfaces {
+            ge-0/0/1 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.11.2/30;
+                    }
+                }
+            }
+            ge-0/0/8 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.1.1/30;
+                    }
+                }
+            }
+            ge-0/0/9 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.1.5/30;
+                    }
+                }
+            }
+            lo0 {
+                unit 21 {
+                    description grx-loopback;
+                    family inet {
+                        address 2.0.0.11/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 2.0.0.11;
+                    export ibgp-export;
+                    neighbor 2.0.0.12;
+                    neighbor 2.0.0.13;
+                    neighbor 2.0.0.14;
+                    neighbor 1.0.0.11;
+                    neighbor 1.0.0.12;
+                    neighbor 1.0.0.13;
+                    neighbor 1.0.0.14;
+                }
+            }
+            ospf {
+                area 0.0.0.0 {
+                    interface ge-0/0/1.4 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/0/8.4 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/0/9.4 {
+                        interface-type p2p;
+                    }
+                    interface lo0.21 {
+                        passive;
+                    }
+                }
+            }
+        }
+        policy-options {
+            policy-statement ibgp-export {
+                term static {
+                    from {
+                        protocol static;
+                        route-filter 2.0.0.0/16 longer;
+                    }
+                    then accept;
+                }
+            }
+        }
+        routing-options {
+            static {
+                route 2.0.11.0/24 reject;
+            }
+            autonomous-system 8959;
+        }
+        firewall {
+            family inet {
+                filter clear-df-bit {
+                    term grx-external-connection {
+                        from {
+                            fragment-flags dont-fragment;
+                        }
+                        then dont-fragment clear;
+                    }
+                    term accept-any {
+                        then accept;
+                    }
+                }
+            }
+        }
+    }
+    grx-pe-lon {
+        interfaces {
+            ge-0/1/0 {
+                unit 4 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 4;
+                    family inet {
+                        address 10.0.14.2/30;
+                    }
+                }
+            }
+            ge-0/1/8 {
+                unit 5 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 5;
+                    family inet {
+                        address 10.0.1.14/30;
+                    }
+                }
+            }
+            ge-0/1/9 {
+                unit 5 {
+                    description l3vpn-grx-infrastructure;
+                    vlan-id 5;
+                    family inet {
+                        address 10.0.1.10/30;
+                    }
+                }
+            }
+            lo0 {
+                unit 24 {
+                    description grx-loopback;
+                    family inet {
+                        address 2.0.0.14/32;
+                    }
+                }
+            }
+        }
+        protocols {
+            bgp {
+                group ibgp {
+                    type internal;
+                    local-address 2.0.0.14;
+                    export ibgp-export;
+                    neighbor 2.0.0.11;
+                    neighbor 2.0.0.12;
+                    neighbor 2.0.0.13;
+                    neighbor 1.0.0.11;
+                    neighbor 1.0.0.12;
+                    neighbor 1.0.0.13;
+                    neighbor 1.0.0.14;
+                }
+            }
+            ospf {
+                area 0.0.0.0 {
+                    interface ge-0/1/0.4 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/1/8.5 {
+                        interface-type p2p;
+                    }
+                    interface ge-0/1/9.5 {
+                        interface-type p2p;
+                    }
+                    interface lo0.24 {
+                        passive;
+                    }
+                }
+            }
+        }
+        policy-options {
+            policy-statement ibgp-export {
+                term static {
+                    from {
+                        protocol static;
+                        route-filter 2.0.0.0/16 longer;
+                    }
+                    then accept;
+                }
+            }
+        }
+        routing-options {
+            static {
+                route 2.0.14.0/24 reject;
+            }
+            autonomous-system 8959;
+        }
+        firewall {
+            family inet {
+                filter clear-df-bit {
+                    term grx-external-connection {
+                        from {
+                            fragment-flags dont-fragment;
+                        }
+                        then dont-fragment clear;
+                    }
+                    term accept-any {
+                        then accept;
+                    }
+                }
+            }
+        }
+    }
+    l2vpn-customer-231_hrz {
+        interfaces {
+            ge-0/0/2 {
+                unit 231 {
+                    vlan-id 231;
+                    family inet {
+                        address 192.168.0.2/30;
+                    }
+                }
+            }
+        }
+        protocols {
+            oam {
+                ethernet {
+                    connectivity-fault-management {
+                        maintenance-domain l2vpn-hrz {
+                            level 5;
+                            maintenance-association l2vpn {
+                                continuity-check {
+                                    interval 10s;
+                                }
+                                mep 10 {
+                                    interface ge-0/0/2.231;
+                                    direction down;
+                                    auto-discovery;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    l2vpn-customer-231_kif {
+        interfaces {
+            ge-0/0/1 {
+                unit 231 {
+                    vlan-id 231;
+                    family inet {
+                        address 192.168.0.1/30;
+                    }
+                }
+            }
+        }
+        protocols {
+            oam {
+                ethernet {
+                    connectivity-fault-management {
+                        maintenance-domain l2vpn-kif {
+                            level 5;
+                            maintenance-association l2vpn {
+                                continuity-check {
+                                    interval 10s;
+                                }
+                                mep 10 {
+                                    interface ge-0/0/1.231;
+                                    direction down;
+                                    auto-discovery;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+chassis {
+    redundancy {
+        routing-engine 0 master;
+        graceful-switchover;
+    }
+    fpc 0 {
+        pic 0 {
+            tunnel-services {
+                bandwidth 1g;
+            }
+        }
+    }
+}
+interfaces {
+    ge-0/0/0 {
+        description "To AMS-VPN-MX480_ge-0/2/9";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/0/1 {
+        description "To KIF-VPN-MX960_ge-0/3/1";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/0/2 {
+        description "To HRX-VPN-MX480_ge-1/3/2";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/0/8 {
+        description "To Partner-MX480_ge-0/1/8 Physcial-loopback";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/0/9 {
+        description "To Partner-MX480_ge-0/1/9 Physcial-loopback";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/1/0 {
+        description "To LON-VPN-M320_ge-ge-3/1/7";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/1/1 {
+        description "To Traffic-Generator";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/1/8 {
+        description "To Partner-MX480_ge-0/0/8 Physcial-loopback";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    ge-0/1/9 {
+        description "To Partner-MX480_ge-0/0/9 Physcial-loopback";
+        flexible-vlan-tagging;
+        mtu 9192;
+        encapsulation flexible-ethernet-services;
+    }
+    fxp0 {
+        unit 0 {
+            family inet {
+                address 10.117.97.39/24;
+            }
+        }
+    }
+}
+snmp {
+    community public {
+        authorization read-write;
+    }
+    trap-group space {
+        targets {
+            10.117.97.208;
+        }
+    }
+}
+routing-options {
+    static {
+        route 10.151.14.0/25 next-hop 10.117.97.1;
+    }
+}
+protocols {
+    lldp {
+        interface all;
+    }
+}
+</configuration-text>
+
+
+================================================================================
+
