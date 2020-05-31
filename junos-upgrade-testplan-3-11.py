@@ -20,9 +20,14 @@ test_3_11 = list()
 test_3_11_1 = "show path-computation-client active-pce"
 test_3_11_2 = "show path-computation-client lsp"
 test_3_11_3 = "show path-computation-client statistics"
-test_3_11_4 = "show mpls lsp ingress externally-provisioned detail"
+test_3_11_4 = "show mpls lsp ingress"
+test_3_11_5 = "show mpls lsp ingress externally-provisioned"
+test_3_11_6 = "show mpls lsp ingress externally-provisioned detail"
+test_3_11_7 = "show rsvp session ingress"
+test_3_11_8 = "show rsvp session ingress externally-provisioned"
+test_3_11_9 = "show rsvp session ingress externally-provisioned detail"
 
-for a in range(1,2):
+for a in range(1,10):
   show_cmd = vars()[("test_3_11_%d" % a)]
   test_3_11.append(show_cmd)
 
