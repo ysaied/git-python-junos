@@ -1,0 +1,153 @@
+##################################################################################
+
+====================  AMS_VPN  Sunday__31-May-2020__11:18 AM  ====================
+
+=====  show configuration firewall policer plcr-5Mbps  @ AMS_VPN  =====
+None
+
+=====  show configuration interfaces ge-0/2/9  @ AMS_VPN  =====
+None
+
+=====  show interfaces policers ge-0/2/9.101 @ AMS_VPN  =====
+
+Interface       Admin Link Proto Input Policer         Output Policer
+ge-0/2/9.101    up    up        
+                           inet 
+                           multiservice __default_arp_policer__
+
+
+=====  show interfaces policers ge-0/2/9.201 @ AMS_VPN  =====
+
+Interface       Admin Link Proto Input Policer         Output Policer
+ge-0/2/9.201    up    up        
+                           ccc  
+
+
+=====  show interfaces policers ge-0/2/9.221 @ AMS_VPN  =====
+
+Interface       Admin Link Proto Input Policer         Output Policer
+ge-0/2/9.221    up    up        
+                           ccc  
+
+
+=====  show interfaces policers ge-0/2/9.401 @ AMS_VPN  =====
+
+Interface       Admin Link Proto Input Policer         Output Policer
+ge-0/2/9.401    up    up        
+                           vpls 
+
+
+=====  show interfaces statistics ge-0/2/9.101 detail @ AMS_VPN  =====
+
+  Logical interface ge-0/2/9.101 (Index 375) (SNMP ifIndex 573)
+   (Generation 290)
+    Description: l3vpn-option_a-101
+    Flags: Up SNMP-Traps 0x4000 VLAN-Tag [ 0x8100.101 ]  Encapsulation: ENET2
+    Traffic statistics:
+     Input  bytes  :         179257118343
+     Output bytes  :        1184275215561
+     Input  packets:            130105805
+     Output packets:            859436741
+    Local statistics:
+     Input  bytes  :              1340446
+     Output bytes  :              1721297
+     Input  packets:                21770
+     Output packets:                21766
+    Transit statistics:
+     Input  bytes  :         179255777897                    0 bps
+     Output bytes  :        1184273494264             38815656 bps
+     Input  packets:            130084035                    0 pps
+     Output packets:            859414975                 3521 pps
+    Protocol inet, MTU: 9170
+    Max nh cache: 75000, New hold nh limit: 75000, Curr nh cnt: 1,
+    Curr new hold cnt: 0, NH drop cnt: 0
+    Generation: 355, Route table: 13
+      Flags: Sendbcast-pkt-to-re, Is-Primary
+      Addresses, Flags: Is-Preferred Is-Primary
+        Destination: 192.168.13.0/30, Local: 192.168.13.1,
+        Broadcast: 192.168.13.3, Generation: 209
+    Protocol multiservice, MTU: Unlimited, Generation: 356, Route table: 13
+      Policer: Input: __default_arp_policer__
+
+
+=====  show interfaces statistics ge-0/2/9.201 detail @ AMS_VPN  =====
+
+  Logical interface ge-0/2/9.201 (Index 380) (SNMP ifIndex 578)
+   (Generation 295)
+    Description: l2ck-option_a-201
+    Flags: Up SNMP-Traps 0x4000 VLAN-Tag [ 0x8100.201 ] 
+    Encapsulation: VLAN-CCC
+    Traffic statistics:
+     Input  bytes  :        1260474235772
+     Output bytes  :        1458596457124
+     Input  packets:            902918507
+     Output packets:           1044839869
+    Local statistics:
+     Input  bytes  :                    0
+     Output bytes  :                    0
+     Input  packets:                    0
+     Output packets:                    0
+    Transit statistics:
+     Input  bytes  :        1260474235772             31460376 bps
+     Output bytes  :        1458596457124             39322680 bps
+     Input  packets:            902918507                 2817 pps
+     Output packets:           1044839869                 3521 pps
+    Protocol ccc, MTU: 9192, Generation: 365, Route table: 0
+      Flags: Is-Primary
+
+
+=====  show interfaces statistics ge-0/2/9.221 detail @ AMS_VPN  =====
+
+  Logical interface ge-0/2/9.221 (Index 385) (SNMP ifIndex 583)
+   (Generation 300)
+    Description: l2vpn-option_a-221
+    Flags: Up SNMP-Traps 0x4000 VLAN-Tag [ 0x8100.221 ] 
+    Encapsulation: VLAN-CCC
+    Traffic statistics:
+     Input  bytes  :        1249128636652
+     Output bytes  :        1447210209276
+     Input  packets:            894791287
+     Output packets:           1036683531
+    Local statistics:
+     Input  bytes  :                    0
+     Output bytes  :                    0
+     Input  packets:                    0
+     Output packets:                    0
+    Transit statistics:
+     Input  bytes  :        1249128636652             31460376 bps
+     Output bytes  :        1447210209276             39322680 bps
+     Input  packets:            894791287                 2817 pps
+     Output packets:           1036683531                 3521 pps
+    Protocol ccc, MTU: 9192, Generation: 370, Route table: 0
+
+
+=====  show interfaces statistics ge-0/2/9.401 detail @ AMS_VPN  =====
+
+  Logical interface ge-0/2/9.401 (Index 390) (SNMP ifIndex 588)
+   (Generation 305)
+    Description: vpls-option_a-401
+    Flags: Up SNMP-Traps 0x4000
+    VLAN-Tag [ 0x8100.401 ] In(pop) Out(push 0x8100.401) 
+    Encapsulation: VLAN-VPLS
+    Traffic statistics:
+     Input  bytes  :        1241039584452
+     Output bytes  :        1446612926488
+     Input  packets:            888996837
+     Output packets:           1036255678
+    Local statistics:
+     Input  bytes  :                    0
+     Output bytes  :                    0
+     Input  packets:                    0
+     Output packets:                    0
+    Transit statistics:
+     Input  bytes  :        1241039584452             31460376 bps
+     Output bytes  :        1446612926488             39322680 bps
+     Input  packets:            888996837                 2817 pps
+     Output packets:           1036255678                 3521 pps
+    Protocol vpls, MTU: 9192, Generation: 375, Route table: 19,
+    Mesh Group: __all_ces__, Next-hop: 1123, vpls-status: up
+      Flags: Is-Primary
+
+
+================================================================================
+

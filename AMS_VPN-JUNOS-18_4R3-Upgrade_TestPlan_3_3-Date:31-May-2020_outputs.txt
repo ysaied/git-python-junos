@@ -1,0 +1,864 @@
+##################################################################################
+
+====================  AMS_VPN  Sunday__31-May-2020__11:17 AM  ====================
+
+=====  show route table l3vpn-option_a-101 @ AMS_VPN  =====
+
+
+l3vpn-option_a-101.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        *[BGP/170] 3d 07:38:14, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+1.0.0.12/32        *[BGP/170] 00:53:17, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+1.0.0.13/32        *[Direct/0] 1w2d 23:52:40
+                    >  via lo0.101
+1.0.0.14/32        *[BGP/170] 3d 19:55:00, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.11/32        *[BGP/170] 3d 10:51:25, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+                    [BGP/170] 3d 19:54:48, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.12/32        *[BGP/170] 3d 19:54:48, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.13/32        *[BGP/170] 3d 10:51:25, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+192.168.11.0/30    *[BGP/170] 2d 20:45:27, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+192.168.12.0/30    *[BGP/170] 00:53:17, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+192.168.13.0/30    *[Direct/0] 3d 10:52:09
+                    >  via ge-0/2/9.101
+192.168.13.1/32    *[Local/0] 3d 10:52:09
+                       Local via ge-0/2/9.101
+192.168.14.0/30    *[BGP/170] 3d 19:55:00, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+                    [BGP/170] 3d 10:51:25, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+192.168.103.0/24   *[BGP/170] 2d 16:10:17, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+                    [BGP/170] 2d 16:10:17, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.104.0/24   *[BGP/170] 3d 10:51:25, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.101
+                    [BGP/170] 3d 19:54:48, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.201.0/24   *[BGP/170] 2d 16:09:45, localpref 100, from 1.0.0.11
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                    [BGP/170] 00:52:51, localpref 100, from 1.0.0.12
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+
+l3vpn-option_a-101.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 1w2d 23:51:44
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-102 @ AMS_VPN  =====
+
+
+l3vpn-option_a-102.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        *[BGP/170] 3d 07:38:14, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+1.0.0.12/32        *[BGP/170] 00:53:17, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+1.0.0.13/32        *[Direct/0] 1w2d 23:52:40
+                    >  via lo0.102
+1.0.0.14/32        *[BGP/170] 3d 19:55:00, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.11/32        *[BGP/170] 3d 10:51:53, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+                    [BGP/170] 3d 19:54:52, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.12/32        *[BGP/170] 3d 19:54:52, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.13/32        *[BGP/170] 3d 10:51:53, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+192.168.11.0/30    *[BGP/170] 2d 20:45:27, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+192.168.12.0/30    *[BGP/170] 00:53:17, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+192.168.13.0/30    *[Direct/0] 3d 10:52:09
+                    >  via ge-0/2/9.102
+192.168.13.1/32    *[Local/0] 3d 10:52:09
+                       Local via ge-0/2/9.102
+192.168.14.0/30    *[BGP/170] 3d 19:55:00, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+                    [BGP/170] 3d 10:51:53, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+192.168.103.0/24   *[BGP/170] 2d 16:10:17, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+                    [BGP/170] 2d 16:10:17, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.104.0/24   *[BGP/170] 3d 10:51:53, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.102
+                    [BGP/170] 3d 19:54:52, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.201.0/24   *[BGP/170] 2d 20:44:44, localpref 100, from 1.0.0.11
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                    [BGP/170] 00:52:58, localpref 100, from 1.0.0.12
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+
+l3vpn-option_a-102.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 1w2d 23:51:44
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-103 @ AMS_VPN  =====
+
+
+l3vpn-option_a-103.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        *[BGP/170] 3d 07:38:15, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+1.0.0.12/32        *[BGP/170] 00:53:18, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+1.0.0.13/32        *[Direct/0] 1w2d 23:52:41
+                    >  via lo0.103
+1.0.0.14/32        *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.11/32        *[BGP/170] 3d 10:51:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+                    [BGP/170] 3d 19:54:57, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.12/32        *[BGP/170] 3d 19:54:57, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.13/32        *[BGP/170] 3d 10:51:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+192.168.11.0/30    *[BGP/170] 2d 20:45:28, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+192.168.12.0/30    *[BGP/170] 00:53:18, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+192.168.13.0/30    *[Direct/0] 3d 10:52:10
+                    >  via ge-0/2/9.103
+192.168.13.1/32    *[Local/0] 3d 10:52:10
+                       Local via ge-0/2/9.103
+192.168.14.0/30    *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+                    [BGP/170] 3d 10:51:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+192.168.103.0/24   *[BGP/170] 2d 16:10:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+                    [BGP/170] 2d 16:10:18, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.104.0/24   *[BGP/170] 3d 10:51:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.103
+                    [BGP/170] 3d 19:54:57, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.201.0/24   *[BGP/170] 2d 20:44:49, localpref 100, from 1.0.0.11
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                    [BGP/170] 00:53:03, localpref 100, from 1.0.0.12
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+
+l3vpn-option_a-103.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 1w2d 23:51:45
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-104 @ AMS_VPN  =====
+
+
+l3vpn-option_a-104.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        *[BGP/170] 3d 07:38:15, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+1.0.0.12/32        *[BGP/170] 00:53:18, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+1.0.0.13/32        *[Direct/0] 1w2d 23:52:41
+                    >  via lo0.104
+1.0.0.14/32        *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.11/32        *[BGP/170] 3d 10:51:14, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+                    [BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.12/32        *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.13/32        *[BGP/170] 3d 10:51:14, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+192.168.11.0/30    *[BGP/170] 2d 20:45:28, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+192.168.12.0/30    *[BGP/170] 00:53:18, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+192.168.13.0/30    *[Direct/0] 3d 10:52:10
+                    >  via ge-0/2/9.104
+192.168.13.1/32    *[Local/0] 3d 10:52:10
+                       Local via ge-0/2/9.104
+192.168.14.0/30    *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+                    [BGP/170] 3d 10:51:14, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+192.168.103.0/24   *[BGP/170] 2d 16:10:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+                    [BGP/170] 2d 16:10:18, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.104.0/24   *[BGP/170] 3d 10:51:14, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.104
+                    [BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.201.0/24   *[BGP/170] 2d 20:44:58, localpref 100, from 1.0.0.11
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                    [BGP/170] 00:53:10, localpref 100, from 1.0.0.12
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+
+l3vpn-option_a-104.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 1w2d 23:51:45
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_a-105 @ AMS_VPN  =====
+
+
+l3vpn-option_a-105.inet.0: 15 destinations, 20 routes (15 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+1.0.0.11/32        *[BGP/170] 3d 07:38:15, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+1.0.0.12/32        *[BGP/170] 00:53:18, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+1.0.0.13/32        *[Direct/0] 1w2d 23:52:41
+                    >  via lo0.105
+1.0.0.14/32        *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.11/32        *[BGP/170] 3d 10:52:06, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+                    [BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.12/32        *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+2.0.0.13/32        *[BGP/170] 3d 10:52:06, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+192.168.11.0/30    *[BGP/170] 2d 20:45:28, localpref 100, from 1.0.0.11
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+192.168.12.0/30    *[BGP/170] 00:53:18, localpref 100, from 1.0.0.12
+                      AS path: I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+192.168.13.0/30    *[Direct/0] 3d 10:52:10
+                    >  via ge-0/2/9.105
+192.168.13.1/32    *[Local/0] 3d 10:52:10
+                       Local via ge-0/2/9.105
+192.168.14.0/30    *[BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+                    [BGP/170] 3d 10:52:06, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+192.168.103.0/24   *[BGP/170] 2d 16:10:18, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+                    [BGP/170] 2d 16:10:18, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.104.0/24   *[BGP/170] 3d 10:52:06, localpref 100
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.13.2 via ge-0/2/9.105
+                    [BGP/170] 3d 19:55:01, localpref 100, from 1.0.0.14
+                      AS path: 1610 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-lon
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_LON-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-lon
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.47
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.252.89
+192.168.201.0/24   *[BGP/170] 2d 20:44:34, localpref 100, from 1.0.0.11
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-kif
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_KIF-VPN_1
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-kif
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.26
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                    [BGP/170] 00:53:14, localpref 100, from 1.0.0.12
+                      AS path: 64517 I, validation-state: unverified
+                    >  to 172.21.249.48 via xe-0/0/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path northstar_AMS-VPN_HRZ-VPN_1
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path ams-to-hrz
+                       to 192.168.155.5 via xe-0/1/0.0, label-switched-path Bypass->172.21.249.48->172.21.249.34
+                       to 172.21.249.48 via xe-0/0/0.0, label-switched-path Bypass->192.168.155.5->172.21.249.24
+
+l3vpn-option_a-105.inet6.0: 1 destinations, 1 routes (1 active, 0 holddown, 0 hidden)
++ = Active Route, - = Last Active, * = Both
+
+ff02::2/128        *[INET6/0] 1w2d 23:51:45
+                       MultiRecv
+
+
+=====  show route table l3vpn-option_c-111 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-112 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-113 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-114 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show route table l3vpn-option_c-115 @ AMS_VPN  =====
+
+
+error: No routing tables matching specification.
+
+
+=====  show l2vpn connections @ AMS_VPN  =====
+
+Layer-2 VPN connections:
+
+Legend for connection status (St)   
+EI -- encapsulation invalid      NC -- interface encapsulation not CCC/TCC/VPLS
+EM -- encapsulation mismatch     WE -- interface and instance encaps not same
+VC-Dn -- Virtual circuit down    NP -- interface hardware not present 
+CM -- control-word mismatch      -> -- only outbound connection is up
+CN -- circuit not provisioned    <- -- only inbound connection is up
+OR -- out of range               Up -- operational
+OL -- no outgoing label          Dn -- down                      
+LD -- local site signaled down   CF -- call admission control failure      
+RD -- remote site signaled down  SC -- local and remote site ID collision
+LN -- local site not designated  LM -- local site ID not minimum designated
+RN -- remote site not designated RM -- remote site ID not minimum designated
+XX -- unknown connection status  IL -- no incoming label
+MM -- MTU mismatch               MI -- Mesh-Group ID not available
+BK -- Backup connection	         ST -- Standby connection
+PF -- Profile parse failure      PB -- Profile busy
+RS -- remote site standby	 SN -- Static Neighbor
+LB -- Local site not best-site   RB -- Remote site not best-site
+VM -- VLAN ID mismatch           HS -- Hot-standby Connection
+
+Legend for interface status 
+Up -- operational           
+Dn -- down
+
+Instance: l2vpn-option_a-221
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     May 28 14:32:16 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 27, Outgoing label: 800028
+      Local interface: ge-0/2/9.221, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-222
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     May 28 14:32:16 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 29, Outgoing label: 800034
+      Local interface: ge-0/2/9.222, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-223
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     May 28 14:32:16 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 31, Outgoing label: 800030
+      Local interface: ge-0/2/9.223, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-224
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     May 28 14:32:16 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 33, Outgoing label: 800036
+      Local interface: ge-0/2/9.224, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: l2vpn-option_a-225
+Edge protection: Not-Primary
+  Local site: 13 (13)
+    connection-site           Type  St     Time last up          # Up trans
+    11                        rmt   Up     May 28 14:32:16 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 35, Outgoing label: 800032
+      Local interface: ge-0/2/9.225, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+
+=====  show l2circuit connections @ AMS_VPN  =====
+
+Layer-2 Circuit Connections:
+
+Legend for connection status (St)   
+EI -- encapsulation invalid      NP -- interface h/w not present   
+MM -- mtu mismatch               Dn -- down                       
+EM -- encapsulation mismatch     VC-Dn -- Virtual circuit Down    
+CM -- control-word mismatch      Up -- operational                
+VM -- vlan id mismatch		 CF -- Call admission control failure
+OL -- no outgoing label          IB -- TDM incompatible bitrate 
+NC -- intf encaps not CCC/TCC    TM -- TDM misconfiguration 
+BK -- Backup Connection          ST -- Standby Connection
+CB -- rcvd cell-bundle size bad  SP -- Static Pseudowire
+LD -- local site signaled down   RS -- remote site standby
+RD -- remote site signaled down  HS -- Hot-standby Connection
+XX -- unknown
+
+Legend for interface status  
+Up -- operational            
+Dn -- down                   
+Neighbor: 1.0.0.11 
+    Interface                 Type  St     Time last up          # Up trans
+    ge-0/2/9.201(vc 201)      rmt   Up     May 28 20:17:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 22, Outgoing label: 299840
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.201, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.202(vc 202)      rmt   Up     May 28 20:17:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 23, Outgoing label: 299792
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.202, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.203(vc 203)      rmt   Up     May 28 20:17:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 24, Outgoing label: 299824
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.203, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.204(vc 204)      rmt   Up     May 28 20:17:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 25, Outgoing label: 299808
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.204, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+    ge-0/2/9.205(vc 205)      rmt   Up     May 28 20:17:59 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 26, Outgoing label: 299856
+      Negotiated PW status TLV: No
+      Local interface: ge-0/2/9.205, Status: Up, Encapsulation: VLAN
+      Flow Label Transmit: No, Flow Label Receive: No
+
+
+=====  show vpls connections @ AMS_VPN  =====
+
+Layer-2 VPN connections:
+
+Legend for connection status (St)   
+EI -- encapsulation invalid      NC -- interface encapsulation not CCC/TCC/VPLS
+EM -- encapsulation mismatch     WE -- interface and instance encaps not same
+VC-Dn -- Virtual circuit down    NP -- interface hardware not present 
+CM -- control-word mismatch      -> -- only outbound connection is up
+CN -- circuit not provisioned    <- -- only inbound connection is up
+OR -- out of range               Up -- operational
+OL -- no outgoing label          Dn -- down                      
+LD -- local site signaled down   CF -- call admission control failure      
+RD -- remote site signaled down  SC -- local and remote site ID collision
+LN -- local site not designated  LM -- local site ID not minimum designated
+RN -- remote site not designated RM -- remote site ID not minimum designated
+XX -- unknown connection status  IL -- no incoming label
+MM -- MTU mismatch               MI -- Mesh-Group ID not available
+BK -- Backup connection	         ST -- Standby connection
+PF -- Profile parse failure      PB -- Profile busy
+RS -- remote site standby	 SN -- Static Neighbor
+LB -- Local site not best-site   RB -- Remote site not best-site
+VM -- VLAN ID mismatch           HS -- Hot-standby Connection
+
+Legend for interface status 
+Up -- operational           
+Dn -- down
+
+Instance: vpls-option_a-401
+Edge protection: Not-Primary
+  LDP-VPLS State
+  VPLS-id: 401
+  Mesh-group connections: __ves__
+    Neighbor                  Type  St     Time last up          # Up trans
+    1.0.0.11(vpls-id 401)     rmt   Up     May 28 20:18:03 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 1387, Outgoing label: 262414
+      Negotiated PW status TLV: No
+      Local interface: lsi.1049097, Status: Up, Encapsulation: ETHERNET
+        Description: Intf - vpls vpls-option_a-401 neighbor 1.0.0.11 vpls-id 401
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-402
+Edge protection: Not-Primary
+  LDP-VPLS State
+  VPLS-id: 402
+  Mesh-group connections: __ves__
+    Neighbor                  Type  St     Time last up          # Up trans
+    1.0.0.11(vpls-id 402)     rmt   Up     May 28 20:18:03 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 1388, Outgoing label: 262412
+      Negotiated PW status TLV: No
+      Local interface: lsi.1049096, Status: Up, Encapsulation: ETHERNET
+        Description: Intf - vpls vpls-option_a-402 neighbor 1.0.0.11 vpls-id 402
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-403
+Edge protection: Not-Primary
+  LDP-VPLS State
+  VPLS-id: 403
+  Mesh-group connections: __ves__
+    Neighbor                  Type  St     Time last up          # Up trans
+    1.0.0.11(vpls-id 403)     rmt   Up     May 28 20:18:03 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 1389, Outgoing label: 262415
+      Negotiated PW status TLV: No
+      Local interface: lsi.1049093, Status: Up, Encapsulation: ETHERNET
+        Description: Intf - vpls vpls-option_a-403 neighbor 1.0.0.11 vpls-id 403
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-404
+Edge protection: Not-Primary
+  LDP-VPLS State
+  VPLS-id: 404
+  Mesh-group connections: __ves__
+    Neighbor                  Type  St     Time last up          # Up trans
+    1.0.0.11(vpls-id 404)     rmt   Up     May 28 20:18:03 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 1390, Outgoing label: 262413
+      Negotiated PW status TLV: No
+      Local interface: lsi.1049094, Status: Up, Encapsulation: ETHERNET
+        Description: Intf - vpls vpls-option_a-404 neighbor 1.0.0.11 vpls-id 404
+      Flow Label Transmit: No, Flow Label Receive: No
+
+Instance: vpls-option_a-405
+Edge protection: Not-Primary
+  LDP-VPLS State
+  VPLS-id: 405
+  Mesh-group connections: __ves__
+    Neighbor                  Type  St     Time last up          # Up trans
+    1.0.0.11(vpls-id 405)     rmt   Up     May 28 20:18:03 2020           1
+      Remote PE: 1.0.0.11, Negotiated control-word: No
+      Incoming label: 1391, Outgoing label: 262411
+      Negotiated PW status TLV: No
+      Local interface: lsi.1049095, Status: Up, Encapsulation: ETHERNET
+        Description: Intf - vpls vpls-option_a-405 neighbor 1.0.0.11 vpls-id 405
+      Flow Label Transmit: No, Flow Label Receive: No
+
+
+================================================================================
+
