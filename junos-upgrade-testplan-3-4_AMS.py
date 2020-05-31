@@ -32,7 +32,7 @@ show_all = test_3_4
 
 for src_node, mgmt_ip in dev_mgmt.items():
       
-   file_name = src_node+"-"+"JUNOS-18_4R3-Upgrade_TestPlan_3_4-Date:"+today+"_outputs.txt"
+   file_name = src_node+"-"+"JUNOS-18_4R3-Upgrade_TestPlan_3_4-Date_"+today+"_outputs.txt"
    file_output = open(file_name, "w")
    print ("open file for %s" % src_node)
    
