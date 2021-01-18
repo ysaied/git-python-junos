@@ -6,8 +6,8 @@
 # {2} -- Customer IPSec Tunnel End Point IP Address, type ipv4
 # {3} -- IPSec IKE Pre-shared key, type string (default = jnpr123)
 
-Juniper_vSRX_1 = { "name" : "vSRX-1", "wan_ip" : "192.168.147.212", "ipsec_client_id" : "23", "ipsec_key" : "jnpr123" }
-Juniper_vSRX_2 = { "name" : "vSRX-2", "wan_ip" : "192.168.147.213", "ipsec_client_id" : "24", "ipsec_key" : "jnpr123" }
+Juniper_vSRX_1 = { "name" : "vSRX-1", "wan_ip" : "172.31.1.5", "ipsec_client_id" : "11", "ipsec_key" : "jnpr123" }
+Juniper_vSRX_2 = { "name" : "vSRX-2", "wan_ip" : "172.31.1.10", "ipsec_client_id" : "11", "ipsec_key" : "jnpr123" }
 
 ipsec_clients = [ Juniper_vSRX_1, Juniper_vSRX_2 ]
 
